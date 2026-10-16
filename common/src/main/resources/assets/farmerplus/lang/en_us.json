@@ -1,0 +1,11 @@
+{
+  "itemGroup.farmerplus": "Farmer+",
+  "item.farmerplus.flour": "Flour",
+  "item.farmerplus.dough": "Dough",
+  "item.farmerplus.wheat_porridge": "Wheat Porridge",
+  "block.farmerplus.wheat_sheaf": "Wheat Sheaf",
+  "tag.item.c.flours": "Flours",
+  "tag.item.c.flours.wheat": "Wheat Flours",
+  "tag.item.c.doughs": "Doughs",
+  "tag.item.c.doughs.wheat": "Wheat Doughs"
+}

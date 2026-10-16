@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "farmerplus:wheat_from_wheat_sheaf"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wheat_sheaf": {
+      "conditions": {
+        "items": [
+          {
+            "items": "farmerplus:wheat_sheaf"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_wheat_sheaf"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "farmerplus:wheat_from_wheat_sheaf"
+    ]
+  }
+}

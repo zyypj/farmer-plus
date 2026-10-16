@@ -1,0 +1,34 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea/*
+!.idea/scopes
+
+# vscode
+.vscode
+
+# gradle
+build
+.gradle
+
+# runtime
+eclipse
+run
+runs
+
+# os
+.DS_Store
+Thumbs.db
+
+# art working files
+art/**/*.bak

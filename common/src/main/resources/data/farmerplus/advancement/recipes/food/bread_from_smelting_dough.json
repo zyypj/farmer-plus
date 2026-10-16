@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "farmerplus:bread_from_smelting_dough"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_dough": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:doughs/wheat"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dough"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "farmerplus:bread_from_smelting_dough"
+    ]
+  }
+}

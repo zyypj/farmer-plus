@@ -1,0 +1,11 @@
+{
+  "itemGroup.farmerplus": "Farmer+",
+  "item.farmerplus.flour": "Farinha",
+  "item.farmerplus.dough": "Massa",
+  "item.farmerplus.wheat_porridge": "Mingau de Trigo",
+  "block.farmerplus.wheat_sheaf": "Feixe de Trigo",
+  "tag.item.c.flours": "Farinhas",
+  "tag.item.c.flours.wheat": "Farinhas de Trigo",
+  "tag.item.c.doughs": "Massas",
+  "tag.item.c.doughs.wheat": "Massas de Trigo"
+}

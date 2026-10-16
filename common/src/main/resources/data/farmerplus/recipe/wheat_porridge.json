@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:wheat",
+    "minecraft:wheat",
+    "minecraft:sugar",
+    "minecraft:milk_bucket",
+    "minecraft:bowl"
+  ],
+  "result": {
+    "id": "farmerplus:wheat_porridge"
+  }
+}
