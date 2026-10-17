@@ -82,6 +82,8 @@ O Farmer+ precisa ser invisível no profiler.
 | Sistema | Pacote | Docs |
 |---|---|---|
 | Pisoteio de plantações | `core/trampling` | [trampling.pt-BR.md](trampling.pt-BR.md) |
+| Features de bioma (worldgen) | `core/worldgen` | [strawberries.pt-BR.md](strawberries.pt-BR.md#compatibilidade-com-modpacks) |
+| Morangos | `content/strawberry` | [strawberries.pt-BR.md](strawberries.pt-BR.md) |
 
 ## Adicionando uma plantação nova (checklist)
 

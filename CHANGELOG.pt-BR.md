@@ -5,6 +5,8 @@
 ## Não lançado
 
 ### Adicionado
+- Morangos: plantação perene plantada só em terra arada, com estágios de muda, folhagem, flor, fruto verde e maduro, colheita com o botão direito e estolões que se espalham para a terra arada vizinha.
+- Morangos silvestres gerados em planícies, campinas e florestas (tag de bioma `farmerplus:has_wild_strawberries`).
 - Pisoteio de plantações: andar entorta as plantas, correr ou passar a cavalo deita elas e passadas repetidas esmagam e abrem caminhos, com caules modelados inclinados, quebrados e deitados.
 - Pular ou cair na plantação amassa em vez de transformar a terra arada em terra comum.
 - Plantas amassadas se recuperam com o tempo; trigo maduro esmagado só dá sementes. Agachado nunca amassa.

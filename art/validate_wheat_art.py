@@ -33,6 +33,19 @@ with ZipFile(JAR) as vanilla:
     check(metadata['min_format'] == expected and metadata['max_format'] == data_format, f'Pack format covers resources {expected} and data {data_format}')
 
 
+STRAWBERRY_BUDGETS = {0: 8, 1: 12, 2: 16, 3: 20, 4: 20}
+
+
+def element_budget(stem):
+    if stem == 'wheat_sheaf':
+        return 24
+    if stem.startswith(('wheat_stage6', 'wheat_stage7')):
+        return 16
+    if stem.startswith('strawberry_plant_stage'):
+        return STRAWBERRY_BUDGETS[int(stem[len('strawberry_plant_stage')])]
+    return 12
+
+
 def resolve(identifier, kind):
     namespace, name = identifier.split(':') if ':' in identifier else ('minecraft', identifier)
     suffix = '.png' if kind == 'textures' else '.json'
@@ -50,7 +63,7 @@ for path in (RES / 'assets').rglob('*.json'):
                 check(resolve(texture, 'textures'), f'{path.name}: texture {key} resolves')
         elements = value.get('elements', [])
         if elements:
-            budget = 24 if path.stem == 'wheat_sheaf' else 16 if path.stem.startswith(('wheat_stage6', 'wheat_stage7')) else 12
+            budget = element_budget(path.stem)
             check(len(elements) <= budget, f'{path.name}: {len(elements)} elements, maximum {budget}')
         for el in elements:
             check('shade' not in el, f'{path.name}: no removed shade property')

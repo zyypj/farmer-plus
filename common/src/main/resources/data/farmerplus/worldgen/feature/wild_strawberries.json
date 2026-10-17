@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:simple_block",
+  "to_place": {
+    "id": "farmerplus:wild_strawberries",
+    "properties": {
+      "age": "4"
+    }
+  }
+}

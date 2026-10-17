@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#farmerplus:has_wild_strawberries",
+  "features": "farmerplus:patch_wild_strawberries",
+  "step": "vegetal_decoration"
+}

@@ -8,5 +8,6 @@ public final class FarmerPlusFabric implements ModInitializer {
     @Override
     public void onInitialize() {
         FarmerPlus.init();
+        FabricWorldgen.register();
     }
 }

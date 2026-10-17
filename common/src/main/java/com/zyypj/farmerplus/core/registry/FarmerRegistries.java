@@ -31,6 +31,14 @@ public final class FarmerRegistries {
         return blockItem(block, BlockItem::new, properties);
     }
 
+    public static RegistryEntry<BlockItem> namedBlockItem(String name, RegistryEntry<? extends Block> block, Supplier<Item.Properties> properties) {
+        return Services.REGISTRATION.register(Registries.ITEM, name, key -> {
+            BlockItem item = new BlockItem(block.get(), properties.get().useItemDescriptionPrefix().setId(key));
+            item.registerBlocks(Item.BY_BLOCK, item);
+            return item;
+        });
+    }
+
     public static <T extends BlockItem> RegistryEntry<T> blockItem(RegistryEntry<? extends Block> block, BiFunction<Block, Item.Properties, T> factory, Supplier<Item.Properties> properties) {
         String name = block.id().getPath();
         return Services.REGISTRATION.register(Registries.ITEM, name, key -> {

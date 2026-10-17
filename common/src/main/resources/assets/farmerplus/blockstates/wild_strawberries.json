@@ -1,0 +1,94 @@
+{
+  "variants": {
+    "age=0": [
+      {
+        "model": "farmerplus:block/strawberry_plant_stage0",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage0",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage0",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage0",
+        "y": 270
+      }
+    ],
+    "age=1": [
+      {
+        "model": "farmerplus:block/strawberry_plant_stage1",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage1",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage1",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage1",
+        "y": 270
+      }
+    ],
+    "age=2": [
+      {
+        "model": "farmerplus:block/strawberry_plant_stage2",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage2",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage2",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage2",
+        "y": 270
+      }
+    ],
+    "age=3": [
+      {
+        "model": "farmerplus:block/strawberry_plant_stage3",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage3",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage3",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage3",
+        "y": 270
+      }
+    ],
+    "age=4": [
+      {
+        "model": "farmerplus:block/strawberry_plant_stage4",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage4",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage4",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage4",
+        "y": 270
+      }
+    ]
+  }
+}

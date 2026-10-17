@@ -13,5 +13,9 @@
   "gamerule.farmerplus.crop_trampling.description": "Walking through crops bends them, sprinting flattens them and repeated passes crush them into paths. Sneaking never tramples.",
   "gamerule.farmerplus.mob_crop_trampling": "Mobs trample crops",
   "gamerule.farmerplus.mob_crop_trampling.description": "Livestock and large mobs in the farmerplus:tramples_crops entity tag trample crops they walk through.",
-  "tag.entity_type.farmerplus.tramples_crops": "Tramples Crops"
+  "tag.entity_type.farmerplus.tramples_crops": "Tramples Crops",
+  "item.farmerplus.strawberry": "Strawberry",
+  "block.farmerplus.strawberry_plant": "Strawberry Plant",
+  "block.farmerplus.wild_strawberries": "Wild Strawberries",
+  "tag.worldgen.biome.farmerplus.has_wild_strawberries": "Has Wild Strawberries"
 }

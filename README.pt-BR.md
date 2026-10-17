@@ -36,6 +36,10 @@ O próprio trigo ganha uma **reformulação visual Vanilla+ realista**: arte ori
 
 ![Estágios do trigo e itens](docs/images/wheat-textures.png)
 
+### Morangos
+
+Uma plantação perene nova. Encontre **morangos silvestres** em planícies, campinas e florestas, depois plante os morangos em **terra arada** (só terra arada). A planta floresce, dá frutos verdes e amadurece; clique com o botão direito para colher 2–4 morangos e ela volta a florir. Plantas saudáveis soltam estolões para a terra arada vazia ao lado. Veja [docs/strawberries.pt-BR.md](docs/strawberries.pt-BR.md).
+
 ### Pisoteio de plantações
 
 Andar pela plantação entorta as plantas, correr ou passar a cavalo deita elas, e os caminhos que você usa sempre ficam esmagados no solo — geometria de verdade, com caules inclinados e quebrados caindo na direção em que você andou. Plantas entortadas se recuperam com o tempo; as esmagadas só dão sementes. Pular na plantação amassa em vez de destruir a planta e a terra arada. Agache para andar com cuidado. Ligue/desligue com `/gamerule farmerplus:crop_trampling` e `/gamerule farmerplus:mob_crop_trampling`. Veja [docs/trampling.pt-BR.md](docs/trampling.pt-BR.md).
@@ -70,6 +74,7 @@ A mesma tarefa existe para `:fabric` e `:forge`.
 | Pipeline de arte (texturas, Blockbench) | [docs/art-pipeline.md](docs/art-pipeline.md) | [docs/art-pipeline.pt-BR.md](docs/art-pipeline.pt-BR.md) |
 | Visual do trigo | [docs/wheat-visuals.md](docs/wheat-visuals.md) | [docs/wheat-visuals.pt-BR.md](docs/wheat-visuals.pt-BR.md) |
 | Pisoteio de plantações | [docs/trampling.md](docs/trampling.md) | [docs/trampling.pt-BR.md](docs/trampling.pt-BR.md) |
+| Morangos | [docs/strawberries.md](docs/strawberries.md) | [docs/strawberries.pt-BR.md](docs/strawberries.pt-BR.md) |
 | Atualizando Minecraft e loaders | [docs/updating.md](docs/updating.md) | [docs/updating.pt-BR.md](docs/updating.pt-BR.md) |
 | Como contribuir | [CONTRIBUTING.md](CONTRIBUTING.md) | [CONTRIBUTING.pt-BR.md](CONTRIBUTING.pt-BR.md) |
 | Histórico de mudanças | [CHANGELOG.md](CHANGELOG.md) | [CHANGELOG.pt-BR.md](CHANGELOG.pt-BR.md) |

@@ -13,5 +13,9 @@
   "gamerule.farmerplus.crop_trampling.description": "Andar pela plantação entorta as plantas, correr deita elas e passar várias vezes esmaga e abre caminhos. Agachado nunca amassa.",
   "gamerule.farmerplus.mob_crop_trampling": "Criaturas amassam plantações",
   "gamerule.farmerplus.mob_crop_trampling.description": "Animais e criaturas grandes da tag farmerplus:tramples_crops amassam as plantações por onde passam.",
-  "tag.entity_type.farmerplus.tramples_crops": "Amassam Plantações"
+  "tag.entity_type.farmerplus.tramples_crops": "Amassam Plantações",
+  "item.farmerplus.strawberry": "Morango",
+  "block.farmerplus.strawberry_plant": "Morangueiro",
+  "block.farmerplus.wild_strawberries": "Morangos Silvestres",
+  "tag.worldgen.biome.farmerplus.has_wild_strawberries": "Tem Morangos Silvestres"
 }

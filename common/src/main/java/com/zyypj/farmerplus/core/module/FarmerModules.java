@@ -1,12 +1,14 @@
 package com.zyypj.farmerplus.core.module;
 
+import com.zyypj.farmerplus.content.strawberry.StrawberryModule;
 import com.zyypj.farmerplus.content.wheat.WheatModule;
 import java.util.List;
 
 public final class FarmerModules {
 
     private static final List<FarmerModule> MODULES = List.of(
-            new WheatModule()
+            new WheatModule(),
+            new StrawberryModule()
     );
 
     private FarmerModules() {

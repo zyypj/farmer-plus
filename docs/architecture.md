@@ -82,6 +82,8 @@ Farmer+ must stay invisible on a profiler.
 | System | Package | Docs |
 |---|---|---|
 | Crop trampling | `core/trampling` | [trampling.md](trampling.md) |
+| Biome features (worldgen) | `core/worldgen` | [strawberries.md](strawberries.md#modpack-compatibility) |
+| Strawberries | `content/strawberry` | [strawberries.md](strawberries.md) |
 
 ## Adding a new crop (checklist)
 

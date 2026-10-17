@@ -5,6 +5,8 @@
 ## Unreleased
 
 ### Added
+- Strawberries: a perennial crop planted only on farmland, with seedling, leafy, flowering, green and ripe stages, right-click harvesting and runners that spread to neighbouring farmland.
+- Wild strawberries generating in plains, meadows and forests (`farmerplus:has_wild_strawberries` biome tag).
 - Crop trampling: walking bends crops, sprinting or riding flattens them and repeated passes crush them into paths, with modelled bent, snapped and flattened stalks.
 - Jumping or falling on crops flattens them instead of turning the farmland into dirt.
 - Trampled crops recover over time; crushed mature wheat only drops seeds. Sneaking never tramples.

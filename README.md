@@ -36,6 +36,10 @@ Wheat itself gets a **Realistic Vanilla+ visual overhaul**: original 32×32 art 
 
 ![Wheat stages and items](docs/images/wheat-textures.png)
 
+### Strawberries
+
+A new perennial crop. Find **wild strawberries** in plains, meadows and forests, then plant the berries on **farmland** (only farmland). Plants flower, set green fruit and ripen; right-click to pick 2–4 strawberries and the plant flowers again. Healthy plants send runners onto neighbouring empty farmland. See [docs/strawberries.md](docs/strawberries.md).
+
 ### Crop trampling
 
 Walking through crops bends them, sprinting or riding flattens them, and paths you keep using get crushed into the soil — real tilted and snapped stalk geometry that falls in the direction you moved. Bent crops recover over time; crushed ones yield only seeds. Jumping on crops flattens them instead of destroying them and the farmland. Sneak to walk carefully. Toggle with `/gamerule farmerplus:crop_trampling` and `/gamerule farmerplus:mob_crop_trampling`. See [docs/trampling.md](docs/trampling.md).
@@ -70,6 +74,7 @@ The same task exists for `:fabric` and `:forge`.
 | Art pipeline (textures, Blockbench) | [docs/art-pipeline.md](docs/art-pipeline.md) | [docs/art-pipeline.pt-BR.md](docs/art-pipeline.pt-BR.md) |
 | Wheat visuals | [docs/wheat-visuals.md](docs/wheat-visuals.md) | [docs/wheat-visuals.pt-BR.md](docs/wheat-visuals.pt-BR.md) |
 | Crop trampling | [docs/trampling.md](docs/trampling.md) | [docs/trampling.pt-BR.md](docs/trampling.pt-BR.md) |
+| Strawberries | [docs/strawberries.md](docs/strawberries.md) | [docs/strawberries.pt-BR.md](docs/strawberries.pt-BR.md) |
 | Updating Minecraft and loaders | [docs/updating.md](docs/updating.md) | [docs/updating.pt-BR.md](docs/updating.pt-BR.md) |
 | Contributing | [CONTRIBUTING.md](CONTRIBUTING.md) | [CONTRIBUTING.pt-BR.md](CONTRIBUTING.pt-BR.md) |
 | Changelog | [CHANGELOG.md](CHANGELOG.md) | [CHANGELOG.pt-BR.md](CHANGELOG.pt-BR.md) |
