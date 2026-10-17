@@ -60,7 +60,8 @@
             11,
             11
           ],
-          "texture": "#end"
+          "texture": "#bark",
+          "rotation": 90
         },
         "down": {
           "uv": [
@@ -69,7 +70,8 @@
             11,
             11
           ],
-          "texture": "#end"
+          "texture": "#bark",
+          "rotation": 90
         }
       }
     }

@@ -2,11 +2,14 @@ package com.zyypj.farmerplus.content.avocado;
 
 import com.zyypj.farmerplus.FarmerPlus;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.ColorParticleOption;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.ParticleUtils;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -38,10 +41,16 @@ public class AvocadoLeavesBlock extends TintedParticleLeavesBlock {
     private static final int FRUIT_SET_CHANCE = 8;
     private static final int RIPENING_CHANCE = 10;
     private static final int FRUIT_FALL_CHANCE = 40;
+    private static final ColorParticleOption FALLING_LEAF = ColorParticleOption.create(ParticleTypes.TINTED_LEAVES, 0.3F, 0.52F, 0.31F);
 
     public AvocadoLeavesBlock(BlockBehaviour.Properties properties) {
         super(LEAF_PARTICLE_CHANCE, properties);
         registerDefaultState(defaultBlockState().setValue(FRUIT, NO_FRUIT));
+    }
+
+    @Override
+    protected void spawnFallingLeavesParticle(Level level, BlockPos pos, RandomSource random) {
+        ParticleUtils.spawnParticleBelow(level, pos, random, FALLING_LEAF);
     }
 
     public static boolean isRipe(BlockState state) {

@@ -27,7 +27,7 @@ def textures():
 
 def core(lo, hi):
     side = {'uv': [lo, lo, hi, hi], 'texture': '#bark'}
-    cap = {'uv': [lo, lo, hi, hi], 'texture': '#end'}
+    cap = {'uv': [lo, lo, hi, hi], 'texture': '#bark', 'rotation': 90}
     return {
         'textures': textures(),
         'elements': [{
@@ -47,7 +47,7 @@ def arm(lo, hi):
             'from': [lo, lo, 0],
             'to': [hi, hi, lo],
             'faces': {
-                'north': {'uv': [lo, lo, hi, hi], 'texture': '#end', 'cullface': 'north'},
+                'north': {'uv': [lo, lo, hi, hi], 'texture': '#bark', 'cullface': 'north'},
                 'up': along,
                 'down': along,
                 'east': turned,
