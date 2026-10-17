@@ -13,7 +13,7 @@ Farmer+ is a vanilla-style farming mod for Minecraft 26.3 with one shared codeba
 ## Hard rules
 
 - All assets and data live in `common/src/main/resources`. Never put assets in `fabric/`, `neoforge/` or `forge/`.
-- Wheat crop and sheaf block textures are 32×32 PNG. All item icons, including wheat-related items, and strawberry block textures use native 16×16 PNG. Other content defaults to 16×16; the mod icon is excepted. Use realistic Vanilla+ pixel art, hard pixels and no anti-aliasing. Never copy or trace Mojang textures.
+- All block and item textures are 16×16 PNG; only the mod icon is larger (512×512). Use realistic Vanilla+ pixel art, hard pixels and no anti-aliasing. Never copy or trace Mojang textures.
 - Blockbench sources go in `art/blockbench/<id>.bbmodel`; exported models go in `assets/farmerplus/models/block/<id>.json` and must reference textures as `farmerplus:block/<name>`.
 - Do not rename registry ids, item model files or texture files that already exist — code and data depend on them.
 - Do not write code comments. Do not use fully-qualified class names inline.

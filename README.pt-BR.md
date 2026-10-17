@@ -15,7 +15,7 @@ Uma reformulação do sistema de plantações do Minecraft com cara de vanilla. 
 ## Princípios
 
 - **Vanilla em primeiro lugar.** Toda adição precisa parecer, soar e funcionar como algo que a Mojang lançaria. Receitas, texturas e progressão seguem as convenções do vanilla.
-- **Levíssimo.** Dois mixins minúsculos, sem lógica por tick, sem reflexão. O conteúdo é registrado uma vez na inicialização e o comportamento vem de componentes de dados, tags e JSON do próprio vanilla. Cada jar tem cerca de 160 KB, quase tudo arte em 32×32 e modelos de bloco.
+- **Levíssimo.** Dois mixins minúsculos, sem lógica por tick, sem reflexão. O conteúdo é registrado uma vez na inicialização e o comportamento vem de componentes de dados, tags e JSON do próprio vanilla. Cada jar tem cerca de 160 KB, quase tudo arte em 16×16 e modelos de bloco.
 - **Feito para modpacks.** Os ingredientes usam as tags de convenção `c:` (`c:flours/wheat`, `c:doughs/wheat`, …), então farinha ou massa de outros mods funciona nas receitas do Farmer+ e vice-versa.
 - **Todos os loaders.** Uma única base de código gera Fabric, NeoForge e Forge, e é atualizada sempre que o Minecraft ou algum loader lança versão nova.
 
@@ -32,7 +32,7 @@ Uma reformulação do sistema de plantações do Minecraft com cara de vanilla. 
 
 O pão vanilla (3 trigos) continua igual — a massa é um caminho alternativo que recompensa quem cozinha.
 
-O próprio trigo ganha uma **reformulação visual Vanilla+ realista**: arte original em 32×32 para os oito estágios, quatro variações naturais por estágio, trigo maduro mais alto e trigo e sementes redesenhados. As mecânicas continuam vanilla. O visual também existe como resource pack avulso (`./gradlew wheatVisualPack`). Veja [docs/wheat-visuals.pt-BR.md](docs/wheat-visuals.pt-BR.md).
+O próprio trigo ganha uma **reformulação visual Vanilla+ realista**: arte original em 16×16 para os oito estágios, quatro variações naturais por estágio, trigo maduro mais alto e trigo e sementes redesenhados. As mecânicas continuam vanilla. O visual também existe como resource pack avulso (`./gradlew wheatVisualPack`). Veja [docs/wheat-visuals.pt-BR.md](docs/wheat-visuals.pt-BR.md).
 
 ![Estágios do trigo e itens](docs/images/wheat-textures.png)
 

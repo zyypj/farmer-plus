@@ -6,7 +6,7 @@ O trigo amassado já tem a **geometria** final (veja [docs/trampling.pt-BR.md](.
 
 Caminho base: `common/src/main/resources/assets/farmerplus/textures/block/`
 
-## Texturas (32×32, mesmas regras de [art-pipeline.pt-BR.md](../art-pipeline.pt-BR.md))
+## Texturas (16×16, mesmas regras de [art-pipeline.pt-BR.md](../art-pipeline.pt-BR.md))
 
 | Arquivo | Conteúdo |
 |---|---|

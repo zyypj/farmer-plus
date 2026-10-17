@@ -2,7 +2,7 @@
 
 [English](wheat-visuals.md) | **Português**
 
-A reformulação do trigo substitui o visual do trigo vanilla por **pixel art original em 32×32**: caules afunilados, espigas alongadas formadas por pequenos grupos alternados de grãos, barbas curtas e poucas folhas arqueadas. A jogabilidade não muda — crescimento, hidratação, farinha de osso, drops, contorno e colisão são os do vanilla.
+A reformulação do trigo substitui o visual do trigo vanilla por **pixel art original em 16×16**: caules afunilados, espigas alongadas formadas por pequenos grupos alternados de grãos, barbas curtas e poucas folhas arqueadas. A jogabilidade não muda — crescimento, hidratação, farinha de osso, drops, contorno e colisão são os do vanilla.
 
 ![Os oito estágios e os itens](images/wheat-textures.png)
 

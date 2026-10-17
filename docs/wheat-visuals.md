@@ -2,7 +2,7 @@
 
 **English** | [Português](wheat-visuals.pt-BR.md)
 
-The wheat overhaul replaces vanilla wheat visuals with original **32×32 pixel art**: tapered stalks, elongated ears built from small alternating grain clusters, short awns and a few restrained arching leaves. Gameplay is untouched — growth, hydration, bone meal, drops, outline and collision are vanilla.
+The wheat overhaul replaces vanilla wheat visuals with original **16×16 pixel art**: tapered stalks, elongated ears built from small alternating grain clusters, short awns and a few restrained arching leaves. Gameplay is untouched — growth, hydration, bone meal, drops, outline and collision are vanilla.
 
 ![All eight stages and items](images/wheat-textures.png)
 

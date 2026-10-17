@@ -6,7 +6,7 @@ Trampled wheat already has final **geometry** (see [docs/trampling.md](../trampl
 
 Base path: `common/src/main/resources/assets/farmerplus/textures/block/`
 
-## Textures (32×32, same rules as [art-pipeline.md](../art-pipeline.md))
+## Textures (16×16, same rules as [art-pipeline.md](../art-pipeline.md))
 
 | File | Content |
 |---|---|

@@ -25,7 +25,7 @@
 - Farmer+ creative tab.
 - English and Brazilian Portuguese translations.
 - Fabric, NeoForge and Forge support for Minecraft 26.3.
-- Realistic Vanilla+ wheat visuals: original 32×32 art for all eight stages, four variations per stage, taller mature crops, redrawn wheat and seeds.
+- Realistic Vanilla+ wheat visuals: original 16×16 art for all eight stages, four variations per stage, taller mature crops, redrawn wheat and seeds.
 - 3D Wheat Sheaf model with a solid cord binding and a dedicated inventory icon.
 - Optional standalone wheat resource pack (`./gradlew wheatVisualPack`).
 - Final art for flour, dough, porridge and the mod icon.

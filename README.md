@@ -15,7 +15,7 @@ A vanilla-friendly overhaul of Minecraft farming. Farmer+ adds crops, foods, ing
 ## Design goals
 
 - **Vanilla first.** Every addition must look, sound and behave like something Mojang could ship. Recipes, textures and progression follow vanilla conventions.
-- **Featherweight.** Two tiny mixins, no per-tick logic, no reflection. Content is registered once at startup and behaviour is driven by vanilla data components, tags and JSON data. Each loader jar is about 160 KB, almost all of it 32×32 art and block models.
+- **Featherweight.** Two tiny mixins, no per-tick logic, no reflection. Content is registered once at startup and behaviour is driven by vanilla data components, tags and JSON data. Each loader jar is about 160 KB, almost all of it 16×16 art and block models.
 - **Modpack friendly.** Ingredients use the shared `c:` convention tags (`c:flours/wheat`, `c:doughs/wheat`, …), so flour or dough from other mods works in Farmer+ recipes and vice versa.
 - **Every loader.** One shared codebase ships to Fabric, NeoForge and Forge, and is updated whenever Minecraft or a loader releases a new version.
 
@@ -32,7 +32,7 @@ A vanilla-friendly overhaul of Minecraft farming. Farmer+ adds crops, foods, ing
 
 Vanilla bread (3 wheat) is untouched — dough is an alternative path that rewards cooking.
 
-Wheat itself gets a **Realistic Vanilla+ visual overhaul**: original 32×32 art for all eight growth stages, four natural variations per stage, taller mature crops and redrawn wheat and seeds. Mechanics stay vanilla. The visuals are also available as a standalone resource pack (`./gradlew wheatVisualPack`). See [docs/wheat-visuals.md](docs/wheat-visuals.md).
+Wheat itself gets a **Realistic Vanilla+ visual overhaul**: original 16×16 art for all eight growth stages, four natural variations per stage, taller mature crops and redrawn wheat and seeds. Mechanics stay vanilla. The visuals are also available as a standalone resource pack (`./gradlew wheatVisualPack`). See [docs/wheat-visuals.md](docs/wheat-visuals.md).
 
 ![Wheat stages and items](docs/images/wheat-textures.png)
 
