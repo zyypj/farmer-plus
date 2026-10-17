@@ -7,28 +7,88 @@
       {
         "when": "1",
         "model": {
-          "type": "minecraft:model",
-          "model": "farmerplus:item/strawberry_jam_1"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": [
+                "gui"
+              ],
+              "model": {
+                "type": "minecraft:model",
+                "model": "farmerplus:item/strawberry_jam_1"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "farmerplus:block/strawberry_jam_1"
+          }
         }
       },
       {
         "when": "2",
         "model": {
-          "type": "minecraft:model",
-          "model": "farmerplus:item/strawberry_jam_2"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": [
+                "gui"
+              ],
+              "model": {
+                "type": "minecraft:model",
+                "model": "farmerplus:item/strawberry_jam_2"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "farmerplus:block/strawberry_jam_2"
+          }
         }
       },
       {
         "when": "3",
         "model": {
-          "type": "minecraft:model",
-          "model": "farmerplus:item/strawberry_jam_3"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": [
+                "gui"
+              ],
+              "model": {
+                "type": "minecraft:model",
+                "model": "farmerplus:item/strawberry_jam_3"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "farmerplus:block/strawberry_jam_3"
+          }
         }
       }
     ],
     "fallback": {
-      "type": "minecraft:model",
-      "model": "farmerplus:item/strawberry_jam_3"
+      "type": "minecraft:select",
+      "property": "minecraft:display_context",
+      "cases": [
+        {
+          "when": [
+            "gui"
+          ],
+          "model": {
+            "type": "minecraft:model",
+            "model": "farmerplus:item/strawberry_jam_3"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "farmerplus:block/strawberry_jam_3"
+      }
     }
   }
 }

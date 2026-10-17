@@ -61,6 +61,8 @@ for path in (RES / 'assets').rglob('*.json'):
         if 'parent' in value:
             check(resolve(value['parent'], 'models'), f'{path.name}: parent resolves')
         for key, texture in value.get('textures', {}).items():
+            if isinstance(texture, dict):
+                texture = texture['sprite']
             if not texture.startswith('#'):
                 check(resolve(texture, 'textures'), f'{path.name}: texture {key} resolves')
         elements = value.get('elements', [])
@@ -198,6 +200,8 @@ for pack in packs:
             if '/models/' in name and name.endswith('.json'):
                 model = json.loads(archive.read(name))
                 for kind, identifier in [('models', model.get('parent', ''))] + [('textures', t) for t in model.get('textures', {}).values()]:
+                    if isinstance(identifier, dict):
+                        identifier = identifier['sprite']
                     if not identifier or identifier.startswith('#'):
                         continue
                     namespace, resource = identifier.split(':') if ':' in identifier else ('minecraft', identifier)
@@ -211,6 +215,44 @@ check(len(strawberries['models']) == 30, 'Thirty native cultivated/wild strawber
 for error in strawberries['errors']:
     check(False, error)
 check(not strawberries['errors'], 'Strawberry native sources, solid berries, stage variation, textures and shapes pass')
+
+jam_models = []
+for level in range(1, 4):
+    name = f'strawberry_jam_{level}'
+    model = load(RES / f'assets/farmerplus/models/block/{name}.json')
+    native = load(ROOT / f'art/blockbench/{name}.bbmodel')
+    check(native['meta']['model_format'] == 'java_block' and native['resolution'] == {'width': 16, 'height': 16}, f'{name}: native 16x16 Java Blockbench source')
+    check(len(model['elements']) == len(native['elements']) == 12, f'{name}: twelve real model elements')
+    check(model.get('ambientocclusion') is False and 'particle' in model['textures'], f'{name}: ambient occlusion disabled and particle assigned')
+    check(model['textures']['glass'].get('force_translucent') is True, f'{name}: native 26.3 translucent glass material')
+    check(all(slot in model.get('display', {}) for slot in ('gui', 'ground', 'fixed', 'thirdperson_righthand', 'firstperson_righthand')), f'{name}: item display transforms')
+    by_name = {element['name']: element for element in model['elements']}
+    label = by_name['cream_strawberry_label_north']
+    check(set(label['faces']) == {'north'} and label['from'][2] < 5, f'{name}: cream label faces north outside glass')
+    check(min(element['from'][1] for element in model['elements']) == 0, f'{name}: foot rests on y=0')
+    drapes = [by_name['cloth_drape_' + side] for side in ('north', 'south', 'west', 'east')]
+    check(len(drapes) == 4 and all(bool(drape.get('rotation')) and all(drape['to'][axis] > drape['from'][axis] for axis in range(3)) for drape in drapes), f'{name}: four solid cloth panels drape from cap edges')
+    check(all(drape['to'][1] == by_name['gingham_cap']['from'][1] for drape in drapes), f'{name}: all four cloth folds connect to cap rim')
+    check('folded_cloth_corner' not in by_name and 'hanging_gingham_hem' not in by_name, f'{name}: isolated flap and box hem removed')
+    check(all(by_name[key]['to'][1] > by_name[key]['from'][1] for key in ('jam_body', 'gingham_cap', 'raised_twine_wrap')), f'{name}: jam, cap and twine have real volume')
+    check(len(native['textures']) == 4, f'{name}: four embedded atlases')
+    for texture in native['textures']:
+        embedded = Image.open(BytesIO(base64.b64decode(texture['source'].split(',')[1]))).convert('RGBA')
+        final = Image.open(RES / f"assets/farmerplus/textures/block/{texture['name']}").convert('RGBA')
+        check(embedded.size == (16, 16) and embedded.tobytes() == final.tobytes(), f'{name}: embedded {texture["name"]} matches final pixels')
+    jam_models.append(by_name)
+
+check(all(jam_models[i]['jam_body']['to'][1] < jam_models[i + 1]['jam_body']['to'][1] for i in range(2)), 'Jam: increasing real fill heights')
+for name in jam_models[0]:
+    if not name.startswith('jam_'):
+        check(all(model[name] == jam_models[0][name] for model in jam_models[1:]), f'Jam: shared jar geometry {name}')
+jam_item = load(RES / 'assets/farmerplus/items/strawberry_jam.json')['model']
+check(jam_item['property'] == 'minecraft:block_state' and jam_item['block_state_property'] == 'portions', 'Jam: portion selection preserved')
+for case in jam_item['cases']:
+    selection = case['model']
+    level = case['when']
+    check(selection['property'] == 'minecraft:display_context' and selection['fallback']['model'] == f'farmerplus:block/strawberry_jam_{level}', f'Jam {level}: real 3D model outside GUI')
+    check(selection['cases'][0]['when'] == ['gui'] and selection['cases'][0]['model']['model'] == f'farmerplus:item/strawberry_jam_{level}', f'Jam {level}: dedicated inventory icon')
 report = {'passed': len(checks), 'errors': errors, 'official_version': version, 'official_client_sha1': hashlib.file_digest(JAR.open('rb'), 'sha1').hexdigest()}
 out = ROOT / 'build/art/validation/wheat-art-validation.json'
 out.parent.mkdir(parents=True, exist_ok=True)

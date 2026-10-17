@@ -1,0 +1,833 @@
+{
+  "texture_size": [
+    16,
+    16
+  ],
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "farmerplus:block/strawberry_jam_fill",
+    "glass": {
+      "sprite": "farmerplus:block/strawberry_jam_glass",
+      "force_translucent": true
+    },
+    "jam": "farmerplus:block/strawberry_jam_fill",
+    "lid": "farmerplus:block/strawberry_jam_lid",
+    "label": "farmerplus:block/strawberry_jam_label"
+  },
+  "elements": [
+    {
+      "name": "glass_front_back",
+      "from": [
+        6,
+        0,
+        5
+      ],
+      "to": [
+        10,
+        6.5,
+        11
+      ],
+      "faces": {
+        "north": {
+          "texture": "#glass",
+          "uv": [
+            0,
+            0,
+            8,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#glass",
+          "uv": [
+            0,
+            0,
+            8,
+            12
+          ]
+        },
+        "down": {
+          "texture": "#glass",
+          "uv": [
+            0,
+            12,
+            16,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "glass_sides",
+      "from": [
+        5,
+        0,
+        6
+      ],
+      "to": [
+        11,
+        6.5,
+        10
+      ],
+      "faces": {
+        "east": {
+          "texture": "#glass",
+          "uv": [
+            0,
+            0,
+            8,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#glass",
+          "uv": [
+            0,
+            0,
+            8,
+            12
+          ]
+        },
+        "down": {
+          "texture": "#glass",
+          "uv": [
+            0,
+            12,
+            16,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "glass_bevel_nw_se",
+      "from": [
+        7.292893218813452,
+        0,
+        4.464466094067262
+      ],
+      "to": [
+        8.707106781186548,
+        6.5,
+        11.535533905932738
+      ],
+      "faces": {
+        "north": {
+          "texture": "#glass",
+          "uv": [
+            8,
+            0,
+            12,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#glass",
+          "uv": [
+            8,
+            0,
+            12,
+            12
+          ]
+        }
+      },
+      "rotation": {
+        "origin": [
+          8,
+          0,
+          8
+        ],
+        "axis": "y",
+        "angle": 45
+      }
+    },
+    {
+      "name": "glass_bevel_ne_sw",
+      "from": [
+        7.292893218813452,
+        0,
+        4.464466094067262
+      ],
+      "to": [
+        8.707106781186548,
+        6.5,
+        11.535533905932738
+      ],
+      "faces": {
+        "north": {
+          "texture": "#glass",
+          "uv": [
+            8,
+            0,
+            12,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#glass",
+          "uv": [
+            8,
+            0,
+            12,
+            12
+          ]
+        }
+      },
+      "rotation": {
+        "origin": [
+          8,
+          0,
+          8
+        ],
+        "axis": "y",
+        "angle": -45
+      }
+    },
+    {
+      "name": "jam_body",
+      "from": [
+        5.55,
+        0.55,
+        5.55
+      ],
+      "to": [
+        10.45,
+        6.249999999999999,
+        10.45
+      ],
+      "faces": {
+        "north": {
+          "texture": "#jam",
+          "uv": [
+            0,
+            0,
+            8,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#jam",
+          "uv": [
+            0,
+            0,
+            8,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#jam",
+          "uv": [
+            0,
+            0,
+            8,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#jam",
+          "uv": [
+            0,
+            0,
+            8,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#jam",
+          "uv": [
+            8,
+            0,
+            16,
+            8
+          ]
+        },
+        "down": {
+          "texture": "#jam",
+          "uv": [
+            0,
+            0,
+            8,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "name": "gingham_cap",
+      "from": [
+        5.1,
+        7.65,
+        5.1
+      ],
+      "to": [
+        10.9,
+        8,
+        10.9
+      ],
+      "faces": {
+        "north": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            9
+          ]
+        },
+        "south": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            9
+          ]
+        },
+        "east": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            9
+          ]
+        },
+        "west": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            9
+          ]
+        },
+        "up": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            0,
+            8,
+            8
+          ]
+        },
+        "down": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            14,
+            16,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "cloth_drape_north",
+      "from": [
+        5.1,
+        6.05,
+        5
+      ],
+      "to": [
+        10.9,
+        7.65,
+        5.2
+      ],
+      "faces": {
+        "north": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        },
+        "down": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        }
+      },
+      "rotation": {
+        "origin": [
+          8,
+          7.65,
+          5.1
+        ],
+        "axis": "x",
+        "angle": 24
+      }
+    },
+    {
+      "name": "cloth_drape_south",
+      "from": [
+        5.1,
+        6.25,
+        10.8
+      ],
+      "to": [
+        10.9,
+        7.65,
+        11
+      ],
+      "faces": {
+        "north": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        },
+        "down": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        }
+      },
+      "rotation": {
+        "origin": [
+          8,
+          7.65,
+          10.9
+        ],
+        "axis": "x",
+        "angle": -20
+      }
+    },
+    {
+      "name": "cloth_drape_west",
+      "from": [
+        5,
+        6.15,
+        5.1
+      ],
+      "to": [
+        5.2,
+        7.65,
+        10.9
+      ],
+      "faces": {
+        "north": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        },
+        "down": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        }
+      },
+      "rotation": {
+        "origin": [
+          5.1,
+          7.65,
+          8
+        ],
+        "axis": "z",
+        "angle": -22
+      }
+    },
+    {
+      "name": "cloth_drape_east",
+      "from": [
+        10.8,
+        6.05,
+        5.1
+      ],
+      "to": [
+        11,
+        7.65,
+        10.9
+      ],
+      "faces": {
+        "north": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        },
+        "down": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            8,
+            8,
+            12
+          ]
+        }
+      },
+      "rotation": {
+        "origin": [
+          10.9,
+          7.65,
+          8
+        ],
+        "axis": "z",
+        "angle": 18
+      }
+    },
+    {
+      "name": "raised_twine_wrap",
+      "from": [
+        4.82,
+        7.0,
+        4.82
+      ],
+      "to": [
+        11.18,
+        7.5,
+        11.18
+      ],
+      "faces": {
+        "north": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            12,
+            16,
+            14
+          ]
+        },
+        "south": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            12,
+            16,
+            14
+          ]
+        },
+        "east": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            12,
+            16,
+            14
+          ]
+        },
+        "west": {
+          "texture": "#lid",
+          "uv": [
+            0,
+            12,
+            16,
+            14
+          ]
+        }
+      }
+    },
+    {
+      "name": "cream_strawberry_label_north",
+      "from": [
+        6.45,
+        2.6,
+        4.97
+      ],
+      "to": [
+        9.55,
+        5.1,
+        4.97
+      ],
+      "faces": {
+        "north": {
+          "texture": "#label",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    }
+  ],
+  "display": {
+    "gui": {
+      "rotation": [
+        22,
+        205,
+        0
+      ],
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        1.4,
+        1.4,
+        1.4
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.65,
+        0.65,
+        0.65
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        1.1,
+        1.1,
+        1.1
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        75,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    }
+  }
+}

@@ -46,6 +46,8 @@ Keep the block and item paths above — the item definition `items/strawberry_ja
 
 ## Done when
 
-- [ ] Three block models, item icons and textures replaced; Blockbench sources saved.
-- [ ] `./gradlew build` and `python art/validate_wheat_art.py` pass.
+- [x] Three block models, item icons and textures replaced; Blockbench sources saved.
+- [x] `./gradlew build` and `python art/validate_wheat_art.py` pass.
 - [ ] In game: three jars on a table (1, 2 and 3 portions) clearly read as the same jar filling up, from the front and from above.
+
+See [the visual report](../strawberry-jam-visuals.md) for sources, 3D item contexts and verification.

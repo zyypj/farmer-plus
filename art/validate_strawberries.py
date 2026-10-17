@@ -139,7 +139,8 @@ def validate(quiet=False):
         check(declared == [(s['width'], s['bottom'], s['top']) for s in shapes], java_name + ': static selection shapes match exported geometry')
     for path in list((ASSET / 'textures/block').glob('strawberry_*.png')) + [ASSET / 'textures/item/strawberry.png']:
         im = Image.open(path)
-        check(im.size == (16, 16) and im.mode == 'RGBA' and set(im.getchannel('A').get_flattened_data()) <= {0, 255}, str(path) + ': hard 16 pixel art')
+        alpha_valid = path.name == 'strawberry_jam_glass.png' or set(im.getchannel('A').get_flattened_data()) <= {0, 255}
+        check(im.size == (16, 16) and im.mode == 'RGBA' and alpha_valid, str(path) + ': hard 16 pixel art')
         report['hashes'][path.relative_to(ROOT).as_posix()] = hashlib.sha256(path.read_bytes()).hexdigest()
     target = ROOT / 'build/art/validation/strawberries.json'
     target.parent.mkdir(parents=True, exist_ok=True)

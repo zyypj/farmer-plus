@@ -21,7 +21,7 @@ public class JamJarItem extends BlockItem {
     @Override
     public InteractionResult useOn(UseOnContext context) {
         Player player = context.getPlayer();
-        if (player != null && !player.isSecondaryUseActive()) {
+        if (player != null && player.isSecondaryUseActive()) {
             return InteractionResult.PASS;
         }
         return super.useOn(context);

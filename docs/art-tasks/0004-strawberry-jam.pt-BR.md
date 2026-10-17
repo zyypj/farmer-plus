@@ -46,6 +46,8 @@ Mantenha esses caminhos — a definição de item `items/strawberry_jam.json` j�
 
 ## Pronto quando
 
-- [ ] Três modelos de bloco, ícones de item e texturas substituídos; fontes do Blockbench salvas.
-- [ ] `./gradlew build` e `python art/validate_wheat_art.py` passam.
+- [x] Três modelos de bloco, ícones de item e texturas substituídos; fontes do Blockbench salvas.
+- [x] `./gradlew build` e `python art/validate_wheat_art.py` passam.
 - [ ] No jogo: três potes numa mesa (1, 2 e 3 porções) parecem claramente o mesmo pote enchendo, de frente e de cima.
+
+Veja [o relatório visual](../strawberry-jam-visuals.pt-BR.md) para fontes, contextos 3D do item e verificação.
