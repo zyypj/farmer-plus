@@ -4,16 +4,54 @@
     {
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "farmerplus:strawberry",
-          "modifier": {
-            "type": "minecraft:set_count",
-            "count": {
-              "type": "minecraft:uniform",
-              "min": 1,
-              "max": 2
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "farmerplus:strawberry",
+              "condition": {
+                "type": "minecraft:match_block",
+                "blocks": "farmerplus:wild_strawberries",
+                "state": {
+                  "flattening": {
+                    "min": "0",
+                    "max": "1"
+                  }
+                }
+              },
+              "modifier": [
+                {
+                  "type": "minecraft:set_count",
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "min": 1,
+                    "max": 2
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "farmerplus:strawberry",
+              "condition": {
+                "type": "minecraft:match_block",
+                "blocks": "farmerplus:wild_strawberries",
+                "state": {
+                  "flattening": "2"
+                }
+              },
+              "modifier": [
+                {
+                  "type": "minecraft:set_count",
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "min": 0,
+                    "max": 1
+                  }
+                }
+              ]
             }
-          }
+          ]
         }
       ],
       "rolls": 1

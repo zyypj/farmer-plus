@@ -1,0 +1,346 @@
+{
+  "format_version": "26.3",
+  "credit": "Made with Blockbench",
+  "ambientocclusion": false,
+  "textures": {
+    "young": "farmerplus:block/strawberry_leaf_young",
+    "under": "farmerplus:block/strawberry_leaf_under",
+    "stem": "farmerplus:block/strawberry_stem",
+    "particle": "farmerplus:block/strawberry_leaf"
+  },
+  "elements": [
+    {
+      "name": "soil_crown",
+      "from": [
+        7,
+        -1,
+        7
+      ],
+      "to": [
+        9,
+        -0.62,
+        9
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#stem"
+        },
+        "east": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#stem"
+        },
+        "south": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#stem"
+        },
+        "west": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#stem"
+        },
+        "up": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#stem"
+        },
+        "down": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#stem"
+        }
+      }
+    },
+    {
+      "name": "leaf_0_petiole",
+      "from": [
+        6.6,
+        -0.65,
+        6.4716
+      ],
+      "to": [
+        9.4,
+        -0.65,
+        8.0
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8.0,
+          -0.65,
+          8.0
+        ],
+        "x": 9.3423,
+        "y": 58.7817,
+        "z": -0.7282
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            7.2,
+            16,
+            16
+          ],
+          "texture": "#young"
+        },
+        "down": {
+          "uv": [
+            0,
+            16,
+            16,
+            7.2
+          ],
+          "texture": "#under"
+        }
+      }
+    },
+    {
+      "name": "leaf_0_trifoliate",
+      "from": [
+        5.3135,
+        -0.3855,
+        5.9678
+      ],
+      "to": [
+        8.1135,
+        -0.3855,
+        7.2183
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          6.7135,
+          -0.3855,
+          7.2183
+        ],
+        "x": -10.0234,
+        "y": 59.0227,
+        "z": -0.138
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            7.2
+          ],
+          "texture": "#young"
+        },
+        "down": {
+          "uv": [
+            0,
+            7.2,
+            16,
+            0
+          ],
+          "texture": "#under"
+        }
+      }
+    },
+    {
+      "name": "leaf_1_petiole",
+      "from": [
+        6.565,
+        -0.65,
+        6.5408
+      ],
+      "to": [
+        9.435,
+        -0.65,
+        8.0
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8.0,
+          -0.65,
+          8.0
+        ],
+        "x": -171.8907,
+        "y": 21.4634,
+        "z": -179.8256
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            7.2,
+            16,
+            16
+          ],
+          "texture": "#young"
+        },
+        "down": {
+          "uv": [
+            0,
+            16,
+            16,
+            7.2
+          ],
+          "texture": "#under"
+        }
+      }
+    },
+    {
+      "name": "leaf_1_trifoliate",
+      "from": [
+        6.0358,
+        -0.4458,
+        8.1505
+      ],
+      "to": [
+        8.9058,
+        -0.4458,
+        9.3444
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          7.4708,
+          -0.4458,
+          9.3444
+        ],
+        "x": 171.618,
+        "y": 21.3794,
+        "z": -179.9693
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            7.2
+          ],
+          "texture": "#young"
+        },
+        "down": {
+          "uv": [
+            0,
+            7.2,
+            16,
+            0
+          ],
+          "texture": "#under"
+        }
+      }
+    },
+    {
+      "name": "leaf_2_petiole",
+      "from": [
+        6.53,
+        -0.65,
+        6.4369
+      ],
+      "to": [
+        9.47,
+        -0.65,
+        8.0
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8.0,
+          -0.65,
+          8.0
+        ],
+        "x": 8.63,
+        "y": -66.6381,
+        "z": -0.5365
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            7.2,
+            16,
+            16
+          ],
+          "texture": "#young"
+        },
+        "down": {
+          "uv": [
+            0,
+            16,
+            16,
+            7.2
+          ],
+          "texture": "#under"
+        }
+      }
+    },
+    {
+      "name": "leaf_2_trifoliate",
+      "from": [
+        7.9508,
+        -0.4287,
+        6.1083
+      ],
+      "to": [
+        10.8908,
+        -0.4287,
+        7.3872
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          9.4208,
+          -0.4287,
+          7.3872
+        ],
+        "x": -8.2931,
+        "y": -66.529,
+        "z": -0.094
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            7.2
+          ],
+          "texture": "#young"
+        },
+        "down": {
+          "uv": [
+            0,
+            7.2,
+            16,
+            0
+          ],
+          "texture": "#under"
+        }
+      }
+    }
+  ]
+}

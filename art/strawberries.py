@@ -1,5 +1,5 @@
 from pathlib import Path
-from PIL import Image, ImageDraw
+from strawberry_pixels import textures
 import json
 import math
 
@@ -13,141 +13,6 @@ BUDGETS = [8, 12, 16, 20, 20]
 def write_json(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(value, indent=2) + '\n', encoding='utf-8')
-
-
-def texture(name, image, item=False):
-    path = ASSET / 'textures' / ('item' if item else 'block') / f'{name}.png'
-    image.save(path)
-
-
-def leaf_texture(kind):
-    image = Image.new('RGBA', (32, 32))
-    draw = ImageDraw.Draw(image)
-    palettes = {
-        'mature': ['254b2b', '356c37', '488644', '69a854', '91bf68', 'a9ce7a'],
-        'young': ['396b36', '50863e', '6ba54d', '8dc364', 'b2d786', 'c7e39b'],
-        'aged': ['465733', '617340', '7c8b46', '9da455', 'b9bc6e', 'd1ce88'],
-        'under': ['476744', '5b8050', '73965c', '8caa70', 'a6bd87', 'b7ca98']
-    }
-    p = ['#' + c for c in palettes[kind]]
-    draw.line([(16, 31), (16, 15)], fill=p[2], width=2)
-    draw.line([(16, 25), (7, 18)], fill=p[2], width=1)
-    draw.line([(16, 25), (25, 18)], fill=p[2], width=1)
-    central = [(16, 1), (18, 3), (20, 3), (20, 5), (22, 6), (21, 8), (22, 10), (20, 11), (21, 13), (19, 14), (19, 16), (16, 19), (13, 17), (13, 15), (11, 14), (12, 12), (10, 11), (11, 9), (10, 7), (12, 6), (12, 4), (14, 4)]
-    left = [(2, 10), (5, 10), (6, 9), (8, 11), (10, 11), (10, 13), (12, 14), (11, 16), (13, 18), (11, 20), (10, 23), (7, 23), (6, 25), (4, 23), (2, 23), (2, 21), (0, 20), (1, 18), (0, 16), (2, 15), (1, 13)]
-    right = [(31 - x, y + 1) for x, y in left]
-    for index, outline in enumerate([left, right, central]):
-        draw.polygon(outline, fill=p[0])
-        cx = sum(v[0] for v in outline) / len(outline)
-        cy = sum(v[1] for v in outline) / len(outline)
-        inner = [(round(cx + (x - cx) * .82), round(cy + (y - cy) * .86)) for x, y in outline]
-        draw.polygon(inner, fill=p[2])
-        if index == 2:
-            draw.polygon([(16, 3), (13, 6), (12, 10), (14, 14), (16, 17)], fill=p[3])
-            draw.line([(16, 4), (16, 17)], fill=p[4], width=1)
-            for y in [7, 11, 14]:
-                draw.line([(16, y + 2), (13, y)], fill=p[3], width=1)
-                draw.line([(17, y + 2), (20, y)], fill=p[1], width=1)
-        else:
-            mirror = index == 1
-            def point(x, y):
-                return (31 - x, y + 1) if mirror else (x, y)
-            draw.polygon([point(x, y) for x, y in [(3, 12), (7, 13), (9, 17), (8, 21), (5, 19), (3, 16)]], fill=p[3])
-            draw.line([point(3, 12), point(10, 22)], fill=p[4], width=1)
-            draw.line([point(6, 17), point(3, 18)], fill=p[4], width=1)
-            draw.line([point(8, 20), point(9, 16)], fill=p[1], width=1)
-    return image
-
-
-def textures():
-    for suffix, kind in [('', 'mature'), ('_young', 'young'), ('_aged', 'aged'), ('_under', 'under')]:
-        texture('strawberry_leaf' + suffix, leaf_texture(kind))
-    flower = Image.new('RGBA', (32, 32))
-    d = ImageDraw.Draw(flower)
-    for i in range(5):
-        a = math.radians(-90 + 72 * i)
-        def polar(radial, lateral):
-            return (round(16 + math.cos(a) * radial - math.sin(a) * lateral), round(12 + math.sin(a) * radial + math.cos(a) * lateral))
-        points = [polar(2, -2), polar(5, -4), polar(8, -3), polar(10, -1), polar(10, 1), polar(8, 3), polar(5, 4), polar(2, 2)]
-        d.polygon(points, fill='#c7d0b9')
-        d.polygon([polar(2, -1), polar(5, -3), polar(8, -2), polar(9, 0), polar(7, 2), polar(3, 2)], fill='#fff7e1')
-        d.line([polar(3, -1), polar(7, -1)], fill='#ffffff', width=1)
-    d.ellipse((12, 9, 19, 15), fill='#bea640')
-    d.ellipse((13, 9, 18, 13), fill='#eed566')
-    d.point((14, 10), fill='#fff1a1')
-    d.line([(3, 31), (3, 28), (6, 26), (9, 28)], fill='#648444', width=1)
-    d.polygon([(2, 27), (4, 25), (7, 26), (9, 25), (10, 28), (6, 29)], fill='#f5efd8')
-    texture('strawberry_flower', flower)
-    fruit = Image.new('RGBA', (32, 32))
-    d = ImageDraw.Draw(fruit)
-    for ox, green in [(0, False), (16, True)]:
-        p = ['#6e252f', '#a72c38', '#ce3b42', '#ec5152', '#fa7870', '#ffc0a3'] if not green else ['#658244', '#91a35c', '#bdc382', '#dfd8ad', '#f1e6ca', '#fff1dc']
-        d.rectangle((ox, 0, ox + 15, 15), fill=p[2])
-        d.polygon([(ox, 0), (ox + 9, 0), (ox + 6, 10), (ox, 12)], fill=p[3])
-        d.polygon([(ox + 12, 0), (ox + 15, 0), (ox + 15, 15), (ox + 6, 15), (ox + 11, 10)], fill=p[1])
-        d.line([(ox + 14, 3), (ox + 14, 14), (ox + 8, 14)], fill=p[0], width=1)
-        d.line([(ox + 3, 2), (ox + 6, 2)], fill=p[5], width=1)
-        d.point((ox + 2, 3), fill=p[4])
-        for x, y in [(3, 5), (9, 3), (12, 7), (6, 9), (2, 12), (10, 12)]:
-            d.point((ox + x + 1, y + 1), fill=p[0])
-            d.line([(ox + x, y), (ox + x, y + 1)], fill='#f5d67f' if not green else '#ddcf83', width=1)
-        d.rectangle((ox, 16, ox + 15, 31), fill=p[2])
-        d.polygon([(ox + 8, 17), (ox + 10, 21), (ox + 15, 21), (ox + 11, 25), (ox + 13, 30), (ox + 8, 27), (ox + 3, 30), (ox + 5, 25), (ox, 21), (ox + 6, 21)], fill='#355f32')
-        d.line([(ox + 8, 19), (ox + 8, 26), (ox + 4, 28)], fill='#8eb454', width=1)
-        d.line([(ox + 8, 23), (ox + 12, 22)], fill='#66963d', width=1)
-        for corner in [(0, 0), (1, 0), (0, 1), (15, 0), (14, 0), (15, 1)]:
-            d.point((ox + corner[0], corner[1]), fill=(0, 0, 0, 0))
-        for x, y in [(0, 16), (1, 16), (0, 17), (15, 16), (14, 16), (15, 17), (0, 31), (15, 31)]:
-            d.point((ox + x, y), fill=(0, 0, 0, 0))
-    texture('strawberry_fruit', fruit)
-    base_red = ['6e252f', 'a72c38', 'ce3b42', 'ec5152', 'fa7870', 'ffc0a3']
-    base_green = ['658244', '91a35c', 'bdc382', 'dfd8ad', 'f1e6ca', 'fff1dc']
-    for suffix, red, green in [
-        ('rose', ['8b3039', 'bd3f45', 'e05257', 'f16d68', 'ff9483', 'ffd3ad'], ['8a945f', 'b0b78a', 'd1d1b0', 'e5dfc8', 'f5ebd7', 'fff5e4']),
-        ('deep', ['59232f', '8e2939', 'b32e40', 'd9414f', 'ee6c6a', 'ffb0a1'], ['50723e', '7a9851', 'a6b771', 'c8ce96', 'e6dfb8', 'f3ebce'])
-    ]:
-        mapping = {tuple(bytes.fromhex(a)) + (255,): tuple(bytes.fromhex(b)) + (255,) for a, b in zip(base_red + base_green, red + green)}
-        alternative = fruit.copy()
-        alternative.putdata([mapping.get(pixel, pixel) for pixel in fruit.get_flattened_data()])
-        texture('strawberry_fruit_' + suffix, alternative)
-    stem = Image.new('RGBA', (32, 32))
-    d = ImageDraw.Draw(stem)
-    d.rectangle((0, 0, 1, 31), fill='#6d9749')
-    d.line([(1, 0), (1, 31)], fill='#436a36', width=1)
-    d.rectangle((16, 16, 31, 31), fill='#536d37')
-    for x in range(17, 32, 3):
-        d.line([(x, 17), (x, 30)], fill='#829047', width=1)
-        d.point((x, 28), fill='#755b38')
-    d.rectangle((16, 16, 31, 31), fill=(0, 0, 0, 0))
-    d.polygon([(23, 17), (26, 20), (30, 20), (28, 24), (30, 27), (26, 28), (24, 31), (21, 28), (17, 28), (19, 24), (17, 21), (21, 20)], fill='#49703a')
-    d.polygon([(23, 19), (26, 22), (27, 26), (24, 29), (21, 26), (20, 23)], fill='#78964b')
-    d.rectangle((22, 23, 25, 25), fill='#826c41')
-    texture('strawberry_stem', stem)
-    peduncle = Image.new('RGBA', (32, 32))
-    d = ImageDraw.Draw(peduncle)
-    d.line([(0, 31), (6, 20), (15, 6), (24, 10), (31, 16)], fill='#416b35', width=2)
-    d.line([(0, 31), (6, 20), (15, 6), (24, 10), (31, 16)], fill='#83a957', width=1)
-    texture('strawberry_peduncle', peduncle)
-    paired = Image.new('RGBA', (32, 32))
-    d = ImageDraw.Draw(paired)
-    for points in [[(16, 31), (11, 19), (7, 10), (3, 13), (0, 16)], [(16, 31), (20, 19), (25, 10), (29, 13), (31, 16)]]:
-        d.line(points, fill='#608c45', width=1)
-    texture('strawberry_peduncle_pair', paired)
-    item = Image.new('RGBA', (32, 32))
-    d = ImageDraw.Draw(item)
-    outline = [(6, 8), (12, 6), (17, 8), (23, 7), (28, 11), (29, 16), (26, 22), (21, 27), (16, 30), (12, 28), (6, 21), (3, 15), (3, 11)]
-    d.polygon(outline, fill='#7c2533')
-    d.polygon([(6, 9), (12, 7), (17, 9), (23, 8), (27, 12), (27, 17), (24, 22), (16, 28), (12, 26), (7, 20), (4, 14)], fill='#cf3544')
-    d.polygon([(7, 10), (12, 9), (17, 11), (20, 10), (23, 13), (20, 21), (14, 25), (9, 20), (6, 15)], fill='#ee5055')
-    d.polygon([(8, 11), (12, 10), (15, 12), (13, 16), (8, 16), (6, 14)], fill='#fa7c76')
-    d.line([(8, 12), (11, 11), (13, 12)], fill='#ffc1a5', width=1)
-    for x, y in [(6, 17), (11, 19), (17, 14), (24, 13), (22, 19), (16, 22), (18, 26), (10, 24)]:
-        d.line([(x + 1, y + 1), (x + 1, y + 2)], fill='#a82c37', width=1)
-        d.line([(x, y), (x, y + 1)], fill='#f6d57b', width=1)
-    d.polygon([(7, 7), (12, 7), (12, 3), (17, 6), (22, 3), (21, 7), (27, 8), (22, 10), (23, 13), (17, 11), (13, 14), (12, 10), (6, 11)], fill='#305d32')
-    d.line([(10, 8), (15, 9), (20, 6)], fill='#88b953', width=2)
-    d.line([(16, 8), (17, 4), (20, 2)], fill='#668b3c', width=2)
-    texture('strawberry', item, item=True)
 
 
 def transform(point, angles):
@@ -222,7 +87,7 @@ def berry(elements, index, root, angle, radius, ripe, wild, variant, shared_top=
     base_angles = [45, 0, -math.degrees(math.atan(1 / math.sqrt(2)))]
     tip_angles = compose(parent_angles, base_angles)
     half = height * .42 / math.sqrt(3)
-    elements.append({'name': f'fruit_{index}_tapered_tip', 'from': [v - half for v in centre], 'to': [v + half for v in centre], 'rotation': rotation(centre, tip_angles), 'faces': {face: {'uv': [u + 2, 2, u + 6, 6], 'texture': material} for face in ('north', 'south', 'east', 'west', 'up', 'down')}})
+    elements.append({'name': f'fruit_{index}_tapered_tip', 'from': [v - half for v in centre], 'to': [v + half for v in centre], 'rotation': rotation(centre, tip_angles), 'faces': {face: {'uv': [u + 3, 4, u + 5, 6], 'texture': material} for face in ('north', 'south', 'east', 'west', 'up', 'down')}})
 
 
 def model(age, variant, wild):
@@ -265,7 +130,7 @@ def model(age, variant, wild):
             berry(elements, i, root, angle, radius, age == 4, wild, variant, top)
     budget = 12 if wild else BUDGETS[age]
     assert len(elements) <= budget, (name, len(elements), budget)
-    return name, {'ambientocclusion': False, 'texture_size': [32, 32], 'textures': {key: 'farmerplus:block/' + value for key, value in [('particle', 'strawberry_leaf'), ('leaf', 'strawberry_leaf'), ('young', 'strawberry_leaf_young'), ('aged', 'strawberry_leaf_aged'), ('under', 'strawberry_leaf_under'), ('flower', 'strawberry_flower'), ('fruit', 'strawberry_fruit'), ('rose', 'strawberry_fruit_rose'), ('deep', 'strawberry_fruit_deep'), ('stem', 'strawberry_stem'), ('peduncle', 'strawberry_peduncle'), ('paired', 'strawberry_peduncle_pair')]}, 'elements': elements}
+    return name, {'ambientocclusion': False, 'texture_size': [16, 16], 'textures': {key: 'farmerplus:block/' + value for key, value in [('particle', 'strawberry_leaf'), ('leaf', 'strawberry_leaf'), ('young', 'strawberry_leaf_young'), ('aged', 'strawberry_leaf_aged'), ('under', 'strawberry_leaf_under'), ('flower', 'strawberry_flower'), ('fruit', 'strawberry_fruit'), ('rose', 'strawberry_fruit_rose'), ('deep', 'strawberry_fruit_deep'), ('stem', 'strawberry_stem'), ('peduncle', 'strawberry_peduncle'), ('paired', 'strawberry_peduncle_pair')]}, 'elements': elements}
 
 
 def build():
@@ -281,7 +146,7 @@ def build():
                 write_json(ART / 'model-inputs' / f'{name}.json', value)
                 manifest.append(name)
                 entries += [{'model': f'farmerplus:block/{name}', 'y': turn, 'weight': 1} for turn in [0, 90, 180, 270]]
-            states[f'age={age}'] = entries
+            states[f'age={age},flattening=0'] = entries
         write_json(ASSET / 'blockstates' / f'{block}.json', {'variants': states})
     write_json(WORK / 'strawberry-models.json', manifest)
     print(json.dumps({'models': len(manifest), 'textures': 12, 'outputs': str(WORK)}))

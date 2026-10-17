@@ -12,13 +12,11 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 
 public final class CropTrampling {
 
-    private static final int MIN_TRAMPLE_AGE = 2;
     private static final float HEAVY_ENTITY_WIDTH = 1.2F;
     private static final double MIN_HORIZONTAL_MOVEMENT_SQR = 1.0E-6;
     private static final int PARTICLE_COUNT = 6;
@@ -38,9 +36,9 @@ public final class CropTrampling {
             return;
         }
 
-        TrampledCropBlock trampled = trampledFormOf(state);
-        if (trampled != null && canTrample(serverLevel, entity)) {
-            apply(serverLevel, pos, state, trampled, force(entity), movementDirection(entity));
+        Trampleable trampleable = trampleableOf(state);
+        if (trampleable != null && canTrample(serverLevel, entity)) {
+            apply(serverLevel, pos, state, trampleable, force(entity), movementDirection(entity));
         }
     }
 
@@ -50,41 +48,28 @@ public final class CropTrampling {
         }
 
         BlockState state = serverLevel.getBlockState(cropPos);
-        TrampledCropBlock trampled = trampledFormOf(state);
-        if (trampled == null) {
+        Trampleable trampleable = trampleableOf(state);
+        if (trampleable == null) {
             return false;
         }
         if (canTrample(serverLevel, entity)) {
-            apply(serverLevel, cropPos, state, trampled, landingForce(entity), movementDirection(entity));
+            apply(serverLevel, cropPos, state, trampleable, landingForce(entity), movementDirection(entity));
         }
         return true;
     }
 
-    private static TrampledCropBlock trampledFormOf(BlockState state) {
-        return state.getBlock() instanceof TrampledCropBlock trampledCrop
-                ? trampledCrop
+    private static Trampleable trampleableOf(BlockState state) {
+        return state.getBlock() instanceof Trampleable trampleable
+                ? trampleable
                 : TrampleableCrops.trampledFormOf(state.getBlock());
     }
 
-    private static void apply(ServerLevel level, BlockPos pos, BlockState state, TrampledCropBlock trampled, int force, Direction direction) {
-        BlockState trampledState = trample(state, trampled, force, direction);
+    private static void apply(ServerLevel level, BlockPos pos, BlockState state, Trampleable trampleable, int force, Direction direction) {
+        BlockState trampledState = trampleable.trample(state, force, direction);
         if (trampledState != state) {
             level.setBlock(pos, trampledState, Block.UPDATE_CLIENTS);
             playEffects(level, pos, state);
         }
-    }
-
-    private static BlockState trample(BlockState state, TrampledCropBlock trampled, int force, Direction direction) {
-        if (state.getBlock() instanceof TrampledCropBlock) {
-            int flattening = Math.min(TrampledCropBlock.CRUSHED, TrampledCropBlock.flattening(state) + force);
-            return state.setValue(TrampledCropBlock.FLATTENING, flattening);
-        }
-
-        int age = ((CropBlock) state.getBlock()).getAge(state);
-        if (age < MIN_TRAMPLE_AGE) {
-            return state;
-        }
-        return trampled.trampledState(age, Math.min(TrampledCropBlock.CRUSHED, force), direction);
     }
 
     private static boolean standsIn(Entity entity, BlockPos pos) {

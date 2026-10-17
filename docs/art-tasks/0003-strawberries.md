@@ -20,7 +20,7 @@ Base path: `common/src/main/resources/assets/farmerplus/`
 
 ## Style
 
-Realistic Vanilla+, same as the wheat: recognisable Minecraft pixel art, hard pixels, no anti-aliasing, limited palette, top-left lighting. **Textures 32×32.** Never trace Mojang textures.
+Realistic Vanilla+, same as the wheat: recognisable Minecraft pixel art, hard pixels, no anti-aliasing, limited palette, top-left lighting. **Textures 16×16.** Never trace Mojang textures.
 
 ## Models to create
 
@@ -44,7 +44,7 @@ For **each** age also create three variations, `strawberry_plant_stage<age>_vari
 - Keep plants **low**: max height ~7 px above the soil for age 4. If the final silhouette is clearly taller or smaller, update `SHAPES` in `content/strawberry/StrawberryPlantBlock.java` (one `Block.column(...)` per age).
 - Set `"ambientocclusion": false`, use `"shade_direction_override": "up"` on leaves like the wheat, give every model a `particle` texture.
 
-### Textures (32×32, `textures/block/`)
+### Textures (16×16, `textures/block/`)
 
 | File | Content |
 |---|---|
@@ -59,7 +59,7 @@ Extra textures are fine if needed. Remove the placeholder `strawberry_plant_stag
 
 | File | Content |
 |---|---|
-| `textures/item/strawberry.png` | 32×32 ripe strawberry: heart-shaped, glossy red with yellow seeds, green calyx and short stalk, 1-px darker outline on the shaded side |
+| `textures/item/strawberry.png` | 16×16 ripe strawberry: heart-shaped, glossy red with yellow seeds, green calyx and short stalk, 1-px darker outline on the shaded side |
 
 ## Save and export
 

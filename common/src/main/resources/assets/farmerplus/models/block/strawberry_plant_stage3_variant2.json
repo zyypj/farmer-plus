@@ -2,10 +2,6 @@
   "format_version": "26.3",
   "credit": "Made with Blockbench",
   "ambientocclusion": false,
-  "texture_size": [
-    32,
-    32
-  ],
   "textures": {
     "particle": "farmerplus:block/strawberry_leaf",
     "leaf": "farmerplus:block/strawberry_leaf",
@@ -621,54 +617,54 @@
       "faces": {
         "north": {
           "uv": [
-            10,
-            2,
-            14,
+            11,
+            4,
+            13,
             6
           ],
           "texture": "#deep"
         },
         "east": {
           "uv": [
-            10,
-            2,
-            14,
+            11,
+            4,
+            13,
             6
           ],
           "texture": "#deep"
         },
         "south": {
           "uv": [
-            10,
-            2,
-            14,
+            11,
+            4,
+            13,
             6
           ],
           "texture": "#deep"
         },
         "west": {
           "uv": [
-            10,
-            2,
-            14,
+            11,
+            4,
+            13,
             6
           ],
           "texture": "#deep"
         },
         "up": {
           "uv": [
-            10,
-            2,
-            14,
+            11,
+            4,
+            13,
             6
           ],
           "texture": "#deep"
         },
         "down": {
           "uv": [
-            10,
-            2,
-            14,
+            11,
+            4,
+            13,
             6
           ],
           "texture": "#deep"
@@ -901,54 +897,54 @@
       "faces": {
         "north": {
           "uv": [
-            10,
-            2,
-            14,
+            11,
+            4,
+            13,
             6
           ],
           "texture": "#fruit"
         },
         "east": {
           "uv": [
-            10,
-            2,
-            14,
+            11,
+            4,
+            13,
             6
           ],
           "texture": "#fruit"
         },
         "south": {
           "uv": [
-            10,
-            2,
-            14,
+            11,
+            4,
+            13,
             6
           ],
           "texture": "#fruit"
         },
         "west": {
           "uv": [
-            10,
-            2,
-            14,
+            11,
+            4,
+            13,
             6
           ],
           "texture": "#fruit"
         },
         "up": {
           "uv": [
-            10,
-            2,
-            14,
+            11,
+            4,
+            13,
             6
           ],
           "texture": "#fruit"
         },
         "down": {
           "uv": [
-            10,
-            2,
-            14,
+            11,
+            4,
+            13,
             6
           ],
           "texture": "#fruit"
@@ -1181,54 +1177,54 @@
       "faces": {
         "north": {
           "uv": [
-            10,
-            2,
-            14,
+            11,
+            4,
+            13,
             6
           ],
           "texture": "#rose"
         },
         "east": {
           "uv": [
-            10,
-            2,
-            14,
+            11,
+            4,
+            13,
             6
           ],
           "texture": "#rose"
         },
         "south": {
           "uv": [
-            10,
-            2,
-            14,
+            11,
+            4,
+            13,
             6
           ],
           "texture": "#rose"
         },
         "west": {
           "uv": [
-            10,
-            2,
-            14,
+            11,
+            4,
+            13,
             6
           ],
           "texture": "#rose"
         },
         "up": {
           "uv": [
-            10,
-            2,
-            14,
+            11,
+            4,
+            13,
             6
           ],
           "texture": "#rose"
         },
         "down": {
           "uv": [
-            10,
-            2,
-            14,
+            11,
+            4,
+            13,
             6
           ],
           "texture": "#rose"

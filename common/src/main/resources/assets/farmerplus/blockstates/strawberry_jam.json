@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "facing=north,portions=1": {
+      "model": "farmerplus:block/strawberry_jam_1",
+      "y": 0
+    },
+    "facing=east,portions=1": {
+      "model": "farmerplus:block/strawberry_jam_1",
+      "y": 90
+    },
+    "facing=south,portions=1": {
+      "model": "farmerplus:block/strawberry_jam_1",
+      "y": 180
+    },
+    "facing=west,portions=1": {
+      "model": "farmerplus:block/strawberry_jam_1",
+      "y": 270
+    },
+    "facing=north,portions=2": {
+      "model": "farmerplus:block/strawberry_jam_2",
+      "y": 0
+    },
+    "facing=east,portions=2": {
+      "model": "farmerplus:block/strawberry_jam_2",
+      "y": 90
+    },
+    "facing=south,portions=2": {
+      "model": "farmerplus:block/strawberry_jam_2",
+      "y": 180
+    },
+    "facing=west,portions=2": {
+      "model": "farmerplus:block/strawberry_jam_2",
+      "y": 270
+    },
+    "facing=north,portions=3": {
+      "model": "farmerplus:block/strawberry_jam_3",
+      "y": 0
+    },
+    "facing=east,portions=3": {
+      "model": "farmerplus:block/strawberry_jam_3",
+      "y": 90
+    },
+    "facing=south,portions=3": {
+      "model": "farmerplus:block/strawberry_jam_3",
+      "y": 180
+    },
+    "facing=west,portions=3": {
+      "model": "farmerplus:block/strawberry_jam_3",
+      "y": 270
+    }
+  }
+}

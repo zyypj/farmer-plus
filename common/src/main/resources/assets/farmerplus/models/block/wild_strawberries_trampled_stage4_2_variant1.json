@@ -1,0 +1,734 @@
+{
+  "format_version": "26.3",
+  "credit": "Made with Blockbench",
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "farmerplus:block/strawberry_leaf",
+    "leaf": "farmerplus:block/strawberry_leaf",
+    "under": "farmerplus:block/strawberry_leaf_under",
+    "rose": "farmerplus:block/strawberry_fruit_rose",
+    "deep": "farmerplus:block/strawberry_fruit_deep",
+    "stem": "farmerplus:block/strawberry_stem",
+    "paired": "farmerplus:block/strawberry_peduncle_pair"
+  },
+  "elements": [
+    {
+      "name": "soil_crown",
+      "from": [
+        7,
+        -1,
+        7
+      ],
+      "to": [
+        9,
+        -0.62,
+        9
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#stem"
+        },
+        "east": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#stem"
+        },
+        "south": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#stem"
+        },
+        "west": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#stem"
+        },
+        "up": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#stem"
+        },
+        "down": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#stem"
+        }
+      }
+    },
+    {
+      "name": "leaf_0_whole",
+      "from": [
+        5.171,
+        -0.65,
+        2.7698
+      ],
+      "to": [
+        10.829,
+        -0.65,
+        8.0
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8.0,
+          -0.65,
+          8.0
+        ],
+        "x": 3.7478,
+        "y": 29.8122,
+        "z": -0.1547
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#leaf"
+        },
+        "down": {
+          "uv": [
+            0,
+            16,
+            16,
+            0
+          ],
+          "texture": "#under"
+        }
+      }
+    },
+    {
+      "name": "leaf_1_whole",
+      "from": [
+        5.102,
+        -0.65,
+        2.3972
+      ],
+      "to": [
+        10.898,
+        -0.65,
+        8.0
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8.0,
+          -0.65,
+          8.0
+        ],
+        "x": -175.3239,
+        "y": 48.7202,
+        "z": -179.3674
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#leaf"
+        },
+        "down": {
+          "uv": [
+            0,
+            16,
+            16,
+            0
+          ],
+          "texture": "#under"
+        }
+      }
+    },
+    {
+      "name": "leaf_2_whole",
+      "from": [
+        5.24,
+        -0.65,
+        2.6456
+      ],
+      "to": [
+        10.76,
+        -0.65,
+        8.0
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8.0,
+          -0.65,
+          8.0
+        ],
+        "x": -174.45,
+        "y": -89.0,
+        "z": -180.0
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#leaf"
+        },
+        "down": {
+          "uv": [
+            0,
+            16,
+            16,
+            0
+          ],
+          "texture": "#under"
+        }
+      }
+    },
+    {
+      "name": "fruit_pair_0_arching_stalks",
+      "from": [
+        2.506,
+        -0.65,
+        8.0
+      ],
+      "to": [
+        13.494,
+        3.794,
+        8.0
+      ],
+      "rotation": {
+        "origin": [
+          8.0,
+          -0.65,
+          8.0
+        ],
+        "x": 59.8008,
+        "y": -44.0,
+        "z": 0.0
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            5,
+            0,
+            16
+          ],
+          "texture": "#paired"
+        },
+        "south": {
+          "uv": [
+            0,
+            5,
+            16,
+            16
+          ],
+          "texture": "#paired"
+        }
+      }
+    },
+    {
+      "name": "fruit_0_ripe_body",
+      "from": [
+        11.2107,
+        -0.0951,
+        11.1575
+      ],
+      "to": [
+        12.0344,
+        0.8783,
+        12.4754
+      ],
+      "rotation": {
+        "origin": [
+          11.952,
+          0.8783,
+          11.8164
+        ],
+        "x": -11.076,
+        "y": 54.4607,
+        "z": -27.8383
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "texture": "#rose"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "texture": "#rose"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "texture": "#rose"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "texture": "#rose"
+        },
+        "up": {
+          "uv": [
+            0,
+            8,
+            4.5,
+            16
+          ],
+          "texture": "#rose"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "texture": "#rose"
+        }
+      }
+    },
+    {
+      "name": "fruit_0_calyx_shoulders",
+      "from": [
+        11.8697,
+        -0.0951,
+        11.1575
+      ],
+      "to": [
+        12.6934,
+        0.8783,
+        12.4754
+      ],
+      "rotation": {
+        "origin": [
+          11.952,
+          0.8783,
+          11.8164
+        ],
+        "x": 21.8691,
+        "y": 52.0722,
+        "z": 12.6576
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "texture": "#rose"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "texture": "#rose"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "texture": "#rose"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "texture": "#rose"
+        },
+        "up": {
+          "uv": [
+            3.5,
+            8,
+            8,
+            16
+          ],
+          "texture": "#rose"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "texture": "#rose"
+        }
+      }
+    },
+    {
+      "name": "fruit_0_tapered_tip",
+      "from": [
+        11.2742,
+        -0.636,
+        11.2974
+      ],
+      "to": [
+        12.1821,
+        0.2718,
+        12.2053
+      ],
+      "rotation": {
+        "origin": [
+          11.7282,
+          -0.1821,
+          11.7514
+        ],
+        "x": 8.3778,
+        "y": 44.7045,
+        "z": -60.8881
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "texture": "#rose"
+        },
+        "east": {
+          "uv": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "texture": "#rose"
+        },
+        "south": {
+          "uv": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "texture": "#rose"
+        },
+        "west": {
+          "uv": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "texture": "#rose"
+        },
+        "up": {
+          "uv": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "texture": "#rose"
+        },
+        "down": {
+          "uv": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "texture": "#rose"
+        }
+      }
+    },
+    {
+      "name": "fruit_1_ripe_body",
+      "from": [
+        3.385,
+        -0.1654,
+        3.5943
+      ],
+      "to": [
+        4.1216,
+        0.705,
+        4.7728
+      ],
+      "rotation": {
+        "origin": [
+          4.048,
+          0.705,
+          4.1836
+        ],
+        "x": 158.1309,
+        "y": -52.0722,
+        "z": -163.3425
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "texture": "#deep"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "texture": "#deep"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "texture": "#deep"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "texture": "#deep"
+        },
+        "up": {
+          "uv": [
+            0,
+            8,
+            4.5,
+            16
+          ],
+          "texture": "#deep"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "texture": "#deep"
+        }
+      }
+    },
+    {
+      "name": "fruit_1_calyx_shoulders",
+      "from": [
+        3.9743,
+        -0.1654,
+        3.5943
+      ],
+      "to": [
+        4.7108,
+        0.705,
+        4.7728
+      ],
+      "rotation": {
+        "origin": [
+          4.048,
+          0.705,
+          4.1836
+        ],
+        "x": -168.924,
+        "y": -54.4607,
+        "z": 156.1617
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "texture": "#deep"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "texture": "#deep"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "texture": "#deep"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "texture": "#deep"
+        },
+        "up": {
+          "uv": [
+            3.5,
+            8,
+            8,
+            16
+          ],
+          "texture": "#deep"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "texture": "#deep"
+        }
+      }
+    },
+    {
+      "name": "fruit_1_tapered_tip",
+      "from": [
+        3.5085,
+        -0.6608,
+        3.7194
+      ],
+      "to": [
+        4.3203,
+        0.151,
+        4.5313
+      ],
+      "rotation": {
+        "origin": [
+          3.9144,
+          -0.2549,
+          4.1253
+        ],
+        "x": -177.4554,
+        "y": -39.3621,
+        "z": -135.0417
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "texture": "#deep"
+        },
+        "east": {
+          "uv": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "texture": "#deep"
+        },
+        "south": {
+          "uv": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "texture": "#deep"
+        },
+        "west": {
+          "uv": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "texture": "#deep"
+        },
+        "up": {
+          "uv": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "texture": "#deep"
+        },
+        "down": {
+          "uv": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "texture": "#deep"
+        }
+      }
+    }
+  ]
+}

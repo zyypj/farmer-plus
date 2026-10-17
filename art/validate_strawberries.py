@@ -56,7 +56,8 @@ def validate(quiet=False):
             report['errors'].append(message)
     for wild in (False, True):
         prefix = 'wild_strawberries' if wild else 'strawberry_plant'
-        state = json.loads((ASSET / 'blockstates' / f'{prefix}.json').read_text())['variants']
+        variants = json.loads((ASSET / 'blockstates' / f'{prefix}.json').read_text())['variants']
+        state = {key.removesuffix(',flattening=0'): value for key, value in variants.items() if key.endswith(',flattening=0')}
         check(set(state) == {f'age={age}' for age in range(5)}, prefix + ': five ages')
         shapes = []
         for age in range(5):
@@ -74,7 +75,7 @@ def validate(quiet=False):
                 check({e['y'] for e in entries if e['model'] == f'farmerplus:block/{name}'} == {0, 90, 180, 270}, name + ': four rotations')
                 check(len(model['elements']) <= (12 if wild else BUDGETS[age]), name + ': budget')
                 check(model.get('ambientocclusion') is False and bool(model['textures']['particle']), name + ': lighting and particles')
-                check(source['resolution'] == {'width': 32, 'height': 32}, name + ': native 32 grid')
+                check(source['resolution'] == {'width': 16, 'height': 16}, name + ': native 16 grid')
                 check(len(source['elements']) == len(model['elements']), name + ': native geometry preserved')
                 crown = next(e for e in model['elements'] if e['name'] == 'soil_crown')
                 check(crown['from'][1] == -1, name + ': soil contact')
@@ -118,7 +119,7 @@ def validate(quiet=False):
                 for texture in source['textures']:
                     pixels = Image.open(BytesIO(base64.b64decode(texture['source'].split(',')[1]))).convert('RGBA')
                     final = ASSET / 'textures/block' / texture['name']
-                    check(pixels.size == (32, 32) and pixels.tobytes() == Image.open(final).convert('RGBA').tobytes(), name + ': embedded ' + texture['name'])
+                    check(pixels.size == (16, 16) and pixels.tobytes() == Image.open(final).convert('RGBA').tobytes(), name + ': embedded ' + texture['name'])
                 extent = bounds(model)
                 check(extent['min'][1] >= -1.001 and all(extent['min'][i] >= -2.001 and extent['max'][i] <= 18.001 for i in (0, 2)), name + ': model bounds')
                 bounds_for_age.append(extent)
@@ -133,11 +134,12 @@ def validate(quiet=False):
         report['shapes'][prefix] = shapes
         java_name = 'WildStrawberriesBlock' if wild else 'StrawberryPlantBlock'
         java = (ROOT / 'common/src/main/java/com/zyypj/farmerplus/content/strawberry' / f'{java_name}.java').read_text()
-        declared = [tuple(float(v) for v in match) for match in re.findall(r'Block.column\(([\d.]+), (-?[\d.]+), ([\d.]+)\)', java)]
+        shape_array = re.search(r'VoxelShape\[\] SHAPES = \{(.*?)\n    \};', java, re.S).group(1)
+        declared = [tuple(float(v) for v in match) for match in re.findall(r'Block.column\(([\d.]+), (-?[\d.]+), ([\d.]+)\)', shape_array)]
         check(declared == [(s['width'], s['bottom'], s['top']) for s in shapes], java_name + ': static selection shapes match exported geometry')
     for path in list((ASSET / 'textures/block').glob('strawberry_*.png')) + [ASSET / 'textures/item/strawberry.png']:
         im = Image.open(path)
-        check(im.size == (32, 32) and im.mode == 'RGBA' and set(im.getchannel('A').get_flattened_data()) <= {0, 255}, str(path) + ': hard 32 pixel art')
+        check(im.size == (16, 16) and im.mode == 'RGBA' and set(im.getchannel('A').get_flattened_data()) <= {0, 255}, str(path) + ': hard 16 pixel art')
         report['hashes'][path.relative_to(ROOT).as_posix()] = hashlib.sha256(path.read_bytes()).hexdigest()
     target = ROOT / 'build/art/validation/strawberries.json'
     target.parent.mkdir(parents=True, exist_ok=True)

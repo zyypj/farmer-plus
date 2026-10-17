@@ -38,7 +38,7 @@ O próprio trigo ganha uma **reformulação visual Vanilla+ realista**: arte ori
 
 ### Morangos
 
-Uma plantação perene nova. Encontre **morangos silvestres** em planícies, campinas e florestas, depois plante os morangos em **terra arada** (só terra arada). A planta floresce, dá frutos verdes e amadurece; clique com o botão direito para colher 2–4 morangos e ela volta a florir. Plantas saudáveis soltam estolões para a terra arada vazia ao lado. Veja [docs/strawberries.pt-BR.md](docs/strawberries.pt-BR.md).
+Uma plantação perene nova. Encontre **morangos silvestres** em planícies, campinas e florestas, depois plante os morangos em **terra arada** (só terra arada). A planta floresce, dá frutos verdes e amadurece; clique com o botão direito para colher 2–4 morangos e ela volta a florir. Plantas saudáveis soltam estolões para a terra arada vazia ao lado, plantas pisoteadas perdem parte da colheita, e os morangos viram **geleia**: um frasco de vidro com 1–3 morangos enche um pote que se come aos poucos ou se coloca como decoração. Veja [docs/strawberries.pt-BR.md](docs/strawberries.pt-BR.md).
 
 ### Pisoteio de plantações
 

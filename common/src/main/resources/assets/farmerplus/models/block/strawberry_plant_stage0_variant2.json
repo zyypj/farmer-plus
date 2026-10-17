@@ -2,15 +2,11 @@
   "format_version": "26.3",
   "credit": "Made with Blockbench",
   "ambientocclusion": false,
-  "texture_size": [
-    32,
-    32
-  ],
   "textures": {
-    "particle": "farmerplus:block/strawberry_leaf",
     "young": "farmerplus:block/strawberry_leaf_young",
     "under": "farmerplus:block/strawberry_leaf_under",
-    "stem": "farmerplus:block/strawberry_stem"
+    "stem": "farmerplus:block/strawberry_stem",
+    "particle": "farmerplus:block/strawberry_leaf"
   },
   "elements": [
     {

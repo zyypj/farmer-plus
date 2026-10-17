@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "farmerplus:strawberry",
+    "farmerplus:strawberry",
+    "farmerplus:strawberry"
+  ],
+  "result": {
+    "id": "farmerplus:strawberry_jam",
+    "components": {
+      "minecraft:block_state": {
+        "portions": "3"
+      }
+    }
+  }
+}

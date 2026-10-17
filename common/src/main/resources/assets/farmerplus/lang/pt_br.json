@@ -17,5 +17,6 @@
   "item.farmerplus.strawberry": "Morango",
   "block.farmerplus.strawberry_plant": "Morangueiro",
   "block.farmerplus.wild_strawberries": "Morangos Silvestres",
-  "tag.worldgen.biome.farmerplus.has_wild_strawberries": "Tem Morangos Silvestres"
+  "tag.worldgen.biome.farmerplus.has_wild_strawberries": "Tem Morangos Silvestres",
+  "block.farmerplus.strawberry_jam": "Geleia de Morango"
 }

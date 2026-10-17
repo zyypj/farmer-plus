@@ -27,6 +27,29 @@ Strawberries behave like a berry bush — pick the fruit and the plant keeps pro
 - Bone meal advances one stage.
 - Eating a strawberry restores 2 hunger. Villagers can eat them; they are compostable.
 
+## Trampling
+
+Strawberry plants use the same [trampling](trampling.md) stages as wheat (bent, flattened, crushed), with modelled leaves pressed to the soil and berries falling to the ground. Trampling never removes the fruit; it damages it:
+
+| State | Picking a ripe plant | Breaking a ripe plant |
+|---|---|---|
+| Upright or bent | 2–4 strawberries | plant + 1–3 (Fortune) |
+| Flattened | 1–2 strawberries | plant + 1–2 |
+| Crushed | cannot be picked (berries smashed) | plant only |
+
+Trampled plants stop growing and spreading until they recover (bent ≈1 in 3 random ticks, flattened ≈1 in 6); crushed plants stay down. Bone meal only works on upright plants. Jumping on a plant on farmland flattens it instead of turning the farmland into dirt.
+
+## Strawberry jam
+
+Craft a **glass bottle** with **1, 2 or 3 strawberries** to get a jar with 1, 2 or 3 portions — the jar visibly fills up.
+
+- **Eat:** right-click (not at a block, or at a block without sneaking). Each bite eats one portion (3 hunger, 0.5 saturation); the last portion gives the empty bottle back.
+- **Place:** sneak + right-click a block to put the jar down as decoration, facing you. Breaking it returns the jar with the same portions.
+- **Refill:** right-click a placed jar with a strawberry to add a portion, up to 3.
+- Jars stack to 16 when they have the same number of portions.
+
+The jar is built on the reusable `core/jam` (`JamJarBlock`, `JamJarItem`), so other fruits can get jams by registering a block with their fruit. Spreading jam on bread is planned.
+
 ## Wild strawberries
 
 Wild strawberries grow on grass/dirt, never on farmland, grow slowly (≈1 in 10 random ticks), do not spread and yield 1–2 berries. They exist so players can start a farm without new recipes or trades.
@@ -50,5 +73,7 @@ When adding a new biome feature, register it in `BiomeFeatures` (Fabric) **and**
 No tick handlers or mixins. Plants use vanilla random ticks only until they are ripe; ripe plants stop ticking. Harvest drops come from data-driven loot tables (`harvest/strawberry_plant`, `harvest/wild_strawberries`).
 
 ## Art
+
+Trampled models (`strawberry_plant_trampled_*`, `wild_strawberries_trampled_*`) are generated from the native models by `python art/trampled_strawberries.py`; rerun it after changing any strawberry model. The jam jar art is [art task 0004](art-tasks/0004-strawberry-jam.md).
 
 The five ages now use native 3D models with four cultivated and two wild arrangements each. See [the visual report](strawberry-visuals.md) for source projects, geometry, selection shapes and validation, and [art task 0003](art-tasks/0003-strawberries.md) for the acceptance checklist.

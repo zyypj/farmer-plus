@@ -18,6 +18,7 @@ public class WildStrawberriesBlock extends StrawberryPlantBlock {
 
     private static final ResourceKey<LootTable> HARVEST_LOOT = ResourceKey.create(Registries.LOOT_TABLE, FarmerPlus.id("harvest/wild_strawberries"));
     private static final int WILD_GROWTH_CHANCE = 10;
+    private static final VoxelShape TRAMPLED_SHAPE = Block.column(10.0, -1.0, 1.0);
     private static final VoxelShape[] SHAPES = {
             Block.column(3.5, -1.0, 0.5),
             Block.column(7.0, -1.0, 1.25),
@@ -37,7 +38,7 @@ public class WildStrawberriesBlock extends StrawberryPlantBlock {
 
     @Override
     protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return SHAPES[state.getValue(AGE)];
+        return isTrampled(state) ? TRAMPLED_SHAPE : SHAPES[state.getValue(AGE)];
     }
 
     @Override

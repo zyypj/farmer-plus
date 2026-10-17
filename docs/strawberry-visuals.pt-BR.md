@@ -16,11 +16,11 @@ Cada morango tem três cuboides sólidos: dois ombros inclinados separadamente e
 
 A coroa tem apenas 0,38 unidade de altura, silhueta transparente irregular e vai de Y=-1 a -0,62. Os pecíolos começam dentro dela em Y=-0,65. Frutos maduros ficam acima de Y=0,25, livres tanto da terra arada em Y=-1 quanto de blocos vizinhos com superfície em Y=0. Os trinta arranjos são conferidos. O toco quadrado anterior e as cinco texturas provisórias de estágio sem referências foram removidos.
 
-Os onze atlas de bloco e o sprite do item são pixel art original RGBA em 32×32, com alpha binário. As texturas são desenhadas com polígonos e traços de pixels em `art/strawberries.py`. Três paletas de folha e um atlas separado de verso mantêm a mesma silhueta; atlas de cores de fruto variam o material sem substituir as diferenças de geometria dos arranjos. O item tem formato de coração, sementes, cálice e haste curta. IDs e caminhos existentes do item/modelos foram preservados.
+Os onze atlas de bloco e o sprite do item são pixel art original RGBA em 16×16, com alpha binário. As texturas são desenhadas com polígonos e traços de pixels em `art/strawberry_pixels.py`. Três paletas de folha e um atlas separado de verso mantêm a mesma silhueta; atlas de cores de fruto variam o material sem substituir as diferenças de geometria dos arranjos. O item tem formato de coração, sementes, cálice e haste curta. IDs e caminhos existentes do item/modelos foram preservados.
 
 ## Fontes e reprodução
 
-Os fontes são `art/blockbench/strawberry_plant_stage<idade>[_variantN].bbmodel` e `art/blockbench/wild_strawberries_stage<idade>[_variant1].bbmodel`. Cada projeto incorpora suas texturas em 32×32. Todos os modelos finais são importados, salvos e exportados no Blockbench 5.2.2 por seu plugin MCP. As rotações Euler exportadas são comparadas à entrada; uma rotação de um eixo pode ser serializada em `axis`/`angle` sem mudar o resultado.
+Os fontes são `art/blockbench/strawberry_plant_stage<idade>[_variantN].bbmodel` e `art/blockbench/wild_strawberries_stage<idade>[_variant1].bbmodel`. Cada projeto incorpora suas texturas em 16×16. Todos os modelos finais são importados, salvos e exportados no Blockbench 5.2.2 por seu plugin MCP. As rotações Euler exportadas são comparadas à entrada; uma rotação de um eixo pode ser serializada em `axis`/`angle` sem mudar o resultado.
 
 1. Execute `python art/strawberries.py` para desenhar texturas, entradas de geometria e blockstates.
 2. Pelo `risky_eval` do MCP conectado ao Blockbench, carregue `art/export_strawberries.js` e execute `await exportStrawberries(root)`, passando a raiz absoluta do repositório. `previews=false` pula as capturas, mantendo o salvamento e a exportação nativos.
@@ -43,3 +43,5 @@ Os fontes são `art/blockbench/strawberry_plant_stage<idade>[_variantN].bbmodel`
 ![Estágios cultivados e silvestres](images/strawberry-stages.png)
 
 ![Campo com 81 posições renderizado no Blockbench](images/strawberry-field-overview.png)
+
+A revisão em 16×16 redesenha os atlas diretamente na grade menor, com menos sementes, grupos maiores nas folhas e silhueta de item em 16×16. Os 30 projetos nativos incorporam os novos pixels; as geometrias de 84 modelos normais/pisados foram comparadas com as anteriores à conversão. Apenas a resolução das texturas e a amostragem UV pequena das pontas dos frutos mudaram.

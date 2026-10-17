@@ -17,10 +17,12 @@
   "variable_placeholders": "",
   "multi_file_ruleset": "",
   "variable_placeholder_buttons": [],
-  "unhandled_root_fields": {},
+  "unhandled_root_fields": {
+    "format_version": "26.3"
+  },
   "resolution": {
-    "width": 32,
-    "height": 32
+    "width": 16,
+    "height": 16
   },
   "elements": [
     {
@@ -45,7 +47,7 @@
         9
       ],
       "autouv": 0,
-      "color": 9,
+      "color": 1,
       "origin": [
         0,
         0,
@@ -54,61 +56,61 @@
       "faces": {
         "north": {
           "uv": [
+            8,
+            8,
             16,
-            16,
-            32,
-            32
+            16
           ],
-          "texture": 8
+          "texture": 6
         },
         "east": {
           "uv": [
+            8,
+            8,
             16,
-            16,
-            32,
-            32
+            16
           ],
-          "texture": 8
+          "texture": 6
         },
         "south": {
           "uv": [
+            8,
+            8,
             16,
-            16,
-            32,
-            32
+            16
           ],
-          "texture": 8
+          "texture": 6
         },
         "west": {
           "uv": [
+            8,
+            8,
             16,
-            16,
-            32,
-            32
+            16
           ],
-          "texture": 8
+          "texture": 6
         },
         "up": {
           "uv": [
+            8,
+            8,
             16,
-            16,
-            32,
-            32
+            16
           ],
-          "texture": 8
+          "texture": 6
         },
         "down": {
           "uv": [
+            8,
+            8,
             16,
-            16,
-            32,
-            32
+            16
           ],
-          "texture": 8
+          "texture": 6
         }
       },
       "type": "cube",
-      "uuid": "9318e885-cd5b-5684-85cf-b706a934dd6f"
+      "uuid": "4a8d3f70-3abe-8e09-dc5c-df95439faedd"
     },
     {
       "name": "leaf_0_whole",
@@ -132,7 +134,7 @@
         8
       ],
       "autouv": 0,
-      "color": 2,
+      "color": 3,
       "rotation": [
         25,
         30,
@@ -184,23 +186,23 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
           "texture": 0
         },
         "down": {
           "uv": [
             0,
-            32,
-            32,
+            16,
+            16,
             0
           ],
-          "texture": 3
+          "texture": 1
         }
       },
       "type": "cube",
-      "uuid": "2c107d6f-aee7-cec8-c37d-c53454045430"
+      "uuid": "6532aa91-9cfa-beea-d03a-682002921a5c"
     },
     {
       "name": "leaf_1_whole",
@@ -224,7 +226,7 @@
         8
       ],
       "autouv": 0,
-      "color": 9,
+      "color": 5,
       "rotation": [
         31,
         84,
@@ -276,23 +278,23 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
           "texture": 0
         },
         "down": {
           "uv": [
             0,
-            32,
-            32,
+            16,
+            16,
             0
           ],
-          "texture": 3
+          "texture": 1
         }
       },
       "type": "cube",
-      "uuid": "d02f58b7-176d-8bf3-c721-7459bf79f9c6"
+      "uuid": "ee829599-f9b3-0969-9fc0-5da8c2b18157"
     },
     {
       "name": "leaf_2_whole",
@@ -316,7 +318,7 @@
         8
       ],
       "autouv": 0,
-      "color": 2,
+      "color": 7,
       "rotation": [
         37,
         173,
@@ -368,23 +370,23 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
           "texture": 0
         },
         "down": {
           "uv": [
             0,
-            32,
-            32,
+            16,
+            16,
             0
           ],
-          "texture": 3
+          "texture": 1
         }
       },
       "type": "cube",
-      "uuid": "7ccb614a-06aa-e309-69e6-7ceefc92cb5d"
+      "uuid": "09fe0064-3561-45d7-068f-ab0e56d93b75"
     },
     {
       "name": "leaf_3_whole",
@@ -408,7 +410,7 @@
         8
       ],
       "autouv": 0,
-      "color": 6,
+      "color": 1,
       "rotation": [
         25,
         -135,
@@ -460,23 +462,23 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
           "texture": 0
         },
         "down": {
           "uv": [
             0,
-            32,
-            32,
+            16,
+            16,
             0
           ],
-          "texture": 3
+          "texture": 1
         }
       },
       "type": "cube",
-      "uuid": "1d71812b-3fb2-64ae-d56d-58fe6ff3323f"
+      "uuid": "f89d555c-40c3-96b4-d44a-6098167f3552"
     },
     {
       "name": "leaf_4_whole",
@@ -500,7 +502,7 @@
         8
       ],
       "autouv": 0,
-      "color": 0,
+      "color": 4,
       "rotation": [
         31,
         -51,
@@ -552,23 +554,23 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
           "texture": 0
         },
         "down": {
           "uv": [
             0,
-            32,
-            32,
+            16,
+            16,
             0
           ],
-          "texture": 3
+          "texture": 1
         }
       },
       "type": "cube",
-      "uuid": "c0c98d2a-be2b-3aab-91c4-19ebbd4a64a9"
+      "uuid": "06500bed-faad-0b7f-6e21-713b0f77bede"
     },
     {
       "name": "flower_0_stalk",
@@ -592,7 +594,7 @@
         8
       ],
       "autouv": 0,
-      "color": 1,
+      "color": 3,
       "rotation": [
         30.62978,
         0,
@@ -608,10 +610,10 @@
           "uv": [
             0,
             0,
-            2,
-            32
+            1,
+            16
           ],
-          "texture": 8
+          "texture": 6
         },
         "east": {
           "uv": [
@@ -626,10 +628,10 @@
           "uv": [
             0,
             0,
-            2,
-            32
+            1,
+            16
           ],
-          "texture": 8
+          "texture": 6
         },
         "west": {
           "uv": [
@@ -660,7 +662,7 @@
         }
       },
       "type": "cube",
-      "uuid": "7edb531c-382f-1402-de78-56ae72692197"
+      "uuid": "e053bf5d-0ced-06a4-ab92-91a2521ee97a"
     },
     {
       "name": "flower_0_five_petals",
@@ -684,7 +686,7 @@
         12.26788
       ],
       "autouv": 0,
-      "color": 5,
+      "color": 2,
       "rotation": [
         8,
         23,
@@ -736,23 +738,23 @@
           "uv": [
             0,
             0,
-            32,
-            24
+            16,
+            12
           ],
-          "texture": 4
+          "texture": 2
         },
         "down": {
           "uv": [
             0,
-            24,
-            32,
+            12,
+            16,
             0
           ],
-          "texture": 4
+          "texture": 2
         }
       },
       "type": "cube",
-      "uuid": "e0256855-181b-b30a-6e61-14b99e870df8"
+      "uuid": "29de7732-231e-94c5-4ac2-d954d75afdde"
     },
     {
       "name": "fruit_0_arching_stalk",
@@ -776,7 +778,7 @@
         8
       ],
       "autouv": 0,
-      "color": 5,
+      "color": 7,
       "rotation": [
         0,
         -28,
@@ -790,12 +792,12 @@
       "faces": {
         "north": {
           "uv": [
-            32,
+            16,
             0,
             0,
-            32
+            16
           ],
-          "texture": 9
+          "texture": 7
         },
         "east": {
           "uv": [
@@ -810,10 +812,10 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
-          "texture": 9
+          "texture": 7
         },
         "west": {
           "uv": [
@@ -844,7 +846,7 @@
         }
       },
       "type": "cube",
-      "uuid": "ec04d9c5-3ad8-204d-4b84-e3bfde052ef2"
+      "uuid": "ba546f5a-4f52-23c6-d10b-9b5c47735696"
     },
     {
       "name": "fruit_0_unripe_body",
@@ -868,7 +870,7 @@
         12.54344
       ],
       "autouv": 0,
-      "color": 0,
+      "color": 9,
       "rotation": [
         -3.80363,
         39.23168,
@@ -882,61 +884,61 @@
       "faces": {
         "north": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 6
+          "texture": 4
         },
         "east": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 6
+          "texture": 4
         },
         "south": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 6
+          "texture": 4
         },
         "west": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 6
+          "texture": 4
         },
         "up": {
           "uv": [
-            16,
-            16,
-            25,
-            32
+            8,
+            8,
+            12.5,
+            16
           ],
-          "texture": 6
+          "texture": 4
         },
         "down": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 6
+          "texture": 4
         }
       },
       "type": "cube",
-      "uuid": "5708e3b8-abd5-80ef-d5ab-e94fc5080b75"
+      "uuid": "dc55a2bf-d92f-30ec-8f5a-91adf68ace41"
     },
     {
       "name": "fruit_0_calyx_shoulders",
@@ -960,7 +962,7 @@
         12.54344
       ],
       "autouv": 0,
-      "color": 9,
+      "color": 2,
       "rotation": [
         15.22158,
         36.77533,
@@ -974,61 +976,61 @@
       "faces": {
         "north": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 6
+          "texture": 4
         },
         "east": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 6
+          "texture": 4
         },
         "south": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 6
+          "texture": 4
         },
         "west": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 6
+          "texture": 4
         },
         "up": {
           "uv": [
-            23,
+            11.5,
+            8,
             16,
-            32,
-            32
+            16
           ],
-          "texture": 6
+          "texture": 4
         },
         "down": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 6
+          "texture": 4
         }
       },
       "type": "cube",
-      "uuid": "c78de2a2-e0d3-888b-1f06-6360c1c326f2"
+      "uuid": "a47074fe-a5f3-59e5-a0a1-44636d449085"
     },
     {
       "name": "fruit_0_tapered_tip",
@@ -1052,7 +1054,7 @@
         12.28421
       ],
       "autouv": 0,
-      "color": 0,
+      "color": 9,
       "rotation": [
         23.97888,
         34.10687,
@@ -1066,61 +1068,61 @@
       "faces": {
         "north": {
           "uv": [
-            20,
+            11,
             4,
-            28,
-            12
+            13,
+            6
           ],
-          "texture": 6
+          "texture": 4
         },
         "east": {
           "uv": [
-            20,
+            11,
             4,
-            28,
-            12
+            13,
+            6
           ],
-          "texture": 6
+          "texture": 4
         },
         "south": {
           "uv": [
-            20,
+            11,
             4,
-            28,
-            12
+            13,
+            6
           ],
-          "texture": 6
+          "texture": 4
         },
         "west": {
           "uv": [
-            20,
+            11,
             4,
-            28,
-            12
+            13,
+            6
           ],
-          "texture": 6
+          "texture": 4
         },
         "up": {
           "uv": [
-            20,
+            11,
             4,
-            28,
-            12
+            13,
+            6
           ],
-          "texture": 6
+          "texture": 4
         },
         "down": {
           "uv": [
-            20,
+            11,
             4,
-            28,
-            12
+            13,
+            6
           ],
-          "texture": 6
+          "texture": 4
         }
       },
       "type": "cube",
-      "uuid": "0bd3fa2c-ef70-bd20-89f0-6ff39f6c3cc9"
+      "uuid": "deefcaa5-c7e4-9e02-bb29-eb3b42b10317"
     },
     {
       "name": "fruit_1_arching_stalk",
@@ -1144,7 +1146,7 @@
         8
       ],
       "autouv": 0,
-      "color": 4,
+      "color": 3,
       "rotation": [
         0,
         -132,
@@ -1158,12 +1160,12 @@
       "faces": {
         "north": {
           "uv": [
-            32,
+            16,
             0,
             0,
-            32
+            16
           ],
-          "texture": 9
+          "texture": 7
         },
         "east": {
           "uv": [
@@ -1178,10 +1180,10 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
-          "texture": 9
+          "texture": 7
         },
         "west": {
           "uv": [
@@ -1212,7 +1214,7 @@
         }
       },
       "type": "cube",
-      "uuid": "f1ee669b-6a0c-e5a5-2e0a-ade7495bdec1"
+      "uuid": "6d412462-e4bd-fe6d-251a-d2b26bcd366a"
     },
     {
       "name": "fruit_1_unripe_body",
@@ -1236,7 +1238,7 @@
         14.85248
       ],
       "autouv": 0,
-      "color": 0,
+      "color": 1,
       "rotation": [
         -176.86743,
         37.30231,
@@ -1250,61 +1252,61 @@
       "faces": {
         "north": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 7
+          "texture": 5
         },
         "east": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 7
+          "texture": 5
         },
         "south": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 7
+          "texture": 5
         },
         "west": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 7
+          "texture": 5
         },
         "up": {
           "uv": [
-            16,
-            16,
-            25,
-            32
+            8,
+            8,
+            12.5,
+            16
           ],
-          "texture": 7
+          "texture": 5
         },
         "down": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 7
+          "texture": 5
         }
       },
       "type": "cube",
-      "uuid": "95ff0259-a755-beb4-bdb3-8bab286861b9"
+      "uuid": "245a7bf7-4192-a9f7-0bc7-89b59ad3aac1"
     },
     {
       "name": "fruit_1_calyx_shoulders",
@@ -1328,7 +1330,7 @@
         14.85248
       ],
       "autouv": 0,
-      "color": 1,
+      "color": 0,
       "rotation": [
         165.40737,
         34.84145,
@@ -1342,61 +1344,61 @@
       "faces": {
         "north": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 7
+          "texture": 5
         },
         "east": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 7
+          "texture": 5
         },
         "south": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 7
+          "texture": 5
         },
         "west": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 7
+          "texture": 5
         },
         "up": {
           "uv": [
-            23,
+            11.5,
+            8,
             16,
-            32,
-            32
+            16
           ],
-          "texture": 7
+          "texture": 5
         },
         "down": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 7
+          "texture": 5
         }
       },
       "type": "cube",
-      "uuid": "da6301c5-b040-f540-b7ac-b0486efcba37"
+      "uuid": "462f682b-fe15-9f42-a6bc-e46346affee9"
     },
     {
       "name": "fruit_1_tapered_tip",
@@ -1420,7 +1422,7 @@
         14.61825
       ],
       "autouv": 0,
-      "color": 1,
+      "color": 9,
       "rotation": [
         -115.62609,
         32.65486,
@@ -1434,61 +1436,61 @@
       "faces": {
         "north": {
           "uv": [
-            20,
+            11,
             4,
-            28,
-            12
+            13,
+            6
           ],
-          "texture": 7
+          "texture": 5
         },
         "east": {
           "uv": [
-            20,
+            11,
             4,
-            28,
-            12
+            13,
+            6
           ],
-          "texture": 7
+          "texture": 5
         },
         "south": {
           "uv": [
-            20,
+            11,
             4,
-            28,
-            12
+            13,
+            6
           ],
-          "texture": 7
+          "texture": 5
         },
         "west": {
           "uv": [
-            20,
+            11,
             4,
-            28,
-            12
+            13,
+            6
           ],
-          "texture": 7
+          "texture": 5
         },
         "up": {
           "uv": [
-            20,
+            11,
             4,
-            28,
-            12
+            13,
+            6
           ],
-          "texture": 7
+          "texture": 5
         },
         "down": {
           "uv": [
-            20,
+            11,
             4,
-            28,
-            12
+            13,
+            6
           ],
-          "texture": 7
+          "texture": 5
         }
       },
       "type": "cube",
-      "uuid": "ba570176-ffaf-8da9-60fa-914cc5d53a8f"
+      "uuid": "50e67c1e-5d26-93aa-3210-8f9faf571254"
     },
     {
       "name": "fruit_2_arching_stalk",
@@ -1512,7 +1514,7 @@
         8
       ],
       "autouv": 0,
-      "color": 6,
+      "color": 8,
       "rotation": [
         0,
         143,
@@ -1526,12 +1528,12 @@
       "faces": {
         "north": {
           "uv": [
-            32,
+            16,
             0,
             0,
-            32
+            16
           ],
-          "texture": 9
+          "texture": 7
         },
         "east": {
           "uv": [
@@ -1546,10 +1548,10 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
-          "texture": 9
+          "texture": 7
         },
         "west": {
           "uv": [
@@ -1580,7 +1582,7 @@
         }
       },
       "type": "cube",
-      "uuid": "ee837a53-63a6-2802-c317-080ad06385b6"
+      "uuid": "fad31723-e0ce-00d0-2dda-aac2de78c0f7"
     },
     {
       "name": "fruit_2_unripe_body",
@@ -1604,7 +1606,7 @@
         3.8293
       ],
       "autouv": 0,
-      "color": 4,
+      "color": 8,
       "rotation": [
         172.62837,
         -47.85485,
@@ -1618,61 +1620,61 @@
       "faces": {
         "north": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 5
+          "texture": 3
         },
         "east": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 5
+          "texture": 3
         },
         "south": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 5
+          "texture": 3
         },
         "west": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 5
+          "texture": 3
         },
         "up": {
           "uv": [
-            16,
-            16,
-            25,
-            32
+            8,
+            8,
+            12.5,
+            16
           ],
-          "texture": 5
+          "texture": 3
         },
         "down": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 5
+          "texture": 3
         }
       },
       "type": "cube",
-      "uuid": "141c6fe2-fed7-744e-8ee1-017c96a03176"
+      "uuid": "8f73f427-c184-8178-c41d-6b453811de4f"
     },
     {
       "name": "fruit_2_calyx_shoulders",
@@ -1696,7 +1698,7 @@
         3.8293
       ],
       "autouv": 0,
-      "color": 1,
+      "color": 7,
       "rotation": [
         -161.47973,
         -45.42753,
@@ -1710,61 +1712,61 @@
       "faces": {
         "north": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 5
+          "texture": 3
         },
         "east": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 5
+          "texture": 3
         },
         "south": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 5
+          "texture": 3
         },
         "west": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 5
+          "texture": 3
         },
         "up": {
           "uv": [
-            23,
+            11.5,
+            8,
             16,
-            32,
-            32
+            16
           ],
-          "texture": 5
+          "texture": 3
         },
         "down": {
           "uv": [
-            16,
+            8,
             0,
-            32,
-            12
+            16,
+            6
           ],
-          "texture": 5
+          "texture": 3
         }
       },
       "type": "cube",
-      "uuid": "f15b360b-ac65-a084-feaa-0de8a910f033"
+      "uuid": "924d3bf3-1779-16e7-144a-4e79ed69b6aa"
     },
     {
       "name": "fruit_2_tapered_tip",
@@ -1788,7 +1790,7 @@
         3.74802
       ],
       "autouv": 0,
-      "color": 9,
+      "color": 3,
       "rotation": [
         -164.20201,
         -40.32759,
@@ -1802,85 +1804,85 @@
       "faces": {
         "north": {
           "uv": [
-            20,
+            11,
             4,
-            28,
-            12
+            13,
+            6
           ],
-          "texture": 5
+          "texture": 3
         },
         "east": {
           "uv": [
-            20,
+            11,
             4,
-            28,
-            12
+            13,
+            6
           ],
-          "texture": 5
+          "texture": 3
         },
         "south": {
           "uv": [
-            20,
+            11,
             4,
-            28,
-            12
+            13,
+            6
           ],
-          "texture": 5
+          "texture": 3
         },
         "west": {
           "uv": [
-            20,
+            11,
             4,
-            28,
-            12
+            13,
+            6
           ],
-          "texture": 5
+          "texture": 3
         },
         "up": {
           "uv": [
-            20,
+            11,
             4,
-            28,
-            12
+            13,
+            6
           ],
-          "texture": 5
+          "texture": 3
         },
         "down": {
           "uv": [
-            20,
+            11,
             4,
-            28,
-            12
+            13,
+            6
           ],
-          "texture": 5
+          "texture": 3
         }
       },
       "type": "cube",
-      "uuid": "56508d00-e35a-55dd-4426-b9f914b3c40f"
+      "uuid": "e41d29e2-e44a-4964-e860-a7d21b85e81f"
     }
   ],
   "groups": [],
   "outliner": [
-    "9318e885-cd5b-5684-85cf-b706a934dd6f",
-    "2c107d6f-aee7-cec8-c37d-c53454045430",
-    "d02f58b7-176d-8bf3-c721-7459bf79f9c6",
-    "7ccb614a-06aa-e309-69e6-7ceefc92cb5d",
-    "1d71812b-3fb2-64ae-d56d-58fe6ff3323f",
-    "c0c98d2a-be2b-3aab-91c4-19ebbd4a64a9",
-    "7edb531c-382f-1402-de78-56ae72692197",
-    "e0256855-181b-b30a-6e61-14b99e870df8",
-    "ec04d9c5-3ad8-204d-4b84-e3bfde052ef2",
-    "5708e3b8-abd5-80ef-d5ab-e94fc5080b75",
-    "c78de2a2-e0d3-888b-1f06-6360c1c326f2",
-    "0bd3fa2c-ef70-bd20-89f0-6ff39f6c3cc9",
-    "f1ee669b-6a0c-e5a5-2e0a-ade7495bdec1",
-    "95ff0259-a755-beb4-bdb3-8bab286861b9",
-    "da6301c5-b040-f540-b7ac-b0486efcba37",
-    "ba570176-ffaf-8da9-60fa-914cc5d53a8f",
-    "ee837a53-63a6-2802-c317-080ad06385b6",
-    "141c6fe2-fed7-744e-8ee1-017c96a03176",
-    "f15b360b-ac65-a084-feaa-0de8a910f033",
-    "56508d00-e35a-55dd-4426-b9f914b3c40f"
+    "4a8d3f70-3abe-8e09-dc5c-df95439faedd",
+    "6532aa91-9cfa-beea-d03a-682002921a5c",
+    "ee829599-f9b3-0969-9fc0-5da8c2b18157",
+    "09fe0064-3561-45d7-068f-ab0e56d93b75",
+    "f89d555c-40c3-96b4-d44a-6098167f3552",
+    "06500bed-faad-0b7f-6e21-713b0f77bede",
+    "e053bf5d-0ced-06a4-ab92-91a2521ee97a",
+    "29de7732-231e-94c5-4ac2-d954d75afdde",
+    "ba546f5a-4f52-23c6-d10b-9b5c47735696",
+    "dc55a2bf-d92f-30ec-8f5a-91adf68ace41",
+    "a47074fe-a5f3-59e5-a0a1-44636d449085",
+    "deefcaa5-c7e4-9e02-bb29-eb3b42b10317",
+    "6d412462-e4bd-fe6d-251a-d2b26bcd366a",
+    "245a7bf7-4192-a9f7-0bc7-89b59ad3aac1",
+    "462f682b-fe15-9f42-a6bc-e46346affee9",
+    "50e67c1e-5d26-93aa-3210-8f9faf571254",
+    "fad31723-e0ce-00d0-2dda-aac2de78c0f7",
+    "8f73f427-c184-8178-c41d-6b453811de4f",
+    "924d3bf3-1779-16e7-144a-4e79ed69b6aa",
+    "e41d29e2-e44a-4964-e860-a7d21b85e81f"
   ],
   "textures": [
     {
@@ -1891,10 +1893,10 @@
       "id": "leaf",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 0,
+      "height": 0,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": true,
       "use_as_default": false,
       "layers_enabled": false,
@@ -1913,74 +1915,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "8dcdca36-2f2b-bb12-498c-167f18519843",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACT0lEQVR4nO1WPUsDQRDdLFsqCAqSgIXGgGJrI9EuheJvsLewtPIH2Av5B/4GiUXARhHRVhT8SCEogkJA+5N35IW5zdzexSOK4MCR3N28mTdvZ3bPmL9utc2lqAjeFk1erZcLkXBFCCD57NwEb/sk7o6uSyMjUBPVIvnC9JTpPHZjMrCHs5fRK1BNVl7I3HdAoeQgV62XIyiRZyncsA2XZe/PH6bb+czdBzYvAQQMrS8S45qsjOcNGSZQSxktX/7b17d+4mGTw1xawp7cUZaU8RRUuiaERey0OE4BDgSS9xi5UBNCjcvmRUnpnUSBJORk9Rsr86Z1fq+RiOf7eK9dgq9GAIlhaECpJvGyONlLVjpiPUECCXj5RhXSekAm1KYG8WXRjnJgdlVNk5XE893YWlR7AO8mZscSOFkEfEEYsaiC9WWBAxy1ACTbPrwZIAgVkFyqELJ+D9SUDYYk8Mvg/oixGbkEWHsYfhlPq14WGysgNxiuLRWQSsDk0QsM/OFDcnLU2JR+csZZ329EiOW0BqGzT4Bgsc9HrR4Z3GtqymIQl0US46QzR5DSAXB1+pSQXx4ykkzorJAF4ZKjbjUgWMpRozLaCUesf1aANMhL6ZHY32csgNhgtIMGJJZXZ/rJs0ySIGmtIBJH8ZmnIYBgvbO7FidA82RhSALk/cR8j6IHeoBA7fOq2fsPoEaCz/D+4GQ78qVOs5L2kH2BYCGwJCJ9U07WREGJw8g3jpjJaT5RpVFTP9FsWtBhPq2zLPR9aM0PWKgYa37Z7D8B88v2BdE+nO4ZX62lAAAAAElFTkSuQmCC"
-    },
-    {
-      "name": "strawberry_leaf_young.png",
-      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/strawberry_leaf_young.png",
-      "folder": "block",
-      "namespace": "farmerplus",
-      "id": "young",
-      "group": "",
-      "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
-      "particle": false,
-      "use_as_default": false,
-      "layers_enabled": false,
-      "sync_to_project": "",
-      "file_format": "png",
-      "render_mode": "default",
-      "render_sides": "auto",
-      "wrap_mode": "limited",
-      "pbr_channel": "color",
-      "fps": 7,
-      "force_translucent": false,
-      "frame_time": 1,
-      "frame_order_type": "loop",
-      "frame_order": "",
-      "frame_interpolate": false,
-      "visible": true,
-      "internal": true,
-      "saved": true,
-      "uuid": "55ecaef1-ac33-9d55-cf05-35cc24565e89",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACRUlEQVR4nO1WsUrDUBRNHhncXIQOBQsF/YAOhQidnQR3P6H+gH6Af9BPEBwcik6uFhpw6OAiKBQUOhRc3NwiJ/Wm5728vJcaSxE8EEKSd+8597z73ksQ/HXE/W5aJ17VJe8cNGqJiOoIAHl7t/H9tBSRDB7CtQmIqVqQ7+20g+nbPBMDTMbz9TvQ0SqvB/WTIBc5xPUvj9KqfRGt2nA+zF4/gvnss3IfqKoCkNA1vyDG1WxtV03pFhCXWGja//I+zYlXJQeiMsKF3d3UZ2W2Clq6M2YscpfliYqBxUT8jCXnakK4MTy/D4u9oxcogiKu/rATB3eTxCJisb4HJ7chxtoEgBhAA7KbEs/FcS8pHoj5hAgQyGVCXCjrASa0rRrk56IV2+GC7PlQz8LQA9J8+CZOCLgYkEMwC1OmLRiApJyAAbHXV48FgSBuNLc0F1zIeyC2bDAiAndJbi4xaUaZAsw9gLvkM52SfFoPJLTByNyKA+wEwEcvYjCep4CnkqeCyc3tOrI1iAw2BUgwyBdkEJPkzzY3uRjklSIlJuLBsgTFOgSMRs+a/UtyXYzrrOCCcPFSV7ZAqOSlJs4wOTtiOysgGuLZehCb+4xCIDYY20EDEb3efk7uA4sQ0baCRDiK956GCITqs9PjjADN44sRERBvEst3FF3oAQm0/V5NxsPsjkCbCHmH7zdPF6lpdRlC20vpCyRzBbMQHms/WfWCvLtvXOGXCgKqTInrF02VBa3ya+2DbfV4BfwmXMWoYMNQ/wKCDeMLbaqVyXKbrqIAAAAASUVORK5CYII="
-    },
-    {
-      "name": "strawberry_leaf_aged.png",
-      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/strawberry_leaf_aged.png",
-      "folder": "block",
-      "namespace": "farmerplus",
-      "id": "aged",
-      "group": "",
-      "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
-      "particle": false,
-      "use_as_default": false,
-      "layers_enabled": false,
-      "sync_to_project": "",
-      "file_format": "png",
-      "render_mode": "default",
-      "render_sides": "auto",
-      "wrap_mode": "limited",
-      "pbr_channel": "color",
-      "fps": 7,
-      "force_translucent": false,
-      "frame_time": 1,
-      "frame_order_type": "loop",
-      "frame_order": "",
-      "frame_interpolate": false,
-      "visible": true,
-      "internal": true,
-      "saved": true,
-      "uuid": "7995528a-37a2-10f3-8533-f91fd4daf975",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACVElEQVR4nO1WMUvDQBS+HsFNHERoaZdurqWli7pmc/YXuLqIm6Ob+BucOztZHAR1KZWunXRpaUEcSrcukS/lpV8ul0tqrUXwgxCS3Hvve9977y5K/XX4J/VgFXu9avBmY3clEt4qBBC8WtpRqoGnBYl267WwNgI+ZYvglWJJvY8mIRmg0/1cvwJNyfwH4H3HyBUc5JoNP4ASeUrhLdtwWRiOZ2o4mObuA52XABy66hsGHs9UubiV16WbgJ8yWqb8g/EoCrxscMBLCziXux5kSYkpKBcnymUL32l+vKRh0hE/Y+RcTQg1bm8eC8neiScohDzO/qi2r556fQuJ+XxfXbQLWFs93rEGDu+DaUxNsefkuJc0L0Q9QQIZymVCVEjrAQ5omxr456Q1y+GC7Plgz8TmPTBvPnwTJQScDIKDMBPTpixYAKfsgAGyrbu3BMFQhcp2TAUXoh7wLRuMkMA9cm6MmDSjlAC1D9cOFvU2lRJ/sR5o0wYjtRUFWAmAj17YYD2XgEvJpeDg4ufy2g/gy7M1iCw2CYjxYp8HmX70bFOTk4FfSVJsPF4sIyjSweC59xGTnw8ZJuM6KzghXDzq2mYIljxqoozthBNb86wAaZBn6RHY3Gc0DLHB2A4akDis7UXBs8AkhLQtISGO5DNPQxiC9fnpQRgAzZNlIyRA3gws35F0ogfE0PZ71em+hHcY2kjIO3y/fzgLTKnTULC9lL6AM5cxE+G19pM1nlDsMDKxGLF8MIkmGzX9F02nOV3m1zoLrv9DrX4BrmS02jD0PwG1YXwBFn6ZMSf2BRkAAAAASUVORK5CYII="
+      "uuid": "8b2c0d92-eeb2-ee53-0397-aecbc87de77f",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA30lEQVR4nGNgIABMc8z/45NnJKRZWIqX4e2zz2D+6SknMdQzEbLZ01KFAWQILsCES8LERhZDIzbvsOCy+cyRx2BDCAFGbCaD/OrR5gIWU1QSYLh/7wPD3aPPGQQUeRjQ1TGhOxmEQQbCAk5DXASuGSaP7DImGANkC8g2dDCl5zCKzTAXwQ0wRXI+zBBY4IFckVNiC2aDxNA1g/QyweIW5ExsYMna8xhiMLUoYSAAdSayV0AKYK5Bth3ZS4wwp6Dbgp4GYIGKDLClTAZ0w2DRicsiggDZAGwAZ1ImFlBsAACWBmQrAgPH0QAAAABJRU5ErkJggg=="
     },
     {
       "name": "strawberry_leaf_under.png",
@@ -1990,10 +1926,10 @@
       "id": "under",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 0,
+      "height": 0,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -2012,8 +1948,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "70779b2c-0461-5d05-985d-92876f664210",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACPElEQVR4nO1WPUsDQRTcLFfaGWJiZSdoIIg/IYH7B1aCZcDWP2BnZSvYq7Vt0PwEESEKdlYmytmlj0xwwmRvb+9iEoLgwHH52Pdm3ux7e2fMX0fcbo3mibfzktcb1blERPMIAHmtXDamYYwREZ3L+9LSBMRCBPLN9Q3TT5KxGKD3NFi+A3VWvgDY3wSFyCHu5OJwVLQvolkbLg+Dz6FJ+sPCfWCLCkDC0P6CGFe1slY0ZVhAnGGha//718eEeFZyIMoiHNvdbo3yrBxPQSUxodg4kCdKBXoS6XeMXKgJ4cb16W0p1TtOgRQUafX727vm4fU5LeJnvs+Pr0pYW2uWvcQAGlDdZLwWp71kdSH2EyJQIS8XdCGrB5TQNzXIr0VbtSMEnvlQr8LQA2w+/EcnCC0G5BCswqxrCxYgqSZQQOxdt5cSCOJybdqFECY9EHsOGIrAncndEWMzcguw9wDuzOc6xXxTPdCRA4Z7SwfUCUAfvYjBet0C3UrdCiV3j2urBNgjLtYAVwTJIAJTgzu++9x0i2GRjIl0MUeQ1kHE48vblP0MpJgQOcFiIAKXjrr1BUKljhpHR8mzHCEgGuLVSRC754xFIA4Y34MGIvZ2tibkeVARFO0riMJTPeADAqH66KA5JkDz5MVQBMS7xPwfRad6gIG+1yt+RqBPBH/D/zfds5FrdRZKvh/ZF0gWClYhutb7ZHUKyj194wKvVBBQZEtCr2g2K2iWV+s8+KYnV8AiESrGmhXD/gswK8Y3kRyX6JCYv4MAAAAASUVORK5CYII="
+      "uuid": "f60a2c80-166d-cffe-5917-9a2bbff9962b",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA4UlEQVR4nGNgIACiGwL+45NnJKRZQoyH4cWrL2D+0oYNGOqZCNlsrK7NADIEF2DCJWGopYChEZt3WHDZfP7aA7AhhAAjNpNBfi2eFgMWkxQRYXj+5g3DlYsvGEQkUV0EUseE7mQQBhkICzgpYXG4Zpg8ssuYYAyQLSDb0MHCVXtRbIa5CO6FaKjzYQEGUwBzgbetOcPWwyfB8siaYfJMsLgFORMbAGlGBzC1KGEgAnUmsldACtBdhqwWIxpfQJ0FokEaYTEBYoOilSgQjRalMEOwyREFkA3ABnAmZWIBxQYAAIBrbQn59kdDAAAAAElFTkSuQmCC"
     },
     {
       "name": "strawberry_flower.png",
@@ -2023,10 +1959,10 @@
       "id": "flower",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 0,
+      "height": 0,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -2045,8 +1981,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "8234944d-4602-20e6-76a8-6fd9912b4490",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABmklEQVR4nGNgGOmAkRLNxy/s/A9jWxq4k2UWE6WWW6hrYDiGFMBIruUwi2HgxM0bZIUEEwMlgEMOzkR3EM0ccByL79HlSTGPhVhLaZU4WYg1CORrWDyDaFyhgC4OMwOXQxjxOeD/94c4ff7+XisK/+bvYITlsLTx4xHCIk55RpLSwPELO//DfIzNckEZaxQxdda1EItBGGQxkuUgc3BFIxMuB6AEGcxgDjmG/evjIY54chRDz/7ljigW4zSPlER4AhzfhFTh148PMJKS9UCGfb/WDhYz0FdDUXPh4i0wzalViSJOKBcwEuMAmCNANMghsGhAB46R++FRAHIsMaUiE7EOgFkOtihwIablIDGQ5UilI9XA8Qs7/4OyJAoGge8P/2PIQcVhcrStC7ABEkOBiazUDMvruMCPRwRTP8kOQAFoCY1Yy8iujGAAZhEsS8JSOYgmt0FCEiDWEro4ZhTQDHx9f+M/MWLUAozEWsQtqEFRH4JgOfCVgC9pFQpMyD7Mn5rDQG/AgiuoQT6mVbATVRRz08FyvA6gFwAAS0Du6bxW3bgAAAAASUVORK5CYII="
+      "uuid": "fbc9fe70-2aec-180e-92f7-f512382b2881",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAArElEQVR4nGNgoBAw4pN8+PT8fxhbXtoQq1omfAbIiYiCMT7AhMtWEP3ozWsGEEYXx+qFh0/P/wfZBtOAz1UwNSBvMSFLImt+vL+IQfDrEjAGsdHVwMKEiYFCwAJjwExE9uOlU+ewakKOERZcJss69hHlAiZkDsx25KiD2YYrOpmwOQ1bTBCKHRSAHte4xKgCGEHE1/c3UEznFtTAm0eQATgWQBpS22zIdyIlmgH24VGtOzXbTgAAAABJRU5ErkJggg=="
     },
     {
       "name": "strawberry_fruit.png",
@@ -2056,10 +1992,10 @@
       "id": "fruit",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 0,
+      "height": 0,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -2078,8 +2014,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "8f2e9bd7-187f-2d99-030f-fb825bb107eb",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACv0lEQVR4nMVWTUgVURS+MwzEo5BIsFwk9gMv4pnUJkMMq0UQERkkCQUtlGjlKogCF4Lh1pWELYICw4oi2rSoIIlqY0RT9KL08VoUmv1I9WiTca6e6dzruefOm4I+eMy8e+433znnfnfuBGoRHzsOzSsB5ekv+lr8+kNfu+LHAY1Pvbou8idnXuhrXHqtr73HLmt+mEacw2ihZT6tOIehS0c1J6Ditb0dxqTZoRtG9bQDiJZrp5L7xvpmI1Z6/8yonnYAEeFNTb4hEbSRH2lTxZ5xY+zRz4rasSyX/F9VszYRtNG4IlClb2aT4qkPqrBuzcISAOaKZSXh4vSsGP80906MX7n/gB0P6Z/cQNOSCdB+qP54Xa3y4Vfl5ZIxaD9Uf2TXTn8CgP74rXLBXn8O58aGnTF7/QFGApWzz1VfYYMocGBsrzMW5jarM50nRf7+Qt6dQFqAAf8GYEBvArmBJmP7IW513jHcL/mBbj/E7bio3e9NII3zfXA5n30PIJKqLeenMSCAVk2dzxkQEKKoq+UoLpkPRF0tR3HbfEkCZSLKtZxWzpmPinItp5VT8yGCidbdzoMExCXHgxnrhvc54yDOiSLAjJEkjiJZgJVTx3MI8EbqBIdtD+8Z3wN3x/ur4u9p6/vzPTAhiJ/YyBuTciTx0xdusuPIiaqt3E7i82B7VrpOIpQmQPVdh9c7u+ADVA98VxcAmc6Cf4kobXXOeUJ1FK4uhOffrEz1gK3blyc/BHAHuw9m5gPXeBFxVSLh6ZPvxjgmTk3IVeniY+Ih91CKTQ2rneI2uG5wfDovtAm+JfHFfUtix0P1nxHYLyL0AexfwOjVSbEL9osIfSDxaRciO0iJINSuFsTSblfKB6Hm7i1GYjYC1y7g1pqLu3YB5wUuHtmTJJNhTOqGZEKM0UT0kZj1QMIjudqjGAFH8m/ufWURElRfngAAAABJRU5ErkJggg=="
+      "uuid": "35a3ab97-05de-ca75-7c84-d6ec95ef7338",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABiklEQVR4nGNkYGBgeBMY9J8BCTx69YHh5sdvDJFXTjCC+PdvrEWRv/f6KsOVB7cY8mOXMDKCNPN5m4IlPm09jWIACFisKWVQkNQHsx88v4hiAAiwIGuEaVaarMdwM+4EXAymEaZZkoOV4QqUzwSTYKmVgyvajqQZBr5/htgIArtvXIWzmWCMP82PMDQd//kdzubkVcOQv3L/BcQAkLNhGAQ8F1mgKAQ5G4ZBwFVDG+GCR1A/wwAo8JC9APMz3NYHt1C8wAJWlHsJrhnd6SDw/MdvuGaY02GAEUScs3aCx3O6ygeGmXcEwGyjo/vA8nsPN8HlK+ZsYOhICQCznW3rGBmRNYPAgUohBof2d3D++w4HFNdc/HiJQZ8f4WVG03gjFAMiQ5UYlq++h6IJnzwTzLnIwNCcG0yD5GDOxSYPkmOCKUQG509+RRFDNwQkDxMDxwLMaSCAy/m45MEuAIU8SAIUeDCbQWIwAAp5kDwo8GA2g8RAABxNoIBE9wbIgNMLz8Hl0b0BMgAkDwDW2Mxn4N/uoQAAAABJRU5ErkJggg=="
     },
     {
       "name": "strawberry_fruit_rose.png",
@@ -2089,10 +2025,10 @@
       "id": "rose",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 0,
+      "height": 0,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -2111,8 +2047,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "bb85313e-2aed-2936-0967-544d6b717bfb",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACvUlEQVR4nMVWTWgTQRSeHRYUjLYHNaJSpKIGJAS9KELxUIKIl1oIUrxKMYiXHjwVBe3JgwcvgeLBi4gEtBcRKR6kIPWihCJopT+IKfU3TY2gIFbe1LfOTN97u1kFP1g2O2++/d57881OAvUbzfNnV5SARr1h7jOfPpt77+PxwI7X5yZF/sflRXOfW5g2977jFwxfJxGn8OhocSWpOIWxB1cNJ7DFNw0WnUnLo+NO9XYHELmbV6Lf27fudGIL79861dsdQISR+L4dkaCPLSM59WH4pTP2rNlSBzsy0XNnpiMS9JH5OaVaOu+MTc+8UHt3719dAlPtq7qSUJ19I8aXWk0x/nDiHjmu7YewnF0zAdoP1Ze6u1Qcvi2t7SC0H6o/1nMyPgHA6ERNcfDXn8Kt+xU25q8/wEngR+WdGuwpiAKHK0fY2PrOojp9oizy89u+8wkkBRjwbwAGjE0gLGed7YeYLD9x3C/5wd5+iKnFdcb9sQkkcX4cOOeT3wFEVPVww3F+EgMCoqqN8/OiAc00FOVajuKS+UCUazmK++aLEmhYolTL7cop89miVMvtym3zIYL5/lPsQQLikuPBjJuvn2PjIE6JIsCMoSSOImmAlduOpxDgD6kTFHbdveP8H6jVxtriFwp9f/4PzAvipY2vyXGbI4mfuXaZHEeObrdyP4l2K/eT0NIEqH6g1M12IQ5QPfC5LgBSnQX/EmHS6th5QnU2uC7o6pc9iV5w4NCG6EIA98bQxdR84DofIqpKJDx/+tUZx8SblwbEKjk+Jq6pl9rIdWVZcR9UNyi+PU/7hLgliYvHLYkf1+o/Q/sD6APYv3Ddrs6ScQ7oA47v+yT0XwAkABCh3f1qteVJt6vNh3b3DtHCiIDbBdRaU3FuF1BeoOKhP0kyGcakbkgmxJidiDkS0x5IeCSnPZDgSP4FJoZpMGd3TXgAAAAASUVORK5CYII="
+      "uuid": "4422bb3c-c1bf-39f9-6c91-b4f0f6c31997",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABeElEQVR4nGNkYGBg+Jib8Z8BCbx/+p7h7tt3DM4HdzOC+E/vn0CRf/PpBcP9Z7cYAjzLGBlBmvk8jcASn7afQzEABDQWNDNIicmA2c9ePUExAARYkDXCNAvUSDIwFEIMQNYI08z66zoDAwMzmM8Ek/ifyAFXdLbwKgM6+PhmP5x96w1EM4oBjPN/YGg69/ELnM0v4oghf+vuVYgBIGfDMAgY92ujKAQ5G4ZBQE3kL8IF72F+hgJQ4CF7AeFnCAAFHrIXWEDEh5bncM3oTgeB32yacM0wp8O9zsDAwPAgKBwez6G8txlWf1YFsxXWrQTLX7y4AS6f0tfEMKeoDszW1w9gZELWDAKRoUpwNkgOWTO6PEiO0TTeCEPB8tX3ULyAT54J5lxkYGjODaZBcjDnYpMHyTHBFCKD8ye/ooihGwKSh4mBYwHZb7icj0se7AJQyIMkguYxw20GicEAKORB8s6yMXCbQWJgA2BRhexk5GgERRW6N5CjEQBD4c7PNqfNFwAAAABJRU5ErkJggg=="
     },
     {
       "name": "strawberry_fruit_deep.png",
@@ -2122,10 +2058,10 @@
       "id": "deep",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 0,
+      "height": 0,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -2144,8 +2080,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "b76d2e33-bc68-7e1d-7555-9e4f69d3c402",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACxElEQVR4nMVWMWgUQRSdXRYLA0IMwYDJISmCGpCcIqc2UUHBQkRFOYNWFgoWclZiEYKFaJNgEdHCTuOhqEUKQUG0MoeYiBjFDRwaFZRwBpUIanHyJ/71z+TPn71V8MGxe/Pn3fv/z5uZC9RvvNqyq64ExLXP+jn187t+nnj5KKDxsfELIr/6cUo/n795rZ9njt7W/DCNOIfBVRvracU5nLq4W3MCKt51fI8xKT5/y6iedgCx6eqh5L27Y4MRm3w7ZlRPO4CI8KW1e3kiaGNruVfdLz40xh7/+KbWL1qcfM81dyaCNgptS1Xlwydj7EVcU6u7WuaXADAz+V5JGJmbFePTs1Uxfv3eE3Y8pF/ah3sWTID2Q/V9Tc3Kh9agtmAM2g/V79+2zp8AYGDaXCMKe/05nL1Sdsbs9QcYCbw79lQN5FaIAkdubnfGZuot6uTBosg/XFjrTiAtwIB/AzCgN4H24R5j+yEu7b1ruF/yA91+iMuVce1+bwJpnO+Dy/nsOYDAqmPL+WkMCMCqYVNS53MGBIQo6mo5ikvmA1FXy1HcNl+SQExEuZbTyjnzUVGu5bRyaj5EMLpms/MiAXHJ8WDGtkHz/LfFOVEEmDGSxFEkC7By6ngOAb5IneCw89kD4//AyJ1SQ/y+HUN//g+MCuKn81/YccqRxIfK5i1qc6JGK7eT+Houn5WukwilCVD9gX2dzi74ANUD39UFQKa74F8iSludc55QHYWrC2H/xJJUP5AvNCUfBHBLxd7MfOAaBxFXJRImKnPGOCZOTchV6eJj4iH3oxQrc8uc4ja4bnB8Oi+0Cb4l8cV9S2LHQ/WfEdgHEfoA9i/g2o2q2AX7IEIfSHzahcgOUiII9at5sbTblfJBqFTsMBKzEbh2AbfWXNy1CzgvcPHIniSZDGNSNyQTYowmoq/ErBcSXsmNXsUIuJJ/Abb5YGKKQ5bSAAAAAElFTkSuQmCC"
+      "uuid": "ce71fdda-afdc-f741-f135-9f0991c4edd6",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVR4nGNkYGBguOno/58BCdx6+5Hh9u+fDEXXjzOC+CfOTUORv/fyNsOVhw8Y2jLWMzKCNKtlOUM0TtuLYgAIWC2NZdCWtQCzrz4+gWIACLAga4Rptl1gwHA7+iRcDKYRptlARAxuABNMQrxXEa5oHpJmGOD7+xHOXnL2FJzNBGO8LL6Poen0r29w9idmfgz5a7feQgwAORuGQSBpqTmKQpCzYRgEYozNEC64BfUzDIACD9kLMD/DAMjvyF5gARGHEy7ANaM7HQQuvHkF1wxzOgwwgojNeg7weG4y/MRQd54PzPa9dAAsv2x7IVy+f8VBhsIIezA7yrOfkRFZM9gVbSIMqlVv4PzPnYYornnx9zGDBLMswgWm8UYoBkSGKjEsX30PRRM+eSaYc5GBoTk3mAbJwZyLTR4kxwRTiAzOn/yKIoZuCEgeJgaOBZjTQACX83HJg10ACnmQBCjwYDaDxGAAFPIgeVDgwWwGiYEAOJpAAYnuDZABpxeeg8ujewNkAEgeALM3zECoXNXqAAAAAElFTkSuQmCC"
     },
     {
       "name": "strawberry_stem.png",
@@ -2155,10 +2091,10 @@
       "id": "stem",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 0,
+      "height": 0,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -2177,8 +2113,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "1a687991-5e93-017f-fb76-c150da1a4e58",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA2UlEQVR4nO2UIQ7DMAxFPSuobJcYGCkbGB3qVSZN6lHGdpTdYLxkYJcYK81kqZbSyG0G7JrkkygBeU+2E7g9uni5niI4Bb3AVYCD4BysAlBb4BysAlBb4BysAmCYrj9HN4FugpckEAzTHvYzGSnBAkxAhtM6fL6ixPP+2qkIlMrMEjmcVpUW8GUpUJLYpAXtBGre4+x8PDaiMGqB8yr8GwTl5L0uvYqgBc4HMS355v/AsFCF9JyFg9UzJFg6+bSX5iRoCEgXkxRLLMEpZl8xA9eG0lQglVh7oj8ixlSVe9JoYwAAAABJRU5ErkJggg=="
+      "uuid": "003649c6-4b3f-56b7-b3e9-bae27a8fb11b",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAX0lEQVR4nGPIne75n4ECwESJ5lEDhmQgehZY/afYBZ5ohrCQokFfTZDh4q33KGJMhAzYPuEYIzIfZAgIw+SYiHU6SBPXtW8Y4kQbAHL6Ny0uDHGSwgBmEIocqdkZ3UAAl2wi2Wm5wRYAAAAASUVORK5CYII="
     },
     {
       "name": "strawberry_peduncle.png",
@@ -2188,10 +2124,10 @@
       "id": "peduncle",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 0,
+      "height": 0,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -2210,41 +2146,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "cb758117-2a39-c350-8a4f-7e6da867a48a",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA0klEQVR4nGNgGAWjYKQDRnI1Omab/neyUwKza8NXkm0OIyWW7zt0D8ynxCEsDBSA/VNPwyz8DyKaV4b/J9UhjJT4HskBGPLEOoSRmpbjcggx6okCIENhwUyqHhBNURpwREt4xAKoz2Gh8R89JJgoSHgk6QE5HOQIUkOQ7KAnNkpYaBX0xEYJC4kaqe4IFnr6HpsjGMjNPtQCTPQMeqId4EjDoCcIHOkU9ASjYD+Ng57mBQ6xgIlhsADHAfA9CDCNaN+DANOI9j0IDHwIDKTvQfYDAMiVl0AiHvoaAAAAAElFTkSuQmCC"
-    },
-    {
-      "name": "strawberry_peduncle_pair.png",
-      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/strawberry_peduncle_pair.png",
-      "folder": "block",
-      "namespace": "farmerplus",
-      "id": "paired",
-      "group": "",
-      "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
-      "particle": false,
-      "use_as_default": false,
-      "layers_enabled": false,
-      "sync_to_project": "",
-      "file_format": "png",
-      "render_mode": "default",
-      "render_sides": "auto",
-      "wrap_mode": "limited",
-      "pbr_channel": "color",
-      "fps": 7,
-      "force_translucent": false,
-      "frame_time": 1,
-      "frame_order_type": "loop",
-      "frame_order": "",
-      "frame_interpolate": false,
-      "visible": true,
-      "internal": true,
-      "saved": true,
-      "uuid": "3ae0ca2b-b561-01b4-707a-f327f9d1efc7",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAj0lEQVR4nO2WwRGAIAwEb+iNPq4gesYXH0RMIMLgZJ+Km/NGVMBxHMfpwBQzdnmYYrYIUBxiF6vBsyFqV9fHxsmZAE/XNo+zM2g0hNjJlwEjAcROCuXaEJL1KqdmsdX2vfFVW/tqBRBwGjTergEnQs0bblUADg4POBVWd7ys/oLlJ3vdz8avnoHCbP3bG7gAdXxm20/TozoAAAAASUVORK5CYII="
+      "uuid": "ceaeee2d-38d0-7f59-b640-82e73857cd31",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAARElEQVR4nGNgGN4ge6b3fxAmWzMDJQZlY9FAtEHZBBQRNCSbCFtwqskmwa9Y1WaTG+oDppmJbBupYTt1XEBRwDEwMAAAxaIrz27p+OUAAAAASUVORK5CYII="
     }
   ]
 }

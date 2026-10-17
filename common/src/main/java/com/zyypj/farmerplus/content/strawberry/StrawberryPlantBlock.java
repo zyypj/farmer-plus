@@ -1,6 +1,9 @@
 package com.zyypj.farmerplus.content.strawberry;
 
 import com.zyypj.farmerplus.FarmerPlus;
+import com.zyypj.farmerplus.core.trampling.CropTrampling;
+import com.zyypj.farmerplus.core.trampling.Flattening;
+import com.zyypj.farmerplus.core.trampling.Trampleable;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.Registries;
@@ -12,6 +15,8 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.InsideBlockEffectApplier;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -37,17 +42,20 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class StrawberryPlantBlock extends VegetationBlock implements BonemealableBlock {
+public class StrawberryPlantBlock extends VegetationBlock implements BonemealableBlock, Trampleable {
 
     public static final int FLOWERING_AGE = 2;
     public static final int RIPE_AGE = BlockStateProperties.MAX_AGE_4;
     public static final IntegerProperty AGE = BlockStateProperties.AGE_4;
+    public static final IntegerProperty FLATTENING = IntegerProperty.create("flattening", Flattening.UPRIGHT, Flattening.CRUSHED);
 
     private static final ResourceKey<LootTable> HARVEST_LOOT = ResourceKey.create(Registries.LOOT_TABLE, FarmerPlus.id("harvest/strawberry_plant"));
     private static final int MIN_GROWTH_BRIGHTNESS = 9;
     private static final int HYDRATED_GROWTH_CHANCE = 5;
     private static final int DRY_GROWTH_CHANCE = 8;
     private static final int RUNNER_CHANCE = 20;
+    private static final int MIN_TRAMPLE_AGE = 1;
+    private static final VoxelShape TRAMPLED_SHAPE = Block.column(14.0, -1.0, 1.0);
     private static final VoxelShape[] SHAPES = {
             Block.column(5.5, -1.0, 1.0),
             Block.column(10.0, -1.0, 2.25),
@@ -58,7 +66,7 @@ public class StrawberryPlantBlock extends VegetationBlock implements Bonemealabl
 
     public StrawberryPlantBlock(BlockBehaviour.Properties properties) {
         super(properties);
-        registerDefaultState(stateDefinition.any().setValue(AGE, 0));
+        registerDefaultState(stateDefinition.any().setValue(AGE, 0).setValue(FLATTENING, Flattening.UPRIGHT));
     }
 
     public static BlockBehaviour.Properties plantProperties() {
@@ -75,6 +83,10 @@ public class StrawberryPlantBlock extends VegetationBlock implements Bonemealabl
         return state.getValue(AGE) == RIPE_AGE;
     }
 
+    public static boolean isTrampled(BlockState state) {
+        return state.getValue(FLATTENING) != Flattening.UPRIGHT;
+    }
+
     @Override
     protected boolean mayPlaceOn(BlockState state, BlockGetter level, BlockPos pos) {
         return state.is(BlockTags.SUPPORTS_CROPS);
@@ -82,7 +94,7 @@ public class StrawberryPlantBlock extends VegetationBlock implements Bonemealabl
 
     @Override
     protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return SHAPES[state.getValue(AGE)];
+        return isTrampled(state) ? TRAMPLED_SHAPE : SHAPES[state.getValue(AGE)];
     }
 
     @Override
@@ -92,12 +104,34 @@ public class StrawberryPlantBlock extends VegetationBlock implements Bonemealabl
 
     @Override
     protected boolean isRandomlyTicking(BlockState state) {
-        return !isRipe(state);
+        int flattening = state.getValue(FLATTENING);
+        return flattening == Flattening.BENT || flattening == Flattening.FLATTENED || (flattening == Flattening.UPRIGHT && !isRipe(state));
+    }
+
+    @Override
+    protected void entityInside(BlockState state, Level level, BlockPos pos, Entity entity, InsideBlockEffectApplier effectApplier, boolean isPrecise) {
+        CropTrampling.onEntityInside(state, level, pos, entity);
+        super.entityInside(state, level, pos, entity, effectApplier, isPrecise);
+    }
+
+    @Override
+    public BlockState trample(BlockState state, int force, Direction direction) {
+        if (state.getValue(AGE) < MIN_TRAMPLE_AGE) {
+            return state;
+        }
+        return state.setValue(FLATTENING, Flattening.add(state.getValue(FLATTENING), force));
     }
 
     @Override
     protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
-        if (isRipe(state) || level.getRawBrightness(pos.above(), 0) < MIN_GROWTH_BRIGHTNESS) {
+        if (level.getRawBrightness(pos.above(), 0) < MIN_GROWTH_BRIGHTNESS) {
+            return;
+        }
+        if (isTrampled(state)) {
+            recover(state, level, pos, random);
+            return;
+        }
+        if (isRipe(state)) {
             return;
         }
 
@@ -110,7 +144,7 @@ public class StrawberryPlantBlock extends VegetationBlock implements Bonemealabl
 
     @Override
     protected InteractionResult useItemOn(ItemStack itemStack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
-        if (!isRipe(state) && itemStack.is(Items.BONE_MEAL)) {
+        if (!isRipe(state) && !isTrampled(state) && itemStack.is(Items.BONE_MEAL)) {
             return InteractionResult.PASS;
         }
         return super.useItemOn(itemStack, state, level, pos, player, hand, hitResult);
@@ -118,7 +152,7 @@ public class StrawberryPlantBlock extends VegetationBlock implements Bonemealabl
 
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
-        if (!isRipe(state)) {
+        if (!isRipe(state) || state.getValue(FLATTENING) == Flattening.CRUSHED) {
             return super.useWithoutItem(state, level, pos, player, hitResult);
         }
 
@@ -136,7 +170,7 @@ public class StrawberryPlantBlock extends VegetationBlock implements Bonemealabl
 
     @Override
     public boolean isValidBonemealTarget(LevelReader level, BlockPos pos, BlockState state, BonemealSource source) {
-        return !isRipe(state);
+        return !isRipe(state) && !isTrampled(state);
     }
 
     @Override
@@ -151,7 +185,7 @@ public class StrawberryPlantBlock extends VegetationBlock implements Bonemealabl
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(AGE);
+        builder.add(AGE, FLATTENING);
     }
 
     protected int growthChance(ServerLevel level, BlockPos pos) {
@@ -165,6 +199,15 @@ public class StrawberryPlantBlock extends VegetationBlock implements Bonemealabl
 
     protected ResourceKey<LootTable> harvestLootTable() {
         return HARVEST_LOOT;
+    }
+
+    private void recover(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+        int flattening = state.getValue(FLATTENING);
+        if (flattening == Flattening.BENT && random.nextInt(Flattening.BENT_RECOVERY_CHANCE) == 0) {
+            level.setBlock(pos, state.setValue(FLATTENING, Flattening.UPRIGHT), Block.UPDATE_CLIENTS);
+        } else if (flattening == Flattening.FLATTENED && random.nextInt(Flattening.FLATTENED_RECOVERY_CHANCE) == 0) {
+            level.setBlock(pos, state.setValue(FLATTENING, Flattening.BENT), Block.UPDATE_CLIENTS);
+        }
     }
 
     private void spreadRunner(ServerLevel level, BlockPos pos, RandomSource random) {

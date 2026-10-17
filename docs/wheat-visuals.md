@@ -45,15 +45,15 @@ Vanilla crops use 8 faces, so mature wheat costs more geometry. AGE 0–5 child 
 
 The sheaf has a pinched waist, dense cut stalks and a solid 3D cord: a closed four-sided wrap, two open bow loops, a knot and two hanging ends. It stays inside the existing 12×16×12 outline, so `WheatSheafBlock` needs no shape change.
 
-In inventories the sheaf uses a dedicated 32×32 icon: `items/wheat_sheaf.json` selects `farmerplus:item/wheat_sheaf` for the `gui` display context and falls back to the 3D block model everywhere else.
+In inventories the sheaf uses a dedicated 16×16 icon: `items/wheat_sheaf.json` selects `farmerplus:item/wheat_sheaf` for the `gui` display context and falls back to the 3D block model everywhere else.
 
 ![The sheaf rendered in Blockbench](images/wheat_sheaf-blockbench.png)
 
 ![The solid cord binding](images/wheat-sheaf-binding-3d.png)
 
-Flour, dough, porridge, wheat and seeds were redrawn at 32×32. Registry ids, recipes and food values are unchanged.
+Flour, dough, porridge, wheat and seeds are drawn on native 16×16 grids, preserving the warm Vanilla+ palettes and simplifying small markings. Strawberry and the sheaf inventory icon also use 16×16. Registry ids, recipes and food values are unchanged.
 
-![Items at 32 px and 16 px](images/wheat-items-refined.png)
+![Native 16×16 item icons, enlarged without smoothing](images/items-16.png)
 
 ## Resource loading
 
@@ -82,7 +82,7 @@ Produces `build/resourcepacks/FarmerPlus-Detailed-Vanilla-Wheat-26.3.zip` (also 
 |---|---|
 | `art/blockbench/wheat_stage*.bbmodel`, `wheat_sheaf.bbmodel` | Editable Blockbench projects with embedded textures |
 | `art/model-inputs/` | Geometry inputs for the Blockbench export |
-| `art/wheat_32.py`, `art/build_wheat_art.py` | Pixel authoring and PNG generation (Pillow) |
+| `art/wheat_32.py`, `art/build_wheat_art.py`, `art/item_pixels.py` | Block and native 16×16 item pixel authoring and PNG generation (Pillow) |
 | `art/export_blockbench.js` | Imports into Blockbench via MCP, saves `.bbmodel`, exports 26.3 JSON |
 | `art/preview_wheat_field.js` | Renders a 12×12 field preview in Blockbench |
 | `art/inspect_leaf_clearance.js`, `art/inspect_sheaf_binding.js` | Geometry checks in Blockbench |
@@ -97,3 +97,5 @@ Rebuild order (Blockbench open with the MCP plugin):
 3. Through MCP: `inspectLeafClearance(root)` and `inspectSheafBinding(root)`
 4. `./gradlew build`
 5. `python art/validate_wheat_art.py`
+
+For item icons only, run `python art/item_pixels.py`; this preserves all block models and block textures. The script also refreshes the item preview.

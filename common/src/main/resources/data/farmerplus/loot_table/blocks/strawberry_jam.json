@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "farmerplus:strawberry_jam",
+          "modifier": [
+            {
+              "type": "minecraft:copy_state",
+              "block": "farmerplus:strawberry_jam",
+              "properties": [
+                "portions"
+              ]
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "farmerplus:blocks/strawberry_jam"
+}

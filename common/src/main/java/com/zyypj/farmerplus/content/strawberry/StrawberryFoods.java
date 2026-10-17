@@ -9,6 +9,11 @@ public final class StrawberryFoods {
             .saturationModifier(0.3F)
             .build();
 
+    public static final FoodProperties STRAWBERRY_JAM_PORTION = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(0.5F)
+            .build();
+
     private StrawberryFoods() {
     }
 }

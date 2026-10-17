@@ -56,7 +56,11 @@ Adicione ou remova criaturas com um data pack que sobrescreva `data/farmerplus/t
 - A recuperação usa os random ticks do vanilla, e só plantas *entortadas* ou *deitadas* jovens recebem tick. Caminhos esmagados e plantas maduras deitadas não custam nada.
 - A renderização é feita com modelos de bloco comuns: 6–8 elementos por modelo, menos que o trigo maduro em pé (16).
 
-## Adicionando pisoteio a outra plantação
+## Outras plantas
+
+Qualquer bloco pode ser pisoteado implementando `Trampleable#trample(state, force, direction)` e chamando `CropTrampling.onEntityInside` no seu próprio `entityInside` — blocos do Farmer+ não precisam de mixin. O morango faz isso com uma propriedade `flattening` (0–3) na própria planta; veja [strawberries.pt-BR.md](strawberries.pt-BR.md#pisoteio).
+
+## Adicionando pisoteio a outra plantação vanilla
 
 1. Registre um `TrampledCropBlock` apontando para a plantação em pé:
    ```java

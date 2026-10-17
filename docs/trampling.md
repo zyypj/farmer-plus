@@ -56,7 +56,11 @@ Add or remove mobs with a data pack overriding `data/farmerplus/tags/entity_type
 - Recovery uses vanilla random ticks, and only *bent* or young *flattened* crops tick at all. Crushed paths and mature flattened crops cost nothing.
 - Rendering is plain baked block models: 6–8 elements per model, fewer than the mature standing wheat (16).
 
-## Adding trampling to another crop
+## Other plants
+
+Any block can be trampled by implementing `Trampleable#trample(state, force, direction)` and calling `CropTrampling.onEntityInside` from its own `entityInside` — no mixin needed for Farmer+ blocks. Strawberries do this with a `flattening` property (0–3) on the plant itself; see [strawberries.md](strawberries.md#trampling).
+
+## Adding trampling to another vanilla crop
 
 1. Register a `TrampledCropBlock` that points at the standing crop:
    ```java

@@ -38,7 +38,7 @@ Wheat itself gets a **Realistic Vanilla+ visual overhaul**: original 32×32 art 
 
 ### Strawberries
 
-A new perennial crop. Find **wild strawberries** in plains, meadows and forests, then plant the berries on **farmland** (only farmland). Plants flower, set green fruit and ripen; right-click to pick 2–4 strawberries and the plant flowers again. Healthy plants send runners onto neighbouring empty farmland. See [docs/strawberries.md](docs/strawberries.md).
+A new perennial crop. Find **wild strawberries** in plains, meadows and forests, then plant the berries on **farmland** (only farmland). Plants flower, set green fruit and ripen; right-click to pick 2–4 strawberries and the plant flowers again. Healthy plants send runners onto neighbouring empty farmland, trampled plants lose part of their harvest, and strawberries become **jam**: a glass bottle with 1–3 strawberries fills a jar you can eat a portion at a time or place as decoration. See [docs/strawberries.md](docs/strawberries.md).
 
 ### Crop trampling
 

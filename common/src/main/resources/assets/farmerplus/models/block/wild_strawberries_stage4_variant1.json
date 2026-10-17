@@ -2,10 +2,6 @@
   "format_version": "26.3",
   "credit": "Made with Blockbench",
   "ambientocclusion": false,
-  "texture_size": [
-    32,
-    32
-  ],
   "textures": {
     "particle": "farmerplus:block/strawberry_leaf",
     "leaf": "farmerplus:block/strawberry_leaf",
@@ -443,54 +439,54 @@
       "faces": {
         "north": {
           "uv": [
-            2,
-            2,
-            6,
+            3,
+            4,
+            5,
             6
           ],
           "texture": "#rose"
         },
         "east": {
           "uv": [
-            2,
-            2,
-            6,
+            3,
+            4,
+            5,
             6
           ],
           "texture": "#rose"
         },
         "south": {
           "uv": [
-            2,
-            2,
-            6,
+            3,
+            4,
+            5,
             6
           ],
           "texture": "#rose"
         },
         "west": {
           "uv": [
-            2,
-            2,
-            6,
+            3,
+            4,
+            5,
             6
           ],
           "texture": "#rose"
         },
         "up": {
           "uv": [
-            2,
-            2,
-            6,
+            3,
+            4,
+            5,
             6
           ],
           "texture": "#rose"
         },
         "down": {
           "uv": [
-            2,
-            2,
-            6,
+            3,
+            4,
+            5,
             6
           ],
           "texture": "#rose"
@@ -680,54 +676,54 @@
       "faces": {
         "north": {
           "uv": [
-            2,
-            2,
-            6,
+            3,
+            4,
+            5,
             6
           ],
           "texture": "#deep"
         },
         "east": {
           "uv": [
-            2,
-            2,
-            6,
+            3,
+            4,
+            5,
             6
           ],
           "texture": "#deep"
         },
         "south": {
           "uv": [
-            2,
-            2,
-            6,
+            3,
+            4,
+            5,
             6
           ],
           "texture": "#deep"
         },
         "west": {
           "uv": [
-            2,
-            2,
-            6,
+            3,
+            4,
+            5,
             6
           ],
           "texture": "#deep"
         },
         "up": {
           "uv": [
-            2,
-            2,
-            6,
+            3,
+            4,
+            5,
             6
           ],
           "texture": "#deep"
         },
         "down": {
           "uv": [
-            2,
-            2,
-            6,
+            3,
+            4,
+            5,
             6
           ],
           "texture": "#deep"

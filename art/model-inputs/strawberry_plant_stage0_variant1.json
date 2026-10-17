@@ -1,22 +1,16 @@
 {
+  "format_version": "26.3",
+  "credit": "Made with Blockbench",
   "ambientocclusion": false,
   "texture_size": [
-    32,
-    32
+    16,
+    16
   ],
   "textures": {
     "particle": "farmerplus:block/strawberry_leaf",
-    "leaf": "farmerplus:block/strawberry_leaf",
     "young": "farmerplus:block/strawberry_leaf_young",
-    "aged": "farmerplus:block/strawberry_leaf_aged",
     "under": "farmerplus:block/strawberry_leaf_under",
-    "flower": "farmerplus:block/strawberry_flower",
-    "fruit": "farmerplus:block/strawberry_fruit",
-    "rose": "farmerplus:block/strawberry_fruit_rose",
-    "deep": "farmerplus:block/strawberry_fruit_deep",
-    "stem": "farmerplus:block/strawberry_stem",
-    "peduncle": "farmerplus:block/strawberry_peduncle",
-    "paired": "farmerplus:block/strawberry_peduncle_pair"
+    "stem": "farmerplus:block/strawberry_stem"
   },
   "elements": [
     {
@@ -41,7 +35,7 @@
           ],
           "texture": "#stem"
         },
-        "south": {
+        "east": {
           "uv": [
             8,
             8,
@@ -50,7 +44,7 @@
           ],
           "texture": "#stem"
         },
-        "east": {
+        "south": {
           "uv": [
             8,
             8,
@@ -100,22 +94,22 @@
         -0.65,
         8
       ],
+      "shade_direction_override": "up",
       "rotation": {
+        "x": 57,
+        "y": 30,
+        "z": -1,
         "origin": [
           8,
           -0.65,
           8
-        ],
-        "x": 57,
-        "y": 30.0,
-        "z": -1
+        ]
       },
-      "shade_direction_override": "up",
       "faces": {
         "up": {
           "uv": [
             0,
-            7.199999999999999,
+            7.2,
             16,
             16
           ],
@@ -126,7 +120,7 @@
             0,
             16,
             16,
-            7.199999999999999
+            7.2
           ],
           "texture": "#under"
         }
@@ -135,40 +129,40 @@
     {
       "name": "leaf_0_trifoliate",
       "from": [
-        6.189062810470425,
-        0.5804945781284091,
-        6.117910909839326
+        6.18906,
+        0.58049,
+        6.11791
       ],
       "to": [
-        9.059062810470424,
-        0.5804945781284091,
-        7.311760909839325
+        9.05906,
+        0.58049,
+        7.31176
       ],
-      "rotation": {
-        "origin": [
-          7.6240628104704244,
-          0.5804945781284091,
-          7.311760909839325
-        ],
-        "x": -13,
-        "y": 30.0,
-        "z": -1
-      },
       "shade_direction_override": "up",
+      "rotation": {
+        "x": -13,
+        "y": 30,
+        "z": -1,
+        "origin": [
+          7.62406,
+          0.58049,
+          7.31176
+        ]
+      },
       "faces": {
         "up": {
           "uv": [
             0,
             0,
             16,
-            7.199999999999999
+            7.2
           ],
           "texture": "#young"
         },
         "down": {
           "uv": [
             0,
-            7.199999999999999,
+            7.2,
             16,
             0
           ],
@@ -188,22 +182,22 @@
         -0.65,
         8
       ],
+      "shade_direction_override": "up",
       "rotation": {
+        "x": 60,
+        "y": 132,
+        "z": 4,
         "origin": [
           8,
           -0.65,
           8
-        ],
-        "x": 60,
-        "y": 132.0,
-        "z": 4
+        ]
       },
-      "shade_direction_override": "up",
       "faces": {
         "up": {
           "uv": [
             0,
-            7.199999999999999,
+            7.2,
             16,
             16
           ],
@@ -214,7 +208,7 @@
             0,
             16,
             16,
-            7.199999999999999
+            7.2
           ],
           "texture": "#under"
         }
@@ -223,40 +217,40 @@
     {
       "name": "leaf_1_trifoliate",
       "from": [
-        5.85618172910866,
-        0.6598719042585547,
-        7.244059025399766
+        5.85618,
+        0.65987,
+        7.24406
       ],
       "to": [
-        8.79618172910866,
-        0.6598719042585547,
-        8.522959025399766
+        8.79618,
+        0.65987,
+        8.52296
       ],
-      "rotation": {
-        "origin": [
-          7.32618172910866,
-          0.6598719042585547,
-          8.522959025399766
-        ],
-        "x": -10,
-        "y": 132.0,
-        "z": 4
-      },
       "shade_direction_override": "up",
+      "rotation": {
+        "x": -10,
+        "y": 132,
+        "z": 4,
+        "origin": [
+          7.32618,
+          0.65987,
+          8.52296
+        ]
+      },
       "faces": {
         "up": {
           "uv": [
             0,
             0,
             16,
-            7.199999999999999
+            7.2
           ],
           "texture": "#young"
         },
         "down": {
           "uv": [
             0,
-            7.199999999999999,
+            7.2,
             16,
             0
           ],
@@ -276,22 +270,22 @@
         -0.65,
         8
       ],
+      "shade_direction_override": "up",
       "rotation": {
+        "x": 63,
+        "y": -91,
+        "z": 0,
         "origin": [
           8,
           -0.65,
           8
-        ],
-        "x": 63,
-        "y": -91.0,
-        "z": 0
+        ]
       },
-      "shade_direction_override": "up",
       "faces": {
         "up": {
           "uv": [
             0,
-            7.199999999999999,
+            7.2,
             16,
             16
           ],
@@ -302,7 +296,7 @@
             0,
             16,
             16,
-            7.199999999999999
+            7.2
           ],
           "texture": "#under"
         }
@@ -311,40 +305,40 @@
     {
       "name": "leaf_2_trifoliate",
       "from": [
-        7.278067719781543,
-        0.6809855458325841,
-        6.789635716074515
+        7.27807,
+        0.68099,
+        6.78964
       ],
       "to": [
-        10.078067719781544,
-        0.6809855458325841,
-        8.011835716074515
+        10.07807,
+        0.68099,
+        8.01184
       ],
-      "rotation": {
-        "origin": [
-          8.678067719781543,
-          0.6809855458325841,
-          8.011835716074515
-        ],
-        "x": -7,
-        "y": -91.0,
-        "z": 0
-      },
       "shade_direction_override": "up",
+      "rotation": {
+        "x": -7,
+        "y": -91,
+        "z": 0,
+        "origin": [
+          8.67807,
+          0.68099,
+          8.01184
+        ]
+      },
       "faces": {
         "up": {
           "uv": [
             0,
             0,
             16,
-            7.199999999999999
+            7.2
           ],
           "texture": "#young"
         },
         "down": {
           "uv": [
             0,
-            7.199999999999999,
+            7.2,
             16,
             0
           ],

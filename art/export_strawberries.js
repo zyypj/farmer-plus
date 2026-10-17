@@ -47,6 +47,7 @@ async function exportStrawberries(root, selected, previews = true) {
         Preview.selected.controls.target.set(0, 1.5, 0);
         Preview.selected.controls.update();
         Canvas.updateAll();
+        if (previews && !name.includes('_variant')) await new Promise(resolve => setTimeout(resolve, 60));
         if (previews && !name.includes('_variant')) await Promise.race([new Promise(resolve => Preview.selected.screenshot({width: 480, height: 360}, data => {
             fs.writeFileSync(root + '/build/art/previews/' + name + '.png', Buffer.from(data.split(',')[1], 'base64'));
             resolve();

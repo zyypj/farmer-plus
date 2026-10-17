@@ -45,15 +45,15 @@ O trigo vanilla usa 8 faces, então o trigo maduro custa mais geometria. Os mode
 
 O feixe tem cintura apertada, caules cortados densos e uma corda 3D sólida: uma volta fechada nos quatro lados, dois laços vazados, um nó e duas pontas penduradas. Ele cabe no contorno atual de 12×16×12, então o `WheatSheafBlock` não precisa mudar o shape.
 
-No inventário o feixe usa um ícone próprio em 32×32: `items/wheat_sheaf.json` escolhe `farmerplus:item/wheat_sheaf` no contexto `gui` e usa o modelo 3D do bloco em todos os outros.
+No inventário o feixe usa um ícone próprio em 16×16: `items/wheat_sheaf.json` escolhe `farmerplus:item/wheat_sheaf` no contexto `gui` e usa o modelo 3D do bloco em todos os outros.
 
 ![O feixe renderizado no Blockbench](images/wheat_sheaf-blockbench.png)
 
 ![A amarração sólida de corda](images/wheat-sheaf-binding-3d.png)
 
-Farinha, massa, mingau, trigo e sementes foram redesenhados em 32×32. Ids de registro, receitas e valores de comida não mudaram.
+Farinha, massa, mingau, trigo e sementes são desenhados em grades nativas de 16×16, mantendo as paletas quentes Vanilla+ e simplificando as pequenas marcações. O morango e o ícone de inventário do feixe também usam 16×16. Ids de registro, receitas e valores de comida não mudaram.
 
-![Itens em 32 px e 16 px](images/wheat-items-refined.png)
+![Ícones nativos em 16×16, ampliados sem suavização](images/items-16.png)
 
 ## Carregamento de recursos
 
@@ -82,7 +82,7 @@ Gera `build/resourcepacks/FarmerPlus-Detailed-Vanilla-Wheat-26.3.zip` (o `./grad
 |---|---|
 | `art/blockbench/wheat_stage*.bbmodel`, `wheat_sheaf.bbmodel` | Projetos editáveis do Blockbench com texturas embutidas |
 | `art/model-inputs/` | Geometria de entrada para a exportação do Blockbench |
-| `art/wheat_32.py`, `art/build_wheat_art.py` | Desenho dos pixels e geração dos PNGs (Pillow) |
+| `art/wheat_32.py`, `art/build_wheat_art.py`, `art/item_pixels.py` | Desenho dos blocos e itens nativos em 16×16 e geração dos PNGs (Pillow) |
 | `art/export_blockbench.js` | Importa no Blockbench via MCP, salva `.bbmodel` e exporta JSON do 26.3 |
 | `art/preview_wheat_field.js` | Renderiza a prévia de um campo 12×12 no Blockbench |
 | `art/inspect_leaf_clearance.js`, `art/inspect_sheaf_binding.js` | Verificações de geometria no Blockbench |
@@ -97,3 +97,5 @@ Ordem para regerar (Blockbench aberto com o plugin MCP):
 3. Via MCP: `inspectLeafClearance(root)` e `inspectSheafBinding(root)`
 4. `./gradlew build`
 5. `python art/validate_wheat_art.py`
+
+Para atualizar somente os ícones dos itens, rode `python art/item_pixels.py`; isso preserva todos os modelos e texturas de bloco. O script também atualiza a prévia dos itens.

@@ -24,16 +24,12 @@ import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class TrampledCropBlock extends CropBlock {
+public class TrampledCropBlock extends CropBlock implements Trampleable {
 
-    public static final int BENT = 1;
-    public static final int FLATTENED = 2;
-    public static final int CRUSHED = 3;
-    public static final IntegerProperty FLATTENING = IntegerProperty.create("flattening", BENT, CRUSHED);
+    public static final IntegerProperty FLATTENING = IntegerProperty.create("flattening", Flattening.BENT, Flattening.CRUSHED);
     public static final EnumProperty<Direction> FACING = BlockStateProperties.HORIZONTAL_FACING;
 
-    private static final int BENT_RECOVERY_CHANCE = 3;
-    private static final int FLATTENED_RECOVERY_CHANCE = 6;
+    private static final int MIN_TRAMPLE_AGE = 2;
     private static final int MIN_GROWTH_BRIGHTNESS = 9;
     private static final int MATURE_COLOR_AGE = 6;
     private static final VoxelShape[] SHAPES = {
@@ -49,7 +45,7 @@ public class TrampledCropBlock extends CropBlock {
         this.standingCrop = standingCrop;
         registerDefaultState(stateDefinition.any()
                 .setValue(AGE, 0)
-                .setValue(FLATTENING, BENT)
+                .setValue(FLATTENING, Flattening.BENT)
                 .setValue(FACING, Direction.NORTH));
     }
 
@@ -79,14 +75,27 @@ public class TrampledCropBlock extends CropBlock {
     }
 
     @Override
+    public BlockState trample(BlockState state, int force, Direction direction) {
+        if (state.is(this)) {
+            return state.setValue(FLATTENING, Flattening.add(flattening(state), force));
+        }
+
+        int age = ((CropBlock) state.getBlock()).getAge(state);
+        if (age < MIN_TRAMPLE_AGE) {
+            return state;
+        }
+        return trampledState(age, Flattening.add(Flattening.UPRIGHT, force), direction);
+    }
+
+    @Override
     protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return SHAPES[flattening(state) - BENT];
+        return SHAPES[flattening(state) - Flattening.BENT];
     }
 
     @Override
     protected boolean isRandomlyTicking(BlockState state) {
         int flattening = flattening(state);
-        return flattening == BENT || (flattening == FLATTENED && !isMaxAge(state));
+        return flattening == Flattening.BENT || (flattening == Flattening.FLATTENED && !isMaxAge(state));
     }
 
     @Override
@@ -96,10 +105,10 @@ public class TrampledCropBlock extends CropBlock {
         }
 
         int flattening = flattening(state);
-        if (flattening == BENT && random.nextInt(BENT_RECOVERY_CHANCE) == 0) {
+        if (flattening == Flattening.BENT && random.nextInt(Flattening.BENT_RECOVERY_CHANCE) == 0) {
             standUp(state, level, pos);
-        } else if (flattening == FLATTENED && random.nextInt(FLATTENED_RECOVERY_CHANCE) == 0) {
-            level.setBlock(pos, state.setValue(FLATTENING, BENT), Block.UPDATE_CLIENTS);
+        } else if (flattening == Flattening.FLATTENED && random.nextInt(Flattening.FLATTENED_RECOVERY_CHANCE) == 0) {
+            level.setBlock(pos, state.setValue(FLATTENING, Flattening.BENT), Block.UPDATE_CLIENTS);
         }
     }
 
@@ -111,7 +120,7 @@ public class TrampledCropBlock extends CropBlock {
 
     @Override
     public boolean isValidBonemealTarget(LevelReader level, BlockPos pos, BlockState state, BonemealSource source) {
-        return flattening(state) == BENT && !isMaxAge(state);
+        return flattening(state) == Flattening.BENT && !isMaxAge(state);
     }
 
     @Override

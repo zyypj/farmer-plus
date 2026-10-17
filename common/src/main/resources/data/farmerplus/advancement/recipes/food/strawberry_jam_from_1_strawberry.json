@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "farmerplus:strawberry_jam_from_1_strawberry"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_strawberry": {
+      "conditions": {
+        "items": [
+          {
+            "items": "farmerplus:strawberry"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_strawberry"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "farmerplus:strawberry_jam_from_1_strawberry"
+    ]
+  }
+}

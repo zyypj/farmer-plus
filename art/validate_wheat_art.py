@@ -43,6 +43,8 @@ def element_budget(stem):
         return 16
     if stem.startswith('strawberry_plant_stage'):
         return STRAWBERRY_BUDGETS[int(stem[len('strawberry_plant_stage')])]
+    if stem.startswith('strawberry_plant_trampled_stage'):
+        return STRAWBERRY_BUDGETS[int(stem[len('strawberry_plant_trampled_stage')])]
     return 12
 
 
@@ -75,10 +77,11 @@ for path in (RES / 'assets').rglob('*.json'):
 
 for path in (RES / 'assets').rglob('*.png'):
     image = Image.open(path)
-    expected_size = (512, 512) if path.name == 'icon.png' else (32, 32)
+    expected_size = (512, 512) if path.name == 'icon.png' else (16, 16) if path.stem.startswith('strawberry') or path.parent.name == 'item' else (32, 32)
     check(image.size == expected_size, f'{path.name}: dimensions {expected_size}')
     check(image.mode == 'RGBA', f'{path.name}: RGBA')
-    check(set(image.getchannel('A').get_flattened_data()) <= {0, 255}, f'{path.name}: binary alpha')
+    if not path.stem.endswith('_glass'):
+        check(set(image.getchannel('A').get_flattened_data()) <= {0, 255}, f'{path.name}: binary alpha')
     check(image.getcolors(256) is not None, f'{path.name}: limited palette')
 
 variants = load(RES / 'assets/minecraft/blockstates/wheat.json')['variants']

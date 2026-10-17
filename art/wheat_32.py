@@ -362,94 +362,8 @@ def crops():
 
 
 def items():
-    flour = blank()
-    d = ImageDraw.Draw(flour)
-    p = colors(['85705a', 'ad9475', 'c9b99b', 'ded1b5', 'ede3cc', 'fff1da'])
-    outline = [(2, 26), (6, 22), (10, 18), (13, 12), (16, 8), (18, 12), (20, 18), (24, 22), (28, 25), (27, 28), (7, 29)]
-    d.polygon(outline, fill=p[2])
-    d.polygon([(2, 26), (7, 22), (11, 17), (16, 8), (16, 13), (13, 19), (11, 25), (6, 27)], fill=p[5])
-    d.polygon([(16, 10), (18, 14), (17, 18), (20, 22), (23, 25), (17, 25), (13, 27), (11, 25), (13, 20)], fill=p[4])
-    d.polygon([(18, 13), (20, 18), (23, 22), (26, 25), (22, 26), (20, 22), (17, 20)], fill=p[3])
-    d.line([(4, 27), (11, 28), (19, 28), (27, 27)], fill=p[1], width=1)
-    for xy in [(3, 29), (28, 29), (1, 27), (24, 30), (9, 25), (10, 23), (15, 16), (17, 24), (21, 27)]:
-        d.point(xy, fill=p[4])
-    save_texture(FP / 'textures/item/flour.png', flour)
-
-    dough = blank()
-    d = ImageDraw.Draw(dough)
-    p = colors(['906c45', 'ad8655', 'c3a06a', 'dab984', 'e9ce9c', 'f4dfb6', 'ffebc5'])
-    d.polygon([(3, 18), (5, 13), (10, 9), (17, 8), (23, 10), (28, 14), (30, 20), (28, 25), (23, 28), (10, 29), (5, 26), (2, 22)], fill=p[1])
-    d.polygon([(3, 18), (6, 13), (11, 10), (18, 9), (24, 12), (28, 16), (28, 22), (24, 26), (11, 27), (6, 24), (3, 21)], fill=p[3])
-    d.polygon([(5, 16), (11, 11), (18, 10), (23, 13), (22, 18), (16, 22), (10, 24), (6, 22), (4, 19)], fill=p[5])
-    d.polygon([(9, 13), (15, 11), (19, 12), (16, 15), (11, 17), (7, 19), (6, 17)], fill=p[6])
-    d.line([(23, 12), (25, 16), (24, 19), (21, 20), (19, 24), (14, 26), (10, 26)], fill=p[2], width=1)
-    d.line([(22, 12), (23, 16), (22, 18), (19, 20), (17, 23), (13, 24)], fill=p[4], width=1)
-    d.line([(6, 24), (10, 27), (20, 27), (26, 24)], fill=p[2], width=1)
-    for xy in [(11, 18), (12, 18), (16, 13), (20, 15), (8, 21), (26, 21), (15, 25)]:
-        d.point(xy, fill=p[4])
-    save_texture(FP / 'textures/item/dough.png', dough)
-
-    porridge = blank()
-    d = ImageDraw.Draw(porridge)
-    wood = colors(['423026', '63432e', '815a38', 'a07549', 'c39a62'])
-    cream = colors(['af8c55', 'ccad72', 'dfc48d', 'eed7a6', 'f8e7c3', 'fff0d2'])
-    d.polygon([(2, 14), (29, 14), (28, 22), (25, 26), (21, 28), (11, 28), (6, 25), (3, 21)], fill=wood[1])
-    d.polygon([(3, 16), (15, 18), (26, 16), (25, 22), (21, 25), (12, 25), (7, 23), (4, 20)], fill=wood[2])
-    d.line([(5, 20), (10, 23), (20, 24), (25, 21)], fill=wood[3], width=1)
-    d.line([(7, 25), (12, 27), (21, 27), (26, 24)], fill=wood[0], width=1)
-    d.ellipse((1, 7, 30, 20), fill=wood[0])
-    d.ellipse((2, 7, 29, 18), fill=wood[3])
-    d.ellipse((4, 8, 27, 16), fill=cream[2])
-    d.ellipse((5, 8, 26, 15), fill=cream[4])
-    d.arc((2, 7, 29, 18), 180, 320, fill=wood[4], width=1)
-    d.arc((4, 8, 27, 17), 10, 160, fill=cream[0], width=1)
-    for x, y, shade in [(8, 11, 1), (13, 10, 2), (20, 10, 1), (23, 13, 2), (17, 13, 0), (11, 14, 1), (6, 13, 2)]:
-        d.line([(x, y), (x + 2, y)], fill=cream[shade], width=1)
-        d.point((x, y - 1), fill=cream[3])
-    for xy in [(10, 9), (14, 12), (20, 14), (7, 12), (24, 11)]:
-        d.point(xy, fill=cream[5])
-    save_texture(FP / 'textures/item/wheat_porridge.png', porridge)
-
-    wheat = blank()
-    d = ImageDraw.Draw(wheat)
-    p = colors(['806039', 'a47b3e', 'bd944d', 'd3ad5c', 'e5c577', 'f4dca0', 'a69b53'])
-    for tip_x, tip_y, lean, base_x in [(7, 6, 0.22, 9), (27, 8, -0.35, 12), (18, 2, -0.18, 10)]:
-        def point(u, v):
-            return (round(tip_x + lean * v + u), tip_y + v)
-        end = point(0, 13)
-        d.line([(base_x + 1, 29), (15, 23), end], fill=p[1], width=2)
-        d.line([(base_x, 29), (14, 23), (end[0] - 1, end[1])], fill=p[4], width=1)
-        d.polygon([point(0, 0), point(-1, 2), point(-2, 5), point(-2, 9), point(0, 13), point(2, 9), point(2, 4)], fill=p[2])
-        for v in (3, 6, 9):
-            d.polygon([point(0, v + 3), point(-2, v + 1), point(-3, v - 1), point(-1, v), point(0, v + 1)], fill=p[4])
-            d.line([point(-2, v - 1), point(-1, v)], fill=p[5], width=1)
-            d.polygon([point(0, v + 3), point(2, v + 2), point(3, v), point(1, v + 1), point(0, v + 1)], fill=p[3])
-            d.point(point(2, v + 2), fill=p[1])
-        d.line([point(0, 1), point(0, -1)], fill=p[5], width=1)
-        d.line([point(-2, 3), point(-3, 1)], fill=p[3], width=1)
-        d.line([point(2, 7), point(3, 5)], fill=p[4], width=1)
-    d.polygon([(12, 25), (8, 22), (6, 18), (9, 20), (11, 23)], fill=p[6])
-    d.line([(12, 25), (8, 21)], fill=p[4], width=1)
-    d.polygon([(13, 26), (17, 22), (22, 21), (19, 24)], fill=p[2])
-    d.line([(14, 25), (19, 22)], fill=p[4], width=1)
-    save_texture(MC / 'textures/item/wheat.png', wheat)
-
-    seeds = blank()
-    d = ImageDraw.Draw(seeds)
-    p = colors(['806139', 'a18343', 'bb9f58', 'd2bb78', 'ead6a0', 'f7e8bb', '8e9651'])
-    for x, y, angle in [(9, 7, -30), (23, 8, 35), (16, 16, -20), (7, 25, 25), (24, 25, -35)]:
-        angle = math.radians(angle)
-        def polygon(points, shade):
-            d.polygon([(round(x + u * math.cos(angle) - v * math.sin(angle)), round(y + u * math.sin(angle) + v * math.cos(angle))) for u, v in points], fill=p[shade])
-        polygon([(-5, 0), (-3, -2), (1, -2), (4, -1), (5, 0), (3, 2), (-1, 2), (-4, 1)], 1)
-        polygon([(-5, 0), (-3, -2), (1, -2), (3, -1), (0, 0), (-3, 1)], 4)
-        polygon([(-3, -1), (-1, -2), (1, -2), (2, -1), (-2, 0)], 5)
-        polygon([(-3, 1), (0, 1), (3, 0), (4, 0), (2, 1), (-1, 2)], 3)
-        crease = [(-3, 0), (-1, 0), (1, -1), (3, -1)]
-        d.line([(round(x + u * math.cos(angle) - v * math.sin(angle)), round(y + u * math.sin(angle) + v * math.cos(angle))) for u, v in crease], fill=p[1], width=1)
-        polygon([(-4, 0), (-3, 1), (-4, 1)], 6)
-        polygon([(3, 0), (4, 1), (3, 2)], 2)
-    save_texture(MC / 'textures/item/wheat_seeds.png', seeds)
+    from item_pixels import items as item_textures
+    item_textures()
     for name in ('wheat', 'wheat_seeds'):
         save_json(MC / f'items/{name}.json', {'model': {'type': 'minecraft:model', 'model': f'minecraft:item/{name}'}})
         save_json(MC / f'models/item/{name}.json', {'parent': 'minecraft:item/generated', 'textures': {'layer0': f'minecraft:item/{name}'}})
@@ -520,25 +434,8 @@ def sheaf():
         draw.line([(10 + index * 2.5, 31), (x - 1, y + 14)], fill=p[3], width=1)
         harvest_ear(ears, x, y, bend)
     save_texture(FP / 'textures/block/wheat_sheaf_ears.png', ears)
-    icon = blank()
-    draw = ImageDraw.Draw(icon)
-    draw.polygon([(8, 29), (13, 20), (18, 20), (24, 29), (22, 30), (9, 30)], fill=p[1])
-    for index, bottom_x in enumerate((8, 10, 12, 14, 17, 19, 21, 24)):
-        draw.line([(bottom_x, 29 + index % 2), (13 + index * 0.7, 20)], fill=p[3 if index % 2 else 2], width=1)
-    for index, (x, y, bend) in enumerate(((5, 6, -1), (11, 3, -1), (16, 1, 0), (22, 4, 1), (27, 7, 1))):
-        draw.line([(13 + index, 21), (x, y + 10)], fill=p[1], width=2)
-        draw.line([(12 + index, 20), (x - 1, y + 10)], fill=p[4], width=1)
-        harvest_ear(icon, x, y, bend, length=10)
-    draw.line([(12, 20), (18, 21)], fill=rope[0], width=3)
-    draw.line([(12, 19), (18, 20)], fill=rope[3], width=1)
-    draw.line([(16, 21), (12, 18), (9, 18), (10, 21), (13, 23), (16, 21), (20, 18), (23, 19), (22, 22), (19, 23), (16, 21)], fill=rope[0], width=2)
-    draw.line([(15, 20), (12, 18), (10, 18)], fill=rope[3], width=1)
-    draw.line([(18, 20), (20, 18), (22, 19)], fill=rope[4], width=1)
-    draw.line([(16, 22), (13, 25), (13, 28)], fill=rope[1], width=2)
-    draw.line([(18, 22), (20, 25), (23, 26)], fill=rope[2], width=2)
-    draw.rectangle((15, 20, 18, 22), fill=rope[1])
-    draw.point((16, 20), fill=rope[4])
-    save_texture(FP / 'textures/item/wheat_sheaf.png', icon)
+    from item_pixels import sheaf as sheaf_icon, write
+    write('wheat_sheaf', sheaf_icon())
     save_json(FP / 'models/item/wheat_sheaf.json', {'parent': 'minecraft:item/generated', 'textures': {'layer0': 'farmerplus:item/wheat_sheaf'}})
     save_json(FP / 'items/wheat_sheaf.json', {'model': {'type': 'minecraft:select', 'property': 'minecraft:display_context', 'cases': [{'when': ['gui'], 'model': {'type': 'minecraft:model', 'model': 'farmerplus:item/wheat_sheaf'}}], 'fallback': {'type': 'minecraft:model', 'model': 'farmerplus:block/wheat_sheaf'}}})
 
@@ -603,7 +500,7 @@ def contact():
     font_path = Path('C:/Windows/Fonts/consola.ttf')
     font = ImageFont.truetype(str(font_path), 22)
     small = ImageFont.truetype(str(font_path), 17)
-    d.text((32, 20), 'FARMER+ / REALISTIC VANILLA+ / NATIVE 32 x 32 PIXEL ART', fill='#eed18a', font=font)
+    d.text((32, 20), 'FARMER+ / REALISTIC VANILLA+ / BLOCKS 32 x 32 / ITEMS 16 x 16', fill='#eed18a', font=font)
     for age in range(8):
         x = 32 + 174 * age
         d.rectangle((x, 78, x + 159, 237), fill='#354438')

@@ -20,7 +20,7 @@ Caminho base: `common/src/main/resources/assets/farmerplus/`
 
 ## Estilo
 
-Vanilla+ realista, igual ao trigo: pixel art reconhecível como Minecraft, pixels duros, sem anti-aliasing, paleta limitada, luz vindo de cima à esquerda. **Texturas 32×32.** Nunca decalque texturas da Mojang.
+Vanilla+ realista, igual ao trigo: pixel art reconhecível como Minecraft, pixels duros, sem anti-aliasing, paleta limitada, luz vindo de cima à esquerda. **Texturas 16×16.** Nunca decalque texturas da Mojang.
 
 ## Modelos a criar
 
@@ -44,7 +44,7 @@ Para **cada** idade crie também três variações, `strawberry_plant_stage<idad
 - Mantenha a planta **baixa**: altura máxima de ~7 px acima do solo na idade 4. Se a silhueta final ficar bem mais alta ou mais baixa, atualize `SHAPES` em `content/strawberry/StrawberryPlantBlock.java` (um `Block.column(...)` por idade).
 - Use `"ambientocclusion": false`, `"shade_direction_override": "up"` nas folhas como no trigo, e dê uma textura `particle` a todo modelo.
 
-### Texturas (32×32, `textures/block/`)
+### Texturas (16×16, `textures/block/`)
 
 | Arquivo | Conteúdo |
 |---|---|
@@ -59,7 +59,7 @@ Pode criar texturas extras se precisar. Apague as provisórias `strawberry_plant
 
 | Arquivo | Conteúdo |
 |---|---|
-| `textures/item/strawberry.png` | Morango maduro 32×32: formato de coração, vermelho brilhante com sementes amarelas, cálice verde e cabinho curto, contorno 1 px mais escuro no lado da sombra |
+| `textures/item/strawberry.png` | Morango maduro 16×16: formato de coração, vermelho brilhante com sementes amarelas, cálice verde e cabinho curto, contorno 1 px mais escuro no lado da sombra |
 
 ## Salvar e exportar
 

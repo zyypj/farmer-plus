@@ -21,6 +21,6 @@ public final class StrawberryModule implements FarmerModule {
 
     @Override
     public List<ItemLike> creativeTabItems() {
-        return List.of(StrawberryItems.STRAWBERRY.get());
+        return List.of(StrawberryItems.STRAWBERRY.get(), StrawberryItems.STRAWBERRY_JAM.get());
     }
 }

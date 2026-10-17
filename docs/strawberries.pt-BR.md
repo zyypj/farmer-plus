@@ -27,6 +27,29 @@ O morango funciona como um arbusto de frutas — você colhe e a planta continua
 - Farinha de osso avança um estágio.
 - Comer um morango recupera 2 de fome. Aldeões podem comer; dá para compostar.
 
+## Pisoteio
+
+O morangueiro usa os mesmos estágios de [pisoteio](trampling.pt-BR.md) do trigo (entortado, deitado, esmagado), com folhas modeladas prensadas no solo e os morangos caindo no chão. Pisar nunca some com o fruto; ele estraga:
+
+| Estado | Colher planta madura | Quebrar planta madura |
+|---|---|---|
+| Em pé ou entortado | 2–4 morangos | planta + 1–3 (Fortuna) |
+| Deitado | 1–2 morangos | planta + 1–2 |
+| Esmagado | não dá para colher (morangos amassados) | só a planta |
+
+Plantas pisadas param de crescer e de se espalhar até se recuperarem (entortada ≈1 a cada 3 random ticks, deitada ≈1 em 6); as esmagadas ficam no chão. Farinha de osso só funciona em plantas em pé. Pular numa planta sobre terra arada amassa a planta em vez de transformar a terra arada em terra comum.
+
+## Geleia de morango
+
+Junte um **frasco de vidro** com **1, 2 ou 3 morangos** para ter um pote com 1, 2 ou 3 porções — o pote enche visivelmente.
+
+- **Comer:** botão direito (no ar, ou num bloco sem estar agachado). Cada mordida come uma porção (3 de fome, 0,5 de saturação); a última porção devolve o frasco vazio.
+- **Colocar:** agachado + botão direito num bloco coloca o pote como decoração, virado para você. Quebrar devolve o pote com as mesmas porções.
+- **Completar:** botão direito no pote colocado segurando um morango adiciona uma porção, até 3.
+- Potes empilham até 16 quando têm o mesmo número de porções.
+
+O pote usa o `core/jam` reutilizável (`JamJarBlock`, `JamJarItem`), então outras frutas podem ganhar geleia registrando um bloco com a sua fruta. Passar geleia no pão está planejado.
+
 ## Morangos silvestres
 
 Os silvestres nascem em grama/terra, nunca em terra arada, crescem devagar (≈1 a cada 10 random ticks), não se espalham e dão 1–2 morangos. Eles existem para o jogador começar a fazenda sem receitas nem trocas novas.
@@ -50,5 +73,7 @@ Ao adicionar uma feature de bioma nova, registre em `BiomeFeatures` (Fabric) **e
 Sem handlers de tick nem mixins. As plantas usam random ticks do vanilla só até amadurecer; plantas maduras param de receber tick. Os drops da colheita vêm de loot tables em dados (`harvest/strawberry_plant`, `harvest/wild_strawberries`).
 
 ## Arte
+
+Os modelos pisoteados (`strawberry_plant_trampled_*`, `wild_strawberries_trampled_*`) são gerados a partir dos modelos nativos por `python art/trampled_strawberries.py`; rode de novo depois de mudar qualquer modelo de morango. A arte do pote de geleia é a [tarefa de arte 0004](art-tasks/0004-strawberry-jam.pt-BR.md).
 
 As cinco idades agora usam modelos 3D nativos, com quatro arranjos cultivados e dois silvestres por idade. Veja [o relatório visual](strawberry-visuals.pt-BR.md) para fontes, geometria, contornos e validação, e a [tarefa de arte 0003](art-tasks/0003-strawberries.pt-BR.md) para os critérios de aceitação.
