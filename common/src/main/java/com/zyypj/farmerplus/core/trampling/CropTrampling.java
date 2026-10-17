@@ -14,6 +14,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.Vec3;
 
 public final class CropTrampling {
 
@@ -22,6 +23,8 @@ public final class CropTrampling {
     private static final double MIN_HORIZONTAL_MOVEMENT_SQR = 1.0E-6;
     private static final int PARTICLE_COUNT = 6;
     private static final float SOUND_VOLUME = 0.4F;
+    private static final int LANDING_FORCE = 2;
+    private static final double HIGH_FALL_DISTANCE = 3.0;
 
     private CropTrampling() {
     }
@@ -35,17 +38,39 @@ public final class CropTrampling {
             return;
         }
 
-        TrampledCropBlock trampled = state.getBlock() instanceof TrampledCropBlock trampledCrop
-                ? trampledCrop
-                : TrampleableCrops.trampledFormOf(state.getBlock());
-        if (trampled == null || !canTrample(serverLevel, entity)) {
-            return;
+        TrampledCropBlock trampled = trampledFormOf(state);
+        if (trampled != null && canTrample(serverLevel, entity)) {
+            apply(serverLevel, pos, state, trampled, force(entity), movementDirection(entity));
+        }
+    }
+
+    public static boolean cushionLanding(Level level, BlockPos cropPos, Entity entity) {
+        if (!(level instanceof ServerLevel serverLevel)) {
+            return false;
         }
 
-        BlockState trampledState = trample(state, trampled, force(entity), movementDirection(entity));
+        BlockState state = serverLevel.getBlockState(cropPos);
+        TrampledCropBlock trampled = trampledFormOf(state);
+        if (trampled == null) {
+            return false;
+        }
+        if (canTrample(serverLevel, entity)) {
+            apply(serverLevel, cropPos, state, trampled, landingForce(entity), movementDirection(entity));
+        }
+        return true;
+    }
+
+    private static TrampledCropBlock trampledFormOf(BlockState state) {
+        return state.getBlock() instanceof TrampledCropBlock trampledCrop
+                ? trampledCrop
+                : TrampleableCrops.trampledFormOf(state.getBlock());
+    }
+
+    private static void apply(ServerLevel level, BlockPos pos, BlockState state, TrampledCropBlock trampled, int force, Direction direction) {
+        BlockState trampledState = trample(state, trampled, force, direction);
         if (trampledState != state) {
-            serverLevel.setBlock(pos, trampledState, Block.UPDATE_CLIENTS);
-            playEffects(serverLevel, pos, state);
+            level.setBlock(pos, trampledState, Block.UPDATE_CLIENTS);
+            playEffects(level, pos, state);
         }
     }
 
@@ -67,7 +92,15 @@ public final class CropTrampling {
     }
 
     private static boolean enteredFromAnotherBlock(Entity entity, BlockPos pos) {
-        return Mth.floor(entity.xo) != pos.getX() || Mth.floor(entity.zo) != pos.getZ();
+        Vec3 previous = previousPosition(entity);
+        return Mth.floor(previous.x) != pos.getX() || Mth.floor(previous.z) != pos.getZ();
+    }
+
+    private static Vec3 previousPosition(Entity entity) {
+        if (entity instanceof Player) {
+            return entity.position().subtract(entity.getKnownMovement());
+        }
+        return new Vec3(entity.xo, entity.yo, entity.zo);
     }
 
     private static boolean canTrample(ServerLevel level, Entity entity) {
@@ -91,9 +124,21 @@ public final class CropTrampling {
         return force;
     }
 
+    private static int landingForce(Entity entity) {
+        int force = LANDING_FORCE;
+        if (entity.fallDistance >= HIGH_FALL_DISTANCE) {
+            force++;
+        }
+        if (entity.getBbWidth() >= HEAVY_ENTITY_WIDTH) {
+            force++;
+        }
+        return force;
+    }
+
     private static Direction movementDirection(Entity entity) {
-        double dx = entity.getX() - entity.xo;
-        double dz = entity.getZ() - entity.zo;
+        Vec3 previous = previousPosition(entity);
+        double dx = entity.getX() - previous.x;
+        double dz = entity.getZ() - previous.z;
         if (dx * dx + dz * dz < MIN_HORIZONTAL_MOVEMENT_SQR) {
             return entity.getDirection();
         }

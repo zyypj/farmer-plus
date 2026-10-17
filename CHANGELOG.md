@@ -6,6 +6,7 @@
 
 ### Added
 - Crop trampling: walking bends crops, sprinting or riding flattens them and repeated passes crush them into paths, with modelled bent, snapped and flattened stalks.
+- Jumping or falling on crops flattens them instead of turning the farmland into dirt.
 - Trampled crops recover over time; crushed mature wheat only drops seeds. Sneaking never tramples.
 - `farmerplus:crop_trampling` and `farmerplus:mob_crop_trampling` game rules and the `farmerplus:tramples_crops` entity tag.
 

@@ -34,6 +34,8 @@ Each time an entity **enters** a crop block it applies force:
 | Sprinting | +1 |
 | Wide body (≥ 1.2 blocks, e.g. horses, camels) | +1 |
 
+**Jumping or falling** onto a crop no longer turns the farmland into dirt and destroys the plant, as vanilla does: the farmland is kept and the crop is flattened instead (force 2, +1 for falls of 3+ blocks, +1 for wide bodies). Crops without a trampled form yet (e.g. carrots) keep vanilla behaviour.
+
 A walk turns a standing crop *bent*; a sprint or a horse flattens it at once; repeated passes crush it. The stalks fall in the direction of movement, so paths read naturally.
 
 ## Configuration
@@ -49,7 +51,7 @@ Add or remove mobs with a data pack overriding `data/farmerplus/tags/entity_type
 
 ## Performance
 
-- One mixin, injected at the head of `CropBlock#entityInside`. Minecraft only calls it while an entity overlaps a crop, and the hook exits after a few field reads unless the entity just stepped into a new block.
+- Two mixins. `CropBlockMixin` hooks `CropBlock#entityInside`, which Minecraft only calls while an entity overlaps a crop; it exits after a few field reads unless the entity just stepped into a new block. `FarmlandBlockMixin` hooks `FarmlandBlock#turnToBaseBlock`, which only runs when something lands hard on farmland.
 - No tick handlers, no block entities, no per-entity state. Progress lives in the block state.
 - Recovery uses vanilla random ticks, and only *bent* or young *flattened* crops tick at all. Crushed paths and mature flattened crops cost nothing.
 - Rendering is plain baked block models: 6–8 elements per model, fewer than the mature standing wheat (16).

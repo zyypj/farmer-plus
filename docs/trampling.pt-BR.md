@@ -34,6 +34,8 @@ Cada vez que uma entidade **entra** num bloco de plantação ela aplica força:
 | Correndo | +1 |
 | Corpo largo (≥ 1,2 bloco, ex.: cavalos, camelos) | +1 |
 
+**Pular ou cair** em cima da plantação não transforma mais a terra arada em terra comum nem destrói a planta, como no vanilla: a terra arada é mantida e a planta é amassada (força 2, +1 em quedas de 3+ blocos, +1 para corpos largos). Plantações que ainda não têm forma amassada (ex.: cenoura) mantêm o comportamento vanilla.
+
 Uma caminhada deixa a planta *entortada*; uma corrida ou um cavalo já deita na hora; passadas repetidas esmagam. Os caules caem na direção do movimento, então os caminhos ficam naturais.
 
 ## Configuração
@@ -49,7 +51,7 @@ Adicione ou remova criaturas com um data pack que sobrescreva `data/farmerplus/t
 
 ## Desempenho
 
-- Um único mixin, injetado no início de `CropBlock#entityInside`. O Minecraft só chama esse método enquanto uma entidade encosta numa plantação, e o gancho sai depois de ler poucos campos, a não ser que a entidade tenha acabado de entrar num bloco novo.
+- Dois mixins. `CropBlockMixin` entra em `CropBlock#entityInside`, que o Minecraft só chama enquanto uma entidade encosta numa plantação; ele sai depois de ler poucos campos, a não ser que a entidade tenha acabado de entrar num bloco novo. `FarmlandBlockMixin` entra em `FarmlandBlock#turnToBaseBlock`, que só roda quando algo cai com força na terra arada.
 - Sem handlers de tick, sem block entities, sem estado por entidade. O progresso fica no próprio estado do bloco.
 - A recuperação usa os random ticks do vanilla, e só plantas *entortadas* ou *deitadas* jovens recebem tick. Caminhos esmagados e plantas maduras deitadas não custam nada.
 - A renderização é feita com modelos de bloco comuns: 6–8 elementos por modelo, menos que o trigo maduro em pé (16).

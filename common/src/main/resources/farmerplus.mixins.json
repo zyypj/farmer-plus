@@ -4,7 +4,8 @@
   "package": "com.zyypj.farmerplus.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "CropBlockMixin"
+    "CropBlockMixin",
+    "FarmlandBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1

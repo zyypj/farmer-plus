@@ -15,7 +15,7 @@ A vanilla-friendly overhaul of Minecraft farming. Farmer+ adds crops, foods, ing
 ## Design goals
 
 - **Vanilla first.** Every addition must look, sound and behave like something Mojang could ship. Recipes, textures and progression follow vanilla conventions.
-- **Featherweight.** One tiny mixin, no per-tick logic, no reflection. Content is registered once at startup and behaviour is driven by vanilla data components, tags and JSON data. Each loader jar is about 160 KB, almost all of it 32×32 art and block models.
+- **Featherweight.** Two tiny mixins, no per-tick logic, no reflection. Content is registered once at startup and behaviour is driven by vanilla data components, tags and JSON data. Each loader jar is about 160 KB, almost all of it 32×32 art and block models.
 - **Modpack friendly.** Ingredients use the shared `c:` convention tags (`c:flours/wheat`, `c:doughs/wheat`, …), so flour or dough from other mods works in Farmer+ recipes and vice versa.
 - **Every loader.** One shared codebase ships to Fabric, NeoForge and Forge, and is updated whenever Minecraft or a loader releases a new version.
 
@@ -38,7 +38,7 @@ Wheat itself gets a **Realistic Vanilla+ visual overhaul**: original 32×32 art 
 
 ### Crop trampling
 
-Walking through crops bends them, sprinting or riding flattens them, and paths you keep using get crushed into the soil — real tilted and snapped stalk geometry that falls in the direction you moved. Bent crops recover over time; crushed ones yield only seeds. Sneak to walk carefully. Toggle with `/gamerule farmerplus:crop_trampling` and `/gamerule farmerplus:mob_crop_trampling`. See [docs/trampling.md](docs/trampling.md).
+Walking through crops bends them, sprinting or riding flattens them, and paths you keep using get crushed into the soil — real tilted and snapped stalk geometry that falls in the direction you moved. Bent crops recover over time; crushed ones yield only seeds. Jumping on crops flattens them instead of destroying them and the farmland. Sneak to walk carefully. Toggle with `/gamerule farmerplus:crop_trampling` and `/gamerule farmerplus:mob_crop_trampling`. See [docs/trampling.md](docs/trampling.md).
 
 ## Installing
 

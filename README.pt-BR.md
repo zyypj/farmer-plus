@@ -15,7 +15,7 @@ Uma reformulação do sistema de plantações do Minecraft com cara de vanilla. 
 ## Princípios
 
 - **Vanilla em primeiro lugar.** Toda adição precisa parecer, soar e funcionar como algo que a Mojang lançaria. Receitas, texturas e progressão seguem as convenções do vanilla.
-- **Levíssimo.** Um único mixin minúsculo, sem lógica por tick, sem reflexão. O conteúdo é registrado uma vez na inicialização e o comportamento vem de componentes de dados, tags e JSON do próprio vanilla. Cada jar tem cerca de 160 KB, quase tudo arte em 32×32 e modelos de bloco.
+- **Levíssimo.** Dois mixins minúsculos, sem lógica por tick, sem reflexão. O conteúdo é registrado uma vez na inicialização e o comportamento vem de componentes de dados, tags e JSON do próprio vanilla. Cada jar tem cerca de 160 KB, quase tudo arte em 32×32 e modelos de bloco.
 - **Feito para modpacks.** Os ingredientes usam as tags de convenção `c:` (`c:flours/wheat`, `c:doughs/wheat`, …), então farinha ou massa de outros mods funciona nas receitas do Farmer+ e vice-versa.
 - **Todos os loaders.** Uma única base de código gera Fabric, NeoForge e Forge, e é atualizada sempre que o Minecraft ou algum loader lança versão nova.
 
@@ -38,7 +38,7 @@ O próprio trigo ganha uma **reformulação visual Vanilla+ realista**: arte ori
 
 ### Pisoteio de plantações
 
-Andar pela plantação entorta as plantas, correr ou passar a cavalo deita elas, e os caminhos que você usa sempre ficam esmagados no solo — geometria de verdade, com caules inclinados e quebrados caindo na direção em que você andou. Plantas entortadas se recuperam com o tempo; as esmagadas só dão sementes. Agache para andar com cuidado. Ligue/desligue com `/gamerule farmerplus:crop_trampling` e `/gamerule farmerplus:mob_crop_trampling`. Veja [docs/trampling.pt-BR.md](docs/trampling.pt-BR.md).
+Andar pela plantação entorta as plantas, correr ou passar a cavalo deita elas, e os caminhos que você usa sempre ficam esmagados no solo — geometria de verdade, com caules inclinados e quebrados caindo na direção em que você andou. Plantas entortadas se recuperam com o tempo; as esmagadas só dão sementes. Pular na plantação amassa em vez de destruir a planta e a terra arada. Agache para andar com cuidado. Ligue/desligue com `/gamerule farmerplus:crop_trampling` e `/gamerule farmerplus:mob_crop_trampling`. Veja [docs/trampling.pt-BR.md](docs/trampling.pt-BR.md).
 
 ## Instalação
 
