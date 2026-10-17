@@ -65,13 +65,13 @@ Every call returns a `RegistryEntry<T>`, a lazy `Supplier<T>` that is safe to ho
 | NeoForge | `NeoForgeRegistrationPlatform` | One `DeferredRegister` per registry, bound to the mod bus |
 | Forge | `ForgeRegistrationPlatform` | One `DeferredRegister` per registry, bound to the mod bus group |
 
-Each loader entrypoint does exactly two things: call `FarmerPlus.init()` and, on NeoForge/Forge, bind the deferred registers.
+Each loader entrypoint calls `FarmerPlus.init()`, binds the deferred registers on NeoForge/Forge and hands the shared lists to the loader API: `BlockEntityBlocks` (extra valid blocks for vanilla block entity types) and, on the client, `client/BoatRendering` (boat model layers and renderers). Client-only code in `common` lives in the `client` package and is only reached from client entrypoints.
 
 ## Performance rules
 
 Farmer+ must stay invisible on a profiler.
 
-1. **No mixins** unless there is no data-driven or API alternative, and never in hot paths (rendering, ticking, pathfinding). Every mixin lives in `common/…/mixin`, is listed in `farmerplus.mixins.json` and is documented with its reason. Current list: `CropBlockMixin` — the only way to react to entities walking through vanilla crops; `FarmlandBlockMixin` — keeps farmland and flattens the crop when something lands on it ([trampling](trampling.md)); `FireBlockAccessor` — an invoker used once at startup to give Farmer+ wood vanilla flammability ([avocado](avocado.md#wood-set)).
+1. **No mixins** unless there is no data-driven or API alternative, and never in hot paths (rendering, ticking, pathfinding). Every mixin lives in `common/…/mixin`, is listed in `farmerplus.mixins.json` and is documented with its reason. Current list: `CropBlockMixin` — the only way to react to entities walking through vanilla crops; `FarmlandBlockMixin` — keeps farmland and flattens the crop when something lands on it ([trampling](trampling.md)); `FireBlockAccessor` — an invoker used once at startup to give Farmer+ wood vanilla flammability ([avocado](avocado.md#wood-set)); `BlockEntityTypeAccessor` — used once at Forge common setup to add Farmer+ signs and shelves to the vanilla block entity types, because Forge has no API for it (Fabric and NeoForge use their APIs) ([avocado](avocado.md#signs-shelf-and-boats)).
 2. **No tick handlers.** Use block random ticks, scheduled ticks or vanilla mechanics instead.
 3. **Prefer data over code.** Composting, fuel, food, villager food, tool behaviour and loot are vanilla data components or JSON — use them.
 4. **No reflection, no runtime classpath scanning, no config libraries** for things a data pack can already express.
@@ -84,8 +84,9 @@ Farmer+ must stay invisible on a profiler.
 | Crop trampling | `core/trampling` | [trampling.md](trampling.md) |
 | Biome features (worldgen) | `core/worldgen` | [strawberries.md](strawberries.md#modpack-compatibility) |
 | Strawberries | `content/strawberry` | [strawberries.md](strawberries.md) |
-| Wood sets | `core/wood`, `tools/wood_set.py` | [avocado.md](avocado.md#reusing-the-wood-set) |
+| Wood sets and connecting branches | `core/wood`, `client/BoatRendering`, `tools/wood_set.py`, `art/avocado_branches.py` | [avocado.md](avocado.md#reusing-the-wood-set) |
 | Avocado tree | `content/avocado` | [avocado.md](avocado.md) |
+| Broadleaf tree generator | `core/worldgen/BroadleafTreeFeature` | [avocado.md](avocado.md#the-tree) |
 
 ## Adding a new crop (checklist)
 

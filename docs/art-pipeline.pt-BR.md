@@ -6,7 +6,7 @@ A arte do Farmer+ segue **Vanilla+ realista**: pixel art reconhecível como Mine
 
 ## Regras de estilo
 
-- **Texturas 16×16:** toda textura de bloco e de item usa **16×16 pixels**. Desenhe direto na grade, com grupos de pixels definidos, e simplifique as marcações pequenas. Só o ícone do mod é maior (512×512).
+- **Texturas 16×16:** toda textura de bloco e de item usa **16×16 pixels**. Desenhe direto na grade, com grupos de pixels definidos, e simplifique as marcações pequenas. Só o ícone do mod é maior (512×512). Texturas de entidade e de tela (`textures/entity/…`, `textures/gui/…`) mantêm o tamanho do layout vanilla que substituem, como 128×64 num bote, porque os modelos e telas leem regiões fixas.
 - **PNG, RGBA, 8 bits.** Fundo transparente nos itens. Sem pixels semitransparentes, exceto materiais tipo vidro.
 - **Sem anti-aliasing, degradês contínuos, desfoque ou texturas fotográficas.** Use grupos de pixels definidos e sombreamento em degraus. Amplie as prévias pelo vizinho mais próximo.
 - **Paleta limitada.** Em geral, 5–8 tons por material, com verdes, palha, ocres e cremes naturais. Evite pontilhado aleatório e contraste excessivo entre caules vizinhos.

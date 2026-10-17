@@ -4,6 +4,8 @@ import com.zyypj.farmerplus.core.FarmerCreativeTab;
 import com.zyypj.farmerplus.core.module.FarmerModules;
 import com.zyypj.farmerplus.core.trampling.TramplingGameRules;
 import com.zyypj.farmerplus.core.wood.Flammability;
+import com.zyypj.farmerplus.core.worldgen.FeatureTypes;
+import com.zyypj.farmerplus.core.wood.WoodSets;
 import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,6 +28,7 @@ public final class FarmerPlus {
         initialized = true;
 
         TramplingGameRules.bootstrap();
+        FeatureTypes.bootstrap();
         FarmerModules.registerAll();
         FarmerCreativeTab.register();
         LOGGER.info("{} loaded {} content modules", MOD_NAME, FarmerModules.all().size());
@@ -33,6 +36,7 @@ public final class FarmerPlus {
 
     public static void commonSetup() {
         Flammability.apply();
+        WoodSets.registerDispenserBehaviors();
     }
 
     public static Identifier id(String path) {

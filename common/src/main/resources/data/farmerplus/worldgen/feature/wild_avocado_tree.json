@@ -1,0 +1,60 @@
+{
+  "type": "farmerplus:broadleaf_tree",
+  "trunk": {
+    "id": "farmerplus:avocado_log",
+    "properties": {
+      "axis": "y"
+    }
+  },
+  "leader": {
+    "id": "farmerplus:avocado_trunk",
+    "properties": {
+      "down": "false",
+      "east": "false",
+      "north": "false",
+      "south": "false",
+      "up": "false",
+      "west": "false"
+    }
+  },
+  "branch": {
+    "id": "farmerplus:avocado_branch",
+    "properties": {
+      "down": "false",
+      "east": "false",
+      "north": "false",
+      "south": "false",
+      "up": "false",
+      "west": "false"
+    }
+  },
+  "leaves": {
+    "id": "farmerplus:avocado_leaves",
+    "properties": {
+      "distance": "7",
+      "persistent": "false",
+      "waterlogged": "false",
+      "fruit": "0"
+    }
+  },
+  "height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 16,
+    "max_inclusive": 20
+  },
+  "trunk_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 3,
+    "max_inclusive": 5
+  },
+  "limbs": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 4,
+    "max_inclusive": 5
+  },
+  "crown_radius": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 7,
+    "max_inclusive": 8
+  }
+}

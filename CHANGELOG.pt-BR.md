@@ -5,8 +5,9 @@
 ## Não lançado
 
 ### Adicionado
-- Abacateiro: árvore de selva em tamanho real cujas folhas florescem, frutificam e amadurecem repetidamente; botão direito colhe abacates, e os maduros também caem sozinhos.
-- Conjunto de madeira de abacateiro (toras, madeira, versões descascadas, tábuas, escada, laje, cerca, portão, porta, alçapão, placa de pressão, botão) espelhando todas as tags, receitas, combustível e inflamabilidade do carvalho.
+- Abacateiro: árvore de folha larga realista (de pomar a partir de uma muda, gigante silvestre a partir de mudas em 2×2 e nas selvas) cujas folhas florescem, frutificam e amadurecem repetidamente; botão direito colhe abacates, e os maduros também caem sozinhos.
+- Madeira fina do abacateiro: a árvore cresce com blocos conectáveis `avocado_trunk` (10 px) e `avocado_branch` (6 px) em vez de toras inteiras; o tronco dropa toras e os galhos dropam gravetos.
+- Conjunto de madeira de abacateiro (toras, madeira, versões descascadas, tábuas, escada, laje, cerca, portão, porta, alçapão, placa de pressão, botão, placa, placa suspensa, prateleira, bote, bote com baú) espelhando todas as tags, receitas, combustível e inflamabilidade do carvalho.
 - Morangos: plantação perene plantada só em terra arada, com estágios de muda, folhagem, flor, fruto verde e maduro, colheita com o botão direito e estolões que se espalham para a terra arada vizinha.
 - Pisoteio do morango: plantas entortadas, deitadas e esmagadas com morangos caídos; plantas danificadas dão menos morangos.
 - Geleia de morango: frasco de vidro com 1–3 morangos, come-se uma porção por vez, coloca-se como decoração virado para o jogador e completa-se com morangos.

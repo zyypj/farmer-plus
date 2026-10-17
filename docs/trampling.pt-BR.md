@@ -73,8 +73,10 @@ Qualquer bloco pode ser pisoteado implementando `Trampleable#trample(state, forc
 
 ## Modelos
 
-`art/trampled_wheat.py` gera `blockstates/trampled_wheat.json`, 48 modelos (`trampled_wheat_stage<idade>_<achatamento>` mais um `_variant1` com as texturas trocadas) e as texturas provisórias `wheat_stage<idade>[_alternate]_crushed.png`. Os modelos são feitos caindo para o norte e o blockstate gira para as outras direções. O Minecraft 26.3 aceita qualquer ângulo de rotação e rotações Euler `x`/`y`/`z`, que os caules entortados e caídos usam.
+`art/trampled_wheat.py` gera `blockstates/trampled_wheat.json`, 48 modelos (`trampled_wheat_stage<idade>_<achatamento>` mais um `_variant1` com as texturas trocadas) e as texturas finais AGE 2–7 `wheat_stage<idade>[_alternate]_crushed.png` por `art/crushed_pixels.py`. As imagens AGE 0–1 permanecem iguais. Os modelos são feitos caindo para o norte e o blockstate gira para as outras direções. O Minecraft 26.3 aceita qualquer ângulo de rotação e rotações Euler `x`/`y`/`z`, que os caules entortados e caídos usam.
 
 ```bash
 python art/trampled_wheat.py
 ```
+
+As texturas esmagadas AGE 2–7 agora são desenhadas em 16×16 por `art/crushed_pixels.py`, chamado pelo gerador; AGE 0–1 permanecem iguais. Veja [o relatório da arte](avocado-visuals.pt-BR.md).

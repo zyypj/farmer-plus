@@ -1,4 +1,6 @@
 {
+  "format_version": "26.3",
+  "credit": "Made with Blockbench",
   "ambientocclusion": false,
   "textures": {
     "particle": "farmerplus:block/avocado_flowers",
@@ -6,88 +8,185 @@
   },
   "elements": [
     {
-      "name": "flowers_0",
+      "name": "panicle_0_stem",
       "from": [
-        3,
-        -2,
-        4
-      ],
-      "to": [
-        5,
-        0,
-        4
-      ],
-      "faces": {
-        "north": {
-          "uv": [
-            0,
-            0,
-            8,
-            8
-          ],
-          "texture": "#fruit"
-        },
-        "south": {
-          "uv": [
-            0,
-            0,
-            8,
-            8
-          ],
-          "texture": "#fruit"
-        }
-      }
-    },
-    {
-      "name": "flowers_1",
-      "from": [
-        10,
-        -2,
-        11
-      ],
-      "to": [
-        12,
-        0,
-        11
-      ],
-      "faces": {
-        "north": {
-          "uv": [
-            8,
-            0,
-            16,
-            8
-          ],
-          "texture": "#fruit"
-        },
-        "south": {
-          "uv": [
-            8,
-            0,
-            16,
-            8
-          ],
-          "texture": "#fruit"
-        }
-      }
-    },
-    {
-      "name": "flowers_2",
-      "from": [
-        7,
+        4.37,
         -1.5,
-        8
+        4.87
       ],
       "to": [
-        9,
+        4.63,
         0,
-        8
+        5.13
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            12,
+            12,
+            14,
+            16
+          ],
+          "texture": "#fruit"
+        },
+        "east": {
+          "uv": [
+            12,
+            12,
+            14,
+            16
+          ],
+          "texture": "#fruit"
+        },
+        "south": {
+          "uv": [
+            12,
+            12,
+            14,
+            16
+          ],
+          "texture": "#fruit"
+        },
+        "west": {
+          "uv": [
+            12,
+            12,
+            14,
+            16
+          ],
+          "texture": "#fruit"
+        },
+        "up": {
+          "uv": [
+            12,
+            12,
+            14,
+            16
+          ],
+          "texture": "#fruit"
+        },
+        "down": {
+          "uv": [
+            12,
+            12,
+            14,
+            16
+          ],
+          "texture": "#fruit"
+        }
+      }
+    },
+    {
+      "name": "panicle_0_flowers_0",
+      "from": [
+        2.8,
+        -3.3,
+        5
+      ],
+      "to": [
+        6.2,
+        -0.8,
+        5
+      ],
+      "rotation": {
+        "angle": 20,
+        "axis": "y",
+        "origin": [
+          4.5,
+          -1.5,
+          5
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            8,
+            12
+          ],
+          "texture": "#fruit"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            8,
+            12
+          ],
+          "texture": "#fruit"
+        }
+      }
+    },
+    {
+      "name": "panicle_0_flowers_90",
+      "from": [
+        2.8,
+        -3.3,
+        5
+      ],
+      "to": [
+        6.2,
+        -0.8,
+        5
+      ],
+      "rotation": {
+        "x": 0,
+        "y": 110,
+        "z": 0,
+        "origin": [
+          4.5,
+          -1.5,
+          5
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            8,
+            12
+          ],
+          "texture": "#fruit"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            8,
+            12
+          ],
+          "texture": "#fruit"
+        }
+      }
+    },
+    {
+      "name": "panicle_0_florets",
+      "from": [
+        4.1,
+        -2.45,
+        4.6
+      ],
+      "to": [
+        4.9,
+        -1.9,
+        5.4
       ],
       "faces": {
         "north": {
           "uv": [
             0,
+            12,
             8,
+            16
+          ],
+          "texture": "#fruit"
+        },
+        "east": {
+          "uv": [
+            0,
+            12,
             8,
             16
           ],
@@ -96,7 +195,257 @@
         "south": {
           "uv": [
             0,
+            12,
             8,
+            16
+          ],
+          "texture": "#fruit"
+        },
+        "west": {
+          "uv": [
+            0,
+            12,
+            8,
+            16
+          ],
+          "texture": "#fruit"
+        },
+        "up": {
+          "uv": [
+            0,
+            12,
+            8,
+            16
+          ],
+          "texture": "#fruit"
+        },
+        "down": {
+          "uv": [
+            0,
+            12,
+            8,
+            16
+          ],
+          "texture": "#fruit"
+        }
+      }
+    },
+    {
+      "name": "panicle_1_stem",
+      "from": [
+        10.87,
+        -1.5,
+        9.87
+      ],
+      "to": [
+        11.13,
+        0,
+        10.13
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            12,
+            12,
+            14,
+            16
+          ],
+          "texture": "#fruit"
+        },
+        "east": {
+          "uv": [
+            12,
+            12,
+            14,
+            16
+          ],
+          "texture": "#fruit"
+        },
+        "south": {
+          "uv": [
+            12,
+            12,
+            14,
+            16
+          ],
+          "texture": "#fruit"
+        },
+        "west": {
+          "uv": [
+            12,
+            12,
+            14,
+            16
+          ],
+          "texture": "#fruit"
+        },
+        "up": {
+          "uv": [
+            12,
+            12,
+            14,
+            16
+          ],
+          "texture": "#fruit"
+        },
+        "down": {
+          "uv": [
+            12,
+            12,
+            14,
+            16
+          ],
+          "texture": "#fruit"
+        }
+      }
+    },
+    {
+      "name": "panicle_1_flowers_0",
+      "from": [
+        9.3,
+        -3.3,
+        10
+      ],
+      "to": [
+        12.7,
+        -0.8,
+        10
+      ],
+      "rotation": {
+        "angle": -25,
+        "axis": "y",
+        "origin": [
+          11,
+          -1.5,
+          10
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            8,
+            0,
+            16,
+            12
+          ],
+          "texture": "#fruit"
+        },
+        "south": {
+          "uv": [
+            8,
+            0,
+            16,
+            12
+          ],
+          "texture": "#fruit"
+        }
+      }
+    },
+    {
+      "name": "panicle_1_flowers_90",
+      "from": [
+        9.3,
+        -3.3,
+        10
+      ],
+      "to": [
+        12.7,
+        -0.8,
+        10
+      ],
+      "rotation": {
+        "x": 0,
+        "y": 65,
+        "z": 0,
+        "origin": [
+          11,
+          -1.5,
+          10
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            8,
+            0,
+            16,
+            12
+          ],
+          "texture": "#fruit"
+        },
+        "south": {
+          "uv": [
+            8,
+            0,
+            16,
+            12
+          ],
+          "texture": "#fruit"
+        }
+      }
+    },
+    {
+      "name": "panicle_1_florets",
+      "from": [
+        10.6,
+        -2.45,
+        9.6
+      ],
+      "to": [
+        11.4,
+        -1.9,
+        10.4
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            12,
+            8,
+            16
+          ],
+          "texture": "#fruit"
+        },
+        "east": {
+          "uv": [
+            0,
+            12,
+            8,
+            16
+          ],
+          "texture": "#fruit"
+        },
+        "south": {
+          "uv": [
+            0,
+            12,
+            8,
+            16
+          ],
+          "texture": "#fruit"
+        },
+        "west": {
+          "uv": [
+            0,
+            12,
+            8,
+            16
+          ],
+          "texture": "#fruit"
+        },
+        "up": {
+          "uv": [
+            0,
+            12,
+            8,
+            16
+          ],
+          "texture": "#fruit"
+        },
+        "down": {
+          "uv": [
+            0,
+            12,
             8,
             16
           ],

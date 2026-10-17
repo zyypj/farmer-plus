@@ -42,7 +42,7 @@ A new perennial crop. Find **wild strawberries** in plains, meadows and forests,
 
 ### Avocado tree
 
-A full-size fruit tree (10–15 blocks) that grows wild in jungles. Its leaves flower, set green fruit and ripen into avocados you pick with a right-click — again and again. It comes with a complete wood set (logs, wood, stripped variants, planks, stairs, slabs, fences, gates, doors, trapdoors, plates, buttons) that works in every vanilla wooden recipe. See [docs/avocado.md](docs/avocado.md).
+A full-size fruit tree modelled on real avocados — a dense rounded crown 10–13 blocks tall, or a 16–20 block wild giant from 2×2 saplings — that grows wild in jungles. Its leaves flower, set green fruit and ripen into avocados you pick with a right-click — again and again. It comes with a complete wood set (logs, wood, stripped variants, planks, stairs, slabs, fences, gates, doors, trapdoors, plates, buttons, signs, hanging signs, shelves, boats and chest boats) that works in every vanilla wooden recipe. See [docs/avocado.md](docs/avocado.md).
 
 ### Crop trampling
 

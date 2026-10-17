@@ -65,13 +65,13 @@ Toda chamada devolve um `RegistryEntry<T>`, um `Supplier<T>` preguiçoso que pod
 | NeoForge | `NeoForgeRegistrationPlatform` | Um `DeferredRegister` por registro, ligado ao mod bus |
 | Forge | `ForgeRegistrationPlatform` | Um `DeferredRegister` por registro, ligado ao mod bus group |
 
-O entrypoint de cada loader faz exatamente duas coisas: chama `FarmerPlus.init()` e, no NeoForge/Forge, liga os deferred registers.
+O entrypoint de cada loader chama `FarmerPlus.init()`, liga os deferred registers no NeoForge/Forge e entrega as listas compartilhadas à API do loader: `BlockEntityBlocks` (blocos válidos extras para tipos de block entity vanilla) e, no cliente, `client/BoatRendering` (camadas de modelo e renderers dos botes). Código só de cliente em `common` fica no pacote `client` e só é alcançado pelos entrypoints de cliente.
 
 ## Regras de desempenho
 
 O Farmer+ precisa ser invisível no profiler.
 
-1. **Sem mixins**, a não ser que não exista alternativa por dados ou API — e nunca em caminhos quentes (render, tick, pathfinding). Todo mixin fica em `common/…/mixin`, é listado em `farmerplus.mixins.json` e tem o motivo documentado. Lista atual: `CropBlockMixin` — a única forma de reagir a entidades andando pelas plantações vanilla; `FarmlandBlockMixin` — mantém a terra arada e amassa a planta quando algo cai em cima ([pisoteio](trampling.pt-BR.md)); `FireBlockAccessor` — um invoker usado uma vez na inicialização para dar à madeira do Farmer+ a inflamabilidade do vanilla ([abacateiro](avocado.pt-BR.md#conjunto-de-madeira)).
+1. **Sem mixins**, a não ser que não exista alternativa por dados ou API — e nunca em caminhos quentes (render, tick, pathfinding). Todo mixin fica em `common/…/mixin`, é listado em `farmerplus.mixins.json` e tem o motivo documentado. Lista atual: `CropBlockMixin` — a única forma de reagir a entidades andando pelas plantações vanilla; `FarmlandBlockMixin` — mantém a terra arada e amassa a planta quando algo cai em cima ([pisoteio](trampling.pt-BR.md)); `FireBlockAccessor` — um invoker usado uma vez na inicialização para dar à madeira do Farmer+ a inflamabilidade do vanilla ([abacateiro](avocado.pt-BR.md#conjunto-de-madeira)); `BlockEntityTypeAccessor` — usado uma vez no common setup do Forge para adicionar as placas e prateleiras do Farmer+ aos tipos de block entity vanilla, porque o Forge não tem API para isso (Fabric e NeoForge usam suas APIs) ([abacateiro](avocado.pt-BR.md#placas-prateleira-e-botes)).
 2. **Sem handlers de tick.** Use random ticks de bloco, scheduled ticks ou mecânicas vanilla.
 3. **Dados antes de código.** Compostagem, combustível, comida, comida de aldeão, ferramentas e loot são componentes de dados ou JSON do vanilla — use-os.
 4. **Sem reflexão, sem varredura de classpath em runtime, sem biblioteca de config** para coisas que um data pack já resolve.
@@ -84,8 +84,9 @@ O Farmer+ precisa ser invisível no profiler.
 | Pisoteio de plantações | `core/trampling` | [trampling.pt-BR.md](trampling.pt-BR.md) |
 | Features de bioma (worldgen) | `core/worldgen` | [strawberries.pt-BR.md](strawberries.pt-BR.md#compatibilidade-com-modpacks) |
 | Morangos | `content/strawberry` | [strawberries.pt-BR.md](strawberries.pt-BR.md) |
-| Conjuntos de madeira | `core/wood`, `tools/wood_set.py` | [avocado.pt-BR.md](avocado.pt-BR.md#reaproveitando-o-conjunto-de-madeira) |
+| Conjuntos de madeira e galhos conectáveis | `core/wood`, `client/BoatRendering`, `tools/wood_set.py`, `art/avocado_branches.py` | [avocado.pt-BR.md](avocado.pt-BR.md#reaproveitando-o-conjunto-de-madeira) |
 | Abacateiro | `content/avocado` | [avocado.pt-BR.md](avocado.pt-BR.md) |
+| Gerador de árvore de folha larga | `core/worldgen/BroadleafTreeFeature` | [avocado.pt-BR.md](avocado.pt-BR.md#a-árvore) |
 
 ## Adicionando uma plantação nova (checklist)
 

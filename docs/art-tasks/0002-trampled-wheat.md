@@ -26,6 +26,8 @@ The sprite is mapped onto planes that lie almost flat on the farmland, with the 
 
 ## Done when
 
-- [ ] 12 textures replaced (ages 2–7, base and alternate), same names.
-- [ ] `python art/validate_wheat_art.py` passes.
+- [x] 12 textures replaced (ages 2–7, base and alternate), same names.
+- [x] `python art/validate_wheat_art.py` passes.
 - [ ] In a survival world, sprint through mature wheat several times: the crushed path reads as broken stalks pressed into the soil, not as a texture glitch.
+
+See [the completed art report](../avocado-visuals.md) for source files, previews, final geometry and verification limits.

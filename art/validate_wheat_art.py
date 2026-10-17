@@ -37,6 +37,8 @@ STRAWBERRY_BUDGETS = {0: 8, 1: 12, 2: 16, 3: 20, 4: 20}
 
 
 def element_budget(stem):
+    if stem in ('avocado_leaves_flowers', 'avocado_leaves_unripe', 'avocado_leaves_ripe'):
+        return 8
     if stem == 'wheat_sheaf':
         return 24
     if stem.startswith(('wheat_stage6', 'wheat_stage7')):
@@ -77,9 +79,11 @@ for path in (RES / 'assets').rglob('*.json'):
                 check(all(0 <= v <= 16 for v in face['uv']), f'{path.name}: UV bounds')
                 check(face['texture'].removeprefix('#') in value.get('textures', {}), f'{path.name}: texture variable resolves')
 
+VANILLA_LAYOUT_SIZES = {('entity', 'boat'): (128, 64), ('entity', 'chest_boat'): (128, 128), ('gui', 'signs'): (24, 26), ('gui', 'hanging_signs'): (16, 16)}
+
 for path in (RES / 'assets').rglob('*.png'):
     image = Image.open(path)
-    expected_size = (512, 512) if path.name == 'icon.png' else (32, 32) if path.parent.name == 'block' and path.stem.startswith('wheat') else (16, 16)
+    expected_size = (512, 512) if path.name == 'icon.png' else (32, 32) if path.parent.name == 'block' and path.stem.startswith('wheat') and not (path.stem.endswith('_crushed') and int(path.stem[11]) >= 2) else VANILLA_LAYOUT_SIZES.get(path.relative_to(RES / 'assets').parts[2:4], (16, 16))
     check(image.size == expected_size, f'{path.name}: dimensions {expected_size}')
     check(image.mode == 'RGBA', f'{path.name}: RGBA')
     if not path.stem.endswith('_glass'):
@@ -253,7 +257,13 @@ for case in jam_item['cases']:
     level = case['when']
     check(selection['property'] == 'minecraft:display_context' and selection['fallback']['model'] == f'farmerplus:block/strawberry_jam_{level}', f'Jam {level}: real 3D model outside GUI')
     check(selection['cases'][0]['when'] == ['gui'] and selection['cases'][0]['model']['model'] == f'farmerplus:item/strawberry_jam_{level}', f'Jam {level}: dedicated inventory icon')
-report = {'passed': len(checks), 'errors': errors, 'official_version': version, 'official_client_sha1': hashlib.file_digest(JAR.open('rb'), 'sha1').hexdigest()}
+from validate_avocado_art import validate as validate_avocado_art
+
+avocado = validate_avocado_art()
+for error in avocado['errors']:
+    check(False, error)
+check(not avocado['errors'], 'Avocado native sources, pear geometry, bounds and twelve native crushed sprites pass')
+report = {'passed': len(checks), 'errors': errors, 'avocado_and_crushed': avocado, 'official_version': version, 'official_client_sha1': hashlib.file_digest(JAR.open('rb'), 'sha1').hexdigest()}
 out = ROOT / 'build/art/validation/wheat-art-validation.json'
 out.parent.mkdir(parents=True, exist_ok=True)
 out.write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')

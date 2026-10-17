@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_shelf_left",
+  "textures": {
+    "all": "farmerplus:block/avocado_shelf",
+    "particle": "farmerplus:block/stripped_avocado_log"
+  }
+}

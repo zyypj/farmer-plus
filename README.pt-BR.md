@@ -42,7 +42,7 @@ Uma plantação perene nova. Encontre **morangos silvestres** em planícies, cam
 
 ### Abacateiro
 
-Uma árvore frutífera em tamanho real (10–15 blocos) que nasce nas selvas. As folhas florescem, dão fruto verde e amadurecem em abacates que você colhe com o botão direito — várias e várias vezes. Vem com um conjunto completo de madeira (toras, madeira, versões descascadas, tábuas, escadas, lajes, cercas, portões, portas, alçapões, placas e botões) que funciona em todas as receitas de madeira do vanilla. Veja [docs/avocado.pt-BR.md](docs/avocado.pt-BR.md).
+Uma árvore frutífera inspirada no abacateiro real — copa redonda e densa de 10–13 blocos, ou uma gigante silvestre de 16–20 blocos a partir de mudas em 2×2 — que nasce nas selvas. As folhas florescem, dão fruto verde e amadurecem em abacates que você colhe com o botão direito — várias e várias vezes. Vem com um conjunto completo de madeira (toras, madeira, versões descascadas, tábuas, escadas, lajes, cercas, portões, portas, alçapões, placas de pressão, botões, placas, placas suspensas, prateleiras, botes e botes com baú) que funciona em todas as receitas de madeira do vanilla. Veja [docs/avocado.pt-BR.md](docs/avocado.pt-BR.md).
 
 ### Pisoteio de plantações
 

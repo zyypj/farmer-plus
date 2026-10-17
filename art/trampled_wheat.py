@@ -145,6 +145,11 @@ def variant(base, model_data):
 
 
 def crushed_texture(source, target):
+    age = int(source.stem.removeprefix('wheat_stage').split('_')[0])
+    if age >= 2:
+        from crushed_pixels import crushed
+        crushed(age, 'alternate' in source.stem).save(target)
+        return
     image = Image.open(source).convert('RGBA')
     alpha = image.getchannel('A')
     rgb = ImageEnhance.Color(image.convert('RGB')).enhance(0.55)

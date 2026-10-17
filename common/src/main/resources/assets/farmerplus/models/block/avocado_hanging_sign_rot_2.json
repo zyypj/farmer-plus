@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_hanging_sign_rot_2",
+  "textures": {
+    "all": "farmerplus:block/avocado_hanging_sign",
+    "particle": "farmerplus:block/stripped_avocado_log"
+  }
+}

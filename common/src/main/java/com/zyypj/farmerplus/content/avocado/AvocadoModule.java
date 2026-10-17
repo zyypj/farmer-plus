@@ -26,6 +26,8 @@ public final class AvocadoModule implements FarmerModule {
         items.add(AvocadoItems.AVOCADO.get());
         items.add(AvocadoItems.AVOCADO_SAPLING.get());
         items.add(AvocadoItems.AVOCADO_LEAVES.get());
+        items.add(AvocadoItems.AVOCADO_TRUNK.get());
+        items.add(AvocadoItems.AVOCADO_BRANCH.get());
         items.addAll(AvocadoBlocks.WOOD.creativeTabItems());
         return items;
     }

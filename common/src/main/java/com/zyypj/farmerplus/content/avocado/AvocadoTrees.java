@@ -10,11 +10,12 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 public final class AvocadoTrees {
 
     public static final ResourceKey<Feature> AVOCADO_TREE = ResourceKey.create(Registries.FEATURE, FarmerPlus.id("avocado_tree"));
+    public static final ResourceKey<Feature> WILD_AVOCADO_TREE = ResourceKey.create(Registries.FEATURE, FarmerPlus.id("wild_avocado_tree"));
 
     public static final TreeGrower GROWER = new TreeGrower(
             FarmerPlus.MOD_ID + "_avocado",
             WeightedList.of(AVOCADO_TREE),
-            WeightedList.of(),
+            WeightedList.of(WILD_AVOCADO_TREE),
             WeightedList.of(),
             AVOCADO_TREE
     );

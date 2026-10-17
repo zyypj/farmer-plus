@@ -5,8 +5,9 @@
 ## Unreleased
 
 ### Added
-- Avocado tree: full-size jungle tree whose leaves flower, fruit and ripen repeatedly; right-click to pick avocados, ripe fruit also falls on its own.
-- Avocado wood set (logs, wood, stripped variants, planks, stairs, slab, fence, fence gate, door, trapdoor, pressure plate, button) mirroring every oak tag, recipe, fuel value and flammability.
+- Avocado tree: a realistic broadleaf tree (orchard tree from one sapling, wild giant from 2×2 saplings and jungles) whose leaves flower, fruit and ripen repeatedly; right-click to pick avocados, ripe fruit also falls on its own.
+- Slim avocado wood: the tree grows from connecting `avocado_trunk` (10 px) and `avocado_branch` (6 px) blocks instead of full logs; the trunk drops logs, branches drop sticks.
+- Avocado wood set (logs, wood, stripped variants, planks, stairs, slab, fence, fence gate, door, trapdoor, pressure plate, button, sign, hanging sign, shelf, boat, boat with chest) mirroring every oak tag, recipe, fuel value and flammability.
 - Strawberries: a perennial crop planted only on farmland, with seedling, leafy, flowering, green and ripe stages, right-click harvesting and runners that spread to neighbouring farmland.
 - Strawberry trampling: bent, flattened and crushed plants with fallen berries; damaged plants yield fewer strawberries.
 - Strawberry jam: craft a glass bottle with 1–3 strawberries, eat it one portion at a time, place it as decoration facing you and refill it with strawberries.

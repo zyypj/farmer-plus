@@ -10,10 +10,12 @@ VANILLA_JAR = ROOT / 'common/build/moddev/artifacts/vanilla-26.3-1-merged.jar'
 TEMPLATE = 'oak'
 NAMESPACE = 'farmerplus'
 
-WOOD_BLOCKS = ['log', 'wood', 'planks', 'stairs', 'slab', 'fence', 'fence_gate', 'door', 'trapdoor', 'pressure_plate', 'button']
+WOOD_BLOCKS = ['log', 'wood', 'planks', 'stairs', 'slab', 'fence', 'fence_gate', 'door', 'trapdoor', 'pressure_plate', 'button', 'sign', 'hanging_sign', 'shelf']
+WALL_BLOCKS = ['wall_sign', 'wall_hanging_sign']
+WOOD_ITEMS = ['boat', 'chest_boat']
 STRIPPED_BLOCKS = ['log', 'wood']
 TREE_BLOCKS = ['leaves', 'sapling']
-RECIPES = ['planks', 'wood', 'stairs', 'slab', 'fence', 'fence_gate', 'door', 'trapdoor', 'pressure_plate', 'button']
+RECIPES = ['planks', 'wood', 'stairs', 'slab', 'fence', 'fence_gate', 'door', 'trapdoor', 'pressure_plate', 'button', 'sign', 'hanging_sign', 'shelf', 'boat', 'chest_boat']
 STRIPPED_RECIPES = ['wood']
 GENERATED_TREE_ASSETS = ['sapling']
 
@@ -22,6 +24,10 @@ def block_ids(wood, template):
     ids = {f'{template}_{suffix}': f'{wood}_{suffix}' for suffix in WOOD_BLOCKS}
     ids.update({f'stripped_{template}_{suffix}': f'stripped_{wood}_{suffix}' for suffix in STRIPPED_BLOCKS})
     return ids
+
+
+def suffixed_ids(suffixes, wood, template):
+    return {f'{template}_{suffix}': f'{wood}_{suffix}' for suffix in suffixes}
 
 
 def tree_ids(wood, template):
@@ -60,13 +66,14 @@ def copy(vanilla, source, target, wood, template):
 
 
 def referenced_models(text, template):
-    return set(re.findall(rf'minecraft:((?:block|item)/(?:stripped_)?{template}_[a-z_]+)', text))
+    return set(re.findall(rf'minecraft:((?:block|item)/(?:stripped_)?{template}_[a-z0-9_]+)', text))
 
 
-def copy_assets(vanilla, names, wood, template):
+def copy_assets(vanilla, blocks, walls, items, wood, template):
     models = set()
-    for vanilla_id, new_id in names.items():
+    for vanilla_id, new_id in (blocks | walls).items():
         models |= referenced_models(copy(vanilla, f'assets/minecraft/blockstates/{vanilla_id}.json', f'assets/{NAMESPACE}/blockstates/{new_id}.json', wood, template), template)
+    for vanilla_id, new_id in (blocks | items).items():
         models |= referenced_models(copy(vanilla, f'assets/minecraft/items/{vanilla_id}.json', f'assets/{NAMESPACE}/items/{new_id}.json', wood, template), template)
     for model in sorted(models):
         target = rename(f'minecraft:{model}', wood, template).split(':', 1)[1]
@@ -77,7 +84,7 @@ def copy_data(vanilla, names, wood, template):
     for vanilla_id, new_id in names.items():
         copy(vanilla, f'data/minecraft/loot_table/blocks/{vanilla_id}.json', f'data/{NAMESPACE}/loot_table/blocks/{new_id}.json', wood, template)
 
-    recipes = {f'{template}_{suffix}': f'{wood}_{suffix}' for suffix in RECIPES}
+    recipes = suffixed_ids(RECIPES, wood, template)
     recipes.update({f'stripped_{template}_{suffix}': f'stripped_{wood}_{suffix}' for suffix in STRIPPED_RECIPES})
     advancements = {Path(name).stem: name for name in vanilla.files('data/minecraft/advancement/recipes/')}
     for vanilla_id, new_id in recipes.items():
@@ -122,13 +129,15 @@ def main():
 
     vanilla = Vanilla(args.jar)
     wood_names = block_ids(args.wood, TEMPLATE)
+    wall_names = suffixed_ids(WALL_BLOCKS, args.wood, TEMPLATE)
+    item_names = suffixed_ids(WOOD_ITEMS, args.wood, TEMPLATE)
     tree_names = tree_ids(args.wood, TEMPLATE)
-    generated_tree = {f'{TEMPLATE}_{suffix}': f'{args.wood}_{suffix}' for suffix in GENERATED_TREE_ASSETS}
+    generated_tree = suffixed_ids(GENERATED_TREE_ASSETS, args.wood, TEMPLATE)
 
-    copy_assets(vanilla, wood_names | generated_tree, args.wood, TEMPLATE)
+    copy_assets(vanilla, wood_names | generated_tree, wall_names, item_names, args.wood, TEMPLATE)
     copy_data(vanilla, wood_names | generated_tree, args.wood, TEMPLATE)
-    mirror_tags(vanilla, wood_names | tree_names, args.wood, TEMPLATE)
-    print(json.dumps({'wood': args.wood, 'blocks': len(wood_names) + len(generated_tree)}))
+    mirror_tags(vanilla, wood_names | wall_names | item_names | tree_names, args.wood, TEMPLATE)
+    print(json.dumps({'wood': args.wood, 'blocks': len(wood_names) + len(wall_names) + len(generated_tree), 'items': len(item_names)}))
 
 
 if __name__ == '__main__':

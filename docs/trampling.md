@@ -73,7 +73,7 @@ Any block can be trampled by implementing `Trampleable#trample(state, force, dir
 
 ## Models
 
-`art/trampled_wheat.py` generates `blockstates/trampled_wheat.json`, 48 models (`trampled_wheat_stage<age>_<flattening>` plus a texture-swapped `_variant1`) and placeholder `wheat_stage<age>[_alternate]_crushed.png` textures. Models are authored falling north and rotated by the blockstate for the other directions. Minecraft 26.3 accepts any rotation angle and Euler `x`/`y`/`z` rotations, which the bent and fallen stalks rely on.
+`art/trampled_wheat.py` generates `blockstates/trampled_wheat.json`, 48 models (`trampled_wheat_stage<age>_<flattening>` plus a texture-swapped `_variant1`) and final native 16×16 AGE 2–7 `wheat_stage<age>[_alternate]_crushed.png` textures through `art/crushed_pixels.py`. AGE 0–1 retain their original images. See [the art report](avocado-visuals.md). Models are authored falling north and rotated by the blockstate for the other directions. Minecraft 26.3 accepts any rotation angle and Euler `x`/`y`/`z` rotations, which the bent and fallen stalks rely on.
 
 ```bash
 python art/trampled_wheat.py

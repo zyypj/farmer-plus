@@ -18,6 +18,9 @@
   "entrypoints": {
     "main": [
       "com.zyypj.farmerplus.fabric.FarmerPlusFabric"
+    ],
+    "client": [
+      "com.zyypj.farmerplus.fabric.FarmerPlusFabricClient"
     ]
   },
   "mixins": [

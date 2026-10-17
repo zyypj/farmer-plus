@@ -39,6 +39,18 @@
     "farmerplus:stripped_avocado_wood": {
       "ignite_odds": 5,
       "burn_odds": 5
+    },
+    "farmerplus:avocado_shelf": {
+      "ignite_odds": 30,
+      "burn_odds": 20
+    },
+    "farmerplus:avocado_trunk": {
+      "ignite_odds": 5,
+      "burn_odds": 5
+    },
+    "farmerplus:avocado_branch": {
+      "ignite_odds": 5,
+      "burn_odds": 5
     }
   }
 }

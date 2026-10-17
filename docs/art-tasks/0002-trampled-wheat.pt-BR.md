@@ -26,6 +26,8 @@ O sprite é aplicado em planos quase deitados sobre a terra arada: os **1–2 px
 
 ## Pronto quando
 
-- [ ] 12 texturas substituídas (idades 2–7, base e alternate), com os mesmos nomes.
-- [ ] `python art/validate_wheat_art.py` passa.
+- [x] 12 texturas substituídas (idades 2–7, base e alternate), com os mesmos nomes.
+- [x] `python art/validate_wheat_art.py` passa.
 - [ ] Num mundo sobrevivência, corra várias vezes pelo trigo maduro: o caminho esmagado precisa parecer caules quebrados prensados no solo, não um erro de textura.
+
+Veja [o relatório da arte](../avocado-visuals.pt-BR.md) para fontes, prévias, geometria final e limites da verificação.
