@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    "#farmerplus:avocado_logs"
+  ],
+  "result": {
+    "count": 4,
+    "id": "farmerplus:avocado_planks"
+  }
+}

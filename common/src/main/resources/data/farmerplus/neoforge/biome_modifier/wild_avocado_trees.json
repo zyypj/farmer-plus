@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#farmerplus:has_avocado_trees",
+  "features": "farmerplus:wild_avocado_trees",
+  "step": "vegetal_decoration"
+}

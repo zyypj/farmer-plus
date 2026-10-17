@@ -5,7 +5,8 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "CropBlockMixin",
-    "FarmlandBlockMixin"
+    "FarmlandBlockMixin",
+    "FireBlockAccessor"
   ],
   "injectors": {
     "defaultRequire": 1

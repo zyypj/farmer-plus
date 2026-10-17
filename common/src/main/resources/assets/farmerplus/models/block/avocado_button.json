@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "farmerplus:block/avocado_planks"
+  }
+}

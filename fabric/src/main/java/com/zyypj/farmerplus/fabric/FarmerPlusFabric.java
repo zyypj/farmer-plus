@@ -9,5 +9,6 @@ public final class FarmerPlusFabric implements ModInitializer {
     public void onInitialize() {
         FarmerPlus.init();
         FabricWorldgen.register();
+        FarmerPlus.commonSetup();
     }
 }

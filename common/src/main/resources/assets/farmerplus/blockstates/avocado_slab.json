@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "farmerplus:block/avocado_slab"
+    },
+    "type=double": {
+      "model": "farmerplus:block/avocado_planks"
+    },
+    "type=top": {
+      "model": "farmerplus:block/avocado_slab_top"
+    }
+  }
+}

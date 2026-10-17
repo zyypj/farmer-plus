@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right_open",
+  "textures": {
+    "bottom": "farmerplus:block/avocado_door_bottom",
+    "top": "farmerplus:block/avocado_door_top"
+  }
+}

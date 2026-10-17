@@ -8,7 +8,8 @@ Farmer+ is a vanilla-style farming mod for Minecraft 26.3 with one shared codeba
 - `docs/art-pipeline.md` — texture and Blockbench rules. **Mandatory for any art task.**
 - `docs/art-tasks/` — the current art backlog with exact file names.
 - `docs/strawberries.md` — strawberry plant stages, wild strawberries and worldgen.
-- `docs/trampling.md` — crop trampling: trampled block states, generated models (`art/trampled_wheat.py`) and the single allowed mixin.
+- `docs/avocado.md` — avocado tree, fruiting leaves and the reusable wood set (`tools/wood_set.py`).
+- `docs/trampling.md` — crop trampling: trampled block states, generated models (`art/trampled_wheat.py`) and the trampling mixins. All mixins are listed in `docs/architecture.md`.
 
 ## Hard rules
 

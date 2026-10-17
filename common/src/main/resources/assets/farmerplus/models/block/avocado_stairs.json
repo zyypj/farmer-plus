@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "farmerplus:block/avocado_planks",
+    "side": "farmerplus:block/avocado_planks",
+    "top": "farmerplus:block/avocado_planks"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "farmerplus:block/stripped_avocado_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "farmerplus:block/stripped_avocado_wood"
+    },
+    "axis=z": {
+      "model": "farmerplus:block/stripped_avocado_wood",
+      "x": 90
+    }
+  }
+}

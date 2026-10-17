@@ -1,0 +1,33 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "farmerplus:block/avocado_leaves"
+      }
+    },
+    {
+      "when": {
+        "fruit": "1"
+      },
+      "apply": {
+        "model": "farmerplus:block/avocado_leaves_flowers"
+      }
+    },
+    {
+      "when": {
+        "fruit": "2"
+      },
+      "apply": {
+        "model": "farmerplus:block/avocado_leaves_unripe"
+      }
+    },
+    {
+      "when": {
+        "fruit": "3"
+      },
+      "apply": {
+        "model": "farmerplus:block/avocado_leaves_ripe"
+      }
+    }
+  ]
+}

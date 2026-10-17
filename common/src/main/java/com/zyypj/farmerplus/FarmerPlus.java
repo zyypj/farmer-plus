@@ -3,6 +3,7 @@ package com.zyypj.farmerplus;
 import com.zyypj.farmerplus.core.FarmerCreativeTab;
 import com.zyypj.farmerplus.core.module.FarmerModules;
 import com.zyypj.farmerplus.core.trampling.TramplingGameRules;
+import com.zyypj.farmerplus.core.wood.Flammability;
 import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,6 +29,10 @@ public final class FarmerPlus {
         FarmerModules.registerAll();
         FarmerCreativeTab.register();
         LOGGER.info("{} loaded {} content modules", MOD_NAME, FarmerModules.all().size());
+    }
+
+    public static void commonSetup() {
+        Flammability.apply();
     }
 
     public static Identifier id(String path) {

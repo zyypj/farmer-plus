@@ -15,7 +15,7 @@ Uma reformulação do sistema de plantações do Minecraft com cara de vanilla. 
 ## Princípios
 
 - **Vanilla em primeiro lugar.** Toda adição precisa parecer, soar e funcionar como algo que a Mojang lançaria. Receitas, texturas e progressão seguem as convenções do vanilla.
-- **Levíssimo.** Dois mixins minúsculos, sem lógica por tick, sem reflexão. O conteúdo é registrado uma vez na inicialização e o comportamento vem de componentes de dados, tags e JSON do próprio vanilla. Cada jar tem cerca de 160 KB, quase tudo arte em 16×16 e modelos de bloco.
+- **Levíssimo.** Três mixins minúsculos, sem lógica por tick, sem reflexão. O conteúdo é registrado uma vez na inicialização e o comportamento vem de componentes de dados, tags e JSON do próprio vanilla. Cada jar tem cerca de 160 KB, quase tudo arte em 16×16 e modelos de bloco.
 - **Feito para modpacks.** Os ingredientes usam as tags de convenção `c:` (`c:flours/wheat`, `c:doughs/wheat`, …), então farinha ou massa de outros mods funciona nas receitas do Farmer+ e vice-versa.
 - **Todos os loaders.** Uma única base de código gera Fabric, NeoForge e Forge, e é atualizada sempre que o Minecraft ou algum loader lança versão nova.
 
@@ -39,6 +39,10 @@ O próprio trigo ganha uma **reformulação visual Vanilla+ realista**: arte ori
 ### Morangos
 
 Uma plantação perene nova. Encontre **morangos silvestres** em planícies, campinas e florestas, depois plante os morangos em **terra arada** (só terra arada). A planta floresce, dá frutos verdes e amadurece; clique com o botão direito para colher 2–4 morangos e ela volta a florir. Plantas saudáveis soltam estolões para a terra arada vazia ao lado, plantas pisoteadas perdem parte da colheita, e os morangos viram **geleia**: um frasco de vidro com 1–3 morangos enche um pote que se come aos poucos ou se coloca como decoração. Veja [docs/strawberries.pt-BR.md](docs/strawberries.pt-BR.md).
+
+### Abacateiro
+
+Uma árvore frutífera em tamanho real (10–15 blocos) que nasce nas selvas. As folhas florescem, dão fruto verde e amadurecem em abacates que você colhe com o botão direito — várias e várias vezes. Vem com um conjunto completo de madeira (toras, madeira, versões descascadas, tábuas, escadas, lajes, cercas, portões, portas, alçapões, placas e botões) que funciona em todas as receitas de madeira do vanilla. Veja [docs/avocado.pt-BR.md](docs/avocado.pt-BR.md).
 
 ### Pisoteio de plantações
 
@@ -75,6 +79,7 @@ A mesma tarefa existe para `:fabric` e `:forge`.
 | Visual do trigo | [docs/wheat-visuals.md](docs/wheat-visuals.md) | [docs/wheat-visuals.pt-BR.md](docs/wheat-visuals.pt-BR.md) |
 | Pisoteio de plantações | [docs/trampling.md](docs/trampling.md) | [docs/trampling.pt-BR.md](docs/trampling.pt-BR.md) |
 | Morangos | [docs/strawberries.md](docs/strawberries.md) | [docs/strawberries.pt-BR.md](docs/strawberries.pt-BR.md) |
+| Abacateiro e madeira | [docs/avocado.md](docs/avocado.md) | [docs/avocado.pt-BR.md](docs/avocado.pt-BR.md) |
 | Atualizando Minecraft e loaders | [docs/updating.md](docs/updating.md) | [docs/updating.pt-BR.md](docs/updating.pt-BR.md) |
 | Como contribuir | [CONTRIBUTING.md](CONTRIBUTING.md) | [CONTRIBUTING.pt-BR.md](CONTRIBUTING.pt-BR.md) |
 | Histórico de mudanças | [CHANGELOG.md](CHANGELOG.md) | [CHANGELOG.pt-BR.md](CHANGELOG.pt-BR.md) |

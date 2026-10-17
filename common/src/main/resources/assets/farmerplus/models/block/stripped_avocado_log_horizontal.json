@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "farmerplus:block/stripped_avocado_log_top",
+    "side": "farmerplus:block/stripped_avocado_log"
+  }
+}

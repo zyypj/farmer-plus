@@ -1,0 +1,108 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "farmerplus:block/avocado_flowers",
+    "fruit": "farmerplus:block/avocado_flowers"
+  },
+  "elements": [
+    {
+      "name": "flowers_0",
+      "from": [
+        3,
+        -2,
+        4
+      ],
+      "to": [
+        5,
+        0,
+        4
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            8,
+            8
+          ],
+          "texture": "#fruit"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            8,
+            8
+          ],
+          "texture": "#fruit"
+        }
+      }
+    },
+    {
+      "name": "flowers_1",
+      "from": [
+        10,
+        -2,
+        11
+      ],
+      "to": [
+        12,
+        0,
+        11
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            8,
+            0,
+            16,
+            8
+          ],
+          "texture": "#fruit"
+        },
+        "south": {
+          "uv": [
+            8,
+            0,
+            16,
+            8
+          ],
+          "texture": "#fruit"
+        }
+      }
+    },
+    {
+      "name": "flowers_2",
+      "from": [
+        7,
+        -1.5,
+        8
+      ],
+      "to": [
+        9,
+        0,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            8,
+            8,
+            16
+          ],
+          "texture": "#fruit"
+        },
+        "south": {
+          "uv": [
+            0,
+            8,
+            8,
+            16
+          ],
+          "texture": "#fruit"
+        }
+      }
+    }
+  ]
+}

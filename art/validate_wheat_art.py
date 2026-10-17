@@ -79,7 +79,7 @@ for path in (RES / 'assets').rglob('*.json'):
 
 for path in (RES / 'assets').rglob('*.png'):
     image = Image.open(path)
-    expected_size = (512, 512) if path.name == 'icon.png' else (16, 16) if path.stem.startswith('strawberry') or path.parent.name == 'item' else (32, 32)
+    expected_size = (512, 512) if path.name == 'icon.png' else (32, 32) if path.parent.name == 'block' and path.stem.startswith('wheat') else (16, 16)
     check(image.size == expected_size, f'{path.name}: dimensions {expected_size}')
     check(image.mode == 'RGBA', f'{path.name}: RGBA')
     if not path.stem.endswith('_glass'):

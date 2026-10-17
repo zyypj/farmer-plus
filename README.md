@@ -15,7 +15,7 @@ A vanilla-friendly overhaul of Minecraft farming. Farmer+ adds crops, foods, ing
 ## Design goals
 
 - **Vanilla first.** Every addition must look, sound and behave like something Mojang could ship. Recipes, textures and progression follow vanilla conventions.
-- **Featherweight.** Two tiny mixins, no per-tick logic, no reflection. Content is registered once at startup and behaviour is driven by vanilla data components, tags and JSON data. Each loader jar is about 160 KB, almost all of it 16×16 art and block models.
+- **Featherweight.** Three tiny mixins, no per-tick logic, no reflection. Content is registered once at startup and behaviour is driven by vanilla data components, tags and JSON data. Each loader jar is about 160 KB, almost all of it 16×16 art and block models.
 - **Modpack friendly.** Ingredients use the shared `c:` convention tags (`c:flours/wheat`, `c:doughs/wheat`, …), so flour or dough from other mods works in Farmer+ recipes and vice versa.
 - **Every loader.** One shared codebase ships to Fabric, NeoForge and Forge, and is updated whenever Minecraft or a loader releases a new version.
 
@@ -39,6 +39,10 @@ Wheat itself gets a **Realistic Vanilla+ visual overhaul**: original 16×16 art 
 ### Strawberries
 
 A new perennial crop. Find **wild strawberries** in plains, meadows and forests, then plant the berries on **farmland** (only farmland). Plants flower, set green fruit and ripen; right-click to pick 2–4 strawberries and the plant flowers again. Healthy plants send runners onto neighbouring empty farmland, trampled plants lose part of their harvest, and strawberries become **jam**: a glass bottle with 1–3 strawberries fills a jar you can eat a portion at a time or place as decoration. See [docs/strawberries.md](docs/strawberries.md).
+
+### Avocado tree
+
+A full-size fruit tree (10–15 blocks) that grows wild in jungles. Its leaves flower, set green fruit and ripen into avocados you pick with a right-click — again and again. It comes with a complete wood set (logs, wood, stripped variants, planks, stairs, slabs, fences, gates, doors, trapdoors, plates, buttons) that works in every vanilla wooden recipe. See [docs/avocado.md](docs/avocado.md).
 
 ### Crop trampling
 
@@ -75,6 +79,7 @@ The same task exists for `:fabric` and `:forge`.
 | Wheat visuals | [docs/wheat-visuals.md](docs/wheat-visuals.md) | [docs/wheat-visuals.pt-BR.md](docs/wheat-visuals.pt-BR.md) |
 | Crop trampling | [docs/trampling.md](docs/trampling.md) | [docs/trampling.pt-BR.md](docs/trampling.pt-BR.md) |
 | Strawberries | [docs/strawberries.md](docs/strawberries.md) | [docs/strawberries.pt-BR.md](docs/strawberries.pt-BR.md) |
+| Avocado tree and wood | [docs/avocado.md](docs/avocado.md) | [docs/avocado.pt-BR.md](docs/avocado.pt-BR.md) |
 | Updating Minecraft and loaders | [docs/updating.md](docs/updating.md) | [docs/updating.pt-BR.md](docs/updating.pt-BR.md) |
 | Contributing | [CONTRIBUTING.md](CONTRIBUTING.md) | [CONTRIBUTING.pt-BR.md](CONTRIBUTING.pt-BR.md) |
 | Changelog | [CHANGELOG.md](CHANGELOG.md) | [CHANGELOG.pt-BR.md](CHANGELOG.pt-BR.md) |
