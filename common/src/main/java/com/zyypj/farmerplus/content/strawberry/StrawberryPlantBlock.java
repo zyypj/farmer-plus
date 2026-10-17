@@ -49,11 +49,11 @@ public class StrawberryPlantBlock extends VegetationBlock implements Bonemealabl
     private static final int DRY_GROWTH_CHANCE = 8;
     private static final int RUNNER_CHANCE = 20;
     private static final VoxelShape[] SHAPES = {
-            Block.column(8.0, 0.0, 3.0),
-            Block.column(12.0, 0.0, 5.0),
-            Block.column(14.0, 0.0, 6.0),
-            Block.column(14.0, 0.0, 6.0),
-            Block.column(14.0, 0.0, 7.0)
+            Block.column(5.5, -1.0, 1.0),
+            Block.column(10.0, -1.0, 2.25),
+            Block.column(13.0, -1.0, 5.75),
+            Block.column(19.0, -1.0, 6.25),
+            Block.column(19.5, -1.0, 5.75)
     };
 
     public StrawberryPlantBlock(BlockBehaviour.Properties properties) {

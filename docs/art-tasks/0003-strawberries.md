@@ -68,8 +68,10 @@ Extra textures are fine if needed. Remove the placeholder `strawberry_plant_stag
 
 ## Done when
 
-- [ ] 5 ages × 4 variations for the cultivated plant, 5 ages × 2 for wild, blockstates updated.
-- [ ] Item texture replaced.
-- [ ] Element budgets respected; berries are 3D and hang over the edge; no floating parts.
-- [ ] `./gradlew build` passes and `./gradlew :neoforge:runClient` shows no `farmerplus` model/texture warnings.
+- [x] 5 ages × 4 variations for the cultivated plant, 5 ages × 2 for wild, blockstates updated.
+- [x] Item texture replaced.
+- [x] Element budgets respected; berries are 3D and hang over the edge; no floating parts.
+- [x] `./gradlew build` passes and `./gradlew :neoforge:runClient` shows no `farmerplus` model/texture warnings.
 - [ ] In game: a 9×9 farmland field with all ages reads as a real strawberry field from 5 and 20 blocks away; ripe berries are clearly visible from standing height.
+
+Implementation and current verification: [visual report](../strawberry-visuals.md). The final manual in-game 9×9 distance check remains open.

@@ -201,6 +201,13 @@ for pack in packs:
                     target = f'assets/{namespace}/{kind}/{resource}' + ('.png' if kind == 'textures' else '.json')
                     check(target in names or target in official, f'Standalone pack: dependency {identifier} is available without mod')
 
+from validate_strawberries import validate as validate_strawberries
+
+strawberries = validate_strawberries(quiet=True)
+check(len(strawberries['models']) == 30, 'Thirty native cultivated/wild strawberry model arrangements')
+for error in strawberries['errors']:
+    check(False, error)
+check(not strawberries['errors'], 'Strawberry native sources, solid berries, stage variation, textures and shapes pass')
 report = {'passed': len(checks), 'errors': errors, 'official_version': version, 'official_client_sha1': hashlib.file_digest(JAR.open('rb'), 'sha1').hexdigest()}
 out = ROOT / 'build/art/validation/wheat-art-validation.json'
 out.parent.mkdir(parents=True, exist_ok=True)

@@ -3,91 +3,411 @@
     "age=0": [
       {
         "model": "farmerplus:block/strawberry_plant_stage0",
-        "y": 0
+        "y": 0,
+        "weight": 1
       },
       {
         "model": "farmerplus:block/strawberry_plant_stage0",
-        "y": 90
+        "y": 90,
+        "weight": 1
       },
       {
         "model": "farmerplus:block/strawberry_plant_stage0",
-        "y": 180
+        "y": 180,
+        "weight": 1
       },
       {
         "model": "farmerplus:block/strawberry_plant_stage0",
-        "y": 270
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage0_variant1",
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage0_variant1",
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage0_variant1",
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage0_variant1",
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage0_variant2",
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage0_variant2",
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage0_variant2",
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage0_variant2",
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage0_variant3",
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage0_variant3",
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage0_variant3",
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage0_variant3",
+        "y": 270,
+        "weight": 1
       }
     ],
     "age=1": [
       {
         "model": "farmerplus:block/strawberry_plant_stage1",
-        "y": 0
+        "y": 0,
+        "weight": 1
       },
       {
         "model": "farmerplus:block/strawberry_plant_stage1",
-        "y": 90
+        "y": 90,
+        "weight": 1
       },
       {
         "model": "farmerplus:block/strawberry_plant_stage1",
-        "y": 180
+        "y": 180,
+        "weight": 1
       },
       {
         "model": "farmerplus:block/strawberry_plant_stage1",
-        "y": 270
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage1_variant1",
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage1_variant1",
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage1_variant1",
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage1_variant1",
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage1_variant2",
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage1_variant2",
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage1_variant2",
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage1_variant2",
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage1_variant3",
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage1_variant3",
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage1_variant3",
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage1_variant3",
+        "y": 270,
+        "weight": 1
       }
     ],
     "age=2": [
       {
         "model": "farmerplus:block/strawberry_plant_stage2",
-        "y": 0
+        "y": 0,
+        "weight": 1
       },
       {
         "model": "farmerplus:block/strawberry_plant_stage2",
-        "y": 90
+        "y": 90,
+        "weight": 1
       },
       {
         "model": "farmerplus:block/strawberry_plant_stage2",
-        "y": 180
+        "y": 180,
+        "weight": 1
       },
       {
         "model": "farmerplus:block/strawberry_plant_stage2",
-        "y": 270
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage2_variant1",
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage2_variant1",
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage2_variant1",
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage2_variant1",
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage2_variant2",
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage2_variant2",
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage2_variant2",
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage2_variant2",
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage2_variant3",
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage2_variant3",
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage2_variant3",
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage2_variant3",
+        "y": 270,
+        "weight": 1
       }
     ],
     "age=3": [
       {
         "model": "farmerplus:block/strawberry_plant_stage3",
-        "y": 0
+        "y": 0,
+        "weight": 1
       },
       {
         "model": "farmerplus:block/strawberry_plant_stage3",
-        "y": 90
+        "y": 90,
+        "weight": 1
       },
       {
         "model": "farmerplus:block/strawberry_plant_stage3",
-        "y": 180
+        "y": 180,
+        "weight": 1
       },
       {
         "model": "farmerplus:block/strawberry_plant_stage3",
-        "y": 270
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage3_variant1",
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage3_variant1",
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage3_variant1",
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage3_variant1",
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage3_variant2",
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage3_variant2",
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage3_variant2",
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage3_variant2",
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage3_variant3",
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage3_variant3",
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage3_variant3",
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage3_variant3",
+        "y": 270,
+        "weight": 1
       }
     ],
     "age=4": [
       {
         "model": "farmerplus:block/strawberry_plant_stage4",
-        "y": 0
+        "y": 0,
+        "weight": 1
       },
       {
         "model": "farmerplus:block/strawberry_plant_stage4",
-        "y": 90
+        "y": 90,
+        "weight": 1
       },
       {
         "model": "farmerplus:block/strawberry_plant_stage4",
-        "y": 180
+        "y": 180,
+        "weight": 1
       },
       {
         "model": "farmerplus:block/strawberry_plant_stage4",
-        "y": 270
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage4_variant1",
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage4_variant1",
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage4_variant1",
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage4_variant1",
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage4_variant2",
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage4_variant2",
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage4_variant2",
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage4_variant2",
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage4_variant3",
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage4_variant3",
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage4_variant3",
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "farmerplus:block/strawberry_plant_stage4_variant3",
+        "y": 270,
+        "weight": 1
       }
     ]
   }

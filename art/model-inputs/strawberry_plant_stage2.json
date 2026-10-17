@@ -1,0 +1,705 @@
+{
+  "ambientocclusion": false,
+  "texture_size": [
+    32,
+    32
+  ],
+  "textures": {
+    "particle": "farmerplus:block/strawberry_leaf",
+    "leaf": "farmerplus:block/strawberry_leaf",
+    "young": "farmerplus:block/strawberry_leaf_young",
+    "aged": "farmerplus:block/strawberry_leaf_aged",
+    "under": "farmerplus:block/strawberry_leaf_under",
+    "flower": "farmerplus:block/strawberry_flower",
+    "fruit": "farmerplus:block/strawberry_fruit",
+    "rose": "farmerplus:block/strawberry_fruit_rose",
+    "deep": "farmerplus:block/strawberry_fruit_deep",
+    "stem": "farmerplus:block/strawberry_stem",
+    "peduncle": "farmerplus:block/strawberry_peduncle",
+    "paired": "farmerplus:block/strawberry_peduncle_pair"
+  },
+  "elements": [
+    {
+      "name": "soil_crown",
+      "from": [
+        7,
+        -1,
+        7
+      ],
+      "to": [
+        9,
+        -0.62,
+        9
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#stem"
+        },
+        "south": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#stem"
+        },
+        "east": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#stem"
+        },
+        "west": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#stem"
+        },
+        "up": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#stem"
+        },
+        "down": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#stem"
+        }
+      }
+    },
+    {
+      "name": "leaf_0_petiole",
+      "from": [
+        4.640000000000001,
+        -0.65,
+        4.581199999999999
+      ],
+      "to": [
+        11.36,
+        -0.65,
+        8
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          -0.65,
+          8
+        ],
+        "x": 54,
+        "y": 0.0,
+        "z": -4
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            7.199999999999999,
+            16,
+            16
+          ],
+          "texture": "#leaf"
+        },
+        "down": {
+          "uv": [
+            0,
+            16,
+            16,
+            7.199999999999999
+          ],
+          "texture": "#under"
+        }
+      }
+    },
+    {
+      "name": "leaf_0_trifoliate",
+      "from": [
+        4.83293714971793,
+        2.109129786637376,
+        3.1932797794624928
+      ],
+      "to": [
+        11.552937149717929,
+        2.109129786637376,
+        5.990479779462492
+      ],
+      "rotation": {
+        "origin": [
+          8.19293714971793,
+          2.109129786637376,
+          5.990479779462492
+        ],
+        "x": -13,
+        "y": 0.0,
+        "z": -4
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            7.199999999999999
+          ],
+          "texture": "#leaf"
+        },
+        "down": {
+          "uv": [
+            0,
+            7.199999999999999,
+            16,
+            0
+          ],
+          "texture": "#under"
+        }
+      }
+    },
+    {
+      "name": "leaf_1_petiole",
+      "from": [
+        4.556000000000001,
+        -0.65,
+        4.33172
+      ],
+      "to": [
+        11.443999999999999,
+        -0.65,
+        8
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          -0.65,
+          8
+        ],
+        "x": 57,
+        "y": 97.0,
+        "z": 1
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            7.199999999999999,
+            16,
+            16
+          ],
+          "texture": "#leaf"
+        },
+        "down": {
+          "uv": [
+            0,
+            16,
+            16,
+            7.199999999999999
+          ],
+          "texture": "#under"
+        }
+      }
+    },
+    {
+      "name": "leaf_1_trifoliate",
+      "from": [
+        2.5196135457017674,
+        2.3914018471517307,
+        5.2421613571769115
+      ],
+      "to": [
+        9.407613545701766,
+        2.3914018471517307,
+        8.243481357176911
+      ],
+      "rotation": {
+        "origin": [
+          5.963613545701767,
+          2.3914018471517307,
+          8.243481357176911
+        ],
+        "x": -10,
+        "y": 97.0,
+        "z": 1
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            7.199999999999999
+          ],
+          "texture": "#leaf"
+        },
+        "down": {
+          "uv": [
+            0,
+            7.199999999999999,
+            16,
+            0
+          ],
+          "texture": "#under"
+        }
+      }
+    },
+    {
+      "name": "leaf_2_petiole",
+      "from": [
+        4.4719999999999995,
+        -0.65,
+        4.49804
+      ],
+      "to": [
+        11.528,
+        -0.65,
+        8
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          -0.65,
+          8
+        ],
+        "x": 60,
+        "y": 170.0,
+        "z": -3
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            7.199999999999999,
+            16,
+            16
+          ],
+          "texture": "#leaf"
+        },
+        "down": {
+          "uv": [
+            0,
+            16,
+            16,
+            7.199999999999999
+          ],
+          "texture": "#under"
+        }
+      }
+    },
+    {
+      "name": "leaf_2_trifoliate",
+      "from": [
+        4.327085982271377,
+        2.394542977066062,
+        6.859138679369316
+      ],
+      "to": [
+        11.383085982271378,
+        2.394542977066062,
+        9.724378679369316
+      ],
+      "rotation": {
+        "origin": [
+          7.855085982271378,
+          2.394542977066062,
+          9.724378679369316
+        ],
+        "x": -7,
+        "y": 170.0,
+        "z": -3
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            7.199999999999999
+          ],
+          "texture": "#leaf"
+        },
+        "down": {
+          "uv": [
+            0,
+            7.199999999999999,
+            16,
+            0
+          ],
+          "texture": "#under"
+        }
+      }
+    },
+    {
+      "name": "leaf_3_petiole",
+      "from": [
+        4.640000000000001,
+        -0.65,
+        4.2485599999999994
+      ],
+      "to": [
+        11.36,
+        -0.65,
+        8
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          -0.65,
+          8
+        ],
+        "x": 63,
+        "y": -79.0,
+        "z": 2
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            7.199999999999999,
+            16,
+            16
+          ],
+          "texture": "#leaf"
+        },
+        "down": {
+          "uv": [
+            0,
+            16,
+            16,
+            7.199999999999999
+          ],
+          "texture": "#under"
+        }
+      }
+    },
+    {
+      "name": "leaf_3_trifoliate",
+      "from": [
+        6.194155036711036,
+        2.7488672417694495,
+        4.605669742449777
+      ],
+      "to": [
+        12.914155036711035,
+        2.7488672417694495,
+        7.675029742449777
+      ],
+      "rotation": {
+        "origin": [
+          9.554155036711036,
+          2.7488672417694495,
+          7.675029742449777
+        ],
+        "x": -13,
+        "y": -79.0,
+        "z": 2
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            7.199999999999999
+          ],
+          "texture": "#leaf"
+        },
+        "down": {
+          "uv": [
+            0,
+            7.199999999999999,
+            16,
+            0
+          ],
+          "texture": "#under"
+        }
+      }
+    },
+    {
+      "name": "flower_0_stalk",
+      "from": [
+        7.89,
+        -0.65,
+        8
+      ],
+      "to": [
+        8.11,
+        5.551007982578316,
+        8
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          -0.65,
+          8
+        ],
+        "x": 17.772667142533408,
+        "y": 0,
+        "z": -27.243738139195557
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            1,
+            16
+          ],
+          "texture": "#stem"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            1,
+            16
+          ],
+          "texture": "#stem"
+        }
+      }
+    },
+    {
+      "name": "flower_0_five_petals",
+      "from": [
+        9.453201746153672,
+        4.6,
+        8.892802239958453
+      ],
+      "to": [
+        11.953201746153672,
+        4.6,
+        10.892802239958453
+      ],
+      "rotation": {
+        "origin": [
+          10.703201746153672,
+          4.6,
+          9.892802239958453
+        ],
+        "x": 8,
+        "y": 0,
+        "z": -8
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            12
+          ],
+          "texture": "#flower"
+        },
+        "down": {
+          "uv": [
+            0,
+            12,
+            16,
+            0
+          ],
+          "texture": "#flower"
+        }
+      }
+    },
+    {
+      "name": "flower_1_stalk",
+      "from": [
+        7.89,
+        -0.65,
+        8
+      ],
+      "to": [
+        8.11,
+        5.76404708432983,
+        8
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          -0.65,
+          8
+        ],
+        "x": 12.558440446605147,
+        "y": 0,
+        "z": 28.53666982257144
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            1,
+            16
+          ],
+          "texture": "#stem"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            1,
+            16
+          ],
+          "texture": "#stem"
+        }
+      }
+    },
+    {
+      "name": "flower_1_five_petals",
+      "from": [
+        3.7591843027790555,
+        4.85,
+        8.394640263744309
+      ],
+      "to": [
+        6.2591843027790555,
+        4.85,
+        10.394640263744309
+      ],
+      "rotation": {
+        "origin": [
+          5.0091843027790555,
+          4.85,
+          9.394640263744309
+        ],
+        "x": 11,
+        "y": 40,
+        "z": -8
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            12
+          ],
+          "texture": "#flower"
+        },
+        "down": {
+          "uv": [
+            0,
+            12,
+            16,
+            0
+          ],
+          "texture": "#flower"
+        }
+      }
+    },
+    {
+      "name": "flower_2_stalk",
+      "from": [
+        7.89,
+        -0.65,
+        8
+      ],
+      "to": [
+        8.11,
+        5.979668166658116,
+        8
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          -0.65,
+          8
+        ],
+        "x": -29.72702552535293,
+        "y": 0,
+        "z": -2.863537856929753
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            1,
+            16
+          ],
+          "texture": "#stem"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            1,
+            16
+          ],
+          "texture": "#stem"
+        }
+      }
+    },
+    {
+      "name": "flower_2_five_petals",
+      "from": [
+        7.0376139510672715,
+        5.1,
+        3.71255749629724
+      ],
+      "to": [
+        9.537613951067272,
+        5.1,
+        5.71255749629724
+      ],
+      "rotation": {
+        "origin": [
+          8.287613951067272,
+          5.1,
+          4.71255749629724
+        ],
+        "x": 14,
+        "y": 80,
+        "z": -8
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            12
+          ],
+          "texture": "#flower"
+        },
+        "down": {
+          "uv": [
+            0,
+            12,
+            16,
+            0
+          ],
+          "texture": "#flower"
+        }
+      }
+    }
+  ]
+}

@@ -68,8 +68,10 @@ Pode criar texturas extras se precisar. Apague as provisórias `strawberry_plant
 
 ## Pronto quando
 
-- [ ] 5 idades × 4 variações do cultivado, 5 idades × 2 do silvestre, blockstates atualizados.
-- [ ] Textura do item substituída.
-- [ ] Limites de elementos respeitados; morangos em 3D pendurados pela borda; nenhuma peça flutuando.
-- [ ] `./gradlew build` passa e `./gradlew :neoforge:runClient` não mostra avisos de modelo/textura do `farmerplus`.
+- [x] 5 idades × 4 variações do cultivado, 5 idades × 2 do silvestre, blockstates atualizados.
+- [x] Textura do item substituída.
+- [x] Limites de elementos respeitados; morangos em 3D pendurados pela borda; nenhuma peça flutuando.
+- [x] `./gradlew build` passa e `./gradlew :neoforge:runClient` não mostra avisos de modelo/textura do `farmerplus`.
 - [ ] No jogo: um campo 9×9 de terra arada com todas as idades parece um morangal de verdade a 5 e a 20 blocos de distância; os morangos maduros aparecem claramente na altura dos olhos.
+
+Implementação e verificação atuais: [relatório visual](../strawberry-visuals.pt-BR.md). A conferência manual final do campo 9×9 no jogo permanece aberta.

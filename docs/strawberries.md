@@ -51,4 +51,4 @@ No tick handlers or mixins. Plants use vanilla random ticks only until they are 
 
 ## Art
 
-The current models are placeholders (flat cross planes). The real 3D models are described in [art task 0003](art-tasks/0003-strawberries.md).
+The five ages now use native 3D models with four cultivated and two wild arrangements each. See [the visual report](strawberry-visuals.md) for source projects, geometry, selection shapes and validation, and [art task 0003](art-tasks/0003-strawberries.md) for the acceptance checklist.

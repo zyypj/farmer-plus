@@ -51,4 +51,4 @@ Sem handlers de tick nem mixins. As plantas usam random ticks do vanilla só at�
 
 ## Arte
 
-Os modelos atuais são provisórios (planos em cruz). Os modelos 3D de verdade estão descritos na [tarefa de arte 0003](art-tasks/0003-strawberries.pt-BR.md).
+As cinco idades agora usam modelos 3D nativos, com quatro arranjos cultivados e dois silvestres por idade. Veja [o relatório visual](strawberry-visuals.pt-BR.md) para fontes, geometria, contornos e validação, e a [tarefa de arte 0003](art-tasks/0003-strawberries.pt-BR.md) para os critérios de aceitação.
