@@ -25,6 +25,7 @@ tasks.register('wheatVisualPack', Zip) {
         include 'assets/minecraft/textures/item/wheat_seeds.png'
         include 'assets/farmerplus/models/block/wheat_stage*.json'
         include 'assets/farmerplus/textures/block/wheat_stage*.png'
+        exclude 'assets/farmerplus/textures/block/*_crushed.png'
     }
     from('common/src/main/resources/assets/farmerplus/icon.png') {
         rename { 'pack.png' }

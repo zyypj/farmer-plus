@@ -1,6 +1,7 @@
 package com.zyypj.farmerplus.content.wheat;
 
 import com.zyypj.farmerplus.core.module.FarmerModule;
+import com.zyypj.farmerplus.core.trampling.TrampleableCrops;
 import java.util.List;
 import net.minecraft.world.level.ItemLike;
 
@@ -15,6 +16,7 @@ public final class WheatModule implements FarmerModule {
     public void register() {
         WheatBlocks.bootstrap();
         WheatItems.bootstrap();
+        TrampleableCrops.register(WheatBlocks.TRAMPLED_WHEAT);
     }
 
     @Override

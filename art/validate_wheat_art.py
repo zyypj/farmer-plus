@@ -29,7 +29,8 @@ with ZipFile(JAR) as vanilla:
     pack_format = version['pack_version']
     expected = [pack_format['resource_major'], pack_format['resource_minor']]
     metadata = load(RES / 'pack.mcmeta')['pack']
-    check(metadata['min_format'] == expected == metadata['max_format'], f'Resource format matches official client: {expected}')
+    data_format = pack_format['data_major']
+    check(metadata['min_format'] == expected and metadata['max_format'] == data_format, f'Pack format covers resources {expected} and data {data_format}')
 
 
 def resolve(identifier, kind):
@@ -54,7 +55,7 @@ for path in (RES / 'assets').rglob('*.json'):
         for el in elements:
             check('shade' not in el, f'{path.name}: no removed shade property')
             rotation = el.get('rotation', {})
-            check(rotation.get('angle', 0) in (-45, -22.5, 0, 22.5, 45), f'{path.name}: supported rotation')
+            check(all(-180 <= rotation.get(axis, 0) <= 180 for axis in ('angle', 'x', 'y', 'z')), f'{path.name}: supported rotation')
             for face in el.get('faces', {}).values():
                 check(all(0 <= v <= 16 for v in face['uv']), f'{path.name}: UV bounds')
                 check(face['texture'].removeprefix('#') in value.get('textures', {}), f'{path.name}: texture variable resolves')

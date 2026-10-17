@@ -1,0 +1,354 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "farmerplus:block/wheat_stage6",
+    "crop": "farmerplus:block/wheat_stage6",
+    "alternate": "farmerplus:block/wheat_stage6_alternate"
+  },
+  "elements": [
+    {
+      "name": "flattened_stub_0",
+      "from": [
+        0,
+        -1.0,
+        13.5
+      ],
+      "to": [
+        16,
+        3.0,
+        13.5
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8,
+          -1.0,
+          13.5
+        ],
+        "x": -8,
+        "y": -10
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            13.091,
+            16,
+            16
+          ],
+          "texture": "#alternate"
+        },
+        "south": {
+          "uv": [
+            16,
+            13.091,
+            0,
+            16
+          ],
+          "texture": "#alternate"
+        }
+      }
+    },
+    {
+      "name": "flattened_fallen_0",
+      "from": [
+        0,
+        3.0,
+        13.5
+      ],
+      "to": [
+        16,
+        21.0,
+        13.5
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8,
+          3.0,
+          13.5
+        ],
+        "x": -74,
+        "y": -10
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            13.091
+          ],
+          "texture": "#alternate"
+        },
+        "south": {
+          "uv": [
+            16,
+            0,
+            0,
+            13.091
+          ],
+          "texture": "#alternate"
+        }
+      }
+    },
+    {
+      "name": "flattened_stub_1",
+      "from": [
+        0,
+        -1.0,
+        11.0
+      ],
+      "to": [
+        16,
+        2.0,
+        11.0
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8,
+          -1.0,
+          11.0
+        ],
+        "x": -8,
+        "y": 8
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            13.818,
+            16,
+            16
+          ],
+          "texture": "#crop"
+        },
+        "south": {
+          "uv": [
+            16,
+            13.818,
+            0,
+            16
+          ],
+          "texture": "#crop"
+        }
+      }
+    },
+    {
+      "name": "flattened_fallen_1",
+      "from": [
+        0,
+        2.0,
+        11.0
+      ],
+      "to": [
+        16,
+        21.0,
+        11.0
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8,
+          2.0,
+          11.0
+        ],
+        "x": -80,
+        "y": 8
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            13.818
+          ],
+          "texture": "#crop"
+        },
+        "south": {
+          "uv": [
+            16,
+            0,
+            0,
+            13.818
+          ],
+          "texture": "#crop"
+        }
+      }
+    },
+    {
+      "name": "flattened_stub_2",
+      "from": [
+        0,
+        -1.0,
+        8.5
+      ],
+      "to": [
+        16,
+        3.5,
+        8.5
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8,
+          -1.0,
+          8.5
+        ],
+        "x": -8,
+        "y": -4
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            12.727,
+            16,
+            16
+          ],
+          "texture": "#alternate"
+        },
+        "south": {
+          "uv": [
+            16,
+            12.727,
+            0,
+            16
+          ],
+          "texture": "#alternate"
+        }
+      }
+    },
+    {
+      "name": "flattened_fallen_2",
+      "from": [
+        0,
+        3.5,
+        8.5
+      ],
+      "to": [
+        16,
+        21.0,
+        8.5
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8,
+          3.5,
+          8.5
+        ],
+        "x": -70,
+        "y": -4
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            12.727
+          ],
+          "texture": "#alternate"
+        },
+        "south": {
+          "uv": [
+            16,
+            0,
+            0,
+            12.727
+          ],
+          "texture": "#alternate"
+        }
+      }
+    },
+    {
+      "name": "flattened_stub_3",
+      "from": [
+        0,
+        -1.0,
+        6.0
+      ],
+      "to": [
+        16,
+        2.5,
+        6.0
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8,
+          -1.0,
+          6.0
+        ],
+        "x": -8,
+        "y": 12
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            13.455,
+            16,
+            16
+          ],
+          "texture": "#crop"
+        },
+        "south": {
+          "uv": [
+            16,
+            13.455,
+            0,
+            16
+          ],
+          "texture": "#crop"
+        }
+      }
+    },
+    {
+      "name": "flattened_fallen_3",
+      "from": [
+        0,
+        2.5,
+        6.0
+      ],
+      "to": [
+        16,
+        21.0,
+        6.0
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8,
+          2.5,
+          6.0
+        ],
+        "x": -78,
+        "y": 12
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            13.455
+          ],
+          "texture": "#crop"
+        },
+        "south": {
+          "uv": [
+            16,
+            0,
+            0,
+            13.455
+          ],
+          "texture": "#crop"
+        }
+      }
+    }
+  ]
+}

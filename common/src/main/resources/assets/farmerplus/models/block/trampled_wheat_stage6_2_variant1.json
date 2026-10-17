@@ -1,0 +1,8 @@
+{
+  "parent": "farmerplus:block/trampled_wheat_stage6_2",
+  "textures": {
+    "particle": "farmerplus:block/wheat_stage6_alternate",
+    "crop": "farmerplus:block/wheat_stage6_alternate",
+    "alternate": "farmerplus:block/wheat_stage6"
+  }
+}

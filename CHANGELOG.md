@@ -2,6 +2,13 @@
 
 **English** | [Português](CHANGELOG.pt-BR.md)
 
+## Unreleased
+
+### Added
+- Crop trampling: walking bends crops, sprinting or riding flattens them and repeated passes crush them into paths, with modelled bent, snapped and flattened stalks.
+- Trampled crops recover over time; crushed mature wheat only drops seeds. Sneaking never tramples.
+- `farmerplus:crop_trampling` and `farmerplus:mob_crop_trampling` game rules and the `farmerplus:tramples_crops` entity tag.
+
 ## 0.1.0 — Wheat update
 
 ### Added

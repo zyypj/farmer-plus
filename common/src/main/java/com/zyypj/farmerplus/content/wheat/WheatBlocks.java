@@ -2,6 +2,9 @@ package com.zyypj.farmerplus.content.wheat;
 
 import com.zyypj.farmerplus.core.registry.FarmerRegistries;
 import com.zyypj.farmerplus.core.registry.RegistryEntry;
+import com.zyypj.farmerplus.core.trampling.TrampledCropBlock;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -17,6 +20,10 @@ public final class WheatBlocks {
                     .sound(SoundType.GRASS)
                     .noOcclusion()
                     .ignitedByLava());
+
+    public static final RegistryEntry<TrampledCropBlock> TRAMPLED_WHEAT = FarmerRegistries.block("trampled_wheat",
+            properties -> new TrampledCropBlock(() -> (CropBlock) Blocks.WHEAT, properties),
+            TrampledCropBlock::cropProperties);
 
     private WheatBlocks() {
     }

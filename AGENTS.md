@@ -7,6 +7,7 @@ Farmer+ is a vanilla-style farming mod for Minecraft 26.3 with one shared codeba
 - `docs/architecture.md` — code layout, modules, performance rules.
 - `docs/art-pipeline.md` — texture and Blockbench rules. **Mandatory for any art task.**
 - `docs/art-tasks/` — the current art backlog with exact file names.
+- `docs/trampling.md` — crop trampling: trampled block states, generated models (`art/trampled_wheat.py`) and the single allowed mixin.
 
 ## Hard rules
 

@@ -71,11 +71,17 @@ Each loader entrypoint does exactly two things: call `FarmerPlus.init()` and, on
 
 Farmer+ must stay invisible on a profiler.
 
-1. **No mixins** unless there is no data-driven or API alternative, and never in hot paths (rendering, ticking, pathfinding).
+1. **No mixins** unless there is no data-driven or API alternative, and never in hot paths (rendering, ticking, pathfinding). Every mixin lives in `common/…/mixin`, is listed in `farmerplus.mixins.json` and is documented with its reason. Current list: `CropBlockMixin` — the only way to react to entities walking through vanilla crops ([trampling](trampling.md)).
 2. **No tick handlers.** Use block random ticks, scheduled ticks or vanilla mechanics instead.
 3. **Prefer data over code.** Composting, fuel, food, villager food, tool behaviour and loot are vanilla data components or JSON — use them.
 4. **No reflection, no runtime classpath scanning, no config libraries** for things a data pack can already express.
 5. **Static shapes.** `VoxelShape`s are computed once in `static final` fields.
+
+## Systems
+
+| System | Package | Docs |
+|---|---|---|
+| Crop trampling | `core/trampling` | [trampling.md](trampling.md) |
 
 ## Adding a new crop (checklist)
 

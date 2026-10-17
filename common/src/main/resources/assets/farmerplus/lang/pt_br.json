@@ -7,5 +7,11 @@
   "tag.item.c.flours": "Farinhas",
   "tag.item.c.flours.wheat": "Farinhas de Trigo",
   "tag.item.c.doughs": "Massas",
-  "tag.item.c.doughs.wheat": "Massas de Trigo"
+  "tag.item.c.doughs.wheat": "Massas de Trigo",
+  "block.farmerplus.trampled_wheat": "Trigo Amassado",
+  "gamerule.farmerplus.crop_trampling": "Jogadores amassam plantações",
+  "gamerule.farmerplus.crop_trampling.description": "Andar pela plantação entorta as plantas, correr deita elas e passar várias vezes esmaga e abre caminhos. Agachado nunca amassa.",
+  "gamerule.farmerplus.mob_crop_trampling": "Criaturas amassam plantações",
+  "gamerule.farmerplus.mob_crop_trampling.description": "Animais e criaturas grandes da tag farmerplus:tramples_crops amassam as plantações por onde passam.",
+  "tag.entity_type.farmerplus.tramples_crops": "Amassam Plantações"
 }

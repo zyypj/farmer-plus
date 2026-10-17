@@ -71,11 +71,17 @@ O entrypoint de cada loader faz exatamente duas coisas: chama `FarmerPlus.init()
 
 O Farmer+ precisa ser invisível no profiler.
 
-1. **Sem mixins**, a não ser que não exista alternativa por dados ou API — e nunca em caminhos quentes (render, tick, pathfinding).
+1. **Sem mixins**, a não ser que não exista alternativa por dados ou API — e nunca em caminhos quentes (render, tick, pathfinding). Todo mixin fica em `common/…/mixin`, é listado em `farmerplus.mixins.json` e tem o motivo documentado. Lista atual: `CropBlockMixin` — a única forma de reagir a entidades andando pelas plantações vanilla ([pisoteio](trampling.pt-BR.md)).
 2. **Sem handlers de tick.** Use random ticks de bloco, scheduled ticks ou mecânicas vanilla.
 3. **Dados antes de código.** Compostagem, combustível, comida, comida de aldeão, ferramentas e loot são componentes de dados ou JSON do vanilla — use-os.
 4. **Sem reflexão, sem varredura de classpath em runtime, sem biblioteca de config** para coisas que um data pack já resolve.
 5. **Shapes estáticos.** `VoxelShape`s são calculados uma vez em campos `static final`.
+
+## Sistemas
+
+| Sistema | Pacote | Docs |
+|---|---|---|
+| Pisoteio de plantações | `core/trampling` | [trampling.pt-BR.md](trampling.pt-BR.md) |
 
 ## Adicionando uma plantação nova (checklist)
 

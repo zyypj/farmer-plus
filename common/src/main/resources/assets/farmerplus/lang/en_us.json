@@ -7,5 +7,11 @@
   "tag.item.c.flours": "Flours",
   "tag.item.c.flours.wheat": "Wheat Flours",
   "tag.item.c.doughs": "Doughs",
-  "tag.item.c.doughs.wheat": "Wheat Doughs"
+  "tag.item.c.doughs.wheat": "Wheat Doughs",
+  "block.farmerplus.trampled_wheat": "Trampled Wheat",
+  "gamerule.farmerplus.crop_trampling": "Players trample crops",
+  "gamerule.farmerplus.crop_trampling.description": "Walking through crops bends them, sprinting flattens them and repeated passes crush them into paths. Sneaking never tramples.",
+  "gamerule.farmerplus.mob_crop_trampling": "Mobs trample crops",
+  "gamerule.farmerplus.mob_crop_trampling.description": "Livestock and large mobs in the farmerplus:tramples_crops entity tag trample crops they walk through.",
+  "tag.entity_type.farmerplus.tramples_crops": "Tramples Crops"
 }

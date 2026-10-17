@@ -1,0 +1,964 @@
+{
+  "variants": {
+    "age=0,facing=north,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_1",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_1_variant1",
+        "y": 0
+      }
+    ],
+    "age=0,facing=east,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_1",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_1_variant1",
+        "y": 90
+      }
+    ],
+    "age=0,facing=south,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_1",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_1_variant1",
+        "y": 180
+      }
+    ],
+    "age=0,facing=west,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_1",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_1_variant1",
+        "y": 270
+      }
+    ],
+    "age=0,facing=north,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_2",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_2_variant1",
+        "y": 0
+      }
+    ],
+    "age=0,facing=east,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_2",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_2_variant1",
+        "y": 90
+      }
+    ],
+    "age=0,facing=south,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_2",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_2_variant1",
+        "y": 180
+      }
+    ],
+    "age=0,facing=west,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_2",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_2_variant1",
+        "y": 270
+      }
+    ],
+    "age=0,facing=north,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_3",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_3_variant1",
+        "y": 0
+      }
+    ],
+    "age=0,facing=east,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_3",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_3_variant1",
+        "y": 90
+      }
+    ],
+    "age=0,facing=south,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_3",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_3_variant1",
+        "y": 180
+      }
+    ],
+    "age=0,facing=west,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_3",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage0_3_variant1",
+        "y": 270
+      }
+    ],
+    "age=1,facing=north,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_1",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_1_variant1",
+        "y": 0
+      }
+    ],
+    "age=1,facing=east,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_1",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_1_variant1",
+        "y": 90
+      }
+    ],
+    "age=1,facing=south,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_1",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_1_variant1",
+        "y": 180
+      }
+    ],
+    "age=1,facing=west,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_1",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_1_variant1",
+        "y": 270
+      }
+    ],
+    "age=1,facing=north,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_2",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_2_variant1",
+        "y": 0
+      }
+    ],
+    "age=1,facing=east,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_2",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_2_variant1",
+        "y": 90
+      }
+    ],
+    "age=1,facing=south,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_2",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_2_variant1",
+        "y": 180
+      }
+    ],
+    "age=1,facing=west,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_2",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_2_variant1",
+        "y": 270
+      }
+    ],
+    "age=1,facing=north,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_3",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_3_variant1",
+        "y": 0
+      }
+    ],
+    "age=1,facing=east,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_3",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_3_variant1",
+        "y": 90
+      }
+    ],
+    "age=1,facing=south,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_3",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_3_variant1",
+        "y": 180
+      }
+    ],
+    "age=1,facing=west,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_3",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage1_3_variant1",
+        "y": 270
+      }
+    ],
+    "age=2,facing=north,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_1",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_1_variant1",
+        "y": 0
+      }
+    ],
+    "age=2,facing=east,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_1",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_1_variant1",
+        "y": 90
+      }
+    ],
+    "age=2,facing=south,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_1",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_1_variant1",
+        "y": 180
+      }
+    ],
+    "age=2,facing=west,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_1",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_1_variant1",
+        "y": 270
+      }
+    ],
+    "age=2,facing=north,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_2",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_2_variant1",
+        "y": 0
+      }
+    ],
+    "age=2,facing=east,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_2",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_2_variant1",
+        "y": 90
+      }
+    ],
+    "age=2,facing=south,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_2",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_2_variant1",
+        "y": 180
+      }
+    ],
+    "age=2,facing=west,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_2",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_2_variant1",
+        "y": 270
+      }
+    ],
+    "age=2,facing=north,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_3",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_3_variant1",
+        "y": 0
+      }
+    ],
+    "age=2,facing=east,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_3",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_3_variant1",
+        "y": 90
+      }
+    ],
+    "age=2,facing=south,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_3",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_3_variant1",
+        "y": 180
+      }
+    ],
+    "age=2,facing=west,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_3",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage2_3_variant1",
+        "y": 270
+      }
+    ],
+    "age=3,facing=north,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_1",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_1_variant1",
+        "y": 0
+      }
+    ],
+    "age=3,facing=east,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_1",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_1_variant1",
+        "y": 90
+      }
+    ],
+    "age=3,facing=south,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_1",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_1_variant1",
+        "y": 180
+      }
+    ],
+    "age=3,facing=west,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_1",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_1_variant1",
+        "y": 270
+      }
+    ],
+    "age=3,facing=north,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_2",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_2_variant1",
+        "y": 0
+      }
+    ],
+    "age=3,facing=east,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_2",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_2_variant1",
+        "y": 90
+      }
+    ],
+    "age=3,facing=south,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_2",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_2_variant1",
+        "y": 180
+      }
+    ],
+    "age=3,facing=west,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_2",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_2_variant1",
+        "y": 270
+      }
+    ],
+    "age=3,facing=north,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_3",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_3_variant1",
+        "y": 0
+      }
+    ],
+    "age=3,facing=east,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_3",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_3_variant1",
+        "y": 90
+      }
+    ],
+    "age=3,facing=south,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_3",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_3_variant1",
+        "y": 180
+      }
+    ],
+    "age=3,facing=west,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_3",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage3_3_variant1",
+        "y": 270
+      }
+    ],
+    "age=4,facing=north,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_1",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_1_variant1",
+        "y": 0
+      }
+    ],
+    "age=4,facing=east,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_1",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_1_variant1",
+        "y": 90
+      }
+    ],
+    "age=4,facing=south,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_1",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_1_variant1",
+        "y": 180
+      }
+    ],
+    "age=4,facing=west,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_1",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_1_variant1",
+        "y": 270
+      }
+    ],
+    "age=4,facing=north,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_2",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_2_variant1",
+        "y": 0
+      }
+    ],
+    "age=4,facing=east,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_2",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_2_variant1",
+        "y": 90
+      }
+    ],
+    "age=4,facing=south,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_2",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_2_variant1",
+        "y": 180
+      }
+    ],
+    "age=4,facing=west,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_2",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_2_variant1",
+        "y": 270
+      }
+    ],
+    "age=4,facing=north,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_3",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_3_variant1",
+        "y": 0
+      }
+    ],
+    "age=4,facing=east,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_3",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_3_variant1",
+        "y": 90
+      }
+    ],
+    "age=4,facing=south,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_3",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_3_variant1",
+        "y": 180
+      }
+    ],
+    "age=4,facing=west,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_3",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage4_3_variant1",
+        "y": 270
+      }
+    ],
+    "age=5,facing=north,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_1",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_1_variant1",
+        "y": 0
+      }
+    ],
+    "age=5,facing=east,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_1",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_1_variant1",
+        "y": 90
+      }
+    ],
+    "age=5,facing=south,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_1",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_1_variant1",
+        "y": 180
+      }
+    ],
+    "age=5,facing=west,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_1",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_1_variant1",
+        "y": 270
+      }
+    ],
+    "age=5,facing=north,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_2",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_2_variant1",
+        "y": 0
+      }
+    ],
+    "age=5,facing=east,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_2",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_2_variant1",
+        "y": 90
+      }
+    ],
+    "age=5,facing=south,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_2",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_2_variant1",
+        "y": 180
+      }
+    ],
+    "age=5,facing=west,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_2",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_2_variant1",
+        "y": 270
+      }
+    ],
+    "age=5,facing=north,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_3",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_3_variant1",
+        "y": 0
+      }
+    ],
+    "age=5,facing=east,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_3",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_3_variant1",
+        "y": 90
+      }
+    ],
+    "age=5,facing=south,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_3",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_3_variant1",
+        "y": 180
+      }
+    ],
+    "age=5,facing=west,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_3",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage5_3_variant1",
+        "y": 270
+      }
+    ],
+    "age=6,facing=north,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_1",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_1_variant1",
+        "y": 0
+      }
+    ],
+    "age=6,facing=east,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_1",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_1_variant1",
+        "y": 90
+      }
+    ],
+    "age=6,facing=south,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_1",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_1_variant1",
+        "y": 180
+      }
+    ],
+    "age=6,facing=west,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_1",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_1_variant1",
+        "y": 270
+      }
+    ],
+    "age=6,facing=north,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_2",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_2_variant1",
+        "y": 0
+      }
+    ],
+    "age=6,facing=east,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_2",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_2_variant1",
+        "y": 90
+      }
+    ],
+    "age=6,facing=south,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_2",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_2_variant1",
+        "y": 180
+      }
+    ],
+    "age=6,facing=west,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_2",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_2_variant1",
+        "y": 270
+      }
+    ],
+    "age=6,facing=north,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_3",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_3_variant1",
+        "y": 0
+      }
+    ],
+    "age=6,facing=east,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_3",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_3_variant1",
+        "y": 90
+      }
+    ],
+    "age=6,facing=south,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_3",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_3_variant1",
+        "y": 180
+      }
+    ],
+    "age=6,facing=west,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_3",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage6_3_variant1",
+        "y": 270
+      }
+    ],
+    "age=7,facing=north,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_1",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_1_variant1",
+        "y": 0
+      }
+    ],
+    "age=7,facing=east,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_1",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_1_variant1",
+        "y": 90
+      }
+    ],
+    "age=7,facing=south,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_1",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_1_variant1",
+        "y": 180
+      }
+    ],
+    "age=7,facing=west,flattening=1": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_1",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_1_variant1",
+        "y": 270
+      }
+    ],
+    "age=7,facing=north,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_2",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_2_variant1",
+        "y": 0
+      }
+    ],
+    "age=7,facing=east,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_2",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_2_variant1",
+        "y": 90
+      }
+    ],
+    "age=7,facing=south,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_2",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_2_variant1",
+        "y": 180
+      }
+    ],
+    "age=7,facing=west,flattening=2": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_2",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_2_variant1",
+        "y": 270
+      }
+    ],
+    "age=7,facing=north,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_3",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_3_variant1",
+        "y": 0
+      }
+    ],
+    "age=7,facing=east,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_3",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_3_variant1",
+        "y": 90
+      }
+    ],
+    "age=7,facing=south,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_3",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_3_variant1",
+        "y": 180
+      }
+    ],
+    "age=7,facing=west,flattening=3": [
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_3",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/trampled_wheat_stage7_3_variant1",
+        "y": 270
+      }
+    ]
+  }
+}

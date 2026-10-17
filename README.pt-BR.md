@@ -15,7 +15,7 @@ Uma reformulação do sistema de plantações do Minecraft com cara de vanilla. 
 ## Princípios
 
 - **Vanilla em primeiro lugar.** Toda adição precisa parecer, soar e funcionar como algo que a Mojang lançaria. Receitas, texturas e progressão seguem as convenções do vanilla.
-- **Levíssimo.** Sem mixins, sem lógica por tick, sem reflexão. O conteúdo é registrado uma vez na inicialização e o comportamento vem de componentes de dados, tags e JSON do próprio vanilla. Cada jar tem cerca de 110 KB, quase tudo arte em 32×32.
+- **Levíssimo.** Um único mixin minúsculo, sem lógica por tick, sem reflexão. O conteúdo é registrado uma vez na inicialização e o comportamento vem de componentes de dados, tags e JSON do próprio vanilla. Cada jar tem cerca de 160 KB, quase tudo arte em 32×32 e modelos de bloco.
 - **Feito para modpacks.** Os ingredientes usam as tags de convenção `c:` (`c:flours/wheat`, `c:doughs/wheat`, …), então farinha ou massa de outros mods funciona nas receitas do Farmer+ e vice-versa.
 - **Todos os loaders.** Uma única base de código gera Fabric, NeoForge e Forge, e é atualizada sempre que o Minecraft ou algum loader lança versão nova.
 
@@ -35,6 +35,10 @@ O pão vanilla (3 trigos) continua igual — a massa é um caminho alternativo q
 O próprio trigo ganha uma **reformulação visual Vanilla+ realista**: arte original em 32×32 para os oito estágios, quatro variações naturais por estágio, trigo maduro mais alto e trigo e sementes redesenhados. As mecânicas continuam vanilla. O visual também existe como resource pack avulso (`./gradlew wheatVisualPack`). Veja [docs/wheat-visuals.pt-BR.md](docs/wheat-visuals.pt-BR.md).
 
 ![Estágios do trigo e itens](docs/images/wheat-textures.png)
+
+### Pisoteio de plantações
+
+Andar pela plantação entorta as plantas, correr ou passar a cavalo deita elas, e os caminhos que você usa sempre ficam esmagados no solo — geometria de verdade, com caules inclinados e quebrados caindo na direção em que você andou. Plantas entortadas se recuperam com o tempo; as esmagadas só dão sementes. Agache para andar com cuidado. Ligue/desligue com `/gamerule farmerplus:crop_trampling` e `/gamerule farmerplus:mob_crop_trampling`. Veja [docs/trampling.pt-BR.md](docs/trampling.pt-BR.md).
 
 ## Instalação
 
@@ -65,6 +69,7 @@ A mesma tarefa existe para `:fabric` e `:forge`.
 | Arquitetura e como adicionar conteúdo | [docs/architecture.md](docs/architecture.md) | [docs/architecture.pt-BR.md](docs/architecture.pt-BR.md) |
 | Pipeline de arte (texturas, Blockbench) | [docs/art-pipeline.md](docs/art-pipeline.md) | [docs/art-pipeline.pt-BR.md](docs/art-pipeline.pt-BR.md) |
 | Visual do trigo | [docs/wheat-visuals.md](docs/wheat-visuals.md) | [docs/wheat-visuals.pt-BR.md](docs/wheat-visuals.pt-BR.md) |
+| Pisoteio de plantações | [docs/trampling.md](docs/trampling.md) | [docs/trampling.pt-BR.md](docs/trampling.pt-BR.md) |
 | Atualizando Minecraft e loaders | [docs/updating.md](docs/updating.md) | [docs/updating.pt-BR.md](docs/updating.pt-BR.md) |
 | Como contribuir | [CONTRIBUTING.md](CONTRIBUTING.md) | [CONTRIBUTING.pt-BR.md](CONTRIBUTING.pt-BR.md) |
 | Histórico de mudanças | [CHANGELOG.md](CHANGELOG.md) | [CHANGELOG.pt-BR.md](CHANGELOG.pt-BR.md) |

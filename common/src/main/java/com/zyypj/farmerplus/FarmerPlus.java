@@ -2,6 +2,7 @@ package com.zyypj.farmerplus;
 
 import com.zyypj.farmerplus.core.FarmerCreativeTab;
 import com.zyypj.farmerplus.core.module.FarmerModules;
+import com.zyypj.farmerplus.core.trampling.TramplingGameRules;
 import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,6 +24,7 @@ public final class FarmerPlus {
         }
         initialized = true;
 
+        TramplingGameRules.bootstrap();
         FarmerModules.registerAll();
         FarmerCreativeTab.register();
         LOGGER.info("{} loaded {} content modules", MOD_NAME, FarmerModules.all().size());

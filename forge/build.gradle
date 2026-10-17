@@ -8,6 +8,7 @@ minecraft {
         configureEach {
             systemProperty 'eventbus.api.strictRuntimeChecks', 'true'
             systemProperty 'forge.enabledGameTestNamespaces', mod_id
+            args '--mixin.config', "${mod_id}.mixins.json"
         }
         register('client') {
             workingDir = layout.projectDirectory.dir('runs/client')
@@ -29,6 +30,12 @@ repositories {
 dependencies {
     implementation minecraft.dependency("net.minecraftforge:forge:${minecraft_version}-${forge_version}")
     annotationProcessor 'net.minecraftforge:eventbus-validator:7.0.6'
+}
+
+jar {
+    manifest {
+        attributes('MixinConfigs': "${mod_id}.mixins.json")
+    }
 }
 
 def loaderAttribute = Attribute.of('io.github.mcgradleconventions.loader', String)

@@ -1,0 +1,354 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "farmerplus:block/wheat_stage1_crushed",
+    "crop": "farmerplus:block/wheat_stage1_crushed",
+    "alternate": "farmerplus:block/wheat_stage1_alternate_crushed"
+  },
+  "elements": [
+    {
+      "name": "crushed_stub_0",
+      "from": [
+        0,
+        -1.0,
+        14.0
+      ],
+      "to": [
+        16,
+        0.2,
+        14.0
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8,
+          -1.0,
+          14.0
+        ],
+        "x": -8,
+        "y": -18
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            14.8,
+            16,
+            16
+          ],
+          "texture": "#crop"
+        },
+        "south": {
+          "uv": [
+            16,
+            14.8,
+            0,
+            16
+          ],
+          "texture": "#crop"
+        }
+      }
+    },
+    {
+      "name": "crushed_fallen_0",
+      "from": [
+        0,
+        0.2,
+        14.0
+      ],
+      "to": [
+        16,
+        15.0,
+        14.0
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8,
+          0.2,
+          14.0
+        ],
+        "x": -86,
+        "y": -18
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            14.8
+          ],
+          "texture": "#crop"
+        },
+        "south": {
+          "uv": [
+            16,
+            0,
+            0,
+            14.8
+          ],
+          "texture": "#crop"
+        }
+      }
+    },
+    {
+      "name": "crushed_stub_1",
+      "from": [
+        0,
+        -1.0,
+        11.5
+      ],
+      "to": [
+        16,
+        0.5,
+        11.5
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8,
+          -1.0,
+          11.5
+        ],
+        "x": -8,
+        "y": -6
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            14.5,
+            16,
+            16
+          ],
+          "texture": "#alternate"
+        },
+        "south": {
+          "uv": [
+            16,
+            14.5,
+            0,
+            16
+          ],
+          "texture": "#alternate"
+        }
+      }
+    },
+    {
+      "name": "crushed_fallen_1",
+      "from": [
+        0,
+        0.5,
+        11.5
+      ],
+      "to": [
+        16,
+        15.0,
+        11.5
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8,
+          0.5,
+          11.5
+        ],
+        "x": -88,
+        "y": -6
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            14.5
+          ],
+          "texture": "#alternate"
+        },
+        "south": {
+          "uv": [
+            16,
+            0,
+            0,
+            14.5
+          ],
+          "texture": "#alternate"
+        }
+      }
+    },
+    {
+      "name": "crushed_stub_2",
+      "from": [
+        0,
+        -1.0,
+        9.0
+      ],
+      "to": [
+        16,
+        0.8,
+        9.0
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8,
+          -1.0,
+          9.0
+        ],
+        "x": -8,
+        "y": 7
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            14.2,
+            16,
+            16
+          ],
+          "texture": "#crop"
+        },
+        "south": {
+          "uv": [
+            16,
+            14.2,
+            0,
+            16
+          ],
+          "texture": "#crop"
+        }
+      }
+    },
+    {
+      "name": "crushed_fallen_2",
+      "from": [
+        0,
+        0.8,
+        9.0
+      ],
+      "to": [
+        16,
+        15.0,
+        9.0
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8,
+          0.8,
+          9.0
+        ],
+        "x": -87,
+        "y": 7
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            14.2
+          ],
+          "texture": "#crop"
+        },
+        "south": {
+          "uv": [
+            16,
+            0,
+            0,
+            14.2
+          ],
+          "texture": "#crop"
+        }
+      }
+    },
+    {
+      "name": "crushed_stub_3",
+      "from": [
+        0,
+        -1.0,
+        6.5
+      ],
+      "to": [
+        16,
+        1.1,
+        6.5
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8,
+          -1.0,
+          6.5
+        ],
+        "x": -8,
+        "y": 16
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            13.9,
+            16,
+            16
+          ],
+          "texture": "#alternate"
+        },
+        "south": {
+          "uv": [
+            16,
+            13.9,
+            0,
+            16
+          ],
+          "texture": "#alternate"
+        }
+      }
+    },
+    {
+      "name": "crushed_fallen_3",
+      "from": [
+        0,
+        1.1,
+        6.5
+      ],
+      "to": [
+        16,
+        15.0,
+        6.5
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "origin": [
+          8,
+          1.1,
+          6.5
+        ],
+        "x": -89,
+        "y": 16
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            13.9
+          ],
+          "texture": "#alternate"
+        },
+        "south": {
+          "uv": [
+            16,
+            0,
+            0,
+            13.9
+          ],
+          "texture": "#alternate"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.zyypj.farmerplus.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "CropBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

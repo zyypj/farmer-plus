@@ -2,6 +2,13 @@
 
 [English](CHANGELOG.md) | **Português**
 
+## Não lançado
+
+### Adicionado
+- Pisoteio de plantações: andar entorta as plantas, correr ou passar a cavalo deita elas e passadas repetidas esmagam e abrem caminhos, com caules modelados inclinados, quebrados e deitados.
+- Plantas amassadas se recuperam com o tempo; trigo maduro esmagado só dá sementes. Agachado nunca amassa.
+- Game rules `farmerplus:crop_trampling` e `farmerplus:mob_crop_trampling` e a tag de entidade `farmerplus:tramples_crops`.
+
 ## 0.1.0 — Atualização do trigo
 
 ### Adicionado
