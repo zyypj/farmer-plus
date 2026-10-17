@@ -15,7 +15,7 @@ A vanilla-friendly overhaul of Minecraft farming. Farmer+ adds crops, foods, ing
 ## Design goals
 
 - **Vanilla first.** Every addition must look, sound and behave like something Mojang could ship. Recipes, textures and progression follow vanilla conventions.
-- **Featherweight.** No mixins, no per-tick logic, no reflection. Content is registered once at startup and behaviour is driven by vanilla data components, tags and JSON data. Each loader jar is under 40 KB of code and data.
+- **Featherweight.** No mixins, no per-tick logic, no reflection. Content is registered once at startup and behaviour is driven by vanilla data components, tags and JSON data. Each loader jar is about 110 KB, almost all of it 32×32 art.
 - **Modpack friendly.** Ingredients use the shared `c:` convention tags (`c:flours/wheat`, `c:doughs/wheat`, …), so flour or dough from other mods works in Farmer+ recipes and vice versa.
 - **Every loader.** One shared codebase ships to Fabric, NeoForge and Forge, and is updated whenever Minecraft or a loader releases a new version.
 
@@ -31,6 +31,10 @@ A vanilla-friendly overhaul of Minecraft farming. Farmer+ adds crops, foods, ing
 | Wheat Sheaf | 4 wheat around 1 string | Decorative block, cuts fall damage by 80% like a hay bale, mined fastest with a hoe, compostable |
 
 Vanilla bread (3 wheat) is untouched — dough is an alternative path that rewards cooking.
+
+Wheat itself gets a **Realistic Vanilla+ visual overhaul**: original 32×32 art for all eight growth stages, four natural variations per stage, taller mature crops and redrawn wheat and seeds. Mechanics stay vanilla. The visuals are also available as a standalone resource pack (`./gradlew wheatVisualPack`). See [docs/wheat-visuals.md](docs/wheat-visuals.md).
+
+![Wheat stages and items](docs/images/wheat-textures.png)
 
 ## Installing
 
@@ -60,6 +64,7 @@ The same task exists for `:fabric` and `:forge`.
 |---|---|---|
 | Architecture and adding content | [docs/architecture.md](docs/architecture.md) | [docs/architecture.pt-BR.md](docs/architecture.pt-BR.md) |
 | Art pipeline (textures, Blockbench) | [docs/art-pipeline.md](docs/art-pipeline.md) | [docs/art-pipeline.pt-BR.md](docs/art-pipeline.pt-BR.md) |
+| Wheat visuals | [docs/wheat-visuals.md](docs/wheat-visuals.md) | [docs/wheat-visuals.pt-BR.md](docs/wheat-visuals.pt-BR.md) |
 | Updating Minecraft and loaders | [docs/updating.md](docs/updating.md) | [docs/updating.pt-BR.md](docs/updating.pt-BR.md) |
 | Contributing | [CONTRIBUTING.md](CONTRIBUTING.md) | [CONTRIBUTING.pt-BR.md](CONTRIBUTING.pt-BR.md) |
 | Changelog | [CHANGELOG.md](CHANGELOG.md) | [CHANGELOG.pt-BR.md](CHANGELOG.pt-BR.md) |

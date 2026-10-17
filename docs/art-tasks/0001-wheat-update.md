@@ -6,7 +6,7 @@ The files below currently contain **placeholder art**. Replace each one in place
 
 Base path: `common/src/main/resources/assets/farmerplus/`
 
-## Item textures (16×16)
+## Item textures (32×32)
 
 | File | Subject | Reference mood |
 |---|---|---|
@@ -21,11 +21,21 @@ A bundle of harvested wheat stalks standing upright, tied around the middle with
 | File | Content |
 |---|---|
 | `art/blockbench/wheat_sheaf.bbmodel` | Blockbench source (Java Block/Item) |
-| `models/block/wheat_sheaf.json` | Exported model, ≤ 12 elements, parent-free with full `display` transforms |
-| `textures/block/wheat_sheaf_side.png` | Stalks seen from the side, with the twine band |
+| `models/block/wheat_sheaf.json` | Exported model, ≤ 24 elements with solid 3D binding, parent-free with full `display` transforms |
+| `textures/block/wheat_sheaf_side.png` | Stalk material; the twine band is separate geometry |
 | `textures/block/wheat_sheaf_top.png` | Top view: grain ears / cut stalks |
 
 Extra textures are allowed (e.g. `wheat_sheaf_ears.png`) if the model needs them.
+
+The current direction is Realistic Vanilla+: native 32×32 pixel art, a narrow visible twine band, individual splayed stalks and fuller overlapping grain heads. All sheaf textures use 32×32, including the added stalk fan and twine atlas.
+
+The sheaf also has `textures/item/wheat_sheaf.png` and `models/item/wheat_sheaf.json` for inventories. The existing `items/wheat_sheaf.json` selects that icon for `gui` and keeps the 3D block model in other contexts. The existing `textures/block/wheat_sheaf_bound_stalks.png` path is retained but contains clean stalks. The binding is actual geometry using `wheat_sheaf_twine.png`: a closed four-sided wrap, two open loops, a raised knot and two hanging ends. Eight plant cards, one compressed core and fifteen cord elements total twenty-four elements; this is the sheaf-specific allowance. Crop budgets stay unchanged.
+
+## Vanilla wheat
+
+Replace `minecraft:wheat` AGE 0–7 through `assets/minecraft/`, preserving vanilla mechanics and resource-pack priority. Each age has four distinct 32×32 botanical sprites combined into four model variants, each with four rotations. Crops use four staggered double-sided plant elements; AGE 6–7 add six outward-curved leaves at staggered heights, each with two connected model segments, totalling sixteen elements. Stalks and leaves stay green at AGE 0–4, turn yellow-green at AGE 5, olive/straw at AGE 6, and golden straw at AGE 7. Mature ears must read as narrow grain clusters with subtle awns. Keep leaves sparse and clean, with visible stalks and restrained basal foliage; fullness comes primarily from the ears and layered stems. AGE 4–7 gradually gain height; AGE 6 uses four upper heights (18/20/21/24) and mature AGE 7 uses 19/21/23/26. The tallest profile reaches about 1.69 blocks including its buried base. Save the six added height source projects as `wheat_stage6_variant1..3.bbmodel` and `wheat_stage7_variant1..3.bbmodel`; exported variant paths stay unchanged. The vanilla interaction outline stays unchanged, so harvest at the original lower block.
+
+Update the wheat and seed items in place. See [the visual report](../wheat-visuals.md) for paths, previews, verification and the standalone optional pack.
 
 Current collision/outline box is 12×16×12 centred (`Block.column(12.0, 0.0, 16.0)` in `WheatSheafBlock`). If the final silhouette is clearly narrower or wider, update that value.
 

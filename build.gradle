@@ -3,3 +3,36 @@ plugins {
     id 'net.neoforged.moddev' version '2.0.148' apply false
     id 'net.minecraftforge.gradle' version '7.0.40' apply false
 }
+
+tasks.register('wheatVisualPack', Zip) {
+    archiveFileName = "FarmerPlus-Detailed-Vanilla-Wheat-${minecraft_version}.zip"
+    destinationDirectory = layout.buildDirectory.dir('resourcepacks')
+    preserveFileTimestamps = false
+    reproducibleFileOrder = true
+    from('common/src/main/resources') {
+        include 'pack.mcmeta'
+        expand mod_name: 'Farmer+ Detailed Vanilla+ Wheat / Trigo'
+    }
+    from('common/src/main/resources') {
+        include 'assets/minecraft/blockstates/wheat.json'
+        include 'assets/minecraft/models/block/wheat_stage*.json'
+        include 'assets/minecraft/models/item/wheat.json'
+        include 'assets/minecraft/models/item/wheat_seeds.json'
+        include 'assets/minecraft/items/wheat.json'
+        include 'assets/minecraft/items/wheat_seeds.json'
+        include 'assets/minecraft/textures/block/wheat_stage*.png'
+        include 'assets/minecraft/textures/item/wheat.png'
+        include 'assets/minecraft/textures/item/wheat_seeds.png'
+        include 'assets/farmerplus/models/block/wheat_stage*.json'
+        include 'assets/farmerplus/textures/block/wheat_stage*.png'
+    }
+    from('common/src/main/resources/assets/farmerplus/icon.png') {
+        rename { 'pack.png' }
+    }
+}
+
+subprojects {
+    tasks.matching { it.name == 'build' }.configureEach {
+        dependsOn rootProject.tasks.named('wheatVisualPack')
+    }
+}

@@ -32,3 +32,4 @@ Thumbs.db
 
 # art working files
 art/**/*.bak
+__pycache__/

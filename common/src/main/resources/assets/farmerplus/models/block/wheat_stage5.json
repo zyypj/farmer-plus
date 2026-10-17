@@ -1,0 +1,188 @@
+{
+  "format_version": "26.3",
+  "credit": "Made with Blockbench",
+  "ambientocclusion": false,
+  "texture_size": [
+    32,
+    32
+  ],
+  "textures": {
+    "particle": "farmerplus:block/wheat_stage5",
+    "crop": "farmerplus:block/wheat_stage5",
+    "alternate": "farmerplus:block/wheat_stage5_alternate"
+  },
+  "elements": [
+    {
+      "name": "front_stalks",
+      "from": [
+        0,
+        -1,
+        4
+      ],
+      "to": [
+        16,
+        19,
+        4
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "angle": -22.5,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#crop"
+        },
+        "south": {
+          "uv": [
+            16,
+            0,
+            0,
+            16
+          ],
+          "texture": "#crop"
+        }
+      }
+    },
+    {
+      "name": "back_stalks",
+      "from": [
+        0,
+        -1,
+        11.5
+      ],
+      "to": [
+        16,
+        18.5,
+        11.5
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "angle": 22.5,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            0,
+            0,
+            16
+          ],
+          "texture": "#alternate"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#alternate"
+        }
+      }
+    },
+    {
+      "name": "left_stalks",
+      "from": [
+        4,
+        -1,
+        0
+      ],
+      "to": [
+        4,
+        19,
+        16
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "angle": 45,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          8
+        ]
+      },
+      "faces": {
+        "east": {
+          "uv": [
+            16,
+            0,
+            0,
+            16
+          ],
+          "texture": "#alternate"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#alternate"
+        }
+      }
+    },
+    {
+      "name": "right_stalks",
+      "from": [
+        12,
+        -1,
+        0
+      ],
+      "to": [
+        12,
+        18,
+        16
+      ],
+      "shade_direction_override": "up",
+      "rotation": {
+        "angle": -45,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          8
+        ]
+      },
+      "faces": {
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#crop"
+        },
+        "west": {
+          "uv": [
+            16,
+            0,
+            0,
+            16
+          ],
+          "texture": "#crop"
+        }
+      }
+    }
+  ]
+}

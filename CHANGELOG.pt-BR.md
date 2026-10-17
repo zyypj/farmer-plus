@@ -13,3 +13,7 @@
 - Aba criativa do Farmer+.
 - Traduções em inglês e português do Brasil.
 - Suporte a Fabric, NeoForge e Forge no Minecraft 26.3.
+- Visual Vanilla+ realista do trigo: arte original em 32×32 nos oito estágios, quatro variações por estágio, trigo maduro mais alto, trigo e sementes redesenhados.
+- Modelo 3D do Feixe de Trigo com amarração de corda sólida e ícone próprio no inventário.
+- Resource pack avulso opcional do trigo (`./gradlew wheatVisualPack`).
+- Arte final de farinha, massa, mingau e ícone do mod.

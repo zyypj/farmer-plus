@@ -15,7 +15,7 @@ Uma reformulação do sistema de plantações do Minecraft com cara de vanilla. 
 ## Princípios
 
 - **Vanilla em primeiro lugar.** Toda adição precisa parecer, soar e funcionar como algo que a Mojang lançaria. Receitas, texturas e progressão seguem as convenções do vanilla.
-- **Levíssimo.** Sem mixins, sem lógica por tick, sem reflexão. O conteúdo é registrado uma vez na inicialização e o comportamento vem de componentes de dados, tags e JSON do próprio vanilla. Cada jar tem menos de 40 KB de código e dados.
+- **Levíssimo.** Sem mixins, sem lógica por tick, sem reflexão. O conteúdo é registrado uma vez na inicialização e o comportamento vem de componentes de dados, tags e JSON do próprio vanilla. Cada jar tem cerca de 110 KB, quase tudo arte em 32×32.
 - **Feito para modpacks.** Os ingredientes usam as tags de convenção `c:` (`c:flours/wheat`, `c:doughs/wheat`, …), então farinha ou massa de outros mods funciona nas receitas do Farmer+ e vice-versa.
 - **Todos os loaders.** Uma única base de código gera Fabric, NeoForge e Forge, e é atualizada sempre que o Minecraft ou algum loader lança versão nova.
 
@@ -31,6 +31,10 @@ Uma reformulação do sistema de plantações do Minecraft com cara de vanilla. 
 | Feixe de Trigo | 4 trigos em volta de 1 linha | Bloco decorativo, reduz dano de queda em 80% como o fardo de feno, quebra mais rápido com enxada, pode ir na composteira |
 
 O pão vanilla (3 trigos) continua igual — a massa é um caminho alternativo que recompensa quem cozinha.
+
+O próprio trigo ganha uma **reformulação visual Vanilla+ realista**: arte original em 32×32 para os oito estágios, quatro variações naturais por estágio, trigo maduro mais alto e trigo e sementes redesenhados. As mecânicas continuam vanilla. O visual também existe como resource pack avulso (`./gradlew wheatVisualPack`). Veja [docs/wheat-visuals.pt-BR.md](docs/wheat-visuals.pt-BR.md).
+
+![Estágios do trigo e itens](docs/images/wheat-textures.png)
 
 ## Instalação
 
@@ -60,6 +64,7 @@ A mesma tarefa existe para `:fabric` e `:forge`.
 |---|---|---|
 | Arquitetura e como adicionar conteúdo | [docs/architecture.md](docs/architecture.md) | [docs/architecture.pt-BR.md](docs/architecture.pt-BR.md) |
 | Pipeline de arte (texturas, Blockbench) | [docs/art-pipeline.md](docs/art-pipeline.md) | [docs/art-pipeline.pt-BR.md](docs/art-pipeline.pt-BR.md) |
+| Visual do trigo | [docs/wheat-visuals.md](docs/wheat-visuals.md) | [docs/wheat-visuals.pt-BR.md](docs/wheat-visuals.pt-BR.md) |
 | Atualizando Minecraft e loaders | [docs/updating.md](docs/updating.md) | [docs/updating.pt-BR.md](docs/updating.pt-BR.md) |
 | Como contribuir | [CONTRIBUTING.md](CONTRIBUTING.md) | [CONTRIBUTING.pt-BR.md](CONTRIBUTING.pt-BR.md) |
 | Histórico de mudanças | [CHANGELOG.md](CHANGELOG.md) | [CHANGELOG.pt-BR.md](CHANGELOG.pt-BR.md) |

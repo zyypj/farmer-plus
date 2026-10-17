@@ -1,6 +1,21 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "farmerplus:block/wheat_sheaf"
+    "type": "minecraft:select",
+    "property": "minecraft:display_context",
+    "cases": [
+      {
+        "when": [
+          "gui"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "farmerplus:item/wheat_sheaf"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "farmerplus:block/wheat_sheaf"
+    }
   }
 }

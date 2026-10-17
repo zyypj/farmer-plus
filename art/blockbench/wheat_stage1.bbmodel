@@ -1,0 +1,538 @@
+{
+  "meta": {
+    "format_version": "5.0",
+    "model_format": "java_block",
+    "box_uv": false
+  },
+  "name": "wheat_stage1",
+  "parent": "",
+  "java_block_version": "26.3",
+  "ambientocclusion": false,
+  "front_gui_light": false,
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "variable_placeholders": "",
+  "multi_file_ruleset": "",
+  "variable_placeholder_buttons": [],
+  "unhandled_root_fields": {},
+  "ai_used": true,
+  "ai_agents": "codex-mcp-client",
+  "resolution": {
+    "width": 32,
+    "height": 32
+  },
+  "elements": [
+    {
+      "name": "front_stalks",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "up",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        0,
+        -1,
+        4
+      ],
+      "to": [
+        16,
+        15,
+        4
+      ],
+      "autouv": 0,
+      "color": 6,
+      "rotation": [
+        0,
+        -22.5,
+        0
+      ],
+      "origin": [
+        8,
+        0,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "south": {
+          "uv": [
+            32,
+            0,
+            0,
+            32
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        }
+      },
+      "type": "cube",
+      "uuid": "f801baaf-e943-c123-a83c-71231fdb01dc"
+    },
+    {
+      "name": "back_stalks",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "up",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        0,
+        -1,
+        11.5
+      ],
+      "to": [
+        16,
+        15,
+        11.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "rotation": [
+        0,
+        22.5,
+        0
+      ],
+      "origin": [
+        8,
+        0,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            32,
+            0,
+            0,
+            32
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        }
+      },
+      "type": "cube",
+      "uuid": "1ee6631c-5aa2-58d9-a3ce-d92b63f0ef49"
+    },
+    {
+      "name": "left_stalks",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "up",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        4,
+        -1,
+        0
+      ],
+      "to": [
+        4,
+        15,
+        16
+      ],
+      "autouv": 0,
+      "color": 7,
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "origin": [
+        8,
+        0,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "east": {
+          "uv": [
+            32,
+            0,
+            0,
+            32
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        }
+      },
+      "type": "cube",
+      "uuid": "378fd26b-6c04-f0dc-0561-317f61fc66b0"
+    },
+    {
+      "name": "right_stalks",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "up",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        12,
+        -1,
+        0
+      ],
+      "to": [
+        12,
+        15,
+        16
+      ],
+      "autouv": 0,
+      "color": 5,
+      "rotation": [
+        0,
+        -45,
+        0
+      ],
+      "origin": [
+        8,
+        0,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "west": {
+          "uv": [
+            32,
+            0,
+            0,
+            32
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        }
+      },
+      "type": "cube",
+      "uuid": "0aded6d2-e449-79f9-9aad-604df1a1aa25"
+    }
+  ],
+  "groups": [],
+  "outliner": [
+    "f801baaf-e943-c123-a83c-71231fdb01dc",
+    "1ee6631c-5aa2-58d9-a3ce-d92b63f0ef49",
+    "378fd26b-6c04-f0dc-0561-317f61fc66b0",
+    "0aded6d2-e449-79f9-9aad-604df1a1aa25"
+  ],
+  "textures": [
+    {
+      "name": "wheat_stage1.png",
+      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/wheat_stage1.png",
+      "folder": "block",
+      "namespace": "farmerplus",
+      "id": "crop",
+      "group": "",
+      "scope": 0,
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "particle": true,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": true,
+      "uuid": "6bd2a0c8-c0f0-179d-1ebf-7812bfafff5b",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAsElEQVR4nGNgGAWjYBSMglEwCkbBKBgFo2AUUAhCKhz+U6KfiWGAAdNAO4AFX9Cu6TjACOMv3J8FD+p4x2lwcXIBzDwWYhVv3nkNhU+JI5DNY0F2DQigG4ysGBQioJAB8bE5AtkcdPNgIYpuHhNMEUgQZjA2V8OiAzlasDkUhEkxjwldAJuh6HIgPi7D8TkUm3mM6IpAQeXrrgVmY7OcVLWkmIeiCVfQYfMVocIIn3kAgByZ3ITg1xEAAAAASUVORK5CYII="
+    },
+    {
+      "name": "wheat_stage1_alternate.png",
+      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/wheat_stage1_alternate.png",
+      "folder": "block",
+      "namespace": "farmerplus",
+      "id": "alternate",
+      "group": "",
+      "scope": 0,
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "particle": false,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": true,
+      "uuid": "54cfd341-cba5-36b1-e902-d3ead40ccfc2",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAo0lEQVR4nGNgGAWjYBSMglEwCkbBKBgFo2AUDFUQWGn3nxrmMDEMsGNZCGmedyADRXOSwwxGSh2EbCYTMS7evPMaGFMDgCyHmQfyDAuya9B9B1OM7BCQGDZ12CzDZ9769kNgORaQIpiPsRmOrBhbXGIzlFjzQIAJXQDdYGQ5EBsWCvgMJdY8EEDhgFzu664FZmNTTCt1GJpwxSm6j4gpCwiZBwDqwYzQDezgxgAAAABJRU5ErkJggg=="
+    },
+    {
+      "name": "wheat_stage1_variant2.png",
+      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/wheat_stage1_variant2.png",
+      "folder": "block",
+      "namespace": "farmerplus",
+      "id": "variant2",
+      "group": "",
+      "scope": 0,
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "particle": false,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": true,
+      "uuid": "dc75faed-92cf-70eb-9a61-fe13fb41adce",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAp0lEQVR4nGNgGAWjYBSMglEwCkbBKBgFo2AU0AlEVDv8xybORI4magImhgEGLKQoXnooCx4i0XbTGCmxGGYWCykaNu+8hsIn1xHIZjEhC8IwPg0rWg+ALQXxYWqR0wqyOcSYxQSTAPkGJIFsMDqAWQ6jcRmOjAmZxYRNEJuh6HIgPi4LQHLEmsWIzXWgIPV11wKzsVlOilpSzMIwGFfwYfMZvjIDn1kA3a2dZjPSVv4AAAAASUVORK5CYII="
+    },
+    {
+      "name": "wheat_stage1_variant3.png",
+      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/wheat_stage1_variant3.png",
+      "folder": "block",
+      "namespace": "farmerplus",
+      "id": "variant3",
+      "group": "",
+      "scope": 0,
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "particle": false,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": true,
+      "uuid": "6e70ff63-f703-53cb-008f-cece91b8cfd3",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAApklEQVR4nGNgGAWjYBSMglEwCkbBKBgFo2AUjAIKQFiZ7X8GCgELMYoW702HWxTrPJORHIeu6jrMiM08FmIs37zzGgqfHEdgMw/kKBZsvoO5GF0xSBzEx+YIZHPQzcNlOYhmAikCCcIMxuZqmGLkYMRmMAiTYh7YAbgMhhmKLgfi4zIcn0NxmceIzAEFsa+7FpiNTTGpakkxD0UTrqDD5itCWZGQeQCnF5u+Vj2O9wAAAABJRU5ErkJggg=="
+    }
+  ]
+}

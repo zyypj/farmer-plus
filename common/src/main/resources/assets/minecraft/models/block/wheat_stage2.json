@@ -1,0 +1,7 @@
+{
+  "parent": "farmerplus:block/wheat_stage2",
+  "textures": {
+    "crop": "minecraft:block/wheat_stage2",
+    "particle": "minecraft:block/wheat_stage2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "farmerplus:block/wheat_stage5",
+  "textures": {
+    "crop": "farmerplus:block/wheat_stage5_variant2",
+    "alternate": "farmerplus:block/wheat_stage5_variant3",
+    "particle": "farmerplus:block/wheat_stage5_variant2"
+  }
+}

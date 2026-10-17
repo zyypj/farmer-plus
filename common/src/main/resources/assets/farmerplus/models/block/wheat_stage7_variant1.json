@@ -1,0 +1,727 @@
+{
+  "texture_size": [
+    32,
+    32
+  ],
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "farmerplus:block/wheat_stage7_alternate",
+    "crop": "farmerplus:block/wheat_stage7_alternate",
+    "alternate": "farmerplus:block/wheat_stage7_variant2",
+    "foliage": "farmerplus:block/wheat_stage7_alternate_leaves"
+  },
+  "elements": [
+    {
+      "name": "front_stalks",
+      "from": [
+        0,
+        -1,
+        4
+      ],
+      "to": [
+        16,
+        19.0,
+        4
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          0,
+          8
+        ],
+        "axis": "y",
+        "angle": -22.5
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#crop"
+        },
+        "south": {
+          "uv": [
+            16,
+            0,
+            0,
+            16
+          ],
+          "texture": "#crop"
+        }
+      }
+    },
+    {
+      "name": "back_stalks",
+      "from": [
+        0,
+        -1,
+        11.5
+      ],
+      "to": [
+        16,
+        18.583333333333336,
+        11.5
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          0,
+          8
+        ],
+        "axis": "y",
+        "angle": 22.5
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            0,
+            0,
+            16
+          ],
+          "texture": "#alternate"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#alternate"
+        }
+      }
+    },
+    {
+      "name": "left_stalks",
+      "from": [
+        4,
+        -1,
+        0
+      ],
+      "to": [
+        4,
+        19.0,
+        16
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          0,
+          8
+        ],
+        "axis": "y",
+        "angle": 45
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#alternate"
+        },
+        "east": {
+          "uv": [
+            16,
+            0,
+            0,
+            16
+          ],
+          "texture": "#alternate"
+        }
+      }
+    },
+    {
+      "name": "right_stalks",
+      "from": [
+        12,
+        -1,
+        0
+      ],
+      "to": [
+        12,
+        18.166666666666668,
+        16
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          0,
+          8
+        ],
+        "axis": "y",
+        "angle": -45
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "west": {
+          "uv": [
+            16,
+            0,
+            0,
+            16
+          ],
+          "texture": "#crop"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#crop"
+        }
+      }
+    },
+    {
+      "name": "front_leaf_base",
+      "from": [
+        11.612071158272435,
+        4.333333333333335,
+        3.619240747962847
+      ],
+      "to": [
+        17.612071158272435,
+        4.333333333333335,
+        6.369240747962847
+      ],
+      "rotation": {
+        "origin": [
+          14.612071158272435,
+          4.333333333333335,
+          6.369240747962847
+        ],
+        "axis": "x",
+        "angle": 22.5
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            8,
+            16,
+            0
+          ],
+          "texture": "#foliage",
+          "rotation": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            8
+          ],
+          "texture": "#foliage",
+          "rotation": 0
+        }
+      }
+    },
+    {
+      "name": "front_leaf_tip",
+      "from": [
+        11.612071158272435,
+        5.385712772337332,
+        1.0785720335568083
+      ],
+      "to": [
+        17.612071158272435,
+        5.385712772337332,
+        3.8285720335568083
+      ],
+      "rotation": {
+        "origin": [
+          14.612071158272435,
+          5.385712772337332,
+          3.8285720335568083
+        ],
+        "axis": "x",
+        "angle": -22.5
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            16,
+            16,
+            8
+          ],
+          "texture": "#foliage",
+          "rotation": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            8,
+            16,
+            16
+          ],
+          "texture": "#foliage",
+          "rotation": 0
+        }
+      }
+    },
+    {
+      "name": "rear_leaf_base",
+      "from": [
+        11.420729442089891,
+        3.791666666666667,
+        9.168819485781508
+      ],
+      "to": [
+        17.420729442089893,
+        3.791666666666667,
+        12.168819485781508
+      ],
+      "rotation": {
+        "origin": [
+          14.420729442089891,
+          3.791666666666667,
+          9.168819485781508
+        ],
+        "axis": "x",
+        "angle": -22.5
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            8
+          ],
+          "texture": "#foliage",
+          "rotation": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            8,
+            16,
+            0
+          ],
+          "texture": "#foliage",
+          "rotation": 0
+        }
+      }
+    },
+    {
+      "name": "rear_leaf_tip",
+      "from": [
+        11.420729442089891,
+        4.939716963761936,
+        11.940458083315368
+      ],
+      "to": [
+        17.420729442089893,
+        4.939716963761936,
+        14.940458083315368
+      ],
+      "rotation": {
+        "origin": [
+          14.420729442089891,
+          4.939716963761936,
+          11.940458083315368
+        ],
+        "axis": "x",
+        "angle": 22.5
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            8,
+            16,
+            16
+          ],
+          "texture": "#foliage",
+          "rotation": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            16,
+            16,
+            8
+          ],
+          "texture": "#foliage",
+          "rotation": 0
+        }
+      }
+    },
+    {
+      "name": "left_leaf_base",
+      "from": [
+        1.7173593128807152,
+        4.666666666666667,
+        6.414213562373094
+      ],
+      "to": [
+        3.717359312880715,
+        4.666666666666667,
+        12.414213562373094
+      ],
+      "rotation": {
+        "origin": [
+          3.717359312880715,
+          4.666666666666667,
+          9.414213562373094
+        ],
+        "axis": "z",
+        "angle": -22.5
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            8
+          ],
+          "texture": "#foliage",
+          "rotation": 90
+        },
+        "down": {
+          "uv": [
+            0,
+            8,
+            16,
+            0
+          ],
+          "texture": "#foliage",
+          "rotation": 270
+        }
+      }
+    },
+    {
+      "name": "left_leaf_tip",
+      "from": [
+        -0.13039975214185828,
+        5.432033531396846,
+        6.414213562373094
+      ],
+      "to": [
+        1.8696002478581417,
+        5.432033531396846,
+        12.414213562373094
+      ],
+      "rotation": {
+        "origin": [
+          1.8696002478581417,
+          5.432033531396846,
+          9.414213562373094
+        ],
+        "axis": "z",
+        "angle": 22.5
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            8,
+            16,
+            16
+          ],
+          "texture": "#foliage",
+          "rotation": 90
+        },
+        "down": {
+          "uv": [
+            0,
+            16,
+            16,
+            8
+          ],
+          "texture": "#foliage",
+          "rotation": 270
+        }
+      }
+    },
+    {
+      "name": "right_leaf_base",
+      "from": [
+        9.454213562373093,
+        3.083333333333334,
+        9.242640687119286
+      ],
+      "to": [
+        12.454213562373093,
+        3.083333333333334,
+        15.242640687119286
+      ],
+      "rotation": {
+        "origin": [
+          9.454213562373093,
+          3.083333333333334,
+          12.242640687119286
+        ],
+        "axis": "z",
+        "angle": 22.5
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            8,
+            16,
+            0
+          ],
+          "texture": "#foliage",
+          "rotation": 90
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            8
+          ],
+          "texture": "#foliage",
+          "rotation": 270
+        }
+      }
+    },
+    {
+      "name": "right_leaf_tip",
+      "from": [
+        12.225852159906953,
+        4.231383630428603,
+        9.242640687119286
+      ],
+      "to": [
+        15.225852159906953,
+        4.231383630428603,
+        15.242640687119286
+      ],
+      "rotation": {
+        "origin": [
+          12.225852159906953,
+          4.231383630428603,
+          12.242640687119286
+        ],
+        "axis": "z",
+        "angle": -22.5
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            16,
+            16,
+            8
+          ],
+          "texture": "#foliage",
+          "rotation": 90
+        },
+        "down": {
+          "uv": [
+            0,
+            8,
+            16,
+            16
+          ],
+          "texture": "#foliage",
+          "rotation": 270
+        }
+      }
+    },
+    {
+      "name": "front_lower_leaf_base",
+      "from": [
+        1.4493963006482824,
+        2.9583333333333335,
+        0.5597229919468591
+      ],
+      "to": [
+        7.449396300648282,
+        2.9583333333333335,
+        2.1597229919468592
+      ],
+      "rotation": {
+        "origin": [
+          4.449396300648282,
+          2.9583333333333335,
+          2.1597229919468592
+        ],
+        "axis": "x",
+        "angle": 22.5
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            8,
+            16,
+            0
+          ],
+          "texture": "#foliage",
+          "rotation": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            8
+          ],
+          "texture": "#foliage",
+          "rotation": 0
+        }
+      }
+    },
+    {
+      "name": "front_lower_leaf_tip",
+      "from": [
+        1.4493963006482824,
+        3.570626825117477,
+        -0.9184842600711998
+      ],
+      "to": [
+        7.449396300648282,
+        3.570626825117477,
+        0.6815157399288003
+      ],
+      "rotation": {
+        "origin": [
+          4.449396300648282,
+          3.570626825117477,
+          0.6815157399288003
+        ],
+        "axis": "x",
+        "angle": -22.5
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            16,
+            16,
+            8
+          ],
+          "texture": "#foliage",
+          "rotation": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            8,
+            16,
+            16
+          ],
+          "texture": "#foliage",
+          "rotation": 0
+        }
+      }
+    },
+    {
+      "name": "rear_upper_leaf_base",
+      "from": [
+        1.2580545844657376,
+        4.916666666666666,
+        13.378337241797496
+      ],
+      "to": [
+        7.258054584465738,
+        4.916666666666666,
+        15.028337241797496
+      ],
+      "rotation": {
+        "origin": [
+          4.258054584465738,
+          4.916666666666666,
+          13.378337241797496
+        ],
+        "axis": "x",
+        "angle": -22.5
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            8
+          ],
+          "texture": "#foliage",
+          "rotation": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            8,
+            16,
+            0
+          ],
+          "texture": "#foliage",
+          "rotation": 0
+        }
+      }
+    },
+    {
+      "name": "rear_upper_leaf_tip",
+      "from": [
+        1.2580545844657376,
+        5.548094330069064,
+        14.902738470441118
+      ],
+      "to": [
+        7.258054584465738,
+        5.548094330069064,
+        16.552738470441117
+      ],
+      "rotation": {
+        "origin": [
+          4.258054584465738,
+          5.548094330069064,
+          14.902738470441118
+        ],
+        "axis": "x",
+        "angle": 22.5
+      },
+      "shade_direction_override": "up",
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            8,
+            16,
+            16
+          ],
+          "texture": "#foliage",
+          "rotation": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            16,
+            16,
+            8
+          ],
+          "texture": "#foliage",
+          "rotation": 0
+        }
+      }
+    }
+  ]
+}

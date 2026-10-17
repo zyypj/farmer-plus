@@ -1,0 +1,532 @@
+{
+  "variants": {
+    "age=0": [
+      {
+        "model": "minecraft:block/wheat_stage0",
+        "y": 0
+      },
+      {
+        "model": "minecraft:block/wheat_stage0",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/wheat_stage0",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/wheat_stage0",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage0_variant1",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage0_variant1",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage0_variant1",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage0_variant1",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage0_variant2",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage0_variant2",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage0_variant2",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage0_variant2",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage0_variant3",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage0_variant3",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage0_variant3",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage0_variant3",
+        "y": 270
+      }
+    ],
+    "age=1": [
+      {
+        "model": "minecraft:block/wheat_stage1",
+        "y": 0
+      },
+      {
+        "model": "minecraft:block/wheat_stage1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/wheat_stage1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/wheat_stage1",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage1_variant1",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage1_variant1",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage1_variant1",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage1_variant1",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage1_variant2",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage1_variant2",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage1_variant2",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage1_variant2",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage1_variant3",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage1_variant3",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage1_variant3",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage1_variant3",
+        "y": 270
+      }
+    ],
+    "age=2": [
+      {
+        "model": "minecraft:block/wheat_stage2",
+        "y": 0
+      },
+      {
+        "model": "minecraft:block/wheat_stage2",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/wheat_stage2",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/wheat_stage2",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage2_variant1",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage2_variant1",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage2_variant1",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage2_variant1",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage2_variant2",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage2_variant2",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage2_variant2",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage2_variant2",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage2_variant3",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage2_variant3",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage2_variant3",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage2_variant3",
+        "y": 270
+      }
+    ],
+    "age=3": [
+      {
+        "model": "minecraft:block/wheat_stage3",
+        "y": 0
+      },
+      {
+        "model": "minecraft:block/wheat_stage3",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/wheat_stage3",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/wheat_stage3",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage3_variant1",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage3_variant1",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage3_variant1",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage3_variant1",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage3_variant2",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage3_variant2",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage3_variant2",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage3_variant2",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage3_variant3",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage3_variant3",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage3_variant3",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage3_variant3",
+        "y": 270
+      }
+    ],
+    "age=4": [
+      {
+        "model": "minecraft:block/wheat_stage4",
+        "y": 0
+      },
+      {
+        "model": "minecraft:block/wheat_stage4",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/wheat_stage4",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/wheat_stage4",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage4_variant1",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage4_variant1",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage4_variant1",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage4_variant1",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage4_variant2",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage4_variant2",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage4_variant2",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage4_variant2",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage4_variant3",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage4_variant3",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage4_variant3",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage4_variant3",
+        "y": 270
+      }
+    ],
+    "age=5": [
+      {
+        "model": "minecraft:block/wheat_stage5",
+        "y": 0
+      },
+      {
+        "model": "minecraft:block/wheat_stage5",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/wheat_stage5",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/wheat_stage5",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage5_variant1",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage5_variant1",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage5_variant1",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage5_variant1",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage5_variant2",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage5_variant2",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage5_variant2",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage5_variant2",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage5_variant3",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage5_variant3",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage5_variant3",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage5_variant3",
+        "y": 270
+      }
+    ],
+    "age=6": [
+      {
+        "model": "minecraft:block/wheat_stage6",
+        "y": 0
+      },
+      {
+        "model": "minecraft:block/wheat_stage6",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/wheat_stage6",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/wheat_stage6",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage6_variant1",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage6_variant1",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage6_variant1",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage6_variant1",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage6_variant2",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage6_variant2",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage6_variant2",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage6_variant2",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage6_variant3",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage6_variant3",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage6_variant3",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage6_variant3",
+        "y": 270
+      }
+    ],
+    "age=7": [
+      {
+        "model": "minecraft:block/wheat_stage7",
+        "y": 0
+      },
+      {
+        "model": "minecraft:block/wheat_stage7",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/wheat_stage7",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/wheat_stage7",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage7_variant1",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage7_variant1",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage7_variant1",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage7_variant1",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage7_variant2",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage7_variant2",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage7_variant2",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage7_variant2",
+        "y": 270
+      },
+      {
+        "model": "farmerplus:block/wheat_stage7_variant3",
+        "y": 0
+      },
+      {
+        "model": "farmerplus:block/wheat_stage7_variant3",
+        "y": 90
+      },
+      {
+        "model": "farmerplus:block/wheat_stage7_variant3",
+        "y": 180
+      },
+      {
+        "model": "farmerplus:block/wheat_stage7_variant3",
+        "y": 270
+      }
+    ]
+  }
+}
