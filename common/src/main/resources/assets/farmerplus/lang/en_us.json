@@ -52,5 +52,7 @@
   "block.farmerplus.banana_sapling": "Banana Sucker",
   "block.farmerplus.banana_stem": "Banana Pseudostem",
   "block.farmerplus.banana_leaf": "Banana Leaf",
-  "block.farmerplus.banana_bunch": "Banana Bunch"
+  "block.farmerplus.banana_bunch": "Banana Bunch",
+  "item.farmerplus.banana_bunch": "Banana Bunch",
+  "block.farmerplus.harvested_banana_bunch": "Banana Bunch"
 }

@@ -96,6 +96,26 @@ def variant_for(blockstate, properties):
     return None
 
 
+def variants_for(blockstate, properties):
+    if 'variants' in blockstate:
+        variant = variant_for(blockstate, properties)
+        return [variant] if variant else []
+
+    def matches(condition):
+        if 'OR' in condition:
+            return any(matches(part) for part in condition['OR'])
+        if 'AND' in condition:
+            return all(matches(part) for part in condition['AND'])
+        return all(properties.get(key) in str(value).split('|') for key, value in condition.items())
+
+    result = []
+    for part in blockstate.get('multipart', []):
+        if matches(part.get('when', {})):
+            applied = part['apply']
+            result.append(applied[0] if isinstance(applied, list) else applied)
+    return result
+
+
 def rotation_matrix(rotation):
     if not rotation:
         return None
@@ -150,9 +170,11 @@ def quads_for(models, name, properties, position):
     blockstate_file = ASSETS / namespace / 'blockstates' / (path + '.json')
     if not blockstate_file.exists():
         return
-    variant = variant_for(json.loads(blockstate_file.read_text(encoding='utf-8')), properties)
-    if not variant:
-        return
+    for variant in variants_for(json.loads(blockstate_file.read_text(encoding='utf-8')), properties):
+        yield from quads_for_variant(models, variant, position)
+
+
+def quads_for_variant(models, variant, position):
     data = models.load(variant['model'])
     angle = math.radians(-variant.get('y', 0))
     state_matrix = [[math.cos(angle), 0, math.sin(angle)], [0, 1, 0], [-math.sin(angle), 0, math.cos(angle)]]

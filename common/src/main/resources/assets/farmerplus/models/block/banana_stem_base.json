@@ -1,14 +1,16 @@
 {
+  "format_version": "26.3",
+  "credit": "Made with Blockbench",
   "ambientocclusion": false,
   "textures": {
-    "side": "farmerplus:block/banana_stem",
-    "end": "farmerplus:block/banana_stem_top",
-    "leaf": "farmerplus:block/banana_leaf",
-    "particle": "farmerplus:block/banana_stem"
+    "particle": "farmerplus:block/banana_stem",
+    "stem": "farmerplus:block/banana_stem",
+    "cut": "farmerplus:block/banana_stem_top",
+    "dry": "farmerplus:block/banana_leaf_dry"
   },
   "elements": [
     {
-      "name": "pseudostem",
+      "name": "overlapping_sheaths",
       "from": [
         5,
         0,
@@ -22,62 +24,62 @@
       "faces": {
         "north": {
           "uv": [
-            5,
             0,
-            11,
+            0,
+            16,
             16
           ],
-          "texture": "#side"
+          "texture": "#stem"
         },
         "east": {
           "uv": [
-            5,
             0,
-            11,
+            0,
+            16,
             16
           ],
-          "texture": "#side"
+          "texture": "#stem"
         },
         "south": {
           "uv": [
-            5,
             0,
-            11,
+            0,
+            16,
             16
           ],
-          "texture": "#side"
+          "texture": "#stem"
         },
         "west": {
           "uv": [
-            5,
             0,
-            11,
+            0,
+            16,
             16
           ],
-          "texture": "#side"
+          "texture": "#stem"
         },
         "up": {
           "uv": [
-            5,
-            5,
-            11,
-            11
+            0,
+            0,
+            16,
+            16
           ],
-          "texture": "#end"
+          "texture": "#cut"
         },
         "down": {
           "uv": [
-            5,
-            5,
-            11,
-            11
+            0,
+            0,
+            16,
+            16
           ],
-          "texture": "#end"
+          "texture": "#cut"
         }
       }
     },
     {
-      "name": "corm",
+      "name": "basal_sheaths",
       "from": [
         4,
         0,
@@ -85,63 +87,221 @@
       ],
       "to": [
         12,
-        2.5,
+        3,
         12
       ],
       "faces": {
         "north": {
           "uv": [
-            4,
-            13.5,
+            0,
             12,
+            16,
             16
           ],
-          "texture": "#side"
+          "texture": "#stem"
         },
         "east": {
           "uv": [
-            4,
-            13.5,
+            0,
             12,
+            16,
             16
           ],
-          "texture": "#side"
+          "texture": "#stem"
         },
         "south": {
           "uv": [
-            4,
-            13.5,
+            0,
             12,
+            16,
             16
           ],
-          "texture": "#side"
+          "texture": "#stem"
         },
         "west": {
           "uv": [
-            4,
-            13.5,
+            0,
             12,
+            16,
             16
           ],
-          "texture": "#side"
+          "texture": "#stem"
         },
         "up": {
           "uv": [
-            4,
-            4,
+            0,
             12,
-            12
+            16,
+            16
           ],
-          "texture": "#end"
+          "texture": "#stem"
         },
         "down": {
           "uv": [
-            4,
-            4,
+            0,
             12,
-            12
+            16,
+            16
           ],
-          "texture": "#end"
+          "texture": "#stem"
+        }
+      }
+    },
+    {
+      "name": "peeling_sheath_west",
+      "from": [
+        4.3,
+        1,
+        5.5
+      ],
+      "to": [
+        5,
+        11,
+        8
+      ],
+      "rotation": {
+        "angle": -9,
+        "axis": "z",
+        "origin": [
+          5,
+          11,
+          8
+        ],
+        "z": -9
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            0,
+            10,
+            16
+          ],
+          "texture": "#dry"
+        },
+        "east": {
+          "uv": [
+            6,
+            0,
+            10,
+            16
+          ],
+          "texture": "#dry"
+        },
+        "south": {
+          "uv": [
+            6,
+            0,
+            10,
+            16
+          ],
+          "texture": "#dry"
+        },
+        "west": {
+          "uv": [
+            6,
+            0,
+            10,
+            16
+          ],
+          "texture": "#dry"
+        },
+        "up": {
+          "uv": [
+            6,
+            0,
+            10,
+            16
+          ],
+          "texture": "#dry"
+        },
+        "down": {
+          "uv": [
+            6,
+            0,
+            10,
+            16
+          ],
+          "texture": "#dry"
+        }
+      }
+    },
+    {
+      "name": "peeling_sheath_front",
+      "from": [
+        8,
+        0.5,
+        10.9
+      ],
+      "to": [
+        10,
+        8,
+        11.25
+      ],
+      "rotation": {
+        "angle": -13,
+        "axis": "x",
+        "origin": [
+          9,
+          8,
+          11
+        ],
+        "x": -13
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": "#dry"
+        },
+        "east": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": "#dry"
+        },
+        "south": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": "#dry"
+        },
+        "west": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": "#dry"
+        },
+        "up": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": "#dry"
+        },
+        "down": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": "#dry"
         }
       }
     }

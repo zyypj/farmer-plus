@@ -14,7 +14,7 @@ A banana is not a tree. It is a giant herb: what looks like a trunk is a **pseud
 |---|---|---|
 | Height to the crown | 2.5–3 m (Cavendish, Prata-Anã); 4–8 m wild | 3–4 blocks (orchard), 4–6 blocks (wild) |
 | Pseudostem | 22–30 cm wide, a little wider at the base | 6 px column with an 8 px base |
-| Leaves | 12–18 alive, blade 1.5–3 m × 0.4–0.9 m, petiole 0.6 m | 8–10 leaves, each about 3 blocks long and 13 px wide |
+| Leaves | 12–18 alive, blade 1.5–3 m × 0.4–0.9 m, petiole 0.6 m | 8–10 leaves, each about 3 blocks long and 16 px wide, with folded halves and an arch in six sections |
 | Crown | Young leaves rise from the top, older ones arch over, dead ones hang brown on the stem | Upright young tier, arching mature tier, 0–2 dry hanging leaves |
 | Bunch | One per stem, 8–12 hands, 20–25 kg, hangs under the crown with a purple male bud | One bunch block under the crown with hands and a purple bud |
 | Cycle | Flowers ~6 months after planting, ripe ~4.5 months later, then a follower sucker replaces the stem | About an hour of play from sucker to ripe bunch, then a follower sucker |
@@ -27,7 +27,7 @@ Sources: [ProMusa — morphology of the banana plant](https://www.promusa.org/Mo
 |---|---|
 | `banana_sapling` (Banana Sucker) | A young sucker. Grows into a plant (≈1 in 8 random ticks per stage, light 9+). Drops itself. |
 | `banana_stem` (Pseudostem) | Works out its own `segment`: `base` (wider foot), `middle` and `crown` (leaf sheaths and the rolled "cigar" leaf). Needs dirt-like ground or another stem below; cutting it drops everything above. Drops string a third of the time — banana fibre. |
-| `banana_leaf` | A giant leaf built from segments: `direction` (8 directions), `segment` (`0` petiole and blade base, `1` blade, `2` drooping tip; diagonal leaves use `0` and `2`) and `age` (`young`, `mature`, `dry`). Removing a segment drops the rest of that leaf, and cutting the stem drops all of its leaves. No collision. Only shears or Silk Touch keep it. |
+| `banana_leaf` | Its hitbox follows the 3D model (`art/banana_leaf_shapes.py`). A giant leaf built from segments: `direction` (8 directions), `segment` (`0` petiole and blade base, `1` blade, `2` drooping tip; diagonal leaves use `0` and `2`) and `age` (`young`, `mature`, `dry`). Removing a segment drops the rest of that leaf, and cutting the stem drops all of its leaves. No collision. Only shears or Silk Touch keep it. |
 | `banana_bunch` | Hangs beside the stem under the crown. `stage`: `0` purple bud, `1` flowering with small hands, `2` green bunch, `3` ripe. |
 
 ## Life cycle
@@ -35,11 +35,17 @@ Sources: [ProMusa — morphology of the banana plant](https://www.promusa.org/Mo
 1. **Sucker → plant.** A sucker grows into a plant with an upright young tier, an arching mature tier and, on taller plants, a few dry leaves hanging on the stem.
 2. **Flowering.** The crown sends out one bunch (≈1 in 20 random ticks) beside the stem, just under the crown, on any free side.
 3. **Fruit.** The bunch goes bud → flowering → green → ripe (≈1 in 6 per stage; bone meal advances one stage). A ripe bunch stays until it is picked.
-4. **Harvest.** Right-click a ripe bunch for **6–10 bananas**. Breaking a ripe bunch drops them too; earlier stages drop nothing.
+4. **Harvest.** Right-click a ripe bunch and you take the **whole bunch** (`banana_bunch`) straight into your empty hand (or your inventory). Breaking a ripe bunch drops it; earlier stages drop nothing.
 5. **Die-back.** Once its bunch is gone (picked, broken or lost), the stem is spent: it never flowers again and soon collapses (≈1 in 6 random ticks), and a **follower sucker** takes its place on the same spot.
 6. **Clumps.** A living plant also sends up new suckers within 2 blocks (≈1 in 40 random ticks), up to 4 stems and suckers per clump.
 
 With the default `random_tick_speed`, a sucker becomes a plant with a ripe bunch in about an hour.
+
+## Carrying and opening the bunch
+
+- **Heavy:** a bunch stacks to 1 and slows you down by 30% while it is in either hand. Any item in `#farmerplus:carried_on_shoulder` is carried **on the shoulder**: the bunch lies on top of the shoulder, front to back, and the raised arm grips the stub in front (`client/ShoulderCarry`, applied by the client-only `HumanoidModelMixin`).
+- **Craft:** one bunch gives **8 bananas** in a crafting grid.
+- **Place it:** right-click the ground to stand the bunch **upright** (`harvested_banana_bunch`): only the hands and a short cut stub on top — the stalk that joined the plant and the purple bud are gone. Each right-click pulls **one banana** off, from the bottom hand up: your arm swings, the banana pops out of the exact spot where that hand was and flies towards you, and that piece of the model disappears (`bananas` 8 → 1); taking the last one removes the stalk. The hands are the same 3D pieces as the ripe bunch on the plant (`banana_bunch_ripe_hand_<tier>_<half>`). Breaking a full bunch gives the bunch back; a partly picked one drops the bananas that are left.
 
 ## Banana
 
@@ -62,4 +68,4 @@ Clumps of one tall plant plus 2–4 suckers or young plants grow in jungles, spa
 
 ## Art
 
-Models and placeholder textures come from `python art/banana_art.py`; textures it finds are never overwritten. The art backlog is [art task 0006](art-tasks/0006-banana-plant.md).
+Final textures are manually authored in `art/banana_pixels.py`. Geometry inputs come from `art/banana_models.py` and are saved/exported through `art/export_banana.js` in Blockbench MCP. **Do not run `art/banana_art.py` over these models:** it would overwrite the final geometry and multipart bunch blockstate. See [the visual report](banana-visuals.md) for previews, the solid-fruit geometry cost, verification and limitations, and [art task 0006](art-tasks/0006-banana-plant.md) for its remaining acceptance check.

@@ -46,7 +46,7 @@ Uma árvore frutífera inspirada no abacateiro real — copa redonda e densa de 
 
 ### Bananeira
 
-Uma bananeira montada como a erva gigante de verdade: pseudocaule fino, folhas enormes que rasgam e arqueiam (novas, maduras e secas penduradas) e um cacho por pé, pendurado embaixo da copa com o coração roxo. Colha 6–10 bananas com o botão direito; o pé gasto morre e um filho seguidor toma o lugar, então as plantas formam touceiras. Touceiras silvestres nascem nas selvas. Veja [docs/banana.pt-BR.md](docs/banana.pt-BR.md).
+Uma bananeira montada como a erva gigante de verdade: pseudocaule fino, folhas enormes que rasgam e arqueiam (novas, maduras e secas penduradas) e um cacho por pé, pendurado embaixo da copa com o coração roxo. Colha o cacho inteiro e pesado, carregue no ombro e depois transforme em 8 bananas na mesa ou coloque em pé no chão e tire as bananas uma a uma; o pé gasto morre e um filho seguidor toma o lugar, então as plantas formam touceiras. Touceiras silvestres nascem nas selvas. Veja [docs/banana.pt-BR.md](docs/banana.pt-BR.md).
 
 ### Pisoteio de plantações
 

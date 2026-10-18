@@ -1,0 +1,1181 @@
+{
+  "meta": {
+    "format_version": "5.0",
+    "model_format": "java_block",
+    "box_uv": false
+  },
+  "name": "banana_bunch_green_hand_2_0",
+  "parent": "",
+  "java_block_version": "26.3",
+  "ambientocclusion": false,
+  "front_gui_light": false,
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "variable_placeholders": "",
+  "multi_file_ruleset": "",
+  "variable_placeholder_buttons": [],
+  "unhandled_root_fields": {},
+  "resolution": {
+    "width": 16,
+    "height": 16
+  },
+  "elements": [
+    {
+      "name": "hand_2_finger_0_curve_0",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        7.73088,
+        3.2498,
+        8.76608
+      ],
+      "to": [
+        9.04128,
+        4.5602,
+        10.68404
+      ],
+      "autouv": 0,
+      "color": 5,
+      "rotation": [
+        -12.52881,
+        45,
+        0
+      ],
+      "origin": [
+        8.38608,
+        3.905,
+        8.88608
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            0,
+            7,
+            1
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "ac4a1fad-4cba-31b1-8ce2-dd2cde97b1a9"
+    },
+    {
+      "name": "hand_2_finger_0_curve_1",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        8.88912,
+        3.6138,
+        9.92432
+      ],
+      "to": [
+        10.19952,
+        4.9242,
+        12.35211
+      ],
+      "autouv": 0,
+      "color": 1,
+      "rotation": [
+        -45,
+        45,
+        0
+      ],
+      "origin": [
+        9.54432,
+        4.269,
+        10.04432
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "71f8fa69-df4a-8b81-6513-bf352529ee7d"
+    },
+    {
+      "name": "hand_2_finger_0_curve_2",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        10.09222,
+        5.27,
+        11.01822
+      ],
+      "to": [
+        11.18422,
+        6.362,
+        13.50943
+      ],
+      "autouv": 0,
+      "color": 8,
+      "rotation": [
+        -75.96376,
+        45,
+        0
+      ],
+      "origin": [
+        10.63822,
+        5.816,
+        11.13822
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "905b75e0-2323-91a8-e9a4-f986a5defdf7"
+    },
+    {
+      "name": "hand_2_finger_1_curve_0",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        7.8908,
+        3.2498,
+        8.38
+      ],
+      "to": [
+        9.2012,
+        4.5602,
+        10.29796
+      ],
+      "autouv": 0,
+      "color": 8,
+      "rotation": [
+        -12.52881,
+        90,
+        0
+      ],
+      "origin": [
+        8.546,
+        3.905,
+        8.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            0,
+            7,
+            1
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "45523cfc-3bdd-4692-b7c6-b74bb53f3395"
+    },
+    {
+      "name": "hand_2_finger_1_curve_1",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        9.5288,
+        3.6138,
+        8.38
+      ],
+      "to": [
+        10.8392,
+        4.9242,
+        10.80779
+      ],
+      "autouv": 0,
+      "color": 8,
+      "rotation": [
+        -45,
+        90,
+        0
+      ],
+      "origin": [
+        10.184,
+        4.269,
+        8.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "7e7eafc9-e9a7-f4fc-2612-470defe098f9"
+    },
+    {
+      "name": "hand_2_finger_1_curve_2",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        11.185,
+        5.27,
+        8.38
+      ],
+      "to": [
+        12.277,
+        6.362,
+        10.87122
+      ],
+      "autouv": 0,
+      "color": 2,
+      "rotation": [
+        -75.96376,
+        90,
+        0
+      ],
+      "origin": [
+        11.731,
+        5.816,
+        8.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "2efc3e59-bb36-9772-f982-fcd5916e2e60"
+    },
+    {
+      "name": "hand_2_finger_2_curve_0",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        7.73088,
+        3.2498,
+        7.99392
+      ],
+      "to": [
+        9.04128,
+        4.5602,
+        9.91188
+      ],
+      "autouv": 0,
+      "color": 8,
+      "rotation": [
+        -12.52881,
+        135,
+        0
+      ],
+      "origin": [
+        8.38608,
+        3.905,
+        8.11392
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            0,
+            7,
+            1
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "575266cc-743d-8507-7b40-2c51c68a0d4b"
+    },
+    {
+      "name": "hand_2_finger_2_curve_1",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        8.88912,
+        3.6138,
+        6.83568
+      ],
+      "to": [
+        10.19952,
+        4.9242,
+        9.26347
+      ],
+      "autouv": 0,
+      "color": 7,
+      "rotation": [
+        -45,
+        135,
+        0
+      ],
+      "origin": [
+        9.54432,
+        4.269,
+        6.95568
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "8d3dc99b-d549-6eb0-2f03-c446553b54d7"
+    },
+    {
+      "name": "hand_2_finger_2_curve_2",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        10.09222,
+        5.27,
+        5.74178
+      ],
+      "to": [
+        11.18422,
+        6.362,
+        8.233
+      ],
+      "autouv": 0,
+      "color": 1,
+      "rotation": [
+        -75.96376,
+        135,
+        0
+      ],
+      "origin": [
+        10.63822,
+        5.816,
+        5.86178
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "4f5b14f3-c32d-6aa7-cde6-a7c765e89282"
+    },
+    {
+      "name": "hand_2_finger_3_curve_0",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        7.3448,
+        3.2498,
+        7.834
+      ],
+      "to": [
+        8.6552,
+        4.5602,
+        9.75196
+      ],
+      "autouv": 0,
+      "color": 9,
+      "rotation": [
+        -12.52881,
+        180,
+        0
+      ],
+      "origin": [
+        8,
+        3.905,
+        7.954
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            0,
+            7,
+            1
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "a905ef57-b87e-fe73-fc53-e99bca5604c8"
+    },
+    {
+      "name": "hand_2_finger_3_curve_1",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        7.3448,
+        3.6138,
+        6.196
+      ],
+      "to": [
+        8.6552,
+        4.9242,
+        8.62379
+      ],
+      "autouv": 0,
+      "color": 2,
+      "rotation": [
+        -45,
+        180,
+        0
+      ],
+      "origin": [
+        8,
+        4.269,
+        6.316
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "64194816-b8a3-43d1-a8bd-86c9e6c07afa"
+    },
+    {
+      "name": "hand_2_finger_3_curve_2",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        7.454,
+        5.27,
+        4.649
+      ],
+      "to": [
+        8.546,
+        6.362,
+        7.14022
+      ],
+      "autouv": 0,
+      "color": 3,
+      "rotation": [
+        -75.96376,
+        180,
+        0
+      ],
+      "origin": [
+        8,
+        5.816,
+        4.769
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "fc769a64-f3bc-7431-a4a0-0d3fc0aad36f"
+    }
+  ],
+  "groups": [],
+  "outliner": [
+    "ac4a1fad-4cba-31b1-8ce2-dd2cde97b1a9",
+    "71f8fa69-df4a-8b81-6513-bf352529ee7d",
+    "905b75e0-2323-91a8-e9a4-f986a5defdf7",
+    "45523cfc-3bdd-4692-b7c6-b74bb53f3395",
+    "7e7eafc9-e9a7-f4fc-2612-470defe098f9",
+    "2efc3e59-bb36-9772-f982-fcd5916e2e60",
+    "575266cc-743d-8507-7b40-2c51c68a0d4b",
+    "8d3dc99b-d549-6eb0-2f03-c446553b54d7",
+    "4f5b14f3-c32d-6aa7-cde6-a7c765e89282",
+    "a905ef57-b87e-fe73-fc53-e99bca5604c8",
+    "64194816-b8a3-43d1-a8bd-86c9e6c07afa",
+    "fc769a64-f3bc-7431-a4a0-0d3fc0aad36f"
+  ],
+  "textures": [
+    {
+      "name": "banana_fingers_green.png",
+      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/banana_fingers_green.png",
+      "folder": "block",
+      "namespace": "farmerplus",
+      "id": "fingers",
+      "group": "",
+      "scope": 0,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
+      "particle": true,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": true,
+      "uuid": "28542514-6caa-d39f-95db-92a2b7a74e2f",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAARElEQVR4nGP0NNX7z0ABYHmvx8rAJ8XGoKstzfDs9QeG+xfek8RnYqAQMI0awAAPg8tXn6IEB7F8xtF0wDCcEhK56QAAasVE6TLIVWUAAAAASUVORK5CYII="
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "facing": "north"
+      },
+      "apply": {
+        "model": "farmerplus:block/harvested_banana_bunch_stalk"
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "bananas": "1|2|3|4|5|6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_0_0"
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "bananas": "2|3|4|5|6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_0_1"
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "bananas": "3|4|5|6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_1_0"
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "bananas": "4|5|6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_1_1"
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "bananas": "5|6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_2_0"
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "bananas": "6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_2_1"
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "bananas": "7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_3_0"
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "bananas": "8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_3_1"
+      }
+    },
+    {
+      "when": {
+        "facing": "east"
+      },
+      "apply": {
+        "model": "farmerplus:block/harvested_banana_bunch_stalk",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "bananas": "1|2|3|4|5|6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_0_0",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "bananas": "2|3|4|5|6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_0_1",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "bananas": "3|4|5|6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_1_0",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "bananas": "4|5|6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_1_1",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "bananas": "5|6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_2_0",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "bananas": "6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_2_1",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "bananas": "7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_3_0",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "bananas": "8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_3_1",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "south"
+      },
+      "apply": {
+        "model": "farmerplus:block/harvested_banana_bunch_stalk",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "bananas": "1|2|3|4|5|6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_0_0",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "bananas": "2|3|4|5|6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_0_1",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "bananas": "3|4|5|6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_1_0",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "bananas": "4|5|6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_1_1",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "bananas": "5|6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_2_0",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "bananas": "6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_2_1",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "bananas": "7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_3_0",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "bananas": "8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_3_1",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west"
+      },
+      "apply": {
+        "model": "farmerplus:block/harvested_banana_bunch_stalk",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "bananas": "1|2|3|4|5|6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_0_0",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "bananas": "2|3|4|5|6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_0_1",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "bananas": "3|4|5|6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_1_0",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "bananas": "4|5|6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_1_1",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "bananas": "5|6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_2_0",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "bananas": "6|7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_2_1",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "bananas": "7|8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_3_0",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "bananas": "8"
+      },
+      "apply": {
+        "model": "farmerplus:block/banana_bunch_ripe_hand_3_1",
+        "y": 270
+      }
+    }
+  ]
+}

@@ -1,0 +1,959 @@
+{
+  "format_version": "26.3",
+  "credit": "Made with Blockbench",
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "farmerplus:block/banana_fingers_ripe",
+    "fingers": "farmerplus:block/banana_fingers_ripe"
+  },
+  "elements": [
+    {
+      "name": "hand_3_finger_0_curve_0",
+      "from": [
+        7.85669,
+        -0.5153,
+        8.57861
+      ],
+      "to": [
+        9.10229,
+        0.7303,
+        10.41359
+      ],
+      "rotation": {
+        "x": -12.52881,
+        "y": 67.5,
+        "z": 0,
+        "origin": [
+          8.47949,
+          0.1075,
+          8.69861
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            0,
+            7,
+            1
+          ],
+          "texture": "#fingers"
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        }
+      }
+    },
+    {
+      "name": "hand_3_finger_0_curve_1",
+      "from": [
+        9.29517,
+        -0.1693,
+        9.17445
+      ],
+      "to": [
+        10.54077,
+        1.0763,
+        11.49405
+      ],
+      "rotation": {
+        "x": -45,
+        "y": 67.5,
+        "z": 0,
+        "origin": [
+          9.91797,
+          0.4535,
+          9.29445
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        }
+      }
+    },
+    {
+      "name": "hand_3_finger_0_curve_2",
+      "from": [
+        10.75754,
+        1.405,
+        9.73719
+      ],
+      "to": [
+        11.79554,
+        2.443,
+        12.11708
+      ],
+      "rotation": {
+        "x": -75.96376,
+        "y": 67.5,
+        "z": 0,
+        "origin": [
+          11.27654,
+          1.924,
+          9.85719
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        }
+      }
+    },
+    {
+      "name": "hand_3_finger_1_curve_0",
+      "from": [
+        7.85669,
+        -0.5153,
+        8.18139
+      ],
+      "to": [
+        9.10229,
+        0.7303,
+        10.01637
+      ],
+      "rotation": {
+        "x": -12.52881,
+        "y": 112.5,
+        "z": 0,
+        "origin": [
+          8.47949,
+          0.1075,
+          8.30139
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            0,
+            7,
+            1
+          ],
+          "texture": "#fingers"
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        }
+      }
+    },
+    {
+      "name": "hand_3_finger_1_curve_1",
+      "from": [
+        9.29517,
+        -0.1693,
+        7.58555
+      ],
+      "to": [
+        10.54077,
+        1.0763,
+        9.90515
+      ],
+      "rotation": {
+        "x": -45,
+        "y": 112.5,
+        "z": 0,
+        "origin": [
+          9.91797,
+          0.4535,
+          7.70555
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        }
+      }
+    },
+    {
+      "name": "hand_3_finger_1_curve_2",
+      "from": [
+        10.75754,
+        1.405,
+        7.02281
+      ],
+      "to": [
+        11.79554,
+        2.443,
+        9.40271
+      ],
+      "rotation": {
+        "x": -75.96376,
+        "y": 112.5,
+        "z": 0,
+        "origin": [
+          11.27654,
+          1.924,
+          7.14281
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        }
+      }
+    },
+    {
+      "name": "hand_3_finger_2_curve_0",
+      "from": [
+        7.57581,
+        -0.5153,
+        7.90051
+      ],
+      "to": [
+        8.82141,
+        0.7303,
+        9.73549
+      ],
+      "rotation": {
+        "x": -12.52881,
+        "y": 157.5,
+        "z": 0,
+        "origin": [
+          8.19861,
+          0.1075,
+          8.02051
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            0,
+            7,
+            1
+          ],
+          "texture": "#fingers"
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        }
+      }
+    },
+    {
+      "name": "hand_3_finger_2_curve_1",
+      "from": [
+        8.17165,
+        -0.1693,
+        6.46203
+      ],
+      "to": [
+        9.41725,
+        1.0763,
+        8.78163
+      ],
+      "rotation": {
+        "x": -45,
+        "y": 157.5,
+        "z": 0,
+        "origin": [
+          8.79445,
+          0.4535,
+          6.58203
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        }
+      }
+    },
+    {
+      "name": "hand_3_finger_2_curve_2",
+      "from": [
+        8.83819,
+        1.405,
+        5.10346
+      ],
+      "to": [
+        9.87619,
+        2.443,
+        7.48335
+      ],
+      "rotation": {
+        "x": -75.96376,
+        "y": 157.5,
+        "z": 0,
+        "origin": [
+          9.35719,
+          1.924,
+          5.22346
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        }
+      }
+    },
+    {
+      "name": "hand_3_finger_3_curve_0",
+      "from": [
+        7.17859,
+        -0.5153,
+        7.90051
+      ],
+      "to": [
+        8.42419,
+        0.7303,
+        9.73549
+      ],
+      "rotation": {
+        "x": -12.52881,
+        "y": -157.5,
+        "z": 0,
+        "origin": [
+          7.80139,
+          0.1075,
+          8.02051
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            0,
+            7,
+            1
+          ],
+          "texture": "#fingers"
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        }
+      }
+    },
+    {
+      "name": "hand_3_finger_3_curve_1",
+      "from": [
+        6.58275,
+        -0.1693,
+        6.46203
+      ],
+      "to": [
+        7.82835,
+        1.0763,
+        8.78163
+      ],
+      "rotation": {
+        "x": -45,
+        "y": -157.5,
+        "z": 0,
+        "origin": [
+          7.20555,
+          0.4535,
+          6.58203
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        }
+      }
+    },
+    {
+      "name": "hand_3_finger_3_curve_2",
+      "from": [
+        6.12381,
+        1.405,
+        5.10346
+      ],
+      "to": [
+        7.16181,
+        2.443,
+        7.48335
+      ],
+      "rotation": {
+        "x": -75.96376,
+        "y": -157.5,
+        "z": 0,
+        "origin": [
+          6.64281,
+          1.924,
+          5.22346
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            7
+          ],
+          "texture": "#fingers"
+        }
+      }
+    }
+  ]
+}

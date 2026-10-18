@@ -1,0 +1,624 @@
+{
+  "meta": {
+    "format_version": "5.0",
+    "model_format": "java_block",
+    "box_uv": false
+  },
+  "name": "banana_stem_crown",
+  "parent": "",
+  "java_block_version": "26.3",
+  "ambientocclusion": false,
+  "front_gui_light": false,
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "variable_placeholders": "",
+  "multi_file_ruleset": "",
+  "variable_placeholder_buttons": [],
+  "unhandled_root_fields": {},
+  "resolution": {
+    "width": 16,
+    "height": 16
+  },
+  "elements": [
+    {
+      "name": "overlapping_sheaths",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        5,
+        0,
+        5
+      ],
+      "to": [
+        11,
+        16,
+        11
+      ],
+      "autouv": 0,
+      "color": 7,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 1
+        }
+      },
+      "type": "cube",
+      "uuid": "cb79eebc-e7f8-86d9-0b2e-58f5d37b3de1"
+    },
+    {
+      "name": "open_sheath_north",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        5.5,
+        10,
+        4.5
+      ],
+      "to": [
+        10.5,
+        17,
+        5.1
+      ],
+      "autouv": 0,
+      "color": 7,
+      "rotation": [
+        -20,
+        0,
+        0
+      ],
+      "origin": [
+        8,
+        10,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            3,
+            0,
+            10,
+            8
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            3,
+            0,
+            10,
+            8
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            3,
+            0,
+            10,
+            8
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            3,
+            0,
+            10,
+            8
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            3,
+            0,
+            10,
+            8
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            3,
+            0,
+            10,
+            8
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "496b83af-9b7a-032a-7c13-d88d831a447e"
+    },
+    {
+      "name": "open_sheath_south",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        5.5,
+        10,
+        10.9
+      ],
+      "to": [
+        10.5,
+        17,
+        11.5
+      ],
+      "autouv": 0,
+      "color": 6,
+      "rotation": [
+        20,
+        0,
+        0
+      ],
+      "origin": [
+        8,
+        10,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            3,
+            0,
+            10,
+            8
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            3,
+            0,
+            10,
+            8
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            3,
+            0,
+            10,
+            8
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            3,
+            0,
+            10,
+            8
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            3,
+            0,
+            10,
+            8
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            3,
+            0,
+            10,
+            8
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "7e7ce984-8311-2c1e-3dad-ad41e5145015"
+    },
+    {
+      "name": "rolled_cigar",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        7,
+        14,
+        7
+      ],
+      "to": [
+        9,
+        28,
+        9
+      ],
+      "autouv": 0,
+      "color": 6,
+      "rotation": [
+        6,
+        0,
+        -5
+      ],
+      "origin": [
+        8,
+        14,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": 2
+        },
+        "east": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": 2
+        },
+        "south": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": 2
+        },
+        "west": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": 2
+        },
+        "up": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": 2
+        },
+        "down": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": 2
+        }
+      },
+      "type": "cube",
+      "uuid": "c4a45619-bd82-6da6-ced4-174b2ef2ae26"
+    },
+    {
+      "name": "cigar_tip",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        7.5,
+        27,
+        7.5
+      ],
+      "to": [
+        8.5,
+        31,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 5,
+      "rotation": [
+        6,
+        0,
+        -5
+      ],
+      "origin": [
+        8,
+        14,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            7,
+            0,
+            8,
+            5
+          ],
+          "texture": 2
+        },
+        "east": {
+          "uv": [
+            7,
+            0,
+            8,
+            5
+          ],
+          "texture": 2
+        },
+        "south": {
+          "uv": [
+            7,
+            0,
+            8,
+            5
+          ],
+          "texture": 2
+        },
+        "west": {
+          "uv": [
+            7,
+            0,
+            8,
+            5
+          ],
+          "texture": 2
+        },
+        "up": {
+          "uv": [
+            7,
+            0,
+            8,
+            5
+          ],
+          "texture": 2
+        },
+        "down": {
+          "uv": [
+            7,
+            0,
+            8,
+            5
+          ],
+          "texture": 2
+        }
+      },
+      "type": "cube",
+      "uuid": "68407204-a52b-4afc-9a84-320fcf04165c"
+    }
+  ],
+  "groups": [],
+  "outliner": [
+    "cb79eebc-e7f8-86d9-0b2e-58f5d37b3de1",
+    "496b83af-9b7a-032a-7c13-d88d831a447e",
+    "7e7ce984-8311-2c1e-3dad-ad41e5145015",
+    "c4a45619-bd82-6da6-ced4-174b2ef2ae26",
+    "68407204-a52b-4afc-9a84-320fcf04165c"
+  ],
+  "textures": [
+    {
+      "name": "banana_stem.png",
+      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/banana_stem.png",
+      "folder": "block",
+      "namespace": "farmerplus",
+      "id": "stem",
+      "group": "",
+      "scope": 0,
+      "width": 0,
+      "height": 0,
+      "uv_width": 16,
+      "uv_height": 16,
+      "particle": true,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": true,
+      "uuid": "3047be9d-09e8-17dd-f75c-a57e08c3b7ff",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAj0lEQVR4nGOcuDz6PwMUKItJMCCDu69eoPBf3XnCIKYig6KWiYFCwESMoivz7oBtJ9sAEDi36T0DNsDEQCFgIUaRTpIKgw40EDFccGXeHYpcwPTkw3dwIJFtAAOeeAcBQoYzyQhwMliaCGCVBGkm5EImaWk24t2LzQAGAqEPciHZ0agMSu9JFLiAGDDwBgAAuB8qSe5prioAAAAASUVORK5CYII="
+    },
+    {
+      "name": "banana_stem_top.png",
+      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/banana_stem_top.png",
+      "folder": "block",
+      "namespace": "farmerplus",
+      "id": "cut",
+      "group": "",
+      "scope": 0,
+      "width": 0,
+      "height": 0,
+      "uv_width": 16,
+      "uv_height": 16,
+      "particle": false,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": true,
+      "uuid": "7906af9f-6394-83f8-01b8-f4d6d432211f",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAwUlEQVR4nGOsbrb/zwAFYioyDMSAV3eewNks6JqVxSTwar776gVYLcwQFmya1SR1sWq+9fwyWA2yIYwTl0f/x6YZpBgZoIuDDIG7QBmLZnRXwMRAGNklTNhsgLHFBOTBGB0gG86CzRZ8AN1rLNgUYbMVF2AiWiUpBrz68BCMYWyiDVCDhjCyQbhiAiMMbqFFEzaALY0w4kpIuABGQgIlR1CyBAmADMFlOzKAaQbpBXsB2RBiASwzwQMROYsSqxmkDgBPIHZ1KJK4MAAAAABJRU5ErkJggg=="
+    },
+    {
+      "name": "banana_leaf.png",
+      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/banana_leaf.png",
+      "folder": "block",
+      "namespace": "farmerplus",
+      "id": "leaf",
+      "group": "",
+      "scope": 0,
+      "width": 0,
+      "height": 0,
+      "uv_width": 16,
+      "uv_height": 16,
+      "particle": false,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": true,
+      "uuid": "868f0de8-e613-c1d8-5aba-3fc8c9bbd705",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABAUlEQVR4nGO0zrb4zyPAygACPLwcDKKC3AwwYKygzKAhJcOw88IJhutP3zF8+fwDLP7lw2+4GhaQZpBGdPD6/VcGBgUMYRTNX9/8ZGDZ2XqYEeQKsAsEWMG2oLsEBND5IIO4RdgZWECco1NPMIJo92rb/9g0Y3MFTA8LvjBA9xLIdTAvgPSBvcAABejhgB4GOL3AgxSIMEVgzThcAAKgcIOJs8CcBDIEphFfGIDUwwId7oUvSFGDLUrxeuEoNDRhILjDFWw6Li9gpANraCxgDQdaBeIX5HSwE5oSYWkBm23oNoMAPB0Qq5koL6A7GTkMcAUiE0gALAH1HyGXILsW5AIAoXGuYO3kJIIAAAAASUVORK5CYII="
+    },
+    {
+      "name": "banana_leaf_dry.png",
+      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/banana_leaf_dry.png",
+      "folder": "block",
+      "namespace": "farmerplus",
+      "id": "dry",
+      "group": "",
+      "scope": 0,
+      "width": 0,
+      "height": 0,
+      "uv_width": 16,
+      "uv_height": 16,
+      "particle": false,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": true,
+      "uuid": "3bbb66cf-9a58-82d5-f093-cd698053f629",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA6UlEQVR4nGOcV+n+n4GBgUFFSx5EMchIi4HpJ09fobDvXHsIZj96/g1MP336C0yzYNNICmCEMQ4tTgO7BGYTCDi4moLpRYsOMshJcoHZSe074XrALpgH9QK6E2EaYOD4mQ8MliYCDA0JtmD1DQsOgw1igZkIMgimGRsAaUbWCANMMAbIIJCtIOzkrAkPVHQAcwGGATBDcGkEeQGbC1iQOegBCYsZGEAPQAwX2MXOYty39zo8INHDABbgOA3A5kSSXECMIUQZcAgaFoRsx2mAXewsylyAz0aiDYABUOYiJUxQwL19NRhhgQ4ABvZnIhnYvh4AAAAASUVORK5CYII="
+    }
+  ]
+}

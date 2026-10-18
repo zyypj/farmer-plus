@@ -1,14 +1,16 @@
 {
+  "format_version": "26.3",
+  "credit": "Made with Blockbench",
   "ambientocclusion": false,
   "textures": {
-    "side": "farmerplus:block/banana_stem",
-    "end": "farmerplus:block/banana_stem_top",
-    "leaf": "farmerplus:block/banana_leaf",
-    "particle": "farmerplus:block/banana_stem"
+    "particle": "farmerplus:block/banana_stem",
+    "stem": "farmerplus:block/banana_stem",
+    "cut": "farmerplus:block/banana_stem_top",
+    "leaf": "farmerplus:block/banana_leaf"
   },
   "elements": [
     {
-      "name": "pseudostem",
+      "name": "overlapping_sheaths",
       "from": [
         5,
         0,
@@ -16,154 +18,253 @@
       ],
       "to": [
         11,
-        13,
+        16,
         11
       ],
       "faces": {
         "north": {
           "uv": [
-            5,
-            3,
-            11,
+            0,
+            0,
+            16,
             16
           ],
-          "texture": "#side"
+          "texture": "#stem"
         },
         "east": {
           "uv": [
-            5,
-            3,
-            11,
+            0,
+            0,
+            16,
             16
           ],
-          "texture": "#side"
+          "texture": "#stem"
         },
         "south": {
           "uv": [
-            5,
-            3,
-            11,
+            0,
+            0,
+            16,
             16
           ],
-          "texture": "#side"
+          "texture": "#stem"
         },
         "west": {
           "uv": [
-            5,
-            3,
-            11,
+            0,
+            0,
+            16,
             16
           ],
-          "texture": "#side"
+          "texture": "#stem"
         },
         "up": {
           "uv": [
-            5,
-            5,
-            11,
-            11
+            0,
+            0,
+            16,
+            16
           ],
-          "texture": "#end"
+          "texture": "#cut"
         },
         "down": {
           "uv": [
-            5,
-            5,
-            11,
-            11
+            0,
+            0,
+            16,
+            16
           ],
-          "texture": "#end"
+          "texture": "#cut"
         }
       }
     },
     {
-      "name": "leaf_sheaths",
+      "name": "open_sheath_north",
       "from": [
-        4.5,
+        5.5,
         10,
         4.5
       ],
       "to": [
-        11.5,
-        15,
-        11.5
+        10.5,
+        17,
+        5.1
       ],
+      "rotation": {
+        "angle": -20,
+        "axis": "x",
+        "origin": [
+          8,
+          10,
+          8
+        ],
+        "x": -20
+      },
       "faces": {
         "north": {
           "uv": [
-            4,
-            1,
-            12,
-            6
+            3,
+            0,
+            10,
+            8
           ],
-          "texture": "#side"
+          "texture": "#stem"
         },
         "east": {
           "uv": [
-            4,
-            1,
-            12,
-            6
+            3,
+            0,
+            10,
+            8
           ],
-          "texture": "#side"
+          "texture": "#stem"
         },
         "south": {
           "uv": [
-            4,
-            1,
-            12,
-            6
+            3,
+            0,
+            10,
+            8
           ],
-          "texture": "#side"
+          "texture": "#stem"
         },
         "west": {
           "uv": [
-            4,
-            1,
-            12,
-            6
+            3,
+            0,
+            10,
+            8
           ],
-          "texture": "#side"
+          "texture": "#stem"
         },
         "up": {
           "uv": [
-            4,
-            4,
-            12,
-            12
+            3,
+            0,
+            10,
+            8
           ],
-          "texture": "#end"
+          "texture": "#stem"
         },
         "down": {
           "uv": [
-            4,
-            4,
-            12,
-            12
+            3,
+            0,
+            10,
+            8
           ],
-          "texture": "#end"
+          "texture": "#stem"
         }
       }
     },
     {
-      "name": "cigar_leaf",
+      "name": "open_sheath_south",
       "from": [
-        7.25,
-        13,
-        7.25
+        5.5,
+        10,
+        10.9
       ],
       "to": [
-        8.75,
-        28,
-        8.75
+        10.5,
+        17,
+        11.5
       ],
+      "rotation": {
+        "angle": 20,
+        "axis": "x",
+        "origin": [
+          8,
+          10,
+          8
+        ],
+        "x": 20
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            3,
+            0,
+            10,
+            8
+          ],
+          "texture": "#stem"
+        },
+        "east": {
+          "uv": [
+            3,
+            0,
+            10,
+            8
+          ],
+          "texture": "#stem"
+        },
+        "south": {
+          "uv": [
+            3,
+            0,
+            10,
+            8
+          ],
+          "texture": "#stem"
+        },
+        "west": {
+          "uv": [
+            3,
+            0,
+            10,
+            8
+          ],
+          "texture": "#stem"
+        },
+        "up": {
+          "uv": [
+            3,
+            0,
+            10,
+            8
+          ],
+          "texture": "#stem"
+        },
+        "down": {
+          "uv": [
+            3,
+            0,
+            10,
+            8
+          ],
+          "texture": "#stem"
+        }
+      }
+    },
+    {
+      "name": "rolled_cigar",
+      "from": [
+        7,
+        14,
+        7
+      ],
+      "to": [
+        9,
+        28,
+        9
+      ],
+      "rotation": {
+        "x": 6,
+        "y": 0,
+        "z": -5,
+        "origin": [
+          8,
+          14,
+          8
+        ]
+      },
       "faces": {
         "north": {
           "uv": [
             7,
             0,
             9,
-            15
+            16
           ],
           "texture": "#leaf"
         },
@@ -172,7 +273,7 @@
             7,
             0,
             9,
-            15
+            16
           ],
           "texture": "#leaf"
         },
@@ -181,7 +282,7 @@
             7,
             0,
             9,
-            15
+            16
           ],
           "texture": "#leaf"
         },
@@ -190,7 +291,7 @@
             7,
             0,
             9,
-            15
+            16
           ],
           "texture": "#leaf"
         },
@@ -199,7 +300,7 @@
             7,
             0,
             9,
-            2
+            16
           ],
           "texture": "#leaf"
         },
@@ -208,20 +309,89 @@
             7,
             0,
             9,
-            2
+            16
           ],
           "texture": "#leaf"
         }
-      },
+      }
+    },
+    {
+      "name": "cigar_tip",
+      "from": [
+        7.5,
+        27,
+        7.5
+      ],
+      "to": [
+        8.5,
+        31,
+        8.5
+      ],
       "rotation": {
-        "origin": [
-          8,
-          13,
-          8
-        ],
         "x": 6,
         "y": 0,
-        "z": 0
+        "z": -5,
+        "origin": [
+          8,
+          14,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            7,
+            0,
+            8,
+            5
+          ],
+          "texture": "#leaf"
+        },
+        "east": {
+          "uv": [
+            7,
+            0,
+            8,
+            5
+          ],
+          "texture": "#leaf"
+        },
+        "south": {
+          "uv": [
+            7,
+            0,
+            8,
+            5
+          ],
+          "texture": "#leaf"
+        },
+        "west": {
+          "uv": [
+            7,
+            0,
+            8,
+            5
+          ],
+          "texture": "#leaf"
+        },
+        "up": {
+          "uv": [
+            7,
+            0,
+            8,
+            5
+          ],
+          "texture": "#leaf"
+        },
+        "down": {
+          "uv": [
+            7,
+            0,
+            8,
+            5
+          ],
+          "texture": "#leaf"
+        }
       }
     }
   ]

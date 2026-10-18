@@ -2,7 +2,7 @@
 
 [English](0006-banana-plant.md) | **Português**
 
-A jogabilidade está pronta ([docs/banana.pt-BR.md](../banana.pt-BR.md)). Tudo abaixo usa pixels provisórios e caixas simples geradas por `python art/banana_art.py`. Substitua a arte **no mesmo lugar**, mantendo todos os nomes de arquivo, para a planta parecer uma bananeira (*Musa*) de verdade de longe e de perto.
+A jogabilidade está pronta ([docs/banana.pt-BR.md](../banana.pt-BR.md)). A arte provisória foi substituída **no mesmo lugar**, preservando todos os nomes existentes. Veja [o relatório visual](../banana-visuals.pt-BR.md) para prévias, geometria multipart dos frutos, verificações e o teste pendente a 20 blocos. Não rode o gerador original `art/banana_art.py` sobre a arte final.
 
 Leia antes: [AGENTS.md](../../AGENTS.md), [art-pipeline.pt-BR.md](../art-pipeline.pt-BR.md). Texturas **16×16**, pixels duros, Vanilla+ realista. Use o servidor MCP do Blockbench para os modelos 3D e salve as fontes em `art/blockbench/<modelo>.bbmodel`.
 
@@ -45,8 +45,21 @@ Mantenha os nomes e os pontos de encaixe — o código coloca os blocos lado a l
 
 Limites: até 12 elementos por modelo, coordenadas entre −16 e 32, `ambientocclusion: false`. `python art/banana_art.py` reescreve esses modelos, então quando eles forem feitos à mão, pare de rodá-lo (ou tire a parte dos modelos) — ele nunca sobrescreve texturas.
 
+## Cacho colhido
+
+| Arquivo | Regras |
+|---|---|
+| `models/block/harvested_banana_bunch_stalk` | O cacho colhido fica **em pé** e é um multipart: este modelo (engaço dentro das pencas e o toquinho cortado em cima, por onde o jogador segura) mais as 8 peças `banana_bunch_ripe_hand_<penca>_<lado>`, que somem uma por uma de baixo para cima. O código solta cada banana do centro da peça, então se mudar as pencas, atualize `HAND_CENTERS` em `HarvestedBananaBunchBlock`. Gerado por `python art/banana_bunch_art.py` |
+| `items/banana_bunch.json` e `models/item/banana_bunch_*.json` | Item composto (toquinho + 8 pencas). Ajuste o `display` (igual em todas as peças) no Blockbench: Ajuste o `display` no Blockbench: `thirdperson_righthand` precisa apoiar o cacho **no ombro direito** com o braço levantado (a pose do braço vem do código), `firstperson_righthand` mostra o cacho no ombro no canto superior direito da tela, `gui` mostra o cacho inteiro |
+
+## Hitbox das folhas
+
+A hitbox das folhas segue os modelos: `python art/banana_leaf_shapes.py` voxeliza cada variante de `banana_leaf` (células de 2 px, y de −16 a 32) em `common/src/main/resources/farmerplus/shapes/banana_leaf.json`, que o `BananaLeafBlock` carrega. **Rode de novo depois de qualquer mudança num modelo de folha ou em `blockstates/banana_leaf.json`.**
+
 ## Pronto quando
 
-- [ ] Todos os arquivos acima substituídos com os mesmos nomes; `./gradlew build` e `python art/validate_wheat_art.py` passam.
-- [ ] `python art/preview_world_models.py` (veja [docs/banana.pt-BR.md](../banana.pt-BR.md)) mostra as folhas conectadas, sem buracos nas emendas dos segmentos, nas 8 direções.
+- [x] Todos os arquivos acima substituídos com os mesmos nomes; `./gradlew build` e `python art/validate_wheat_art.py` passam.
+- [x] `python art/preview_world_models.py` (veja [docs/banana.pt-BR.md](../banana.pt-BR.md)) mostra as folhas conectadas, sem buracos nas emendas dos segmentos, nas 8 direções.
 - [ ] No jogo, a 20 blocos de distância, a planta parece uma bananeira: pseudocaule verde-claro, folhas enormes e rasgadas, um cacho com coração roxo.
+
+O último item permanece pendente: a captura do jogo não tem distância medida e o usuário interrompeu a inspeção da interface. Os frutos sólidos acrescentam vinte modelos de meia penca via multipart vanilla; cada modelo respeita o limite de 12 elementos, mas o cacho verde/maduro montado soma 104 elementos. Consulte o relatório antes de revisar o desempenho.

@@ -1,173 +1,122 @@
 {
+  "format_version": "26.3",
+  "credit": "Made with Blockbench",
   "ambientocclusion": false,
   "textures": {
-    "leaf": "farmerplus:block/banana_leaf_dry",
-    "particle": "farmerplus:block/banana_leaf_dry"
+    "particle": "farmerplus:block/banana_leaf_dry",
+    "dry": "farmerplus:block/banana_leaf_dry"
   },
   "elements": [
     {
-      "name": "petiole",
+      "name": "dry_petiole",
       "from": [
-        7.25,
-        9.5,
-        14.5
+        7.4,
+        7.6,
+        14
       ],
       "to": [
-        8.75,
-        11,
-        21.5
+        8.6,
+        8.6,
+        21
       ],
       "faces": {
         "north": {
           "uv": [
-            6,
-            0,
             7,
+            0,
+            9,
             7
           ],
-          "texture": "#leaf"
+          "texture": "#dry"
         },
         "east": {
           "uv": [
-            6,
-            0,
             7,
+            0,
+            9,
             7
           ],
-          "texture": "#leaf"
+          "texture": "#dry"
         },
         "south": {
           "uv": [
-            6,
-            0,
             7,
+            0,
+            9,
             7
           ],
-          "texture": "#leaf"
+          "texture": "#dry"
         },
         "west": {
           "uv": [
-            6,
-            0,
             7,
+            0,
+            9,
             7
           ],
-          "texture": "#leaf"
+          "texture": "#dry"
         },
         "up": {
           "uv": [
-            6,
-            0,
             7,
-            2
+            0,
+            9,
+            7
           ],
-          "texture": "#leaf"
+          "texture": "#dry"
         },
         "down": {
           "uv": [
-            6,
-            0,
             7,
-            2
+            0,
+            9,
+            7
           ],
-          "texture": "#leaf"
+          "texture": "#dry"
         }
-      },
-      "rotation": {
-        "origin": [
-          8,
-          10,
-          21.5
-        ],
-        "x": -25,
-        "y": 0,
-        "z": 0
       }
     },
     {
-      "name": "blade_left",
+      "name": "hanging_torn_blade",
       "from": [
-        3.45,
+        2,
         -14,
         14.5
       ],
       "to": [
-        12.55,
-        10,
+        14,
+        8,
         14.5
       ],
+      "rotation": {
+        "angle": -8,
+        "axis": "x",
+        "origin": [
+          8,
+          8,
+          14.5
+        ],
+        "x": -8
+      },
       "faces": {
         "north": {
           "uv": [
-            3,
             0,
-            13,
+            0,
+            16,
             16
           ],
-          "texture": "#leaf"
+          "texture": "#dry"
         },
         "south": {
           "uv": [
-            3,
             0,
-            13,
+            0,
+            16,
             16
           ],
-          "texture": "#leaf"
+          "texture": "#dry"
         }
-      },
-      "rotation": {
-        "origin": [
-          8,
-          10,
-          14.5
-        ],
-        "x": -6,
-        "y": 10,
-        "z": 0
-      }
-    },
-    {
-      "name": "blade_right",
-      "from": [
-        3.45,
-        -14,
-        14.5
-      ],
-      "to": [
-        12.55,
-        10,
-        14.5
-      ],
-      "faces": {
-        "north": {
-          "uv": [
-            3,
-            0,
-            13,
-            16
-          ],
-          "texture": "#leaf"
-        },
-        "south": {
-          "uv": [
-            3,
-            0,
-            13,
-            16
-          ],
-          "texture": "#leaf"
-        }
-      },
-      "rotation": {
-        "origin": [
-          8,
-          10,
-          14.5
-        ],
-        "x": -6,
-        "y": -10,
-        "z": 0
       }
     }
   ]

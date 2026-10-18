@@ -1,0 +1,308 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "stem": "farmerplus:block/banana_stem",
+    "cut": "farmerplus:block/banana_stem_top",
+    "leaf": "farmerplus:block/banana_leaf",
+    "dry": "farmerplus:block/banana_leaf_dry",
+    "particle": "farmerplus:block/banana_stem"
+  },
+  "elements": [
+    {
+      "name": "overlapping_sheaths",
+      "from": [
+        5,
+        0,
+        5
+      ],
+      "to": [
+        11,
+        16,
+        11
+      ],
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#cut",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#cut",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "basal_sheaths",
+      "from": [
+        4,
+        0,
+        4
+      ],
+      "to": [
+        12,
+        3,
+        12
+      ],
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            0,
+            12,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            0,
+            12,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            0,
+            12,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            0,
+            12,
+            16,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            0,
+            12,
+            16,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            0,
+            12,
+            16,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "peeling_sheath_west",
+      "from": [
+        4.3,
+        1,
+        5.5
+      ],
+      "to": [
+        5,
+        11,
+        8
+      ],
+      "faces": {
+        "north": {
+          "texture": "#dry",
+          "uv": [
+            6,
+            0,
+            10,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#dry",
+          "uv": [
+            6,
+            0,
+            10,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#dry",
+          "uv": [
+            6,
+            0,
+            10,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#dry",
+          "uv": [
+            6,
+            0,
+            10,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#dry",
+          "uv": [
+            6,
+            0,
+            10,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#dry",
+          "uv": [
+            6,
+            0,
+            10,
+            16
+          ]
+        }
+      },
+      "rotation": {
+        "origin": [
+          5,
+          11,
+          8
+        ],
+        "x": 0,
+        "y": 0,
+        "z": -9
+      }
+    },
+    {
+      "name": "peeling_sheath_front",
+      "from": [
+        8,
+        0.5,
+        10.9
+      ],
+      "to": [
+        10,
+        8,
+        11.25
+      ],
+      "faces": {
+        "north": {
+          "texture": "#dry",
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#dry",
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#dry",
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#dry",
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#dry",
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#dry",
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ]
+        }
+      },
+      "rotation": {
+        "origin": [
+          9,
+          8,
+          11
+        ],
+        "x": -13,
+        "y": 0,
+        "z": 0
+      }
+    }
+  ]
+}

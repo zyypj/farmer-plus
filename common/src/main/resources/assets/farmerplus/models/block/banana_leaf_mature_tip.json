@@ -1,28 +1,58 @@
 {
+  "format_version": "26.3",
+  "credit": "Made with Blockbench",
   "ambientocclusion": false,
   "textures": {
+    "particle": "farmerplus:block/banana_leaf",
     "leaf": "farmerplus:block/banana_leaf",
-    "tip": "farmerplus:block/banana_leaf_tip",
-    "particle": "farmerplus:block/banana_leaf"
+    "tip": "farmerplus:block/banana_leaf_tip"
   },
   "elements": [
     {
-      "name": "tip_left",
+      "name": "tip_0_left",
       "from": [
-        1.5,
-        10.94,
-        0
+        0,
+        12.5,
+        5.91602
       ],
       "to": [
         8,
-        10.94,
-        16
+        13.05,
+        16.65
       ],
+      "rotation": {
+        "x": -31.43921,
+        "y": 6.32644,
+        "z": 10.21771,
+        "origin": [
+          8,
+          13,
+          16
+        ]
+      },
       "faces": {
+        "north": {
+          "uv": [
+            8,
+            8,
+            0,
+            9
+          ],
+          "texture": "#tip"
+        },
+        "south": {
+          "uv": [
+            0,
+            15,
+            8,
+            16
+          ],
+          "texture": "#tip"
+        },
         "up": {
           "uv": [
             0,
-            0,
+            8,
             8,
             16
           ],
@@ -31,41 +61,59 @@
         "down": {
           "uv": [
             0,
-            0,
+            16,
             8,
-            16
+            8
           ],
           "texture": "#tip"
         }
-      },
-      "rotation": {
-        "origin": [
-          8,
-          10.94,
-          16
-        ],
-        "x": -42,
-        "y": 0,
-        "z": 10
       }
     },
     {
-      "name": "tip_right",
+      "name": "tip_0_right",
       "from": [
         8,
-        10.94,
-        0
+        12.5,
+        5.91602
       ],
       "to": [
-        14.5,
-        10.94,
-        16
+        16,
+        13.05,
+        16.65
       ],
+      "rotation": {
+        "x": -31.43921,
+        "y": -6.32644,
+        "z": -10.21771,
+        "origin": [
+          8,
+          13,
+          16
+        ]
+      },
       "faces": {
+        "north": {
+          "uv": [
+            16,
+            8,
+            8,
+            9
+          ],
+          "texture": "#tip"
+        },
+        "south": {
+          "uv": [
+            8,
+            15,
+            16,
+            16
+          ],
+          "texture": "#tip"
+        },
         "up": {
           "uv": [
             8,
-            0,
+            8,
             16,
             16
           ],
@@ -74,43 +122,43 @@
         "down": {
           "uv": [
             8,
-            0,
             16,
-            16
+            16,
+            8
           ],
           "texture": "#tip"
         }
-      },
-      "rotation": {
-        "origin": [
-          8,
-          10.94,
-          16
-        ],
-        "x": -42,
-        "y": 0,
-        "z": -10
       }
     },
     {
-      "name": "midrib",
+      "name": "tip_0_midrib",
       "from": [
-        7.25,
-        10.74,
-        0
+        7.72,
+        12.72,
+        6.56602
       ],
       "to": [
-        8.75,
-        11.34,
+        8.28,
+        13.12,
         16
       ],
+      "rotation": {
+        "angle": -32.00538,
+        "axis": "x",
+        "origin": [
+          8,
+          13,
+          16
+        ],
+        "x": -32.00538
+      },
       "faces": {
         "north": {
           "uv": [
             7,
             0,
             9,
-            16
+            1
           ],
           "texture": "#leaf"
         },
@@ -119,7 +167,7 @@
             7,
             0,
             9,
-            16
+            1
           ],
           "texture": "#leaf"
         },
@@ -128,7 +176,7 @@
             7,
             0,
             9,
-            16
+            1
           ],
           "texture": "#leaf"
         },
@@ -137,7 +185,7 @@
             7,
             0,
             9,
-            16
+            1
           ],
           "texture": "#leaf"
         },
@@ -146,7 +194,7 @@
             7,
             0,
             9,
-            16
+            1
           ],
           "texture": "#leaf"
         },
@@ -155,20 +203,211 @@
             7,
             0,
             9,
-            16
+            1
           ],
           "texture": "#leaf"
         }
-      },
+      }
+    },
+    {
+      "name": "tip_1_left",
+      "from": [
+        0,
+        7.5,
+        -3.96371
+      ],
+      "to": [
+        8,
+        8.05,
+        8.65
+      ],
       "rotation": {
+        "x": -44.36708,
+        "y": 8.45403,
+        "z": 8.54759,
         "origin": [
           8,
-          10.94,
-          16
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            8,
+            0,
+            0,
+            1
+          ],
+          "texture": "#tip"
+        },
+        "south": {
+          "uv": [
+            0,
+            7,
+            8,
+            8
+          ],
+          "texture": "#tip"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            8,
+            8
+          ],
+          "texture": "#tip"
+        },
+        "down": {
+          "uv": [
+            0,
+            8,
+            8,
+            0
+          ],
+          "texture": "#tip"
+        }
+      }
+    },
+    {
+      "name": "tip_1_right",
+      "from": [
+        8,
+        7.5,
+        -3.96371
+      ],
+      "to": [
+        16,
+        8.05,
+        8.65
+      ],
+      "rotation": {
+        "x": -44.36708,
+        "y": -8.45403,
+        "z": -8.54759,
+        "origin": [
+          8,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            0,
+            8,
+            1
+          ],
+          "texture": "#tip"
+        },
+        "south": {
+          "uv": [
+            8,
+            7,
+            16,
+            8
+          ],
+          "texture": "#tip"
+        },
+        "up": {
+          "uv": [
+            8,
+            0,
+            16,
+            8
+          ],
+          "texture": "#tip"
+        },
+        "down": {
+          "uv": [
+            8,
+            8,
+            16,
+            0
+          ],
+          "texture": "#tip"
+        }
+      }
+    },
+    {
+      "name": "tip_1_midrib",
+      "from": [
+        7.72,
+        7.72,
+        -3.31371
+      ],
+      "to": [
+        8.28,
+        8.12,
+        8
+      ],
+      "rotation": {
+        "angle": -45,
+        "axis": "x",
+        "origin": [
+          8,
+          8,
+          8
         ],
-        "x": -42,
-        "y": 0,
-        "z": 0
+        "x": -45
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            7,
+            0,
+            9,
+            1
+          ],
+          "texture": "#leaf"
+        },
+        "east": {
+          "uv": [
+            7,
+            0,
+            9,
+            1
+          ],
+          "texture": "#leaf"
+        },
+        "south": {
+          "uv": [
+            7,
+            0,
+            9,
+            1
+          ],
+          "texture": "#leaf"
+        },
+        "west": {
+          "uv": [
+            7,
+            0,
+            9,
+            1
+          ],
+          "texture": "#leaf"
+        },
+        "up": {
+          "uv": [
+            7,
+            0,
+            9,
+            1
+          ],
+          "texture": "#leaf"
+        },
+        "down": {
+          "uv": [
+            7,
+            0,
+            9,
+            1
+          ],
+          "texture": "#leaf"
+        }
       }
     }
   ]

@@ -1,0 +1,43 @@
+{
+  "model": {
+    "type": "minecraft:composite",
+    "models": [
+      {
+        "type": "minecraft:model",
+        "model": "farmerplus:item/banana_bunch_stalk"
+      },
+      {
+        "type": "minecraft:model",
+        "model": "farmerplus:item/banana_bunch_hand_0_0"
+      },
+      {
+        "type": "minecraft:model",
+        "model": "farmerplus:item/banana_bunch_hand_0_1"
+      },
+      {
+        "type": "minecraft:model",
+        "model": "farmerplus:item/banana_bunch_hand_1_0"
+      },
+      {
+        "type": "minecraft:model",
+        "model": "farmerplus:item/banana_bunch_hand_1_1"
+      },
+      {
+        "type": "minecraft:model",
+        "model": "farmerplus:item/banana_bunch_hand_2_0"
+      },
+      {
+        "type": "minecraft:model",
+        "model": "farmerplus:item/banana_bunch_hand_2_1"
+      },
+      {
+        "type": "minecraft:model",
+        "model": "farmerplus:item/banana_bunch_hand_3_0"
+      },
+      {
+        "type": "minecraft:model",
+        "model": "farmerplus:item/banana_bunch_hand_3_1"
+      }
+    ]
+  }
+}

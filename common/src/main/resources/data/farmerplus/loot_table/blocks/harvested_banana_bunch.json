@@ -1,0 +1,149 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "farmerplus:banana_bunch",
+              "condition": {
+                "type": "minecraft:match_block",
+                "blocks": "farmerplus:harvested_banana_bunch",
+                "state": {
+                  "bananas": "8"
+                }
+              }
+            },
+            {
+              "type": "minecraft:item",
+              "name": "farmerplus:banana",
+              "condition": {
+                "type": "minecraft:match_block",
+                "blocks": "farmerplus:harvested_banana_bunch",
+                "state": {
+                  "bananas": "1"
+                }
+              },
+              "modifier": [
+                {
+                  "type": "minecraft:set_count",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "farmerplus:banana",
+              "condition": {
+                "type": "minecraft:match_block",
+                "blocks": "farmerplus:harvested_banana_bunch",
+                "state": {
+                  "bananas": "2"
+                }
+              },
+              "modifier": [
+                {
+                  "type": "minecraft:set_count",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "farmerplus:banana",
+              "condition": {
+                "type": "minecraft:match_block",
+                "blocks": "farmerplus:harvested_banana_bunch",
+                "state": {
+                  "bananas": "3"
+                }
+              },
+              "modifier": [
+                {
+                  "type": "minecraft:set_count",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "farmerplus:banana",
+              "condition": {
+                "type": "minecraft:match_block",
+                "blocks": "farmerplus:harvested_banana_bunch",
+                "state": {
+                  "bananas": "4"
+                }
+              },
+              "modifier": [
+                {
+                  "type": "minecraft:set_count",
+                  "count": 4
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "farmerplus:banana",
+              "condition": {
+                "type": "minecraft:match_block",
+                "blocks": "farmerplus:harvested_banana_bunch",
+                "state": {
+                  "bananas": "5"
+                }
+              },
+              "modifier": [
+                {
+                  "type": "minecraft:set_count",
+                  "count": 5
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "farmerplus:banana",
+              "condition": {
+                "type": "minecraft:match_block",
+                "blocks": "farmerplus:harvested_banana_bunch",
+                "state": {
+                  "bananas": "6"
+                }
+              },
+              "modifier": [
+                {
+                  "type": "minecraft:set_count",
+                  "count": 6
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "farmerplus:banana",
+              "condition": {
+                "type": "minecraft:match_block",
+                "blocks": "farmerplus:harvested_banana_bunch",
+                "state": {
+                  "bananas": "7"
+                }
+              },
+              "modifier": [
+                {
+                  "type": "minecraft:set_count",
+                  "count": 7
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "farmerplus:blocks/harvested_banana_bunch"
+}

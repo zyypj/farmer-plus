@@ -1,0 +1,865 @@
+{
+  "meta": {
+    "format_version": "5.0",
+    "model_format": "java_block",
+    "box_uv": false
+  },
+  "name": "banana_bunch_ripe",
+  "parent": "",
+  "java_block_version": "26.3",
+  "ambientocclusion": false,
+  "front_gui_light": false,
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "variable_placeholders": "",
+  "multi_file_ruleset": "",
+  "variable_placeholder_buttons": [],
+  "unhandled_root_fields": {},
+  "resolution": {
+    "width": 16,
+    "height": 16
+  },
+  "elements": [
+    {
+      "name": "peduncle_from_stem",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        7,
+        14,
+        -5
+      ],
+      "to": [
+        9,
+        16,
+        9
+      ],
+      "autouv": 0,
+      "color": 2,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "f5e9e48d-8309-ee52-92aa-e5493412ea19"
+    },
+    {
+      "name": "exposed_rachis",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        7.5,
+        -3,
+        8
+      ],
+      "to": [
+        8.5,
+        15,
+        9
+      ],
+      "autouv": 0,
+      "color": 4,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "1d5ef875-1e48-1acf-17e2-d21560c8c743"
+    },
+    {
+      "name": "male_bud_bract_0",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        6.704,
+        -3.83333,
+        7.204
+      ],
+      "to": [
+        9.296,
+        -3,
+        9.796
+      ],
+      "autouv": 0,
+      "color": 7,
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "origin": [
+        8,
+        -3,
+        8.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            4
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            4
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            4
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            4
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            4
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            4
+          ],
+          "texture": 1
+        }
+      },
+      "type": "cube",
+      "uuid": "70d767b1-0dcc-8cc9-911e-671036b28d91"
+    },
+    {
+      "name": "male_bud_bract_1",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        6.2,
+        -4.66667,
+        6.7
+      ],
+      "to": [
+        9.8,
+        -3.83333,
+        10.3
+      ],
+      "autouv": 0,
+      "color": 8,
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "origin": [
+        8,
+        -3.83333,
+        8.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            2,
+            16,
+            6
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            2,
+            16,
+            6
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            2,
+            16,
+            6
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            2,
+            16,
+            6
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            2,
+            16,
+            6
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            2,
+            16,
+            6
+          ],
+          "texture": 1
+        }
+      },
+      "type": "cube",
+      "uuid": "4e384166-ec5a-97ad-edfa-9b581ebaf354"
+    },
+    {
+      "name": "male_bud_bract_2",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        6.344,
+        -5.5,
+        6.844
+      ],
+      "to": [
+        9.656,
+        -4.66667,
+        10.156
+      ],
+      "autouv": 0,
+      "color": 8,
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "origin": [
+        8,
+        -4.66667,
+        8.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            4,
+            16,
+            8
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            4,
+            16,
+            8
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            4,
+            16,
+            8
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            4,
+            16,
+            8
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            4,
+            16,
+            8
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            4,
+            16,
+            8
+          ],
+          "texture": 1
+        }
+      },
+      "type": "cube",
+      "uuid": "973bd4a2-104f-6a16-ae63-ea5602007baf"
+    },
+    {
+      "name": "male_bud_bract_3",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        6.686,
+        -6.33333,
+        7.186
+      ],
+      "to": [
+        9.314,
+        -5.5,
+        9.814
+      ],
+      "autouv": 0,
+      "color": 2,
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "origin": [
+        8,
+        -5.5,
+        8.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            6,
+            16,
+            10
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            6,
+            16,
+            10
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            6,
+            16,
+            10
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            6,
+            16,
+            10
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            6,
+            16,
+            10
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            6,
+            16,
+            10
+          ],
+          "texture": 1
+        }
+      },
+      "type": "cube",
+      "uuid": "dc0a792b-f271-f616-e6eb-de056898d17c"
+    },
+    {
+      "name": "male_bud_bract_4",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        7.172,
+        -7.16667,
+        7.672
+      ],
+      "to": [
+        8.828,
+        -6.33333,
+        9.328
+      ],
+      "autouv": 0,
+      "color": 7,
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "origin": [
+        8,
+        -6.33333,
+        8.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            8,
+            16,
+            12
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            8,
+            16,
+            12
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            8,
+            16,
+            12
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            8,
+            16,
+            12
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            8,
+            16,
+            12
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            8,
+            16,
+            12
+          ],
+          "texture": 1
+        }
+      },
+      "type": "cube",
+      "uuid": "e548804d-c4f5-1eec-b9c2-5b7ddf364d8d"
+    },
+    {
+      "name": "male_bud_bract_5",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        7.676,
+        -8,
+        8.176
+      ],
+      "to": [
+        8.324,
+        -7.16667,
+        8.824
+      ],
+      "autouv": 0,
+      "color": 5,
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "origin": [
+        8,
+        -7.16667,
+        8.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            10,
+            16,
+            14
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            10,
+            16,
+            14
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            10,
+            16,
+            14
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            10,
+            16,
+            14
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            10,
+            16,
+            14
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            10,
+            16,
+            14
+          ],
+          "texture": 1
+        }
+      },
+      "type": "cube",
+      "uuid": "3e9234e1-31f2-2933-0992-eab96b250c46"
+    }
+  ],
+  "groups": [],
+  "outliner": [
+    "f5e9e48d-8309-ee52-92aa-e5493412ea19",
+    "1d5ef875-1e48-1acf-17e2-d21560c8c743",
+    "70d767b1-0dcc-8cc9-911e-671036b28d91",
+    "4e384166-ec5a-97ad-edfa-9b581ebaf354",
+    "973bd4a2-104f-6a16-ae63-ea5602007baf",
+    "dc0a792b-f271-f616-e6eb-de056898d17c",
+    "e548804d-c4f5-1eec-b9c2-5b7ddf364d8d",
+    "3e9234e1-31f2-2933-0992-eab96b250c46"
+  ],
+  "textures": [
+    {
+      "name": "banana_stem.png",
+      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/banana_stem.png",
+      "folder": "block",
+      "namespace": "farmerplus",
+      "id": "stem",
+      "group": "",
+      "scope": 0,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
+      "particle": true,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": true,
+      "uuid": "9ffb9ee4-64ef-46bf-268b-bf4dcb253212",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAj0lEQVR4nGOcuDz6PwMUKItJMCCDu69eoPBf3XnCIKYig6KWiYFCwESMoivz7oBtJ9sAEDi36T0DNsDEQCFgIUaRTpIKgw40EDFccGXeHYpcwPTkw3dwIJFtAAOeeAcBQoYzyQhwMliaCGCVBGkm5EImaWk24t2LzQAGAqEPciHZ0agMSu9JFLiAGDDwBgAAuB8qSe5prioAAAAASUVORK5CYII="
+    },
+    {
+      "name": "banana_heart.png",
+      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/banana_heart.png",
+      "folder": "block",
+      "namespace": "farmerplus",
+      "id": "heart",
+      "group": "",
+      "scope": 0,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
+      "particle": false,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": true,
+      "uuid": "fd5a3064-74d2-7377-78ec-2a038addc168",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA10lEQVR4nGNsMfb/zwAF8vJSDOjg4cNncPbdjx8Q7O+fwDQLsmYxbUUUza+u3geLIxuCrBnFAJgGYmxHBiwgCWV+AQxbcGlEth1sAAOSIpBBuGxD16jMyQcxQBlJE0wjsmKYQhANUwsCoLDZd+kaxAXg0H+IZDqSQrg8FMC8CtIM9wKuKMQXmPBolMdiOjaAMxYeoscxDoXItqIYcJeEEHeTkMMMRGW0kAUBJxwugLkWHGOXPoAtYkHXjE0DNu9h5AVsAUiM91DCgJSUiDAAKgEKKFI0wgAAZK6PcXHT3i0AAAAASUVORK5CYII="
+    },
+    {
+      "name": "banana_fingers_ripe.png",
+      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/banana_fingers_ripe.png",
+      "folder": "block",
+      "namespace": "farmerplus",
+      "id": "fingers",
+      "group": "",
+      "scope": 0,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
+      "particle": false,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": true,
+      "uuid": "c3e05012-a7fa-94df-cfb7-a9b5b1d5918f",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAVklEQVR4nGP0NNX7z0ABYMmKYGIwNBBgEJDWYPjw9AbD+QsfSOIzMVAImGhmQGjsMcoMWL3YijIDiAVMMAYoRJEBsXzG0XTAQHYswNIJ2QbA0snApwMASstLS39t+WYAAAAASUVORK5CYII="
+    }
+  ]
+}

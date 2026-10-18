@@ -1,0 +1,121 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "dry": "farmerplus:block/banana_leaf_dry",
+    "particle": "farmerplus:block/banana_leaf_dry"
+  },
+  "elements": [
+    {
+      "name": "dry_petiole",
+      "from": [
+        7.4,
+        7.6,
+        14
+      ],
+      "to": [
+        8.6,
+        8.6,
+        21
+      ],
+      "faces": {
+        "north": {
+          "texture": "#dry",
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ]
+        },
+        "south": {
+          "texture": "#dry",
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ]
+        },
+        "east": {
+          "texture": "#dry",
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ]
+        },
+        "west": {
+          "texture": "#dry",
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ]
+        },
+        "up": {
+          "texture": "#dry",
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ]
+        },
+        "down": {
+          "texture": "#dry",
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ]
+        }
+      }
+    },
+    {
+      "name": "hanging_torn_blade",
+      "from": [
+        2,
+        -14,
+        14.5
+      ],
+      "to": [
+        14,
+        8,
+        14.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#dry",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#dry",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      },
+      "rotation": {
+        "origin": [
+          8,
+          8,
+          14.5
+        ],
+        "x": -8,
+        "y": 0,
+        "z": 0
+      }
+    }
+  ]
+}

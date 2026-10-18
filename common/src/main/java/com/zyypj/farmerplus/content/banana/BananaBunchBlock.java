@@ -10,6 +10,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -109,7 +110,7 @@ public class BananaBunchBlock extends Block implements BonemealableBlock {
         }
         if (level instanceof ServerLevel serverLevel) {
             Block.dropFromBlockInteractLootTable(serverLevel, HARVEST_LOOT, pos, state, null, null, player,
-                    (dropLevel, stack) -> Block.popResource(dropLevel, pos, stack));
+                    (dropLevel, stack) -> carry(player, stack, dropLevel, pos));
             float pitch = 0.8F + serverLevel.getRandom().nextFloat() * 0.4F;
             serverLevel.playSound(null, pos, SoundEvents.CAVE_VINES_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, pitch);
             BlockState picked = Blocks.AIR.defaultBlockState();
@@ -117,6 +118,14 @@ public class BananaBunchBlock extends Block implements BonemealableBlock {
             serverLevel.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(player, picked));
         }
         return InteractionResult.SUCCESS;
+    }
+
+    private static void carry(Player player, ItemStack stack, Level level, BlockPos pos) {
+        if (player.getMainHandItem().isEmpty()) {
+            player.setItemInHand(InteractionHand.MAIN_HAND, stack);
+        } else if (!player.getInventory().add(stack)) {
+            Block.popResource(level, pos, stack);
+        }
     }
 
     @Override

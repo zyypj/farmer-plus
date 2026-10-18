@@ -1,14 +1,15 @@
 {
+  "format_version": "26.3",
+  "credit": "Made with Blockbench",
   "ambientocclusion": false,
   "textures": {
-    "side": "farmerplus:block/banana_stem",
-    "end": "farmerplus:block/banana_stem_top",
-    "leaf": "farmerplus:block/banana_leaf",
-    "particle": "farmerplus:block/banana_stem"
+    "particle": "farmerplus:block/banana_stem",
+    "stem": "farmerplus:block/banana_stem",
+    "cut": "farmerplus:block/banana_stem_top"
   },
   "elements": [
     {
-      "name": "pseudostem",
+      "name": "overlapping_sheaths",
       "from": [
         5,
         0,
@@ -22,57 +23,57 @@
       "faces": {
         "north": {
           "uv": [
-            5,
             0,
-            11,
+            0,
+            16,
             16
           ],
-          "texture": "#side"
+          "texture": "#stem"
         },
         "east": {
           "uv": [
-            5,
             0,
-            11,
+            0,
+            16,
             16
           ],
-          "texture": "#side"
+          "texture": "#stem"
         },
         "south": {
           "uv": [
-            5,
             0,
-            11,
+            0,
+            16,
             16
           ],
-          "texture": "#side"
+          "texture": "#stem"
         },
         "west": {
           "uv": [
-            5,
             0,
-            11,
+            0,
+            16,
             16
           ],
-          "texture": "#side"
+          "texture": "#stem"
         },
         "up": {
           "uv": [
-            5,
-            5,
-            11,
-            11
+            0,
+            0,
+            16,
+            16
           ],
-          "texture": "#end"
+          "texture": "#cut"
         },
         "down": {
           "uv": [
-            5,
-            5,
-            11,
-            11
+            0,
+            0,
+            16,
+            16
           ],
-          "texture": "#end"
+          "texture": "#cut"
         }
       }
     }

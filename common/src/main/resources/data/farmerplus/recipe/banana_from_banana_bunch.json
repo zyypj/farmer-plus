@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "farmerplus:banana_bunch"
+  ],
+  "result": {
+    "count": 8,
+    "id": "farmerplus:banana"
+  }
+}

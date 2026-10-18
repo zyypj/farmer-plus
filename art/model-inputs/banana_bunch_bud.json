@@ -1,0 +1,622 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "stem": "farmerplus:block/banana_stem",
+    "heart": "farmerplus:block/banana_heart",
+    "particle": "farmerplus:block/banana_stem"
+  },
+  "elements": [
+    {
+      "name": "peduncle_from_stem",
+      "from": [
+        7,
+        14,
+        -5
+      ],
+      "to": [
+        9,
+        16,
+        9
+      ],
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "exposed_rachis",
+      "from": [
+        7.5,
+        6,
+        8
+      ],
+      "to": [
+        8.5,
+        15,
+        9
+      ],
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "male_bud_bract_0",
+      "from": [
+        6.272,
+        4.833333333333333,
+        6.772
+      ],
+      "to": [
+        9.728,
+        6.0,
+        10.228
+      ],
+      "faces": {
+        "north": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            0,
+            16,
+            4
+          ]
+        },
+        "south": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            0,
+            16,
+            4
+          ]
+        },
+        "east": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            0,
+            16,
+            4
+          ]
+        },
+        "west": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            0,
+            16,
+            4
+          ]
+        },
+        "up": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            0,
+            16,
+            4
+          ]
+        },
+        "down": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            0,
+            16,
+            4
+          ]
+        }
+      },
+      "rotation": {
+        "origin": [
+          8,
+          6.0,
+          8.5
+        ],
+        "x": 0,
+        "y": 45,
+        "z": 0
+      }
+    },
+    {
+      "name": "male_bud_bract_1",
+      "from": [
+        5.6,
+        3.6666666666666665,
+        6.1
+      ],
+      "to": [
+        10.4,
+        4.833333333333333,
+        10.9
+      ],
+      "faces": {
+        "north": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            2,
+            16,
+            6
+          ]
+        },
+        "south": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            2,
+            16,
+            6
+          ]
+        },
+        "east": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            2,
+            16,
+            6
+          ]
+        },
+        "west": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            2,
+            16,
+            6
+          ]
+        },
+        "up": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            2,
+            16,
+            6
+          ]
+        },
+        "down": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            2,
+            16,
+            6
+          ]
+        }
+      },
+      "rotation": {
+        "origin": [
+          8,
+          4.833333333333333,
+          8.5
+        ],
+        "x": 0,
+        "y": 45,
+        "z": 0
+      }
+    },
+    {
+      "name": "male_bud_bract_2",
+      "from": [
+        5.792,
+        2.5,
+        6.292
+      ],
+      "to": [
+        10.208,
+        3.6666666666666665,
+        10.708
+      ],
+      "faces": {
+        "north": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            4,
+            16,
+            8
+          ]
+        },
+        "south": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            4,
+            16,
+            8
+          ]
+        },
+        "east": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            4,
+            16,
+            8
+          ]
+        },
+        "west": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            4,
+            16,
+            8
+          ]
+        },
+        "up": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            4,
+            16,
+            8
+          ]
+        },
+        "down": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            4,
+            16,
+            8
+          ]
+        }
+      },
+      "rotation": {
+        "origin": [
+          8,
+          3.6666666666666665,
+          8.5
+        ],
+        "x": 0,
+        "y": 45,
+        "z": 0
+      }
+    },
+    {
+      "name": "male_bud_bract_3",
+      "from": [
+        6.248,
+        1.333333333333333,
+        6.748
+      ],
+      "to": [
+        9.752,
+        2.5,
+        10.252
+      ],
+      "faces": {
+        "north": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            6,
+            16,
+            10
+          ]
+        },
+        "south": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            6,
+            16,
+            10
+          ]
+        },
+        "east": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            6,
+            16,
+            10
+          ]
+        },
+        "west": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            6,
+            16,
+            10
+          ]
+        },
+        "up": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            6,
+            16,
+            10
+          ]
+        },
+        "down": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            6,
+            16,
+            10
+          ]
+        }
+      },
+      "rotation": {
+        "origin": [
+          8,
+          2.5,
+          8.5
+        ],
+        "x": 0,
+        "y": 45,
+        "z": 0
+      }
+    },
+    {
+      "name": "male_bud_bract_4",
+      "from": [
+        6.896,
+        0.16666666666666696,
+        7.396
+      ],
+      "to": [
+        9.104,
+        1.333333333333333,
+        9.604
+      ],
+      "faces": {
+        "north": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            8,
+            16,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            8,
+            16,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            8,
+            16,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            8,
+            16,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            8,
+            16,
+            12
+          ]
+        },
+        "down": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            8,
+            16,
+            12
+          ]
+        }
+      },
+      "rotation": {
+        "origin": [
+          8,
+          1.333333333333333,
+          8.5
+        ],
+        "x": 0,
+        "y": 45,
+        "z": 0
+      }
+    },
+    {
+      "name": "male_bud_bract_5",
+      "from": [
+        7.568,
+        -1.0,
+        8.068
+      ],
+      "to": [
+        8.432,
+        0.16666666666666696,
+        8.932
+      ],
+      "faces": {
+        "north": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            10,
+            16,
+            14
+          ]
+        },
+        "south": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            10,
+            16,
+            14
+          ]
+        },
+        "east": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            10,
+            16,
+            14
+          ]
+        },
+        "west": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            10,
+            16,
+            14
+          ]
+        },
+        "up": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            10,
+            16,
+            14
+          ]
+        },
+        "down": {
+          "texture": "#heart",
+          "uv": [
+            0,
+            10,
+            16,
+            14
+          ]
+        }
+      },
+      "rotation": {
+        "origin": [
+          8,
+          0.16666666666666696,
+          8.5
+        ],
+        "x": 0,
+        "y": 45,
+        "z": 0
+      }
+    }
+  ]
+}

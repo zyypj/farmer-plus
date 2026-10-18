@@ -52,5 +52,7 @@
   "block.farmerplus.banana_sapling": "Muda de Bananeira",
   "block.farmerplus.banana_stem": "Pseudocaule de Bananeira",
   "block.farmerplus.banana_leaf": "Folha de Bananeira",
-  "block.farmerplus.banana_bunch": "Cacho de Banana"
+  "block.farmerplus.banana_bunch": "Cacho de Banana",
+  "item.farmerplus.banana_bunch": "Cacho de Banana",
+  "block.farmerplus.harvested_banana_bunch": "Cacho de Banana"
 }

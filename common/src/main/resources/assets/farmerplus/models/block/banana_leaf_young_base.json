@@ -1,174 +1,492 @@
 {
+  "format_version": "26.3",
+  "credit": "Made with Blockbench",
   "ambientocclusion": false,
   "textures": {
+    "particle": "farmerplus:block/banana_leaf",
     "leaf": "farmerplus:block/banana_leaf",
-    "tip": "farmerplus:block/banana_leaf_tip",
-    "particle": "farmerplus:block/banana_leaf"
+    "tip": "farmerplus:block/banana_leaf_tip"
   },
   "elements": [
     {
       "name": "petiole",
       "from": [
-        7.25,
-        9,
-        8
+        7.72,
+        9.72,
+        11
       ],
       "to": [
-        8.75,
-        10.5,
+        8.28,
+        10.12,
         21
       ],
+      "rotation": {
+        "angle": 36.8699,
+        "axis": "x",
+        "origin": [
+          8,
+          10,
+          21
+        ],
+        "x": 36.8699
+      },
       "faces": {
         "north": {
           "uv": [
-            6,
-            0,
             7,
-            16
+            0,
+            9,
+            1
           ],
           "texture": "#leaf"
         },
         "east": {
           "uv": [
-            6,
-            0,
             7,
-            16
+            0,
+            9,
+            1
           ],
           "texture": "#leaf"
         },
         "south": {
           "uv": [
-            6,
-            0,
             7,
-            16
+            0,
+            9,
+            1
           ],
           "texture": "#leaf"
         },
         "west": {
           "uv": [
-            6,
-            0,
             7,
+            0,
+            9,
+            1
+          ],
+          "texture": "#leaf"
+        },
+        "up": {
+          "uv": [
+            7,
+            0,
+            9,
+            1
+          ],
+          "texture": "#leaf"
+        },
+        "down": {
+          "uv": [
+            7,
+            0,
+            9,
+            1
+          ],
+          "texture": "#leaf"
+        }
+      }
+    },
+    {
+      "name": "blade_base_0_left",
+      "from": [
+        0,
+        15.5,
+        4.02834
+      ],
+      "to": [
+        8,
+        16.05,
+        13.65
+      ],
+      "rotation": {
+        "x": 32.16206,
+        "y": -6.4554,
+        "z": 10.13725,
+        "origin": [
+          8,
+          16,
+          13
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            8,
+            9,
+            0,
+            10
+          ],
+          "texture": "#tip"
+        },
+        "south": {
+          "uv": [
+            0,
+            1,
+            8,
+            2
+          ],
+          "texture": "#tip"
+        },
+        "up": {
+          "uv": [
+            0,
+            9,
+            8,
+            2
+          ],
+          "texture": "#tip"
+        },
+        "down": {
+          "uv": [
+            0,
+            2,
+            8,
+            9
+          ],
+          "texture": "#tip"
+        }
+      }
+    },
+    {
+      "name": "blade_base_0_right",
+      "from": [
+        8,
+        15.5,
+        4.02834
+      ],
+      "to": [
+        16,
+        16.05,
+        13.65
+      ],
+      "rotation": {
+        "x": 32.16206,
+        "y": 6.4554,
+        "z": -10.13725,
+        "origin": [
+          8,
+          16,
+          13
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            9,
+            8,
+            10
+          ],
+          "texture": "#tip"
+        },
+        "south": {
+          "uv": [
+            8,
+            1,
+            16,
+            2
+          ],
+          "texture": "#tip"
+        },
+        "up": {
+          "uv": [
+            8,
+            9,
+            16,
+            2
+          ],
+          "texture": "#tip"
+        },
+        "down": {
+          "uv": [
+            8,
+            2,
+            16,
+            9
+          ],
+          "texture": "#tip"
+        }
+      }
+    },
+    {
+      "name": "blade_base_0_midrib",
+      "from": [
+        7.72,
+        15.72,
+        4.67834
+      ],
+      "to": [
+        8.28,
+        16.12,
+        13
+      ],
+      "rotation": {
+        "angle": 32.73523,
+        "axis": "x",
+        "origin": [
+          8,
+          16,
+          13
+        ],
+        "x": 32.73523
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            7,
+            0,
+            9,
+            1
+          ],
+          "texture": "#leaf"
+        },
+        "east": {
+          "uv": [
+            7,
+            0,
+            9,
+            1
+          ],
+          "texture": "#leaf"
+        },
+        "south": {
+          "uv": [
+            7,
+            0,
+            9,
+            1
+          ],
+          "texture": "#leaf"
+        },
+        "west": {
+          "uv": [
+            7,
+            0,
+            9,
+            1
+          ],
+          "texture": "#leaf"
+        },
+        "up": {
+          "uv": [
+            7,
+            0,
+            9,
+            1
+          ],
+          "texture": "#leaf"
+        },
+        "down": {
+          "uv": [
+            7,
+            0,
+            9,
+            1
+          ],
+          "texture": "#leaf"
+        }
+      }
+    },
+    {
+      "name": "blade_base_1_left",
+      "from": [
+        0,
+        20,
+        -0.83466
+      ],
+      "to": [
+        8,
+        20.55,
+        6.65
+      ],
+      "rotation": {
+        "x": 13.74127,
+        "y": -2.89042,
+        "z": 11.65165,
+        "origin": [
+          8,
+          20.5,
+          6
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            8,
+            15,
+            0,
             16
           ],
-          "texture": "#leaf"
+          "texture": "#tip"
+        },
+        "south": {
+          "uv": [
+            0,
+            8,
+            8,
+            9
+          ],
+          "texture": "#tip"
         },
         "up": {
           "uv": [
-            6,
             0,
-            7,
-            2
+            16,
+            8,
+            9
           ],
-          "texture": "#leaf"
+          "texture": "#tip"
         },
         "down": {
           "uv": [
-            6,
             0,
-            7,
-            2
+            9,
+            8,
+            16
           ],
-          "texture": "#leaf"
+          "texture": "#tip"
         }
-      },
-      "rotation": {
-        "origin": [
-          8,
-          9.75,
-          21
-        ],
-        "x": 30,
-        "y": 0,
-        "z": 0
       }
     },
     {
-      "name": "blade_base_left",
+      "name": "blade_base_1_right",
       "from": [
-        1.5,
-        16.25,
-        0
+        8,
+        20,
+        -0.83466
       ],
       "to": [
-        8,
-        16.25,
-        10
+        16,
+        20.55,
+        6.65
       ],
+      "rotation": {
+        "x": 13.74127,
+        "y": 2.89042,
+        "z": -11.65165,
+        "origin": [
+          8,
+          20.5,
+          6
+        ]
+      },
       "faces": {
+        "north": {
+          "uv": [
+            16,
+            15,
+            8,
+            16
+          ],
+          "texture": "#tip"
+        },
+        "south": {
+          "uv": [
+            8,
+            8,
+            16,
+            9
+          ],
+          "texture": "#tip"
+        },
         "up": {
           "uv": [
-            0,
-            16,
             8,
-            5
+            16,
+            16,
+            9
           ],
           "texture": "#tip"
         },
         "down": {
           "uv": [
-            0,
-            16,
             8,
-            5
+            9,
+            16,
+            16
           ],
           "texture": "#tip"
         }
-      },
-      "rotation": {
-        "origin": [
-          8,
-          16.25,
-          10
-        ],
-        "x": 0,
-        "y": 0,
-        "z": 10
       }
     },
     {
-      "name": "blade_base_right",
+      "name": "blade_base_1_midrib",
       "from": [
-        8,
-        16.25,
-        0
+        7.72,
+        20.22,
+        -0.18466
       ],
       "to": [
-        14.5,
-        16.25,
-        10
+        8.28,
+        20.62,
+        6
       ],
+      "rotation": {
+        "angle": 14.03624,
+        "axis": "x",
+        "origin": [
+          8,
+          20.5,
+          6
+        ],
+        "x": 14.03624
+      },
       "faces": {
+        "north": {
+          "uv": [
+            7,
+            0,
+            9,
+            1
+          ],
+          "texture": "#leaf"
+        },
+        "east": {
+          "uv": [
+            7,
+            0,
+            9,
+            1
+          ],
+          "texture": "#leaf"
+        },
+        "south": {
+          "uv": [
+            7,
+            0,
+            9,
+            1
+          ],
+          "texture": "#leaf"
+        },
+        "west": {
+          "uv": [
+            7,
+            0,
+            9,
+            1
+          ],
+          "texture": "#leaf"
+        },
         "up": {
           "uv": [
-            8,
-            16,
-            16,
-            5
+            7,
+            0,
+            9,
+            1
           ],
-          "texture": "#tip"
+          "texture": "#leaf"
         },
         "down": {
           "uv": [
-            8,
-            16,
-            16,
-            5
+            7,
+            0,
+            9,
+            1
           ],
-          "texture": "#tip"
+          "texture": "#leaf"
         }
-      },
-      "rotation": {
-        "origin": [
-          8,
-          16.25,
-          10
-        ],
-        "x": 0,
-        "y": 0,
-        "z": -10
       }
     }
   ]

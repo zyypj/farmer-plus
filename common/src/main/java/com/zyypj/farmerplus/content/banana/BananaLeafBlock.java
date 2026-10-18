@@ -1,5 +1,14 @@
 package com.zyypj.farmerplus.content.banana;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.UncheckedIOException;
+import java.nio.charset.StandardCharsets;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -13,6 +22,7 @@ import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.pathfinder.PathComputationType;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class BananaLeafBlock extends Block {
@@ -24,12 +34,8 @@ public class BananaLeafBlock extends Block {
     public static final IntegerProperty SEGMENT = IntegerProperty.create("segment", BASE, TIP);
     public static final EnumProperty<LeafAge> AGE = EnumProperty.create("age", LeafAge.class);
 
-    private static final VoxelShape[] SHAPES = {
-            Block.box(0.0, 8.0, 0.0, 16.0, 16.0, 16.0),
-            Block.box(0.0, 11.0, 0.0, 16.0, 16.0, 16.0),
-            Block.box(0.0, 2.0, 0.0, 16.0, 15.0, 16.0)
-    };
-    private static final VoxelShape DRY_SHAPE = Block.box(2.0, 0.0, 2.0, 14.0, 12.0, 14.0);
+    private static final String SHAPES_RESOURCE = "/farmerplus/shapes/banana_leaf.json";
+    private static final VoxelShape[] SHAPES = loadShapes();
 
     public BananaLeafBlock(BlockBehaviour.Properties properties) {
         super(properties);
@@ -49,7 +55,39 @@ public class BananaLeafBlock extends Block {
 
     @Override
     protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return state.getValue(AGE) == LeafAge.DRY ? DRY_SHAPE : SHAPES[state.getValue(SEGMENT)];
+        return SHAPES[shapeIndex(state.getValue(AGE), state.getValue(DIRECTION), state.getValue(SEGMENT))];
+    }
+
+    private static int shapeIndex(LeafAge age, LeafDirection direction, int segment) {
+        return (age.ordinal() * LeafDirection.values().length + direction.ordinal()) * (TIP + 1) + segment;
+    }
+
+    private static VoxelShape[] loadShapes() {
+        try (InputStream stream = BananaLeafBlock.class.getResourceAsStream(SHAPES_RESOURCE)) {
+            if (stream == null) {
+                throw new IllegalStateException("Missing " + SHAPES_RESOURCE);
+            }
+            JsonObject json = JsonParser.parseReader(new InputStreamReader(stream, StandardCharsets.UTF_8)).getAsJsonObject();
+            JsonArray boxes = json.getAsJsonArray("shapes");
+            VoxelShape[] unique = new VoxelShape[boxes.size()];
+            for (int i = 0; i < unique.length; i++) {
+                VoxelShape shape = Shapes.empty();
+                for (JsonElement element : boxes.get(i).getAsJsonArray()) {
+                    JsonArray box = element.getAsJsonArray();
+                    shape = Shapes.or(shape, Block.box(box.get(0).getAsDouble(), box.get(1).getAsDouble(), box.get(2).getAsDouble(),
+                            box.get(3).getAsDouble(), box.get(4).getAsDouble(), box.get(5).getAsDouble()));
+                }
+                unique[i] = shape.optimize();
+            }
+            JsonArray states = json.getAsJsonArray("states");
+            VoxelShape[] shapes = new VoxelShape[states.size()];
+            for (int i = 0; i < shapes.length; i++) {
+                shapes[i] = unique[states.get(i).getAsInt()];
+            }
+            return shapes;
+        } catch (IOException exception) {
+            throw new UncheckedIOException(exception);
+        }
     }
 
     @Override

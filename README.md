@@ -46,7 +46,7 @@ A full-size fruit tree modelled on real avocados — a dense rounded crown 10–
 
 ### Banana plant
 
-A banana built like the real giant herb: a slim pseudostem, huge leaves that tear and arch (young, mature and dry hanging ones), and one bunch per stem that hangs under the crown with its purple bud. Pick 6–10 bananas with a right-click; the spent stem then dies back and a follower sucker takes its place, so plants spread into clumps. Wild clumps grow in jungles. See [docs/banana.md](docs/banana.md).
+A banana built like the real giant herb: a slim pseudostem, huge leaves that tear and arch (young, mature and dry hanging ones), and one bunch per stem that hangs under the crown with its purple bud. Harvest the whole heavy bunch and carry it on your shoulder, then craft it into 8 bananas or stand it on the ground and pull bananas off one by one; the spent stem then dies back and a follower sucker takes its place, so plants spread into clumps. Wild clumps grow in jungles. See [docs/banana.md](docs/banana.md).
 
 ### Crop trampling
 

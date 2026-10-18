@@ -5,7 +5,7 @@
 ## Unreleased
 
 ### Added
-- Banana plant: a pseudostem with young, mature and dry hanging leaves, one bunch per stem (bud, flowering, green, ripe) picked for 6–10 bananas, die-back after fruiting with a follower sucker, clumps, and wild clumps in jungles.
+- Banana plant: a pseudostem with young, mature and dry hanging leaves, one bunch per stem (bud, flowering, green, ripe) harvested whole and carried on the shoulder (heavy), crafted into 8 bananas or stood on the ground to pick bananas one by one, die-back after fruiting with a follower sucker, clumps, and wild clumps in jungles.
 - Avocado tree: a realistic broadleaf tree (orchard tree from one sapling, wild giant from 2×2 saplings and jungles) whose leaves flower and fruit repeatedly; avocados hang under the leaves as their own block with a hitbox and are picked with right-click.
 - Slim avocado wood: the tree grows from connecting `avocado_trunk` (10 px) and `avocado_branch` (6 px) blocks instead of full logs; the trunk drops logs, branches drop sticks.
 - Avocado wood set (logs, wood, stripped variants, planks, stairs, slab, fence, fence gate, door, trapdoor, pressure plate, button, sign, hanging sign, shelf, boat, boat with chest) mirroring every oak tag, recipe, fuel value and flammability.

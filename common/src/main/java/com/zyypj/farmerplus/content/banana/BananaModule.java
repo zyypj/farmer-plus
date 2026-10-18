@@ -21,6 +21,6 @@ public final class BananaModule implements FarmerModule {
 
     @Override
     public List<ItemLike> creativeTabItems() {
-        return List.of(BananaItems.BANANA.get(), BananaItems.BANANA_SAPLING.get(), BananaItems.BANANA_LEAF.get());
+        return List.of(BananaItems.BANANA.get(), BananaItems.BANANA_BUNCH.get(), BananaItems.BANANA_SAPLING.get(), BananaItems.BANANA_LEAF.get());
     }
 }

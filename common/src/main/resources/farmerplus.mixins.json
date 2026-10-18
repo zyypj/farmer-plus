@@ -9,6 +9,9 @@
     "FarmlandBlockMixin",
     "FireBlockAccessor"
   ],
+  "client": [
+    "HumanoidModelMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   }

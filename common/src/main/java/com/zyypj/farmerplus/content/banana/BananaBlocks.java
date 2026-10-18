@@ -43,6 +43,15 @@ public final class BananaBlocks {
                     .sound(SoundType.CROP)
                     .pushReaction(PushReaction.POPPED));
 
+    public static final RegistryEntry<HarvestedBananaBunchBlock> HARVESTED_BANANA_BUNCH = FarmerRegistries.block("harvested_banana_bunch",
+            HarvestedBananaBunchBlock::new,
+            () -> BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_YELLOW)
+                    .strength(0.3F)
+                    .noOcclusion()
+                    .sound(SoundType.CROP)
+                    .pushReaction(PushReaction.POPPED));
+
     public static final RegistryEntry<GrowingSaplingBlock> BANANA_SAPLING = FarmerRegistries.block("banana_sapling",
             properties -> new GrowingSaplingBlock(BananaPlants.GROWER, SAPLING_GROWTH_CHANCE, properties),
             () -> BlockBehaviour.Properties.of()

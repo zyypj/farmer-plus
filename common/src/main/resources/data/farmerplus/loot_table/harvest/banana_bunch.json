@@ -6,17 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "farmerplus:banana",
-          "modifier": [
-            {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 6,
-                "max": 10
-              }
-            }
-          ]
+          "name": "farmerplus:banana_bunch"
         }
       ]
     }

@@ -1,0 +1,252 @@
+{
+  "meta": {
+    "format_version": "5.0",
+    "model_format": "java_block",
+    "box_uv": false
+  },
+  "name": "banana_stem_middle",
+  "parent": "",
+  "java_block_version": "26.3",
+  "ambientocclusion": false,
+  "front_gui_light": false,
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "variable_placeholders": "",
+  "multi_file_ruleset": "",
+  "variable_placeholder_buttons": [],
+  "unhandled_root_fields": {},
+  "resolution": {
+    "width": 16,
+    "height": 16
+  },
+  "elements": [
+    {
+      "name": "overlapping_sheaths",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        5,
+        0,
+        5
+      ],
+      "to": [
+        11,
+        16,
+        11
+      ],
+      "autouv": 0,
+      "color": 4,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 1
+        }
+      },
+      "type": "cube",
+      "uuid": "08b5d8c5-c0b9-74b0-2952-960c945cd929"
+    }
+  ],
+  "groups": [],
+  "outliner": [
+    "08b5d8c5-c0b9-74b0-2952-960c945cd929"
+  ],
+  "textures": [
+    {
+      "name": "banana_stem.png",
+      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/banana_stem.png",
+      "folder": "block",
+      "namespace": "farmerplus",
+      "id": "stem",
+      "group": "",
+      "scope": 0,
+      "width": 0,
+      "height": 0,
+      "uv_width": 16,
+      "uv_height": 16,
+      "particle": true,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": true,
+      "uuid": "287e5cec-1945-8168-03b7-012aa8ee90a8",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAj0lEQVR4nGOcuDz6PwMUKItJMCCDu69eoPBf3XnCIKYig6KWiYFCwESMoivz7oBtJ9sAEDi36T0DNsDEQCFgIUaRTpIKgw40EDFccGXeHYpcwPTkw3dwIJFtAAOeeAcBQoYzyQhwMliaCGCVBGkm5EImaWk24t2LzQAGAqEPciHZ0agMSu9JFLiAGDDwBgAAuB8qSe5prioAAAAASUVORK5CYII="
+    },
+    {
+      "name": "banana_stem_top.png",
+      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/banana_stem_top.png",
+      "folder": "block",
+      "namespace": "farmerplus",
+      "id": "cut",
+      "group": "",
+      "scope": 0,
+      "width": 0,
+      "height": 0,
+      "uv_width": 16,
+      "uv_height": 16,
+      "particle": false,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": true,
+      "uuid": "2f59ed51-11f5-1311-62cd-75c8cc9e7646",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAwUlEQVR4nGOsbrb/zwAFYioyDMSAV3eewNks6JqVxSTwar776gVYLcwQFmya1SR1sWq+9fwyWA2yIYwTl0f/x6YZpBgZoIuDDIG7QBmLZnRXwMRAGNklTNhsgLHFBOTBGB0gG86CzRZ8AN1rLNgUYbMVF2AiWiUpBrz68BCMYWyiDVCDhjCyQbhiAiMMbqFFEzaALY0w4kpIuABGQgIlR1CyBAmADMFlOzKAaQbpBXsB2RBiASwzwQMROYsSqxmkDgBPIHZ1KJK4MAAAAABJRU5ErkJggg=="
+    },
+    {
+      "name": "banana_leaf.png",
+      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/banana_leaf.png",
+      "folder": "block",
+      "namespace": "farmerplus",
+      "id": "leaf",
+      "group": "",
+      "scope": 0,
+      "width": 0,
+      "height": 0,
+      "uv_width": 16,
+      "uv_height": 16,
+      "particle": false,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": true,
+      "uuid": "a378b434-0108-f3da-cfc1-f7c7db546792",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABAUlEQVR4nGO0zrb4zyPAygACPLwcDKKC3AwwYKygzKAhJcOw88IJhutP3zF8+fwDLP7lw2+4GhaQZpBGdPD6/VcGBgUMYRTNX9/8ZGDZ2XqYEeQKsAsEWMG2oLsEBND5IIO4RdgZWECco1NPMIJo92rb/9g0Y3MFTA8LvjBA9xLIdTAvgPSBvcAABejhgB4GOL3AgxSIMEVgzThcAAKgcIOJs8CcBDIEphFfGIDUwwId7oUvSFGDLUrxeuEoNDRhILjDFWw6Li9gpANraCxgDQdaBeIX5HSwE5oSYWkBm23oNoMAPB0Qq5koL6A7GTkMcAUiE0gALAH1HyGXILsW5AIAoXGuYO3kJIIAAAAASUVORK5CYII="
+    },
+    {
+      "name": "banana_leaf_dry.png",
+      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/banana_leaf_dry.png",
+      "folder": "block",
+      "namespace": "farmerplus",
+      "id": "dry",
+      "group": "",
+      "scope": 0,
+      "width": 0,
+      "height": 0,
+      "uv_width": 16,
+      "uv_height": 16,
+      "particle": false,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": true,
+      "uuid": "68553c3f-8a12-867f-2765-66af03006ea4",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA6UlEQVR4nGOcV+n+n4GBgUFFSx5EMchIi4HpJ09fobDvXHsIZj96/g1MP336C0yzYNNICmCEMQ4tTgO7BGYTCDi4moLpRYsOMshJcoHZSe074XrALpgH9QK6E2EaYOD4mQ8MliYCDA0JtmD1DQsOgw1igZkIMgimGRsAaUbWCANMMAbIIJCtIOzkrAkPVHQAcwGGATBDcGkEeQGbC1iQOegBCYsZGEAPQAwX2MXOYty39zo8INHDABbgOA3A5kSSXECMIUQZcAgaFoRsx2mAXewsylyAz0aiDYABUOYiJUxQwL19NRhhgQ4ABvZnIhnYvh4AAAAASUVORK5CYII="
+    }
+  ]
+}
