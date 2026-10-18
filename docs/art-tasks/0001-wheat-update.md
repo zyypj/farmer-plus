@@ -2,7 +2,7 @@
 
 **English** | [Português](0001-wheat-update.pt-BR.md)
 
-The files below currently contain **placeholder art**. Replace each one in place, keeping the exact path and name.
+The files below contain original final pixel art. All wheat block materials and their vanilla overrides now use native 16×16 artwork, matching the item textures; existing paths and names are preserved.
 
 Base path: `common/src/main/resources/assets/farmerplus/`
 
@@ -47,6 +47,9 @@ Current collision/outline box is 12×16×12 centred (`Block.column(12.0, 0.0, 16
 
 ## Done when
 
-- [ ] All files above replaced, same names.
+- [x] All files above contain final art, same names; the existing 512×512 mod icon is preserved.
+- [x] All 70 wheat block textures (Farmer+ and vanilla overrides) are 16×16 RGBA with binary alpha; items remain native 16×16.
+- [x] Fifteen Blockbench projects have 16×16 embedded textures and UV grids; crop/sheaf element budgets, leaf clearance and solid binding checks pass.
+- [x] `./gradlew build` and `python art/validate_wheat_art.py` pass.
 - [ ] `./gradlew :neoforge:runClient` shows the items correctly in the Farmer+ creative tab, in hand and on the ground; the sheaf looks right placed in the world.
-- [ ] No `farmerplus` model/texture warnings in the log.
+- [x] No `farmerplus` model/texture warnings in the log.

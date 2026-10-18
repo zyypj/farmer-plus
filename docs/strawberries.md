@@ -43,7 +43,7 @@ Trampled plants stop growing and spreading until they recover (bent ≈1 in 3 ra
 
 Craft a **glass bottle** with **1, 2 or 3 strawberries** to get a jar with 1, 2 or 3 portions — the jar visibly fills up.
 
-- **Eat:** right-click the air, or sneak + right-click a block. Each bite eats one portion (3 hunger, 0.5 saturation); the last portion gives the empty bottle back.
+- **Eat:** right-click a placed jar to eat one portion straight from it, like a cake (only when you are hungry). From the hand, right-click the air or sneak + right-click a block. Each bite eats one portion (3 hunger, 0.5 saturation); the last portion gives the empty bottle back.
 - **Place:** right-click a block to put the jar down as decoration; the label turns to face you. Breaking it returns the jar with the same portions.
 - **Refill:** right-click a placed jar with a strawberry to add a portion, up to 3.
 - Jars stack to 16 when they have the same number of portions.

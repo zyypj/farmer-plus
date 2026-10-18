@@ -5,6 +5,8 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 TEXTURES = ROOT / 'common/src/main/resources/assets/farmerplus/textures/block'
 PALETTES = {
+    0: ['2e4c30', '446839', '618447', '8ca55c', 'b6bd78'],
+    1: ['2e4c30', '446839', '618447', '8ca55c', 'b6bd78'],
     2: ['2e4c30', '446839', '618447', '8ca55c', 'b6bd78'],
     3: ['344f31', '4b6b3d', '6d884b', '98a966', 'bec58a'],
     4: ['405335', '5d7141', '809351', 'a8af70', 'c9c58c'],
@@ -18,6 +20,13 @@ def crushed(age, alternate=False):
     p = ['#' + h for h in PALETTES[age]]
     im = Image.new('RGBA', (16, 16))
     d = ImageDraw.Draw(im)
+    if age < 2:
+        for index, x in enumerate((3, 8, 12) if not alternate else (2, 7, 13)):
+            y = 14 - age - (index % 2)
+            d.line([(x, 15), (x, y)], fill=p[1])
+            d.point((x, y), fill=p[3])
+            d.line([(x, 15), (x + (2 if index % 2 else -2), 14 - age)], fill=p[2])
+        return im
     paths = [[(3, 15), (3, 13), (5, 11), (3, 8), (5, 6), (3, 4)],
              [(8, 15), (8, 13), (6, 10), (9, 8), (8, 6), (10, 3)],
              [(12, 15), (12, 14), (10, 12), (12, 9), (10, 7), (13, 5)]]

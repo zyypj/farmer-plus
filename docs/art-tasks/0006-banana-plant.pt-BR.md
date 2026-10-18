@@ -61,5 +61,9 @@ A hitbox das folhas segue os modelos: `python art/banana_leaf_shapes.py` voxeliz
 - [x] Todos os arquivos acima substituídos com os mesmos nomes; `./gradlew build` e `python art/validate_wheat_art.py` passam.
 - [x] `python art/preview_world_models.py` (veja [docs/banana.pt-BR.md](../banana.pt-BR.md)) mostra as folhas conectadas, sem buracos nas emendas dos segmentos, nas 8 direções.
 - [ ] No jogo, a 20 blocos de distância, a planta parece uma bananeira: pseudocaule verde-claro, folhas enormes e rasgadas, um cacho com coração roxo.
+- [x] Cacho colhido em pé: engaço fibroso e cortado finalizado, oito peças maduras compartilhadas e `HAND_CENTERS` correspondentes; estados cheio e parciais renderizados de um mundo de teste salvo.
+- [x] Display idêntico exportado pelo Blockbench para os nove modelos do item composto; escala 1,1 da terceira pessoa preservada e enquadramentos de GUI/chão/fixo revisados.
+- [x] Folhas secas conectadas nas oito direções; hitboxes regeneradas após a alteração do modelo/blockstate diagonal.
+- [ ] Conferir no Minecraft o cacho apoiado no ombro direito em F5 e o recorte parcial no canto superior direito em primeira pessoa.
 
-O último item permanece pendente: a captura do jogo não tem distância medida e o usuário interrompeu a inspeção da interface. Os frutos sólidos acrescentam vinte modelos de meia penca via multipart vanilla; cada modelo respeita o limite de 12 elementos, mas o cacho verde/maduro montado soma 104 elementos. Consulte o relatório antes de revisar o desempenho.
+Os testes de distância e de carregar no ombro permanecem pendentes: a captura existente não tem distância medida e o Computer Use foi interrompido com Escape, inclusive na inspeção retomada. Prévias do editor e carregamento de recursos não substituem essas conferências. Os frutos sólidos acrescentam vinte modelos de meia penca via multipart vanilla; cada modelo respeita o limite de 12 elementos, mas o cacho verde/maduro da planta soma 104 elementos e o cacho colhido finalizado soma 102. Consulte o relatório antes de revisar o desempenho.

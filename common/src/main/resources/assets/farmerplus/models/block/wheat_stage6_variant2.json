@@ -1,8 +1,6 @@
 {
-  "texture_size": [
-    32,
-    32
-  ],
+  "format_version": "26.3",
+  "credit": "Made with Blockbench",
   "ambientocclusion": false,
   "textures": {
     "particle": "farmerplus:block/wheat_stage6_variant3",
@@ -20,19 +18,19 @@
       ],
       "to": [
         16,
-        24.000000000000004,
+        24,
         4
       ],
+      "shade_direction_override": "up",
       "rotation": {
+        "angle": -22.5,
+        "axis": "y",
         "origin": [
           8,
           0,
           8
-        ],
-        "axis": "y",
-        "angle": -22.5
+        ]
       },
-      "shade_direction_override": "up",
       "faces": {
         "north": {
           "uv": [
@@ -63,19 +61,19 @@
       ],
       "to": [
         16,
-        23.431818181818183,
+        23.43182,
         11.5
       ],
+      "shade_direction_override": "up",
       "rotation": {
+        "angle": 22.5,
+        "axis": "y",
         "origin": [
           8,
           0,
           8
-        ],
-        "axis": "y",
-        "angle": 22.5
+        ]
       },
-      "shade_direction_override": "up",
       "faces": {
         "north": {
           "uv": [
@@ -106,34 +104,34 @@
       ],
       "to": [
         4,
-        24.000000000000004,
+        24,
         16
       ],
+      "shade_direction_override": "up",
       "rotation": {
+        "angle": 45,
+        "axis": "y",
         "origin": [
           8,
           0,
           8
-        ],
-        "axis": "y",
-        "angle": 45
+        ]
       },
-      "shade_direction_override": "up",
       "faces": {
-        "west": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#alternate"
-        },
         "east": {
           "uv": [
             16,
             0,
             0,
+            16
+          ],
+          "texture": "#alternate"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
             16
           ],
           "texture": "#alternate"
@@ -149,34 +147,34 @@
       ],
       "to": [
         12,
-        22.863636363636367,
+        22.86364,
         16
       ],
+      "shade_direction_override": "up",
       "rotation": {
+        "angle": -45,
+        "axis": "y",
         "origin": [
           8,
           0,
           8
-        ],
-        "axis": "y",
-        "angle": -45
+        ]
       },
-      "shade_direction_override": "up",
       "faces": {
-        "west": {
-          "uv": [
-            16,
-            0,
-            0,
-            16
-          ],
-          "texture": "#crop"
-        },
         "east": {
           "uv": [
             0,
             0,
             16,
+            16
+          ],
+          "texture": "#crop"
+        },
+        "west": {
+          "uv": [
+            16,
+            0,
+            0,
             16
           ],
           "texture": "#crop"
@@ -186,25 +184,25 @@
     {
       "name": "front_leaf_base",
       "from": [
-        11.612071158272435,
-        5.761363636363638,
-        3.619240747962847
+        11.61207,
+        5.76136,
+        3.61924
       ],
       "to": [
-        17.612071158272435,
-        5.761363636363638,
-        6.369240747962847
+        17.61207,
+        5.76136,
+        6.36924
       ],
-      "rotation": {
-        "origin": [
-          14.612071158272435,
-          5.761363636363638,
-          6.369240747962847
-        ],
-        "axis": "x",
-        "angle": 22.5
-      },
       "shade_direction_override": "up",
+      "rotation": {
+        "angle": 22.5,
+        "axis": "x",
+        "origin": [
+          14.61207,
+          5.76136,
+          6.36924
+        ]
+      },
       "faces": {
         "up": {
           "uv": [
@@ -213,8 +211,7 @@
             16,
             0
           ],
-          "texture": "#foliage",
-          "rotation": 0
+          "texture": "#foliage"
         },
         "down": {
           "uv": [
@@ -223,33 +220,32 @@
             16,
             8
           ],
-          "texture": "#foliage",
-          "rotation": 0
+          "texture": "#foliage"
         }
       }
     },
     {
       "name": "front_leaf_tip",
       "from": [
-        11.612071158272435,
-        6.8137430753676345,
-        1.0785720335568083
+        11.61207,
+        6.81374,
+        1.07857
       ],
       "to": [
-        17.612071158272435,
-        6.8137430753676345,
-        3.8285720335568083
+        17.61207,
+        6.81374,
+        3.82857
       ],
-      "rotation": {
-        "origin": [
-          14.612071158272435,
-          6.8137430753676345,
-          3.8285720335568083
-        ],
-        "axis": "x",
-        "angle": -22.5
-      },
       "shade_direction_override": "up",
+      "rotation": {
+        "angle": -22.5,
+        "axis": "x",
+        "origin": [
+          14.61207,
+          6.81374,
+          3.82857
+        ]
+      },
       "faces": {
         "up": {
           "uv": [
@@ -258,8 +254,7 @@
             16,
             8
           ],
-          "texture": "#foliage",
-          "rotation": 0
+          "texture": "#foliage"
         },
         "down": {
           "uv": [
@@ -268,33 +263,32 @@
             16,
             16
           ],
-          "texture": "#foliage",
-          "rotation": 0
+          "texture": "#foliage"
         }
       }
     },
     {
       "name": "rear_leaf_base",
       "from": [
-        11.420729442089891,
-        5.084280303030304,
-        9.168819485781508
+        11.42073,
+        5.08428,
+        9.16882
       ],
       "to": [
-        17.420729442089893,
-        5.084280303030304,
-        12.168819485781508
+        17.42073,
+        5.08428,
+        12.16882
       ],
-      "rotation": {
-        "origin": [
-          14.420729442089891,
-          5.084280303030304,
-          9.168819485781508
-        ],
-        "axis": "x",
-        "angle": -22.5
-      },
       "shade_direction_override": "up",
+      "rotation": {
+        "angle": -22.5,
+        "axis": "x",
+        "origin": [
+          14.42073,
+          5.08428,
+          9.16882
+        ]
+      },
       "faces": {
         "up": {
           "uv": [
@@ -303,8 +297,7 @@
             16,
             8
           ],
-          "texture": "#foliage",
-          "rotation": 0
+          "texture": "#foliage"
         },
         "down": {
           "uv": [
@@ -313,33 +306,32 @@
             16,
             0
           ],
-          "texture": "#foliage",
-          "rotation": 0
+          "texture": "#foliage"
         }
       }
     },
     {
       "name": "rear_leaf_tip",
       "from": [
-        11.420729442089891,
-        6.232330600125573,
-        11.940458083315368
+        11.42073,
+        6.23233,
+        11.94046
       ],
       "to": [
-        17.420729442089893,
-        6.232330600125573,
-        14.940458083315368
+        17.42073,
+        6.23233,
+        14.94046
       ],
-      "rotation": {
-        "origin": [
-          14.420729442089891,
-          6.232330600125573,
-          11.940458083315368
-        ],
-        "axis": "x",
-        "angle": 22.5
-      },
       "shade_direction_override": "up",
+      "rotation": {
+        "angle": 22.5,
+        "axis": "x",
+        "origin": [
+          14.42073,
+          6.23233,
+          11.94046
+        ]
+      },
       "faces": {
         "up": {
           "uv": [
@@ -348,8 +340,7 @@
             16,
             16
           ],
-          "texture": "#foliage",
-          "rotation": 0
+          "texture": "#foliage"
         },
         "down": {
           "uv": [
@@ -358,33 +349,32 @@
             16,
             8
           ],
-          "texture": "#foliage",
-          "rotation": 0
+          "texture": "#foliage"
         }
       }
     },
     {
       "name": "left_leaf_base",
       "from": [
-        1.7173593128807152,
-        6.178030303030304,
-        6.414213562373094
+        1.71736,
+        6.17803,
+        6.41421
       ],
       "to": [
-        3.717359312880715,
-        6.178030303030304,
-        12.414213562373094
+        3.71736,
+        6.17803,
+        12.41421
       ],
-      "rotation": {
-        "origin": [
-          3.717359312880715,
-          6.178030303030304,
-          9.414213562373094
-        ],
-        "axis": "z",
-        "angle": -22.5
-      },
       "shade_direction_override": "up",
+      "rotation": {
+        "angle": -22.5,
+        "axis": "z",
+        "origin": [
+          3.71736,
+          6.17803,
+          9.41421
+        ]
+      },
       "faces": {
         "up": {
           "uv": [
@@ -393,8 +383,8 @@
             16,
             8
           ],
-          "texture": "#foliage",
-          "rotation": 90
+          "rotation": 90,
+          "texture": "#foliage"
         },
         "down": {
           "uv": [
@@ -403,33 +393,33 @@
             16,
             0
           ],
-          "texture": "#foliage",
-          "rotation": 270
+          "rotation": 270,
+          "texture": "#foliage"
         }
       }
     },
     {
       "name": "left_leaf_tip",
       "from": [
-        -0.13039975214185828,
-        6.943397167760483,
-        6.414213562373094
+        -0.1304,
+        6.9434,
+        6.41421
       ],
       "to": [
-        1.8696002478581417,
-        6.943397167760483,
-        12.414213562373094
+        1.8696,
+        6.9434,
+        12.41421
       ],
-      "rotation": {
-        "origin": [
-          1.8696002478581417,
-          6.943397167760483,
-          9.414213562373094
-        ],
-        "axis": "z",
-        "angle": 22.5
-      },
       "shade_direction_override": "up",
+      "rotation": {
+        "angle": 22.5,
+        "axis": "z",
+        "origin": [
+          1.8696,
+          6.9434,
+          9.41421
+        ]
+      },
       "faces": {
         "up": {
           "uv": [
@@ -438,8 +428,8 @@
             16,
             16
           ],
-          "texture": "#foliage",
-          "rotation": 90
+          "rotation": 90,
+          "texture": "#foliage"
         },
         "down": {
           "uv": [
@@ -448,33 +438,33 @@
             16,
             8
           ],
-          "texture": "#foliage",
-          "rotation": 270
+          "rotation": 270,
+          "texture": "#foliage"
         }
       }
     },
     {
       "name": "right_leaf_base",
       "from": [
-        9.454213562373093,
-        4.198863636363636,
-        9.242640687119286
+        9.45421,
+        4.19886,
+        9.24264
       ],
       "to": [
-        12.454213562373093,
-        4.198863636363636,
-        15.242640687119286
+        12.45421,
+        4.19886,
+        15.24264
       ],
-      "rotation": {
-        "origin": [
-          9.454213562373093,
-          4.198863636363636,
-          12.242640687119286
-        ],
-        "axis": "z",
-        "angle": 22.5
-      },
       "shade_direction_override": "up",
+      "rotation": {
+        "angle": 22.5,
+        "axis": "z",
+        "origin": [
+          9.45421,
+          4.19886,
+          12.24264
+        ]
+      },
       "faces": {
         "up": {
           "uv": [
@@ -483,8 +473,8 @@
             16,
             0
           ],
-          "texture": "#foliage",
-          "rotation": 90
+          "rotation": 90,
+          "texture": "#foliage"
         },
         "down": {
           "uv": [
@@ -493,33 +483,33 @@
             16,
             8
           ],
-          "texture": "#foliage",
-          "rotation": 270
+          "rotation": 270,
+          "texture": "#foliage"
         }
       }
     },
     {
       "name": "right_leaf_tip",
       "from": [
-        12.225852159906953,
-        5.3469139334589055,
-        9.242640687119286
+        12.22585,
+        5.34691,
+        9.24264
       ],
       "to": [
-        15.225852159906953,
-        5.3469139334589055,
-        15.242640687119286
+        15.22585,
+        5.34691,
+        15.24264
       ],
-      "rotation": {
-        "origin": [
-          12.225852159906953,
-          5.3469139334589055,
-          12.242640687119286
-        ],
-        "axis": "z",
-        "angle": -22.5
-      },
       "shade_direction_override": "up",
+      "rotation": {
+        "angle": -22.5,
+        "axis": "z",
+        "origin": [
+          12.22585,
+          5.34691,
+          12.24264
+        ]
+      },
       "faces": {
         "up": {
           "uv": [
@@ -528,8 +518,8 @@
             16,
             8
           ],
-          "texture": "#foliage",
-          "rotation": 90
+          "rotation": 90,
+          "texture": "#foliage"
         },
         "down": {
           "uv": [
@@ -538,33 +528,33 @@
             16,
             16
           ],
-          "texture": "#foliage",
-          "rotation": 270
+          "rotation": 270,
+          "texture": "#foliage"
         }
       }
     },
     {
       "name": "front_lower_leaf_base",
       "from": [
-        1.4493963006482824,
-        4.042613636363637,
-        0.5597229919468591
+        1.4494,
+        4.04261,
+        0.55972
       ],
       "to": [
-        7.449396300648282,
-        4.042613636363637,
-        2.1597229919468592
+        7.4494,
+        4.04261,
+        2.15972
       ],
-      "rotation": {
-        "origin": [
-          4.449396300648282,
-          4.042613636363637,
-          2.1597229919468592
-        ],
-        "axis": "x",
-        "angle": 22.5
-      },
       "shade_direction_override": "up",
+      "rotation": {
+        "angle": 22.5,
+        "axis": "x",
+        "origin": [
+          4.4494,
+          4.04261,
+          2.15972
+        ]
+      },
       "faces": {
         "up": {
           "uv": [
@@ -573,8 +563,7 @@
             16,
             0
           ],
-          "texture": "#foliage",
-          "rotation": 0
+          "texture": "#foliage"
         },
         "down": {
           "uv": [
@@ -583,33 +572,32 @@
             16,
             8
           ],
-          "texture": "#foliage",
-          "rotation": 0
+          "texture": "#foliage"
         }
       }
     },
     {
       "name": "front_lower_leaf_tip",
       "from": [
-        1.4493963006482824,
-        4.65490712814778,
-        -0.9184842600711998
+        1.4494,
+        4.65491,
+        -0.91848
       ],
       "to": [
-        7.449396300648282,
-        4.65490712814778,
-        0.6815157399288003
+        7.4494,
+        4.65491,
+        0.68152
       ],
-      "rotation": {
-        "origin": [
-          4.449396300648282,
-          4.65490712814778,
-          0.6815157399288003
-        ],
-        "axis": "x",
-        "angle": -22.5
-      },
       "shade_direction_override": "up",
+      "rotation": {
+        "angle": -22.5,
+        "axis": "x",
+        "origin": [
+          4.4494,
+          4.65491,
+          0.68152
+        ]
+      },
       "faces": {
         "up": {
           "uv": [
@@ -618,8 +606,7 @@
             16,
             8
           ],
-          "texture": "#foliage",
-          "rotation": 0
+          "texture": "#foliage"
         },
         "down": {
           "uv": [
@@ -628,33 +615,32 @@
             16,
             16
           ],
-          "texture": "#foliage",
-          "rotation": 0
+          "texture": "#foliage"
         }
       }
     },
     {
       "name": "rear_upper_leaf_base",
       "from": [
-        1.2580545844657376,
-        6.490530303030303,
-        13.378337241797496
+        1.25805,
+        6.49053,
+        13.37834
       ],
       "to": [
-        7.258054584465738,
-        6.490530303030303,
-        15.028337241797496
+        7.25805,
+        6.49053,
+        15.02834
       ],
-      "rotation": {
-        "origin": [
-          4.258054584465738,
-          6.490530303030303,
-          13.378337241797496
-        ],
-        "axis": "x",
-        "angle": -22.5
-      },
       "shade_direction_override": "up",
+      "rotation": {
+        "angle": -22.5,
+        "axis": "x",
+        "origin": [
+          4.25805,
+          6.49053,
+          13.37834
+        ]
+      },
       "faces": {
         "up": {
           "uv": [
@@ -663,8 +649,7 @@
             16,
             8
           ],
-          "texture": "#foliage",
-          "rotation": 0
+          "texture": "#foliage"
         },
         "down": {
           "uv": [
@@ -673,33 +658,32 @@
             16,
             0
           ],
-          "texture": "#foliage",
-          "rotation": 0
+          "texture": "#foliage"
         }
       }
     },
     {
       "name": "rear_upper_leaf_tip",
       "from": [
-        1.2580545844657376,
-        7.121957966432701,
-        14.902738470441118
+        1.25805,
+        7.12196,
+        14.90274
       ],
       "to": [
-        7.258054584465738,
-        7.121957966432701,
-        16.552738470441117
+        7.25805,
+        7.12196,
+        16.55274
       ],
-      "rotation": {
-        "origin": [
-          4.258054584465738,
-          7.121957966432701,
-          14.902738470441118
-        ],
-        "axis": "x",
-        "angle": 22.5
-      },
       "shade_direction_override": "up",
+      "rotation": {
+        "angle": 22.5,
+        "axis": "x",
+        "origin": [
+          4.25805,
+          7.12196,
+          14.90274
+        ]
+      },
       "faces": {
         "up": {
           "uv": [
@@ -708,8 +692,7 @@
             16,
             16
           ],
-          "texture": "#foliage",
-          "rotation": 0
+          "texture": "#foliage"
         },
         "down": {
           "uv": [
@@ -718,8 +701,7 @@
             16,
             8
           ],
-          "texture": "#foliage",
-          "rotation": 0
+          "texture": "#foliage"
         }
       }
     }

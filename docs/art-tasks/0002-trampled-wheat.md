@@ -2,7 +2,7 @@
 
 **English** | [Português](0002-trampled-wheat.pt-BR.md)
 
-Trampled wheat already has final **geometry** (see [docs/trampling.md](../trampling.md)). *Bent* and *flattened* crops reuse the standing stage sprites. Only the **crushed** stage needs its own art: the files below are generated placeholders (darkened copies of the standing sprites). Replace them in place.
+Trampled wheat already has final **geometry** (see [docs/trampling.md](../trampling.md)). *Bent* and *flattened* crops reuse the standing stage sprites. The **crushed** stage has its own native 16×16 art: broken stalks and torn leaves with real gaps, rather than darkened standing sprites.
 
 Base path: `common/src/main/resources/assets/farmerplus/textures/block/`
 
@@ -13,7 +13,7 @@ Base path: `common/src/main/resources/assets/farmerplus/textures/block/`
 | `wheat_stage2_crushed.png` … `wheat_stage7_crushed.png` | Side view of stalks that were stepped on: snapped culms with sharp kinks, split and frayed stems, bruised darker green (young) or dull dusty straw (mature), a few leaves torn |
 | `wheat_stage2_alternate_crushed.png` … `wheat_stage7_alternate_crushed.png` | A second, different layout of the same, for variation |
 
-Ages 0–1 are never crushed in game; their `_crushed` files can stay as they are.
+Ages 0–1 are never crushed in game; their existing `_crushed` paths are preserved and now contain separately drawn native 16×16 stubs too.
 
 ### How the sprite is used
 
@@ -28,6 +28,10 @@ The sprite is mapped onto planes that lie almost flat on the farmland, with the 
 
 - [x] 12 textures replaced (ages 2–7, base and alternate), same names.
 - [x] `python art/validate_wheat_art.py` passes.
+- [x] All 48 models and the blockstate were regenerated with `python art/trampled_wheat.py`; every crushed sprite is native 16×16.
+- [x] The updated offline model preview shows snapped upright stubs, fallen stalks and visible soil gaps.
+- [x] `./gradlew build` passes.
+- [x] NeoForge loaded the current resources without Farmer+ model/texture warnings.
 - [ ] In a survival world, sprint through mature wheat several times: the crushed path reads as broken stalks pressed into the soil, not as a texture glitch.
 
-See [the completed art report](../avocado-visuals.md) for source files, previews, final geometry and verification limits.
+See [the wheat art report](../wheat-visuals.md) for source files, previews, final geometry and verification limits.

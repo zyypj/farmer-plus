@@ -6,7 +6,7 @@ Farmer+ uses **Realistic Vanilla+**: recognizable Minecraft pixel art with more 
 
 ## Style rules
 
-- **16×16 textures:** every block and item texture uses **16×16 pixels**. Draw directly on the grid with deliberate pixel clusters and simplify small markings. Only the mod icon is larger (512×512). Entity and screen textures (`textures/entity/…`, `textures/gui/…`) keep the size of the vanilla layout they replace, such as 128×64 for a boat, because their models and screens read fixed regions.
+- **16×16 textures:** every block and item texture uses **16×16 pixels**. Draw directly on the grid with deliberate pixel clusters and simplify small markings. Only the mod icon is larger (512×512). Wheat has no size exception: stage sprites, all alternates, modelled-leaf atlases, sheaf materials and every crushed sprite (including the unused AGE 0–1 files) are authored natively at 16×16. Embedded Blockbench images and project UV resolution must also be 16×16. Entity and screen textures (`textures/entity/…`, `textures/gui/…`) keep the size of the vanilla layout they replace, such as 128×64 for a boat, because their models and screens read fixed regions.
 - **PNG, RGBA, 8-bit.** Transparent background for items. No semi-transparent pixels except glass-like materials.
 - **No anti-aliasing, continuous gradients, blur or photographic textures.** Use hard pixel clusters and deliberate stepped shading. Preview enlarged sprites with nearest-neighbour sampling.
 - **Limited palette.** Usually 5–8 shades per material, with natural green, straw, ochre and cream tones. Avoid noisy single-pixel dithering and excessive contrast between adjacent stalks.
@@ -27,7 +27,7 @@ Farmer+ uses **Realistic Vanilla+**: recognizable Minecraft pixel art with more 
 | Block textures | `common/src/main/resources/assets/farmerplus/textures/block/<id>[_part].png` | yes |
 | Vanilla wheat overrides | `common/src/main/resources/assets/minecraft/{blockstates,models,items,textures}/…` | yes |
 | Block models (exported) | `common/src/main/resources/assets/farmerplus/models/block/<id>.json` | yes |
-| Mod icon | `common/src/main/resources/assets/farmerplus/icon.png` (square, 128×128 or 512×512) | yes |
+| Mod icon | `common/src/main/resources/assets/farmerplus/icon.png` (512×512) | yes |
 | Blockbench projects | `art/blockbench/<id>.bbmodel` | no |
 | Layered/working files | `art/textures/…` | no |
 

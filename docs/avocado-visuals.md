@@ -38,7 +38,7 @@ One fruit per model leaves room for a gradual narrow neck, broad lower belly and
 
 All twelve AGE 2–7 base/alternate textures were drawn as distinct broken stalk arrangements. Short snapped stubs occupy the bottom rows. Kinked culms, torn leaf ends, partial ears and loose mature kernels use bruised greens transitioning to dusty, muted straw. No soil or mud is painted into the sprites. Native 16×16 pixel coverage is about 14–27%, keeping roughly 73–86% of each sprite open; field previews were used to avoid a solid carpet after the four model planes overlap.
 
-The existing 48 trampled models and blockstate geometry are unchanged. `art/trampled_wheat.py` now delegates AGE 2–7 crushed pixels to `art/crushed_pixels.py`, so regenerating the models preserves the final art. AGE 0–1 images are unchanged.
+The existing 48 trampled models and blockstate geometry are unchanged. `art/trampled_wheat.py` now delegates AGE 2–7 crushed pixels to `art/crushed_pixels.py`, so regenerating the models preserves the final art. The later [native wheat revision](wheat-visuals.md#native-16x16-revision) also redraws the unused AGE 0–1 crushed sprites at 16×16.
 
 ![The twelve crushed sprites](images/crushed-wheat-textures.png)
 

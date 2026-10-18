@@ -10,8 +10,7 @@
     },
     {
       "when": {
-        "facing": "north",
-        "bananas": "1|2|3|4|5|6|7|8"
+        "facing": "north"
       },
       "apply": {
         "model": "farmerplus:block/banana_bunch_ripe_hand_0_0"
@@ -91,8 +90,7 @@
     },
     {
       "when": {
-        "facing": "east",
-        "bananas": "1|2|3|4|5|6|7|8"
+        "facing": "east"
       },
       "apply": {
         "model": "farmerplus:block/banana_bunch_ripe_hand_0_0",
@@ -180,8 +178,7 @@
     },
     {
       "when": {
-        "facing": "south",
-        "bananas": "1|2|3|4|5|6|7|8"
+        "facing": "south"
       },
       "apply": {
         "model": "farmerplus:block/banana_bunch_ripe_hand_0_0",
@@ -269,8 +266,7 @@
     },
     {
       "when": {
-        "facing": "west",
-        "bananas": "1|2|3|4|5|6|7|8"
+        "facing": "west"
       },
       "apply": {
         "model": "farmerplus:block/banana_bunch_ripe_hand_0_0",

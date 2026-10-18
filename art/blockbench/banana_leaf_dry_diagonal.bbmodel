@@ -1,0 +1,253 @@
+{
+  "meta": {
+    "format_version": "5.0",
+    "model_format": "java_block",
+    "box_uv": false
+  },
+  "name": "banana_leaf_dry_diagonal",
+  "parent": "",
+  "java_block_version": "26.3",
+  "ambientocclusion": false,
+  "front_gui_light": false,
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "variable_placeholders": "",
+  "multi_file_ruleset": "",
+  "variable_placeholder_buttons": [],
+  "unhandled_root_fields": {},
+  "ai_used": true,
+  "ai_agents": "FarmerPlusArt",
+  "resolution": {
+    "width": 16,
+    "height": 16
+  },
+  "elements": [
+    {
+      "name": "dry_diagonal_petiole",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        -8.6,
+        7.6,
+        17
+      ],
+      "to": [
+        -7.4,
+        8.6,
+        24
+      ],
+      "autouv": 0,
+      "color": 6,
+      "rotation": [
+        0,
+        -45,
+        0
+      ],
+      "origin": [
+        -8,
+        8,
+        24
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "2f534e3c-6e75-44ad-602e-2a51b02030a3"
+    },
+    {
+      "name": "dry_diagonal_hanging_blade",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        -9.40381,
+        -14,
+        19.40381
+      ],
+      "to": [
+        2.59619,
+        8,
+        19.40381
+      ],
+      "autouv": 0,
+      "color": 0,
+      "rotation": [
+        -8,
+        -45,
+        0
+      ],
+      "origin": [
+        -3.40381,
+        8,
+        19.40381
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        }
+      },
+      "type": "cube",
+      "uuid": "353cdfe5-647c-4603-1dc0-3784cf85ad94"
+    }
+  ],
+  "groups": [],
+  "outliner": [
+    "2f534e3c-6e75-44ad-602e-2a51b02030a3",
+    "353cdfe5-647c-4603-1dc0-3784cf85ad94"
+  ],
+  "textures": [
+    {
+      "name": "banana_leaf_dry.png",
+      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/banana_leaf_dry.png",
+      "folder": "block",
+      "namespace": "farmerplus",
+      "id": "dry",
+      "group": "",
+      "scope": 0,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
+      "particle": true,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": true,
+      "uuid": "43b94f66-4dfc-98ae-7b35-6a70e1760c06",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA6UlEQVR4nGOcV+n+n4GBgUFFSx5EMchIi4HpJ09fobDvXHsIZj96/g1MP336C0yzYNNICmCEMQ4tTgO7BGYTCDi4moLpRYsOMshJcoHZSe074XrALpgH9QK6E2EaYOD4mQ8MliYCDA0JtmD1DQsOgw1igZkIMgimGRsAaUbWCANMMAbIIJCtIOzkrAkPVHQAcwGGATBDcGkEeQGbC1iQOegBCYsZGEAPQAwX2MXOYty39zo8INHDABbgOA3A5kSSXECMIUQZcAgaFoRsx2mAXewsylyAz0aiDYABUOYiJUxQwL19NRhhgQ4ABvZnIhnYvh4AAAAASUVORK5CYII="
+    }
+  ]
+}

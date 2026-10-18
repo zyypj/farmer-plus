@@ -11,7 +11,7 @@
 - Avocado wood set (logs, wood, stripped variants, planks, stairs, slab, fence, fence gate, door, trapdoor, pressure plate, button, sign, hanging sign, shelf, boat, boat with chest) mirroring every oak tag, recipe, fuel value and flammability.
 - Strawberries: a perennial crop planted only on farmland, with seedling, leafy, flowering, green and ripe stages, right-click harvesting and runners that spread to neighbouring farmland.
 - Strawberry trampling: bent, flattened and crushed plants with fallen berries; damaged plants yield fewer strawberries.
-- Strawberry jam: craft a glass bottle with 1–3 strawberries, eat it one portion at a time, place it as decoration facing you and refill it with strawberries.
+- Strawberry jam: craft a glass bottle with 1–3 strawberries, eat it one portion at a time, place it as decoration facing you, eat from the placed jar with a right-click and refill it with strawberries.
 - Wild strawberries generating in plains, meadows and forests (`farmerplus:has_wild_strawberries` biome tag).
 - Crop trampling: walking bends crops, sprinting or riding flattens them and repeated passes crush them into paths, with modelled bent, snapped and flattened stalks.
 - Jumping or falling on crops flattens them instead of turning the farmland into dirt.

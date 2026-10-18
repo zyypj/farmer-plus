@@ -43,7 +43,7 @@ Plantas pisadas param de crescer e de se espalhar até se recuperarem (entortada
 
 Junte um **frasco de vidro** com **1, 2 ou 3 morangos** para ter um pote com 1, 2 ou 3 porções — o pote enche visivelmente.
 
-- **Comer:** botão direito no ar, ou agachado + botão direito num bloco. Cada mordida come uma porção (3 de fome, 0,5 de saturação); a última porção devolve o frasco vazio.
+- **Comer:** botão direito num pote colocado come uma porção direto dele, como um bolo (só quando você está com fome). Na mão, botão direito no ar ou agachado + botão direito num bloco. Cada mordida come uma porção (3 de fome, 0,5 de saturação); a última porção devolve o frasco vazio.
 - **Colocar:** botão direito num bloco coloca o pote como decoração; o rótulo vira para você. Quebrar devolve o pote com as mesmas porções.
 - **Completar:** botão direito no pote colocado segurando um morango adiciona uma porção, até 3.
 - Potes empilham até 16 quando têm o mesmo número de porções.

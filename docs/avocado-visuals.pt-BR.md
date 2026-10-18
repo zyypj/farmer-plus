@@ -38,7 +38,7 @@ Um fruto por modelo permite modelar gradualmente o pescoço fino, a barriga larg
 
 As doze texturas AGE 2–7, base e alternate, foram desenhadas com arranjos diferentes de caules partidos. Tocos curtos quebrados ocupam as linhas inferiores. Caules dobrados, pontas de folhas rasgadas, espigas incompletas e grãos maduros soltos passam de verdes machucados para palha opaca e empoeirada. Os sprites não contêm terra nem lama. A cobertura dos pixels nativos em 16×16 fica em cerca de 14–27%, deixando aproximadamente 73–86% de cada sprite aberto; as prévias do campo ajudaram a evitar um tapete sólido quando os quatro planos do modelo se sobrepõem.
 
-Os 48 modelos de trigo pisoteado e a geometria do blockstate continuam iguais. `art/trampled_wheat.py` agora delega os pixels esmagados AGE 2–7 a `art/crushed_pixels.py`, portanto regenerar os modelos preserva a arte final. As imagens AGE 0–1 não foram alteradas.
+Os 48 modelos de trigo pisoteado e a geometria do blockstate continuam iguais. `art/trampled_wheat.py` agora delega os pixels esmagados AGE 2–7 a `art/crushed_pixels.py`, portanto regenerar os modelos preserva a arte final. A [revisão nativa do trigo](wheat-visuals.pt-BR.md#revisão-nativa-em-16x16) posterior também redesenha os sprites esmagados AGE 0–1 sem uso em 16×16.
 
 ![Os doze sprites esmagados](images/crushed-wheat-textures.png)
 

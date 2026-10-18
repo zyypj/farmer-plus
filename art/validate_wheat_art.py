@@ -83,7 +83,7 @@ VANILLA_LAYOUT_SIZES = {('entity', 'boat'): (128, 64), ('entity', 'chest_boat'):
 
 for path in (RES / 'assets').rglob('*.png'):
     image = Image.open(path)
-    expected_size = (512, 512) if path.name == 'icon.png' else (32, 32) if path.parent.name == 'block' and path.stem.startswith('wheat') and not (path.stem.endswith('_crushed') and int(path.stem[11]) >= 2) else VANILLA_LAYOUT_SIZES.get(path.relative_to(RES / 'assets').parts[2:4], (16, 16))
+    expected_size = (512, 512) if path == RES / 'assets/farmerplus/icon.png' else VANILLA_LAYOUT_SIZES.get(path.relative_to(RES / 'assets').parts[2:4], (16, 16))
     check(image.size == expected_size, f'{path.name}: dimensions {expected_size}')
     check(image.mode == 'RGBA', f'{path.name}: RGBA')
     if not path.stem.endswith('_glass'):
@@ -111,11 +111,11 @@ for age in range(8):
             height_models.append(height_model)
             native = load(ROOT / f'art/blockbench/{name}.bbmodel')
             check(len(native['elements']) == len(height_model['elements']) == 16, f'{name}: height variation preserves element count')
-            check(native['resolution'] == {'width': 32, 'height': 32}, f'{name}: native 32x32 project resolution')
+            check(native['resolution'] == {'width': 16, 'height': 16}, f'{name}: native 16x16 project resolution')
             for texture in native['textures']:
                 pixels = Image.open(BytesIO(base64.b64decode(texture['source'].split(',')[1]))).convert('RGBA')
                 path = RES / f"assets/farmerplus/textures/block/{texture['name']}"
-                check(pixels.tobytes() == Image.open(path).convert('RGBA').tobytes(), f'{name}: embedded {texture["name"]} matches final pixels')
+                check(pixels.size == (16, 16) and pixels.tobytes() == Image.open(path).convert('RGBA').tobytes(), f'{name}: embedded {texture["name"]} matches final pixels')
         upper_y = [m['elements'][0]['to'][1] for m in height_models]
         check(len(set(upper_y)) == 4 and max(upper_y) - min(upper_y) >= 6, f'Age {age}: four visibly distinct crop heights')
         check(all(e['from'][1] == -1 for m in height_models for e in m['elements'][:4]), f'Age {age}: every height variant stays grounded at farmland')
@@ -144,17 +144,20 @@ for age in range(8):
             root, end = edge_point(base, direction < 0), edge_point(tip, direction > 0)
             outward = (end[0] - root[0]) * (root[0] - 8) + (end[2] - root[2]) * (root[2] - 8)
             check(outward > 0, f'Age {age}: {prefix} opens away from the crop centre')
-    check(source['resolution'] == {'width': 32, 'height': 32}, f'Age {age}: native 32x32 project resolution')
+    check(source['resolution'] == {'width': 16, 'height': 16}, f'Age {age}: native 16x16 project resolution')
     check(all(t.get('source', '').startswith('data:image/png;base64,') for t in source['textures']), f'Age {age}: embedded portable textures')
     signatures = []
     for suffix in ('', '_alternate', '_variant2', '_variant3'):
         tex = Image.open(RES / f'assets/farmerplus/textures/block/wheat_stage{age}{suffix}.png').convert('RGBA')
         signatures.append(hashlib.sha256(tex.tobytes()).hexdigest())
     check(len(set(signatures)) == 4, f'Age {age}: four distinct original sprites')
+    vanilla_pixels = Image.open(RES / f'assets/minecraft/textures/block/wheat_stage{age}.png').convert('RGBA')
+    base_pixels = Image.open(RES / f'assets/farmerplus/textures/block/wheat_stage{age}.png').convert('RGBA')
+    check(vanilla_pixels.tobytes() == base_pixels.tobytes(), f'Age {age}: vanilla override matches native Farmer+ pixels')
     for texture in source['textures']:
         embedded = Image.open(BytesIO(base64.b64decode(texture['source'].split(',')[1]))).convert('RGBA')
         path = RES / f"assets/farmerplus/textures/block/{texture['name']}"
-        check(embedded.size == (32, 32) and embedded.tobytes() == Image.open(path).convert('RGBA').tobytes(), f'Age {age}: embedded {texture["name"]} matches final pixels')
+        check(embedded.size == (16, 16) and embedded.tobytes() == Image.open(path).convert('RGBA').tobytes(), f'Age {age}: embedded {texture["name"]} matches final pixels')
 
 clearance = load(ROOT / 'build/art/validation/leaf-clearance.json')
 check(not clearance['uvErrors'], 'Leaf UVs agree across both surfaces and connected segments')
@@ -173,11 +176,19 @@ check(binding['allCordPartsConnected'] and binding['bandClosed'] and binding['wa
 check(len(binding['apertures']) == 2 and all(a['fourConnectedSegments'] and a['openingIsEmpty'] for a in binding['apertures']), 'Both bow loops are connected and have real open centres')
 for path, digest in binding['assetHashes'].items():
     check(hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == digest, f'Binding inspection uses current {path}')
-check(sheaf['resolution'] == {'width': 32, 'height': 32}, 'Sheaf uses 32x32 texture resolution')
+check(sheaf['resolution'] == {'width': 16, 'height': 16}, 'Sheaf uses 16x16 texture resolution')
 for texture in sheaf['textures']:
     embedded = Image.open(BytesIO(base64.b64decode(texture['source'].split(',')[1]))).convert('RGBA')
     path = RES / f"assets/farmerplus/textures/block/{texture['name']}"
-    check(embedded.size == (32, 32) and embedded.tobytes() == Image.open(path).convert('RGBA').tobytes(), f'Sheaf: embedded {texture["name"]} matches final pixels')
+    check(embedded.size == (16, 16) and embedded.tobytes() == Image.open(path).convert('RGBA').tobytes(), f'Sheaf: embedded {texture["name"]} matches final pixels')
+
+for path in (ROOT / 'art/blockbench').glob('wheat*.bbmodel'):
+    native = load(path)
+    check(native['resolution'] == {'width': 16, 'height': 16}, f'{path.name}: native wheat UV grid is 16x16')
+    for element in native['elements']:
+        for face in element.get('faces', {}).values():
+            if face.get('texture') is not None:
+                check(all(0 <= coordinate <= 16 for coordinate in face['uv']), f'{path.name}: native face UV fits the 16x16 atlas')
 
 for loader in ('fabric', 'neoforge', 'forge'):
     jars = [p for p in (ROOT / loader / 'build/libs').glob('*.jar') if 'sources' not in p.name]

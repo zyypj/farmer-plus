@@ -1,5 +1,5 @@
 from pathlib import Path
-from PIL import Image, ImageEnhance
+from crushed_pixels import crushed
 import json
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -146,19 +146,7 @@ def variant(base, model_data):
 
 def crushed_texture(source, target):
     age = int(source.stem.removeprefix('wheat_stage').split('_')[0])
-    if age >= 2:
-        from crushed_pixels import crushed
-        crushed(age, 'alternate' in source.stem).save(target)
-        return
-    image = Image.open(source).convert('RGBA')
-    alpha = image.getchannel('A')
-    rgb = ImageEnhance.Color(image.convert('RGB')).enhance(0.55)
-    rgb = ImageEnhance.Brightness(rgb).enhance(0.72)
-    tint = Image.new('RGB', rgb.size, (92, 74, 46))
-    rgb = Image.blend(rgb, tint, 0.18)
-    result = rgb.convert('RGBA')
-    result.putalpha(alpha.point(lambda value: 255 if value >= 128 else 0))
-    result.save(target)
+    crushed(age, 'alternate' in source.stem).save(target)
 
 
 def save_json(path, value):

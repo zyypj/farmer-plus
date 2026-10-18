@@ -2,7 +2,7 @@
 
 [English](0001-wheat-update.md) | **Português**
 
-Os arquivos abaixo hoje têm **arte provisória**. Substitua cada um no mesmo lugar, mantendo exatamente o caminho e o nome.
+Os arquivos abaixo têm pixel art final original. Todos os materiais de bloco do trigo e suas substituições vanilla agora usam desenhos nativos em 16×16, acompanhando os itens; os caminhos e nomes existentes foram preservados.
 
 Caminho base: `common/src/main/resources/assets/farmerplus/`
 
@@ -47,6 +47,9 @@ A caixa de colisão/contorno atual é 12×16×12 centralizada (`Block.column(12.
 
 ## Pronto quando
 
-- [ ] Todos os arquivos acima substituídos, com os mesmos nomes.
+- [x] Todos os arquivos acima têm arte final, com os mesmos nomes; o ícone existente de 512×512 foi preservado.
+- [x] As 70 texturas de bloco do trigo (Farmer+ e substituições vanilla) são 16×16 RGBA com alpha binário; os itens continuam em 16×16 nativos.
+- [x] Quinze projetos Blockbench têm texturas embutidas e grades UV 16×16; os limites de elementos, o espaço entre folhas e a amarração sólida passam nas verificações.
+- [x] `./gradlew build` e `python art/validate_wheat_art.py` passam.
 - [ ] `./gradlew :neoforge:runClient` mostra os itens certinhos na aba criativa Farmer+, na mão e no chão; o feixe fica bonito colocado no mundo.
-- [ ] Nenhum aviso de modelo/textura do `farmerplus` no log.
+- [x] Nenhum aviso de modelo/textura do `farmerplus` no log.

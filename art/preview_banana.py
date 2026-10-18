@@ -45,14 +45,19 @@ def main():
     sheet(cells, 2, 'banana-generated-plants.png')
     directions = [('north', 0, -1), ('north_east', 1, -1), ('east', 1, 0), ('south_east', 1, 1), ('south', 0, 1), ('south_west', -1, 1), ('west', -1, 0), ('north_west', -1, -1)]
     cells = []
-    for age in ('young', 'mature'):
+    for age in ('young', 'mature', 'dry'):
         for name, delta_x, delta_z in directions:
             blocks = {(0, 0, 0): ('farmerplus:banana_stem', {'segment': 'crown', 'fruited': 'false'})}
             diagonal = delta_x != 0 and delta_z != 0
-            for step in range(2 if diagonal else 3):
+            for step in range(1 if age == 'dry' else 2 if diagonal else 3):
                 blocks[(delta_x * (step + 1), 0, delta_z * (step + 1))] = ('farmerplus:banana_leaf', {'age': age, 'direction': name, 'segment': str(2 if diagonal and step else step)})
             cells.append((age + ' ' + name, render(blocks, 60, 200, 0.4)))
     sheet(cells, 4, 'banana-leaf-directions.png')
+    cells = []
+    for count in range(8, 0, -1):
+        blocks = {(0, 0, 0): ('farmerplus:harvested_banana_bunch', {'bananas': str(count), 'facing': 'north'})}
+        cells.append((str(count) + ' pieces remaining', render(blocks, 115, 160, 0.38)))
+    sheet(cells, 4, 'banana-harvested-stages.png')
 
 
 if __name__ == '__main__':

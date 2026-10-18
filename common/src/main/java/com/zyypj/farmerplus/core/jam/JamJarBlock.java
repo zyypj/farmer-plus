@@ -12,7 +12,9 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.component.BlockItemStateProperties;
+import net.minecraft.world.item.component.Consumable;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -90,6 +92,33 @@ public class JamJarBlock extends Block {
             serverLevel.playSound(null, pos, SoundEvents.HONEY_BLOCK_PLACE, SoundSource.BLOCKS, 0.8F, 1.2F);
             serverLevel.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(player, filled));
             itemStack.consume(1, player);
+        }
+        return InteractionResult.SUCCESS;
+    }
+
+    @Override
+    protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
+        ItemStack portion = withPortions(new ItemStack(asItem()), state.getValue(PORTIONS));
+        Consumable consumable = portion.get(DataComponents.CONSUMABLE);
+        if (consumable == null || !consumable.canConsume(player, portion)) {
+            return InteractionResult.PASS;
+        }
+
+        if (level instanceof ServerLevel serverLevel) {
+            consumable.onConsume(serverLevel, player, portion);
+            int portions = state.getValue(PORTIONS);
+            if (portions > 1) {
+                BlockState eaten = state.setValue(PORTIONS, portions - 1);
+                serverLevel.setBlock(pos, eaten, Block.UPDATE_ALL);
+                serverLevel.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(player, eaten));
+            } else {
+                serverLevel.removeBlock(pos, false);
+                serverLevel.gameEvent(GameEvent.BLOCK_DESTROY, pos, GameEvent.Context.of(player, state));
+                ItemStack bottle = new ItemStack(Items.GLASS_BOTTLE);
+                if (!player.getInventory().add(bottle)) {
+                    Block.popResource(serverLevel, pos, bottle);
+                }
+            }
         }
         return InteractionResult.SUCCESS;
     }

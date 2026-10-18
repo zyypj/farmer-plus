@@ -1,7 +1,7 @@
 {
   "texture_size": [
-    32,
-    32
+    16,
+    16
   ],
   "textures": {
     "particle": "farmerplus:block/wheat_sheaf_side",

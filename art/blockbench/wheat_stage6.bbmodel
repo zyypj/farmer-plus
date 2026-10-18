@@ -21,8 +21,8 @@
   "ai_used": true,
   "ai_agents": "codex-mcp-client",
   "resolution": {
-    "width": 32,
-    "height": 32
+    "width": 16,
+    "height": 16
   },
   "elements": [
     {
@@ -47,7 +47,7 @@
         4
       ],
       "autouv": 0,
-      "color": 4,
+      "color": 8,
       "rotation": [
         0,
         -22.5,
@@ -63,8 +63,8 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
           "texture": 0
         },
@@ -79,10 +79,10 @@
         },
         "south": {
           "uv": [
-            32,
+            16,
             0,
             0,
-            32
+            16
           ],
           "texture": 0
         },
@@ -115,7 +115,7 @@
         }
       },
       "type": "cube",
-      "uuid": "e38ac3d7-0c78-8e04-169a-9bd2d3bee3a0"
+      "uuid": "cd1c9115-f023-9476-657a-705e7ff5cfe7"
     },
     {
       "name": "back_stalks",
@@ -139,7 +139,7 @@
         11.5
       ],
       "autouv": 0,
-      "color": 3,
+      "color": 6,
       "rotation": [
         0,
         22.5,
@@ -153,10 +153,10 @@
       "faces": {
         "north": {
           "uv": [
-            32,
+            16,
             0,
             0,
-            32
+            16
           ],
           "texture": 1
         },
@@ -173,8 +173,8 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
           "texture": 1
         },
@@ -207,7 +207,7 @@
         }
       },
       "type": "cube",
-      "uuid": "8e6df2e1-ef01-72a2-e6c3-f9c6c2492b52"
+      "uuid": "e0f66cb3-15a9-78a4-69a1-76d27864ed8b"
     },
     {
       "name": "left_stalks",
@@ -231,7 +231,7 @@
         16
       ],
       "autouv": 0,
-      "color": 8,
+      "color": 6,
       "rotation": [
         0,
         45,
@@ -254,10 +254,10 @@
         },
         "east": {
           "uv": [
-            32,
+            16,
             0,
             0,
-            32
+            16
           ],
           "texture": 1
         },
@@ -274,8 +274,8 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
           "texture": 1
         },
@@ -299,7 +299,7 @@
         }
       },
       "type": "cube",
-      "uuid": "31da2187-1464-c757-3bd9-4a6700d8f306"
+      "uuid": "c9146b3a-442a-5bda-9b54-5b3aeddcd4d5"
     },
     {
       "name": "right_stalks",
@@ -348,8 +348,8 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
           "texture": 0
         },
@@ -364,10 +364,10 @@
         },
         "west": {
           "uv": [
-            32,
+            16,
             0,
             0,
-            32
+            16
           ],
           "texture": 0
         },
@@ -391,7 +391,7 @@
         }
       },
       "type": "cube",
-      "uuid": "580b6735-67e4-68de-613b-6c3e4ab69863"
+      "uuid": "ccc41e98-66e9-2a21-b361-05b409f37621"
     },
     {
       "name": "front_leaf_base",
@@ -415,7 +415,7 @@
         6.36924
       ],
       "autouv": 0,
-      "color": 9,
+      "color": 2,
       "rotation": [
         22.5,
         0,
@@ -466,8 +466,8 @@
         "up": {
           "uv": [
             0,
+            8,
             16,
-            32,
             0
           ],
           "texture": 4
@@ -476,14 +476,14 @@
           "uv": [
             0,
             0,
-            32,
-            16
+            16,
+            8
           ],
           "texture": 4
         }
       },
       "type": "cube",
-      "uuid": "29bdf89e-571f-f162-bd1c-4c8aa63d09a0"
+      "uuid": "7bb7eb0f-dce1-7fa4-19ee-6ede7fff7ec8"
     },
     {
       "name": "front_leaf_tip",
@@ -507,7 +507,7 @@
         3.82857
       ],
       "autouv": 0,
-      "color": 3,
+      "color": 8,
       "rotation": [
         -22.5,
         0,
@@ -558,24 +558,24 @@
         "up": {
           "uv": [
             0,
-            32,
-            32,
-            16
+            16,
+            16,
+            8
           ],
           "texture": 4
         },
         "down": {
           "uv": [
             0,
+            8,
             16,
-            32,
-            32
+            16
           ],
           "texture": 4
         }
       },
       "type": "cube",
-      "uuid": "b7bc106f-3943-a41f-69e4-73e928250bbc"
+      "uuid": "17323951-ce74-b22b-7380-011032910149"
     },
     {
       "name": "rear_leaf_base",
@@ -599,7 +599,7 @@
         12.16882
       ],
       "autouv": 0,
-      "color": 6,
+      "color": 5,
       "rotation": [
         -22.5,
         0,
@@ -651,23 +651,23 @@
           "uv": [
             0,
             0,
-            32,
-            16
+            16,
+            8
           ],
           "texture": 4
         },
         "down": {
           "uv": [
             0,
+            8,
             16,
-            32,
             0
           ],
           "texture": 4
         }
       },
       "type": "cube",
-      "uuid": "e50bcf86-7a14-5983-172b-aa49689c3d95"
+      "uuid": "19b77122-050a-ce95-f958-0cd16fe8b059"
     },
     {
       "name": "rear_leaf_tip",
@@ -691,7 +691,7 @@
         14.94046
       ],
       "autouv": 0,
-      "color": 6,
+      "color": 4,
       "rotation": [
         22.5,
         0,
@@ -742,24 +742,24 @@
         "up": {
           "uv": [
             0,
+            8,
             16,
-            32,
-            32
+            16
           ],
           "texture": 4
         },
         "down": {
           "uv": [
             0,
-            32,
-            32,
-            16
+            16,
+            16,
+            8
           ],
           "texture": 4
         }
       },
       "type": "cube",
-      "uuid": "1410d93b-d8c3-a235-36d2-dcda22893ede"
+      "uuid": "dd84504f-0e60-1d54-49bc-f21880b621d5"
     },
     {
       "name": "left_leaf_base",
@@ -783,7 +783,7 @@
         12.41421
       ],
       "autouv": 0,
-      "color": 7,
+      "color": 8,
       "rotation": [
         0,
         0,
@@ -835,8 +835,8 @@
           "uv": [
             0,
             0,
-            32,
-            16
+            16,
+            8
           ],
           "texture": 4,
           "rotation": 90
@@ -844,8 +844,8 @@
         "down": {
           "uv": [
             0,
+            8,
             16,
-            32,
             0
           ],
           "texture": 4,
@@ -853,7 +853,7 @@
         }
       },
       "type": "cube",
-      "uuid": "26be936b-270b-c07b-637c-e9435f992ed2"
+      "uuid": "bbaf68f3-66a6-6afa-f555-989a95a6dedd"
     },
     {
       "name": "left_leaf_tip",
@@ -877,7 +877,7 @@
         12.41421
       ],
       "autouv": 0,
-      "color": 1,
+      "color": 0,
       "rotation": [
         0,
         0,
@@ -928,9 +928,9 @@
         "up": {
           "uv": [
             0,
+            8,
             16,
-            32,
-            32
+            16
           ],
           "texture": 4,
           "rotation": 90
@@ -938,16 +938,16 @@
         "down": {
           "uv": [
             0,
-            32,
-            32,
-            16
+            16,
+            16,
+            8
           ],
           "texture": 4,
           "rotation": 270
         }
       },
       "type": "cube",
-      "uuid": "2c720d85-277b-92fa-4ab1-ae76156d98ce"
+      "uuid": "85d54da3-0da6-85f8-2a1a-9d6c94278fcd"
     },
     {
       "name": "right_leaf_base",
@@ -1022,8 +1022,8 @@
         "up": {
           "uv": [
             0,
+            8,
             16,
-            32,
             0
           ],
           "texture": 4,
@@ -1033,15 +1033,15 @@
           "uv": [
             0,
             0,
-            32,
-            16
+            16,
+            8
           ],
           "texture": 4,
           "rotation": 270
         }
       },
       "type": "cube",
-      "uuid": "abed0831-8c3d-e9c9-5c9f-1179851fc321"
+      "uuid": "b1f2ee42-9a82-dd9d-27bc-647eb2a759bf"
     },
     {
       "name": "right_leaf_tip",
@@ -1065,7 +1065,7 @@
         15.24264
       ],
       "autouv": 0,
-      "color": 2,
+      "color": 3,
       "rotation": [
         0,
         0,
@@ -1116,9 +1116,9 @@
         "up": {
           "uv": [
             0,
-            32,
-            32,
-            16
+            16,
+            16,
+            8
           ],
           "texture": 4,
           "rotation": 90
@@ -1126,16 +1126,16 @@
         "down": {
           "uv": [
             0,
+            8,
             16,
-            32,
-            32
+            16
           ],
           "texture": 4,
           "rotation": 270
         }
       },
       "type": "cube",
-      "uuid": "0cf653eb-2c49-24cc-bf59-a83aa7939ac7"
+      "uuid": "f8f843fd-7923-046d-9058-8470e0ce186c"
     },
     {
       "name": "front_lower_leaf_base",
@@ -1159,7 +1159,7 @@
         2.15972
       ],
       "autouv": 0,
-      "color": 5,
+      "color": 6,
       "rotation": [
         22.5,
         0,
@@ -1210,8 +1210,8 @@
         "up": {
           "uv": [
             0,
+            8,
             16,
-            32,
             0
           ],
           "texture": 4
@@ -1220,14 +1220,14 @@
           "uv": [
             0,
             0,
-            32,
-            16
+            16,
+            8
           ],
           "texture": 4
         }
       },
       "type": "cube",
-      "uuid": "bfb33fb7-2160-995a-ce37-eddb4334430d"
+      "uuid": "5e6a9035-f221-e7c5-1e2d-63ec1d3a651e"
     },
     {
       "name": "front_lower_leaf_tip",
@@ -1251,7 +1251,7 @@
         0.68152
       ],
       "autouv": 0,
-      "color": 9,
+      "color": 3,
       "rotation": [
         -22.5,
         0,
@@ -1302,24 +1302,24 @@
         "up": {
           "uv": [
             0,
-            32,
-            32,
-            16
+            16,
+            16,
+            8
           ],
           "texture": 4
         },
         "down": {
           "uv": [
             0,
+            8,
             16,
-            32,
-            32
+            16
           ],
           "texture": 4
         }
       },
       "type": "cube",
-      "uuid": "9d276363-c64d-e472-2834-ac19bbf77074"
+      "uuid": "8ff533d2-40c6-c219-2967-c3e70ec8a1ec"
     },
     {
       "name": "rear_upper_leaf_base",
@@ -1343,7 +1343,7 @@
         15.02834
       ],
       "autouv": 0,
-      "color": 7,
+      "color": 1,
       "rotation": [
         -22.5,
         0,
@@ -1395,23 +1395,23 @@
           "uv": [
             0,
             0,
-            32,
-            16
+            16,
+            8
           ],
           "texture": 4
         },
         "down": {
           "uv": [
             0,
+            8,
             16,
-            32,
             0
           ],
           "texture": 4
         }
       },
       "type": "cube",
-      "uuid": "756d6e1c-93d1-3554-67ff-130479362ed6"
+      "uuid": "5feff46a-ca7c-905e-b99a-92dedacaf290"
     },
     {
       "name": "rear_upper_leaf_tip",
@@ -1435,7 +1435,7 @@
         16.55274
       ],
       "autouv": 0,
-      "color": 1,
+      "color": 9,
       "rotation": [
         22.5,
         0,
@@ -1486,44 +1486,44 @@
         "up": {
           "uv": [
             0,
+            8,
             16,
-            32,
-            32
+            16
           ],
           "texture": 4
         },
         "down": {
           "uv": [
             0,
-            32,
-            32,
-            16
+            16,
+            16,
+            8
           ],
           "texture": 4
         }
       },
       "type": "cube",
-      "uuid": "6a25bcc8-cd34-ad42-9a88-d0a42cfb1126"
+      "uuid": "2b47c21d-98b0-b1c1-e174-cc2b4ed70aa9"
     }
   ],
   "groups": [],
   "outliner": [
-    "e38ac3d7-0c78-8e04-169a-9bd2d3bee3a0",
-    "8e6df2e1-ef01-72a2-e6c3-f9c6c2492b52",
-    "31da2187-1464-c757-3bd9-4a6700d8f306",
-    "580b6735-67e4-68de-613b-6c3e4ab69863",
-    "29bdf89e-571f-f162-bd1c-4c8aa63d09a0",
-    "b7bc106f-3943-a41f-69e4-73e928250bbc",
-    "e50bcf86-7a14-5983-172b-aa49689c3d95",
-    "1410d93b-d8c3-a235-36d2-dcda22893ede",
-    "26be936b-270b-c07b-637c-e9435f992ed2",
-    "2c720d85-277b-92fa-4ab1-ae76156d98ce",
-    "abed0831-8c3d-e9c9-5c9f-1179851fc321",
-    "0cf653eb-2c49-24cc-bf59-a83aa7939ac7",
-    "bfb33fb7-2160-995a-ce37-eddb4334430d",
-    "9d276363-c64d-e472-2834-ac19bbf77074",
-    "756d6e1c-93d1-3554-67ff-130479362ed6",
-    "6a25bcc8-cd34-ad42-9a88-d0a42cfb1126"
+    "cd1c9115-f023-9476-657a-705e7ff5cfe7",
+    "e0f66cb3-15a9-78a4-69a1-76d27864ed8b",
+    "c9146b3a-442a-5bda-9b54-5b3aeddcd4d5",
+    "ccc41e98-66e9-2a21-b361-05b409f37621",
+    "7bb7eb0f-dce1-7fa4-19ee-6ede7fff7ec8",
+    "17323951-ce74-b22b-7380-011032910149",
+    "19b77122-050a-ce95-f958-0cd16fe8b059",
+    "dd84504f-0e60-1d54-49bc-f21880b621d5",
+    "bbaf68f3-66a6-6afa-f555-989a95a6dedd",
+    "85d54da3-0da6-85f8-2a1a-9d6c94278fcd",
+    "b1f2ee42-9a82-dd9d-27bc-647eb2a759bf",
+    "f8f843fd-7923-046d-9058-8470e0ce186c",
+    "5e6a9035-f221-e7c5-1e2d-63ec1d3a651e",
+    "8ff533d2-40c6-c219-2967-c3e70ec8a1ec",
+    "5feff46a-ca7c-905e-b99a-92dedacaf290",
+    "2b47c21d-98b0-b1c1-e174-cc2b4ed70aa9"
   ],
   "textures": [
     {
@@ -1534,10 +1534,10 @@
       "id": "crop",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": true,
       "use_as_default": false,
       "layers_enabled": false,
@@ -1556,8 +1556,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "86d06f5a-1991-ee00-e7a1-2406c35f73a5",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACRklEQVR4nO1XTStFURTd9/QYSpKPRIoJA8nMD/CRUiYGBm8iGZgaKJPXnZiZGkgmBgYm6pV8ZEZPBnpJTCiRfCT5AXK1rjbHsc+5517KxKrXufedvddeZ+1z7nuX6B8ZUd6YjOgXoOivBZUzJEo5P3Kk7Jl8fzQXIRbjT3i+taB7aDFISsb87d0lNTa0EkZJGObSIodkJk4ChBYXRqLm1jriEbAJSwJEK99kdml4aj24vnwgFMfIc4cHh/E1hPm0AjHIi1vgmwyhPL+1e0osxiZMgtkuBRVIwshBECIls1uIn5nfi9uBwpIwiUPaR8q2MokAK0MiRi4uCXNZz+1iDsUEbF9nW+0Xch26zSZpfc9sPOdyUAc48Pk4hjZys3e6S5JA/XSYMJ1G3ZiEjyIEnF48ijbyxkGcvl90gT4c5kYNfMgZvDom0WN9OUyewJzga7OAlGy2wSXQ5pLSA5gw6Sy79oDrWSCdFpWmACPpqNny9WPMm1GlLfBcWeGq7cyXHFJZCrjgk+90eGVpNLJ9Xwj7vH7vbRzSQ0qZiec3zz41nMVdHKZDSr9pb2mxJuYn1oLB3i5yucDFw8KOc5PqyOk3vf3zQWl7OqKQojQkPmBxWIhVgITZcMD7fx4ctNlvm8uZX2yWjr/cdzTXfLbm9YWywuRlqG9Km6o/rleWx+LVF/fL8X2xdJJZAPaPhFxSYn589b1nIUVw4+z6KfUqM78Z5bk4Ec0VtgIUr6BXa7zunonzq6v0AshAR1NVmnAv/Nq7YVa8Aa2887VFqE3pAAAAAElFTkSuQmCC"
+      "uuid": "1d5fb72a-5f98-cdda-7a62-5d0ef648fea9",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAxklEQVR4nGNgwAGu7K/8z0AEYMKlWEJanSgDmXApPnN8F1EGMr25teD/i6c3MUx+8OwNXBE+A5lE1BIYQYwZ7W7/YRpAkgpSIlgNBGGQpTADmbBpALkIpAHZNmT5NWuXMcjIySMMeIGmQcexnRGk4cmjhxgGohvGhE0DDHjEL2NEl0e3jAWbBhB4xsmGEbAw+R0Lo/7DLGNiIBKgGwgzjImBQsBEEwN2LIwiKh9gNQCUSEhxAUosgAAsZaK7Qur7L+JcQCoAAOBMdrMdK29IAAAAAElFTkSuQmCC"
     },
     {
       "name": "wheat_stage6_alternate.png",
@@ -1567,10 +1567,10 @@
       "id": "alternate",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -1589,8 +1589,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "5feba5b6-5fec-af32-93d3-e2400274345c",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACJklEQVR4nO1UOUuDQRDdb1DsRCzEA4NFGhtRrMTaq1BsLG3Exr8gQgiIldY2dha2YgoTxNIDISgisYkgCR6IiGAp+MlbGFnWPYNi44OwZHfmzby3860Q//hllPcX0z8jKv9U8UbIguPLEcQhsffnqynisIbw0fDUVuIjZtKuzj4v4cPjrUAcVl8sahP+uJqIIWWus9MzUb99ErubM7JxlxgKUcekgInUhN6+DvlDrksM+dSxO7NLewlUgRSrCeDh5kqHFZmLhl0OETZ96nRiNKMTAywGTS6vHychDhE60lXp5KHE+lXhh2ZdDhEfgNymEIHdQyvyCkwNqlCvKsShJvWACVzkKG6bAww0uHAGIbpbPBPIZxEJH+rEeiMqeeXm2XgV/DUhTp1+HWotCrHOZp8O5HOTpmHmT169arIdNPIW+D5VkwgKVRdSgGETYXIoUQPU6dZfMTXGNgN87hpk9f6/rkBVyMVdCl0uvTW3CB9Uh8gX0EgBH5yv5K7jkWFsb82lpr1cfiw6l2IVgqB69/ptP5vJiEZAMcFcPJ87+GbhyPhGMjkyIFwumJonU2CIlbGwNd8UQwKbQbKcn0inRwflXrVWE9f1F7GWKyUhuTrIFBiKwtGFXPt72+VaPLkMzrU2UPSQvAuSBVEcqucXdr6UZ3varHk2XtI3MEg2FE6u5KpbrjZhg42XRAT6e1rl6rtvEzArQQ1ULYGMZvERW9uJKAd+A59x+/ysnFq6TAAAAABJRU5ErkJggg=="
+      "uuid": "4df95874-788b-d8f9-b325-9826928ded1e",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAsklEQVR4nGNgIAFcOFD2H12MiRTFEtLqGHJMhBTD5F/cnvv/zPFdGHJM6AIwDTDFMLBm7TIGGTl5DDkmkMkvnt7E8MKDZ2/gLgNZoCAlglWOSUI1mRHEmNLh/B+XBpAFIE3Y5JgIaQABA4cuRpD8k0cPMeSYCGlABj5xKxnR5ZgIaYCxn3GyYZVjIlYDLsBElKoBM2DLonCMFEqyC0AJDZ88Cy4Jqe+/oIG6Es4nywWEAABhDHXZKNlGDQAAAABJRU5ErkJggg=="
     },
     {
       "name": "wheat_stage6_variant2.png",
@@ -1600,10 +1600,10 @@
       "id": "variant2",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -1622,8 +1622,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "56fafdb7-2917-67b6-01d0-5143c9c3d220",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACKUlEQVR4nO1UzyuEQRieGesqIdG2UvZC4uwPEG4uDg4uEn+A2162vTj4D0guDg4uag8sudHKCW3rsmrbTSTkD5BPz/KuaXpn9vvmk1Ke+n7OvM/7PO+8M0L8IyZKheVA/GkRpR9y8OsiSl8xz1drAd7x9MmtcBud2pS+Iu4fqqK/b1Dg6RMvoZxIusczMmwgRNN7vfooUoO9gp40FoZDRXFA5cZ8AkgoOeFgYzYIy6Fwuzi/aAbalsJVbvyDCKBwUhYzK/uSE8FxKHKgl83mAHM4sUQKntX1U2f5iQMVA0ejAggmMpsDalSM6WvOCcOFeS4hiMelyAGRjgz1CBuBS6guzAYzHsIT5IDUmw2lg0pNCUko7STEgdi2DLpRyifxohOUb5+sBKZAqhJ1NTjCbEGdR0Yl0IPNZdL7hjsPOKMyLIFPlUyBnFGlT6AArg+ibDVqUPM/OMkENaMKS2A7AzjYBHJbWMUlMPHU1i5aQTeo4hL4QDeo4hJwyOYmrctjGlT6x87WXFC5e7USYzyOcw4qyuSFpT0JEbbx4tFqw0Aue8yK5AwqM0E62WktYasKuUCxpjhlTkwPDFhJXGO+SLSakMlNNatxWLz2TgTxXPUSrQKHU13fzt/fnCJ8BCoXyc72fMN9/uyy8Z0vlpxk6J+o4hIciV6qhcXdz6bJiQDVuKm/CB9MT4yxIpQrqJlcCLGWLUgkbxfvXgIqtRr7P9I5MJzs8EruwgcmNfvweUYRxwAAAABJRU5ErkJggg=="
+      "uuid": "10d5129f-4910-f62c-40dd-90ca06fa77eb",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAzklEQVR4nGNgIBJcP1j5H5s4EyEFMCAhrc6A1wAJJAXohoH4Z47vwuoiJmwKsNn24NkbFINhaljQFYAkXjy9ieF8BamHcJtBfJiFTAgFImABQZUERhA9u9PtP8xGkIEgC2BgzdplDDJy8ggDXqApQDYQBDTt2xlB/CePHmLIMaErwGYgDLjGLmNEl2NCV4DNQBB4xsmG4RoMA9ABzEB8cky4FMBsJASYiFJFqgG7F0fhTdZ4DXh/ZwHRmkEAnhJhAJaQ0F0h9f0XcS4gFQAAM0RwD4jBftYAAAAASUVORK5CYII="
     },
     {
       "name": "wheat_stage6_variant3.png",
@@ -1633,10 +1633,10 @@
       "id": "variant3",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -1655,8 +1655,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "0c33d229-201f-b716-fc2d-f72ba96a424c",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACK0lEQVR4nO1UP0jbQRR+vyNCpiKC0iIJDllcxMFFOpcK6tjRRR27uggSguDq4qiTg0PHtGAojhIRBwmiSwSJlBYVcReMfAdPjufd/d4Fg0s/0At3774/Ly9H9B99QuvnUldTZ96asG9oJRhIMtt6Q+Lbk/UuarBqOc3E3E6mJf70cSxq7u+/K0INVg1wx85AzEQKMXiOj47t519b89Z0TBz1RpNOQ8whZr/Xs+urGyqNjRBWCaln8tJpiQHwsLnGwTnhDgy7qaWewb+8dHnEDCaHyZXNpq1Bra+bCIFzO4QylSSXxN74RJYDtUwuxV2AC3+2A0weSgiTw1Nr9ivwGWS4X5MPspPgLbgJmSTkmo355gDDxelB7uuUTyfjQ0ksjbgC55d3rwR4slGDZKEQUsdo25c3B9o3QOpkmnQ+91h9Sd0aTRcLbjp22MsMuEiZgQK3j93zhIcSxgQYoTM2jfXlKSaRkMVjCWPi98Vi8J7vNTW+Qn4LUgW0iPFT6JFxsbv9revbq9a+5N6V/CY1IYTafx6oV0h+k3KZxWvV36/at7D8I6uMDpKmCy4Kvk2Q+EQq5TLBwGrta3f+86Tda3c6dHF9TxvVRsbnMfMwGu1ApVxWu68fntp1vDSUWxviNXJjv9mKEj2SsYIQR+qFxb3gT1LDa+TGzPREkKTePLMrt5z3NSZCvIYSMD76wa6ueEr3VAbanU70wgA9Bc/wKwghxGvi/vqPdzfwDDKV/Y6o5rZXAAAAAElFTkSuQmCC"
+      "uuid": "2d53d3c9-f32c-2bc2-d970-c393b6eeeb95",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAv0lEQVR4nGNgwAGu7in/z0AEYMIlISGtjtNQZMOZsNkG4p85vgunociGM+Gy7cGzNyg2vr0+D2wouuFMIIkXT29i2KQgJYIitmbtMgYZOXkMw5mENZMYQYyZLS7/YYIgA0GKsBmIbjgTNkFtl05GEP/Jo4cM6AaiG86ETRAG3JNWMKIbiG44EzYbQeAZJxtOA5HZTLgUoANsBmIYQA5goqkBO+dFEMwPBF0ASmj45FlwSUh9/wUN1BVwPlkuIAQAkTl14qA/LBsAAAAASUVORK5CYII="
     },
     {
       "name": "wheat_stage6_leaves.png",
@@ -1666,10 +1666,10 @@
       "id": "foliage",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -1688,8 +1688,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "f51236b7-14cd-52a9-34d2-4af487211fea",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAuklEQVR4nGNgoBBUNbr/p0Q/EzUsp8QRTORqXDwv8r+mrBCY3Va/k5HuDqAWYCHH5zD29cfvKHYAE8UmjDqAnlGwGBr/KnJy8PinJAeQ5ADkxDdoCiJqACaqmDLqAAoAE8MAA6ZRBzCMRgEZ4M6jRwx0j4LYpOUoZT6sNTRgTTJqAaYh5YBYtGiAAbo2SmORHAFLByMvDcRSMRSYGAYYMJGrET1BkpsQGRkoBMhBT44jmCh1wKAB5CZCAEH3OFn8VbpMAAAAAElFTkSuQmCC"
+      "uuid": "113281c1-8405-efc4-0db1-fa6a8d4dec8b",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAaElEQVR4nGNgIACu7K/8j0+eiYGW4AoB24lywbxVCf9BmGQDruyv/H/q9XMwOylsASPZLiAEmHDZLiGtTtB2nAaQApgGpwE6ju2ML57eBLPxRSHtXAACIFeYiUqC2YRcgRfQPDNRbAAAtFskiudnYj4AAAAASUVORK5CYII="
     },
     {
       "name": "wheat_stage6_alternate_leaves.png",
@@ -1699,10 +1699,10 @@
       "id": "foliage1",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -1721,8 +1721,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "c05fd6be-aed0-3051-af76-66326be4a87f",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAuElEQVR4nGNgoBBUNbr/p0Q/EzUsp8QRTORqXDwv8r+mrBCY3Va/k5HuDqAWYCLX98h8ukbBYiTLrz9+N0KjYFA4QEVOjv4OWIyW+OiaCBcjWQ7y/eajF+Byo4lwZOYCagEmqpk06oChGgWMlJSEsNqQksKIiWGAAdOoAxhIALFJy7HGM10ro1gkR8BaxQPSLKcWYKKaSSPKAbFJyxlhaQGWDsgFLJRoRi4JByQK2pCyH7k5YcDTAABFrzu7La5n6QAAAABJRU5ErkJggg=="
+      "uuid": "726dba00-f151-35de-50fc-330bb49bfca7",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAaElEQVR4nGNgIAAuHCj7j0+eiYGW4AIB24lywazVsf9BmGQDLhwo+3/q9XMwOy10MSPZLiAEmHDZLiGtTtB2nAaQApgGpwEGDl2ML57eBLPxRSHtXAACIFeYiUqC2YRcgRfQPDNRbAAAXnAkbDIRMOEAAAAASUVORK5CYII="
     },
     {
       "name": "wheat_stage6_variant2_leaves.png",
@@ -1732,10 +1732,10 @@
       "id": "foliage2",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -1754,8 +1754,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "9c874447-db73-2d67-f1ad-51442fecfccd",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAqElEQVR4nGNgoBBUNbr/p0Q/EzUsp8QRTORqXDwv8r+mrBCY3Va/k5HuDqAWYCLX98j8AYkCagEmSnx//fG7EZoGQEBFTo6B7g5YjJb4RmYipDZgorqJow4gETAxDDBgGnUAw1CNgjuPHg2sA6gFmKhm0ohwQGzScqwNj5HZIBkwB8QiRQOsXzDyGiSxaImRkkTIQq5GWJOcUsBErkZkX1PaQ6YIUGo5AJB7Mpt4BUwUAAAAAElFTkSuQmCC"
+      "uuid": "98c44eee-9641-c621-f29c-e7a8ca5c8f15",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAaElEQVR4nGNgIACuH6z8j0+eiYGW4DoB24lywcI1Cf9BmGQDrh+s/H/q9XMwOz5kASPZLiAEmHDZLiGtTtB2nAaQApgGpwGa9u2ML57eBLPxRSHtXAACIFeYiUqC2YRcgRfQPDNRbAAA+/8ko+RzNEYAAAAASUVORK5CYII="
     },
     {
       "name": "wheat_stage6_variant3_leaves.png",
@@ -1765,10 +1765,10 @@
       "id": "foliage3",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -1787,8 +1787,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "35d4d2cd-af20-1c94-b29e-73ecdc083ca9",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAp0lEQVR4nGNgoBBUNbr/p0Q/EzUsp8QRTJQ4QFNWCIwpAUzkalw8LxLs6+uP3zG01e9kpKsDFkMth4EBiwJqACaqmDKiHLAYGv8qcnLgBAgCdEuEi9ESHwyMJsKRlQipDZiobuKoA0gETAwDDJiGrAPuPHo0sA6gFmCimkkjwgGxScuxVrt0bxNSEzBR1bRRB9AjCmLREiIlCRAEyNaM3A4czQUMFAAAkQ4ssflu3n4AAAAASUVORK5CYII="
+      "uuid": "8163caa0-1aff-0636-e9a6-812c6217d7d3",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAZElEQVR4nGNgIACu7in/j0+eiYGW4CoB24lywfzlcf9BmGwDCAEmmhlwdU/5fwlpdTA7MXIRI/1dMPAGaLt0Mr54ehPMJisar+4p/3/q9XPyA1HbpZPRTFSSoAsIAppnJooNAADdYyR2fpUt0AAAAABJRU5ErkJggg=="
     }
   ]
 }

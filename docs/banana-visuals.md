@@ -2,7 +2,7 @@
 
 **English** | [Português](banana-visuals.pt-BR.md)
 
-The task 0006 placeholders are replaced in place. All eleven shipped textures are manually authored 16×16 RGBA pixel grids with binary alpha. The 38 Java models are imported, saved as portable `.bbmodel` sources with embedded textures, and exported through Blockbench 5.2.2 over its localhost MCP server. Registry ids, existing model names and texture paths are preserved.
+The task 0006 placeholders are replaced in place. All twelve banana textures are manually authored 16×16 RGBA pixel grids with binary alpha. The forty Java block models, including the harvested stalk and diagonal dry leaf, have portable `.bbmodel` sources with embedded textures exported through Blockbench 5.2.2 over localhost MCP. Registry ids, existing model names and texture paths are preserved.
 
 ![In-game banana plant supplied during review](images/banana-in-game.png)
 
@@ -32,7 +32,36 @@ These are model previews, not new Minecraft screenshots. Existing fruit geometry
 ![All four bunch stages](images/banana-bunch-stages.png)
 ![Manually authored textures enlarged with nearest-neighbour sampling](images/banana-textures.png)
 
-## Multipart budget and cost
+## Harvested bunch and shoulder display
+
+The upright harvested bunch reuses the same eight ripe half-hands. Their geometry and positions have not changed. `validate_banana_carry.py` compares all eight geometric centres against `HAND_CENTERS`; the rounded Java coordinates still match, so no Java change is needed. All 32 facing/count combinations retain the core and exactly the expected remaining hands, removed from the bottom upward.
+
+The stalk is now a six-element model with a narrow rachis inside the fruit, a reinforced grip, a small collar and two peeling fibres. The top remains at Y=19.5, preserving the hand attachment. A chamfered cap uses the original pale concentric cut texture across its entire top. The new original `banana_bunch_stalk.png` atlas uses seven hand-selected colours for longitudinal fibres, without altering the plant pseudostem texture. A full harvested bunch totals 102 elements across its nine parts.
+
+![Upright harvested bunch with eight through one pieces remaining](images/banana-harvested-stages.png)
+![Eight actual placed states read from the saved Fabric test world](images/banana-harvested-world.png)
+
+All nine `models/item/banana_bunch_*.json` files received the same display exported from the Blockbench display editor. After the user supplied the F5 image below, third-person rotation was refined to `[57,0,156]` with translation `[3.08642,3.5033,7.33115]`, preserving scale `[1.1,1.1,1.1]`. The bunch rotates around the centre of the held stub at (8,17.75,8.5), so the original hand attachment moves by less than 0.001 model pixel. This lowers the fruit body and moves it outward relative to the head without changing its size. The calculation follows Minecraft 26.3 `ItemTransform`'s XYZ quaternion order, verified from the local runtime class. The existing first-person shoulder placement is preserved. GUI vertical translation is refined to -1.25; ground translation is 3.2, matching the scaled base; fixed view rotates 15° around Y. The complete nine-part item was assembled in Blockbench for GUI/ground/fixed previews, rather than judging the isolated stub.
+
+![User's F5 review image before the grip-preserving inclination adjustment](images/banana-shoulder-review.png)
+
+This image exposed overlap with the head and motivated the final inclination adjustment; it is not approval of that adjustment. A new F5 screenshot and first-person inspection are still required.
+
+![Whole composite item in the GUI display editor](images/banana-display-gui.png)
+![Ground display reference](images/banana-display-ground.png)
+![Fixed display reference](images/banana-display-fixed.png)
+
+These previews verify framing in the editor. They do not certify the code-driven raised arm, shoulder contact in F5 or the screen crop in first person; those in-game checks remain pending because Computer Use was stopped with Escape, including after the subsequent request to continue.
+
+## Dry diagonal attachment and hitboxes
+
+The review found that diagonal dry states reused a cardinal model and left the petiole detached. The new `banana_leaf_dry_diagonal` keeps the existing names intact and places the root at the neighbouring stem centre (-8,24), with a -45° local yaw. Only the twelve dry diagonal variants (four directions × three segments) select this extra model. Living leaves and fruit pieces retain their positions.
+
+`python art/banana_leaf_shapes.py` was rerun after the export and blockstate change. The generated asset now has 48 unique shapes and 72 state mappings, including the four dry diagonals. The preview sheet covers young, mature and dry in all eight directions.
+
+![Dry leaves in all eight directions placed in the test world](images/banana-dry-world.png)
+
+## Plant bunch geometry budget
 
 Solid fruit uses additive vanilla blockstate `multipart` composition. Each half-hand is a separate 12-element Java model, and every original bunch model remains the peduncle/rachis/heart core. There are twenty additional hand model files and corresponding Blockbench sources; none of the existing names was replaced or renamed. No custom renderer, block entity or render tick handler is introduced.
 
@@ -68,13 +97,17 @@ Generation prompt: “Create a botanical visual study sheet for an artist hand-d
 
 **Do not run `python art/banana_art.py`: it would overwrite the final models and multipart blockstate.**
 
+To reproduce the harvested-bunch finish, run `python art/finish_banana_bunch.py`, then call `finishBananaCarry(root)` from `art/export_banana_carry.js` through MCP. The helper writes art inputs; Blockbench writes the final stalk/source and synchronizes display across the nine item models. `previewBananaCarry(root)` from `art/preview_banana_carry.js` generates the editor previews. If `art/banana_bunch_art.py` is needed to regenerate the harvested blockstate or composite item, reapply this finish afterwards: it otherwise restores the provisional stalk and default display values.
+
+For diagonal dry leaves, run `python art/finish_banana_dry.py`, export `banana_leaf_dry_diagonal` using `exportBanana(root, ['banana_leaf_dry_diagonal'])`, then run `python art/banana_leaf_shapes.py`. Always regenerate shapes after changing any leaf model or the leaf blockstate. Run `python art/validate_banana_carry.py` alongside the existing validators.
+
 ![Plants generated by the server feature](images/banana-generated-plants.png)
-![Both leaf ages in eight directions](images/banana-leaf-directions.png)
+![Young, mature and dry leaves in eight directions](images/banana-leaf-directions.png)
 
 ## Verification and limits
 
-On 18 October 2026, the revised-leaf build passed. `validate_wheat_art.py` passed 24,391 checks with no errors; `validate_banana_art.py` passed 3,548 checks with no errors. The latter checks binary alpha, 16×16 RGBA, coordinates, UVs, embedded source pixels, all sixteen bunch stage/facing combinations and identical shipped assets in the Fabric, NeoForge and Forge jars. All eight live-leaf directions occur in the saved-world fixtures. Eighty internal/block joint checks validate midrib endpoints and 640 folded-skin overlap samples. The largest midrib discrepancy is approximately 0.0000065 model pixels. Blockbench previews were inspected from above and below.
+On 18 October 2026, the final art build passed. `validate_wheat_art.py` passed 24,557 checks with no errors; `validate_banana_art.py` passed 3,588 checks with no errors; `validate_banana_carry.py` passed 95 checks with no errors. The checks cover binary alpha, 16×16 RGBA, coordinates, UVs, embedded source pixels, all sixteen plant bunch stage/facing combinations, all 32 harvested facing/count combinations, shared displays, preserved grip position, dry attachments and identical shipped assets in the Fabric, NeoForge and Forge jars. All eight live-leaf directions occur in the saved-world fixtures. Eighty internal/block joint checks validate midrib endpoints and 640 folded-skin overlap samples. The largest midrib discrepancy is approximately 0.0000065 model pixels. Blockbench previews were inspected from above and below.
 
-The initial client reloaded the first artwork with F3+T. For the leaf refinement, a fresh `:neoforge:runClient` test instance loaded the block and item atlases with no Farmer+ model or texture warnings/errors (`build/banana-leaf-client-isolated.log`). It used an isolated test directory and was stopped after resource loading; no new world was opened. Initial launcher configuration attempts were corrected before the successful load. Existing unrelated warnings include the trampled-wheat loot table, an old QA datapack function, Windows performance counters and the `minecraft:end_of_frame` post effect.
+The final-art `:neoforge:runClient` instance loaded the block and item atlases without Farmer+ model/texture warnings (`build/banana-final-client.log`). Desktop control was stopped before the requested F5/first-person inspection. The local server connection initially rejected the test player due to the whitelist; the test identity was added, and a local world was subsequently opened through user interaction. None of this certifies shoulder alignment. The last grip-preserving display adjustment was validated numerically and exported in Blockbench after that launch; its runtime visual check remains pending. Existing unrelated warnings concern trampled-wheat loot, missing test datapacks, Windows performance counters and untranslated item tags. An initial simultaneous build/server resource-copy race was resolved by running the final build sequentially after stopping the dedicated server.
 
 The user stopped Computer Use with Escape during further visual inspection. No further desktop inputs were issued. The supplied screenshot records the new plant in game, but the exact 20-block distance check remains **pending**. Software previews use simplified lighting and no GPU back-face culling; they cannot certify in-game lighting, every viewing angle or orchard performance. Harvest interactions and growth timings were not retested. No commit was created.

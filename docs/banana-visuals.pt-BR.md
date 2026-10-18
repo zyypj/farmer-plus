@@ -2,7 +2,7 @@
 
 [English](banana-visuals.md) | **Português**
 
-Os arquivos provisórios da tarefa 0006 foram substituídos no mesmo lugar. As onze texturas distribuídas são grades de pixels desenhadas manualmente, em RGBA 16×16 e alfa binário. Os 38 modelos Java foram importados, salvos como fontes `.bbmodel` portáteis com texturas embutidas e exportados pelo Blockbench 5.2.2 via MCP local. Os ids, nomes de modelos existentes e caminhos de texturas foram preservados.
+Os arquivos provisórios da tarefa 0006 foram substituídos no mesmo lugar. As doze texturas da bananeira são grades de pixels desenhadas manualmente, em RGBA 16×16 e alfa binário. Os quarenta modelos Java de blocos, incluindo o engaço colhido e a folha seca diagonal, têm fontes `.bbmodel` portáteis com texturas embutidas exportadas pelo Blockbench 5.2.2 via MCP local. Os ids, nomes de modelos existentes e caminhos de texturas foram preservados.
 
 ![Bananeira no jogo, captura fornecida durante a revisão](images/banana-in-game.png)
 
@@ -32,7 +32,36 @@ Estas são prévias dos modelos, não novas capturas do Minecraft. A geometria d
 ![Os quatro estágios do cacho](images/banana-bunch-stages.png)
 ![Texturas manuais ampliadas por vizinho mais próximo](images/banana-textures.png)
 
-## Composição multipart e custo
+## Cacho colhido e display no ombro
+
+O cacho colhido em pé reutiliza as mesmas oito meias pencas maduras. A geometria e as posições delas não foram alteradas. `validate_banana_carry.py` compara os oito centros geométricos com `HAND_CENTERS`; as coordenadas arredondadas do Java continuam correspondendo, sem necessidade de mudança no código. As 32 combinações de orientação/quantidade mantêm o núcleo e exatamente as peças restantes, retiradas de baixo para cima.
+
+O engaço passou a ter seis elementos: eixo estreito dentro dos frutos, região de pegada reforçada, pequeno colar e duas fibras se soltando. O topo permanece em Y=19,5, preservando o encaixe da mão. Uma tampa chanfrada usa a textura original de corte claro e concêntrico em toda a face superior. O novo atlas original `banana_bunch_stalk.png` usa sete cores escolhidas manualmente para as fibras longitudinais, sem alterar a textura do pseudocaule da planta. O cacho colhido cheio soma 102 elementos nas nove partes.
+
+![Cacho colhido em pé, de oito até uma peça restante](images/banana-harvested-stages.png)
+![Oito estados realmente colocados e lidos do mundo de teste Fabric salvo](images/banana-harvested-world.png)
+
+Os nove arquivos `models/item/banana_bunch_*.json` receberam o mesmo display exportado pelo editor de display do Blockbench. Após a captura em F5 fornecida pelo usuário abaixo, a rotação da terceira pessoa foi refinada para `[57,0,156]`, com translação `[3.08642,3.5033,7.33115]`, preservando a escala `[1.1,1.1,1.1]`. O cacho gira em torno do centro do toquinho segurado, em (8;17,75;8,5): o encaixe original na mão se desloca menos de 0,001 pixel de modelo. Isso baixa o corpo dos frutos e o afasta lateralmente da cabeça sem mudar o tamanho. O cálculo segue a ordem XYZ do quaternion de `ItemTransform` no Minecraft 26.3, conferida na classe local do jogo. A posição existente em primeira pessoa foi preservada. A translação vertical da GUI foi refinada para -1,25; no chão, ficou em 3,2, acompanhando a base reduzida; no modo fixo, há rotação de 15° em Y. O item completo de nove partes foi montado no Blockbench para as prévias de GUI/chão/fixo, sem avaliar apenas o toquinho isolado.
+
+![Captura de revisão em F5 do usuário, anterior ao ajuste em torno da pegada](images/banana-shoulder-review.png)
+
+Essa imagem mostrou sobreposição com a cabeça e motivou o ajuste final da inclinação; ela não representa aprovação desse ajuste. Ainda é necessária uma nova captura em F5 e a inspeção em primeira pessoa.
+
+![Item composto inteiro no editor de display da GUI](images/banana-display-gui.png)
+![Referência do display no chão](images/banana-display-ground.png)
+![Referência do display fixo](images/banana-display-fixed.png)
+
+Estas prévias conferem o enquadramento no editor. Elas não comprovam o braço levantado pelo código, o contato com o ombro em F5 nem o recorte na primeira pessoa; essas verificações no jogo permanecem pendentes porque o Computer Use foi interrompido com Escape, inclusive após o pedido posterior para continuar.
+
+## Encaixe seco diagonal e hitboxes
+
+A revisão encontrou estados secos diagonais reutilizando o modelo cardinal, deixando o pecíolo afastado do caule. O novo `banana_leaf_dry_diagonal` preserva os nomes existentes e coloca a raiz no centro do caule vizinho (-8,24), com rotação local de -45° em Y. Apenas as doze variantes secas diagonais (quatro direções × três segmentos) selecionam esse modelo adicional. As folhas vivas e as peças do cacho mantêm suas posições.
+
+`python art/banana_leaf_shapes.py` foi executado novamente após a exportação e a mudança do blockstate. O arquivo gerado agora tem 48 formas únicas e 72 mapeamentos de estado, incluindo as quatro diagonais secas. A prancha de direções cobre young, mature e dry nas oito direções.
+
+![Folhas secas nas oito direções colocadas no mundo de teste](images/banana-dry-world.png)
+
+## Custo da geometria do cacho na planta
 
 Os frutos sólidos usam composição aditiva `multipart` dos blockstates vanilla. Cada meia penca é um modelo Java separado com 12 elementos; os modelos originais dos cachos ficam como núcleo do pedúnculo, engaço e coração. Foram acrescentados vinte arquivos de modelos de pencas e suas fontes Blockbench. Nenhum nome existente foi removido ou renomeado. Não há renderizador próprio, entidade de bloco ou processamento por tick de renderização.
 
@@ -68,13 +97,17 @@ O prompt usado na ferramenta integrada pediu uma prancha botânica de Musa Prata
 
 **Não execute `python art/banana_art.py`: ele sobrescreveria os modelos finais e o blockstate multipart.**
 
+Para reproduzir o acabamento do cacho colhido, execute `python art/finish_banana_bunch.py` e chame `finishBananaCarry(root)` de `art/export_banana_carry.js` pelo MCP. O helper escreve as entradas de arte; o Blockbench grava o engaço final e sua fonte, além de sincronizar o display dos nove modelos de item. `previewBananaCarry(root)`, em `art/preview_banana_carry.js`, gera as prévias do editor. Se precisar executar `art/banana_bunch_art.py` para regenerar o blockstate colhido ou o item composto, reaplique esse acabamento depois: o gerador restaura o engaço provisório e os valores padrão de display.
+
+Para as folhas secas diagonais, execute `python art/finish_banana_dry.py`, exporte `banana_leaf_dry_diagonal` com `exportBanana(root, ['banana_leaf_dry_diagonal'])` e rode `python art/banana_leaf_shapes.py`. Regenere sempre as formas após mudar qualquer modelo de folha ou o blockstate das folhas. Execute também `python art/validate_banana_carry.py`, além dos validadores existentes.
+
 ![Plantas geradas pela feature no servidor](images/banana-generated-plants.png)
-![As duas idades de folha nas oito direções](images/banana-leaf-directions.png)
+![Folhas young, mature e dry nas oito direções](images/banana-leaf-directions.png)
 
 ## Verificações e limites
 
-Em 18 de outubro de 2026, o build das folhas revisadas passou. `validate_wheat_art.py` passou em 24.391 verificações, sem erros; `validate_banana_art.py` passou em 3.548, sem erros. O segundo confere alfa binário, RGBA 16×16, coordenadas, UVs, pixels embutidos nas fontes, as dezesseis combinações de estágio/orientação dos cachos e arquivos idênticos nos jars Fabric, NeoForge e Forge. As plantas do mundo salvo contêm folhas vivas nas oito direções. Oitenta verificações de curvas internas e emendas conferem os pontos das nervuras e 640 amostras de sobreposição das superfícies dobradas. A maior diferença entre nervuras é de aproximadamente 0,0000065 pixel de modelo. As prévias do Blockbench foram inspecionadas por cima e por baixo.
+Em 18 de outubro de 2026, o build da arte final passou. `validate_wheat_art.py` passou em 24.557 verificações, sem erros; `validate_banana_art.py` passou em 3.588, sem erros; `validate_banana_carry.py` passou em 95, sem erros. As verificações cobrem alfa binário, RGBA 16×16, coordenadas, UVs, pixels embutidos nas fontes, as dezesseis combinações de estágio/orientação dos cachos na planta, as 32 combinações de orientação/quantidade do cacho colhido, displays compartilhados, pegada preservada, encaixes secos e arquivos idênticos nos jars Fabric, NeoForge e Forge. As plantas do mundo salvo contêm folhas vivas nas oito direções. Oitenta verificações de curvas internas e emendas conferem os pontos das nervuras e 640 amostras de sobreposição das superfícies dobradas. A maior diferença entre nervuras é de aproximadamente 0,0000065 pixel de modelo. As prévias do Blockbench foram inspecionadas por cima e por baixo.
 
-O cliente inicial recarregou a primeira arte com F3+T. Para a revisão das folhas, uma nova instância de teste de `:neoforge:runClient` carregou os atlas de blocos e itens sem avisos ou erros de modelo/textura do Farmer+ (`build/banana-leaf-client-isolated.log`). Ela usou uma pasta isolada e foi encerrada após carregar os recursos, sem abrir um mundo novo. As primeiras tentativas de configuração do lançador foram corrigidas antes da carga bem-sucedida. Há avisos anteriores e independentes sobre o loot do trigo pisoteado, uma função de datapack antigo de QA, contadores de desempenho do Windows e o efeito `minecraft:end_of_frame`.
+A instância de `:neoforge:runClient` da arte final carregou os atlas de blocos e itens sem avisos de modelo/textura do Farmer+ (`build/banana-final-client.log`). O controle de tela foi interrompido antes da inspeção solicitada em F5/primeira pessoa. A conexão local ao servidor rejeitou inicialmente o jogador de teste pela whitelist; essa identidade foi adicionada, e um mundo local foi aberto em seguida por interação do usuário. Isso não comprova o alinhamento no ombro. O último ajuste do display em torno da pegada foi validado numericamente e exportado no Blockbench depois dessa execução; sua verificação visual no jogo continua pendente. Os avisos independentes dizem respeito ao loot do trigo pisoteado, datapacks de teste ausentes, contadores do Windows e tags de itens sem tradução. Uma disputa inicial na cópia de recursos entre build e servidor simultâneos foi resolvida executando o build final em sequência, após parar o servidor dedicado.
 
 O usuário interrompeu o Computer Use com Escape durante a inspeção visual adicional; não foram enviados outros comandos de interface. A captura fornecida registra a planta nova no jogo, mas a verificação à distância exata de 20 blocos permanece **pendente**. As prévias por software usam iluminação simplificada e não descartam faces traseiras pela GPU; não comprovam a iluminação do jogo, todos os ângulos nem desempenho em pomares. As interações de colheita e tempos de crescimento não foram retestados. Nenhum commit foi criado.

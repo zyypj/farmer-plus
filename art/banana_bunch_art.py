@@ -52,7 +52,10 @@ def blockstate():
         parts.append({'when': {'facing': facing}, 'apply': dict({'model': 'farmerplus:block/harvested_banana_bunch_stalk'}, **rotation)})
         for index in range(MAX_BANANAS):
             counts = '|'.join(str(count) for count in range(index + 1, MAX_BANANAS + 1))
-            parts.append({'when': {'facing': facing, 'bananas': counts}, 'apply': dict({'model': hand_model(index)}, **rotation)})
+            condition = {'facing': facing}
+            if index:
+                condition['bananas'] = counts
+            parts.append({'when': condition, 'apply': dict({'model': hand_model(index)}, **rotation)})
     return {'multipart': parts}
 
 

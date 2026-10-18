@@ -105,6 +105,18 @@ def main():
         check(image.size == (16, 16) and image.mode == 'RGBA', path.name + ': 16x16 RGBA')
         check(set(image.getchannel('A').get_flattened_data()) <= {0, 255}, path.name + ': hard alpha')
         resources.append(path)
+    leaf_state = load(ASSETS / 'blockstates/banana_leaf.json')
+    for direction, delta_x, delta_z in [('north', 0, -1), ('north_east', 1, -1), ('east', 1, 0), ('south_east', 1, 1), ('south', 0, 1), ('south_west', -1, 1), ('west', -1, 0), ('north_west', -1, -1)]:
+        variant = leaf_state['variants']['age=dry,direction=%s,segment=0' % direction]
+        diagonal = delta_x != 0 and delta_z != 0
+        root = [-8, 8, 24] if diagonal else [8, 8, 21]
+        root = apply(rotation_matrix({'y': -variant.get('y', 0)}), root, [8, 8, 8])
+        root[0] += delta_x * 16
+        root[2] += delta_z * 16
+        check(all(4.999 <= root[axis] <= 11.001 for axis in (0, 2)), direction + ': dry petiole reaches the stem')
+        check(variant['model'].endswith('banana_leaf_dry_diagonal' if diagonal else 'banana_leaf_dry'), direction + ': correct dry model frame')
+    shapes = load(ROOT / 'common/src/main/resources/farmerplus/shapes/banana_leaf.json')
+    check(len(shapes['states']) == 72 and len(shapes['shapes']) == 48, 'Regenerated leaf hitboxes cover cardinal and diagonal dry leaves')
     for age in ('young', 'mature'):
         for diagonal in (False, True):
             suffixes = ['diagonal_base', 'diagonal_tip'] if diagonal else ['base', 'blade', 'tip']

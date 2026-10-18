@@ -21,8 +21,8 @@
   "ai_used": true,
   "ai_agents": "codex-mcp-client",
   "resolution": {
-    "width": 32,
-    "height": 32
+    "width": 16,
+    "height": 16
   },
   "elements": [
     {
@@ -47,7 +47,7 @@
         4
       ],
       "autouv": 0,
-      "color": 1,
+      "color": 3,
       "rotation": [
         0,
         -22.5,
@@ -63,8 +63,8 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
           "texture": 0
         },
@@ -79,10 +79,10 @@
         },
         "south": {
           "uv": [
-            32,
+            16,
             0,
             0,
-            32
+            16
           ],
           "texture": 0
         },
@@ -115,7 +115,7 @@
         }
       },
       "type": "cube",
-      "uuid": "c2278341-64ee-532b-5341-338ce0c6a4b6"
+      "uuid": "b9c1c18c-2bb1-e3d1-205c-b4e6897a1fb8"
     },
     {
       "name": "back_stalks",
@@ -139,7 +139,7 @@
         11.5
       ],
       "autouv": 0,
-      "color": 0,
+      "color": 3,
       "rotation": [
         0,
         22.5,
@@ -153,10 +153,10 @@
       "faces": {
         "north": {
           "uv": [
-            32,
+            16,
             0,
             0,
-            32
+            16
           ],
           "texture": 1
         },
@@ -173,8 +173,8 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
           "texture": 1
         },
@@ -207,7 +207,7 @@
         }
       },
       "type": "cube",
-      "uuid": "dac7ad45-c9bd-752e-90e1-776d9fe6f237"
+      "uuid": "45b00110-7b93-eca8-a830-3bf4076186b3"
     },
     {
       "name": "left_stalks",
@@ -254,10 +254,10 @@
         },
         "east": {
           "uv": [
-            32,
+            16,
             0,
             0,
-            32
+            16
           ],
           "texture": 1
         },
@@ -274,8 +274,8 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
           "texture": 1
         },
@@ -299,7 +299,7 @@
         }
       },
       "type": "cube",
-      "uuid": "bdaee763-3bc2-3075-ab07-9d882c40d956"
+      "uuid": "269e93f8-4258-e21e-ba10-0d3c770d6ddb"
     },
     {
       "name": "right_stalks",
@@ -323,7 +323,7 @@
         16
       ],
       "autouv": 0,
-      "color": 4,
+      "color": 2,
       "rotation": [
         0,
         -45,
@@ -348,8 +348,8 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
           "texture": 0
         },
@@ -364,10 +364,10 @@
         },
         "west": {
           "uv": [
-            32,
+            16,
             0,
             0,
-            32
+            16
           ],
           "texture": 0
         },
@@ -391,15 +391,15 @@
         }
       },
       "type": "cube",
-      "uuid": "fa2d0c7a-5388-6c66-5dae-9cc1c82b31bd"
+      "uuid": "bb2cf547-7ad7-bdbb-79cd-417c749044d7"
     }
   ],
   "groups": [],
   "outliner": [
-    "c2278341-64ee-532b-5341-338ce0c6a4b6",
-    "dac7ad45-c9bd-752e-90e1-776d9fe6f237",
-    "bdaee763-3bc2-3075-ab07-9d882c40d956",
-    "fa2d0c7a-5388-6c66-5dae-9cc1c82b31bd"
+    "b9c1c18c-2bb1-e3d1-205c-b4e6897a1fb8",
+    "45b00110-7b93-eca8-a830-3bf4076186b3",
+    "269e93f8-4258-e21e-ba10-0d3c770d6ddb",
+    "bb2cf547-7ad7-bdbb-79cd-417c749044d7"
   ],
   "textures": [
     {
@@ -410,10 +410,10 @@
       "id": "crop",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": true,
       "use_as_default": false,
       "layers_enabled": false,
@@ -432,8 +432,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "9b6db12c-f669-db67-b29e-cb6cc6e73ea1",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACAklEQVR4nO1Wu0oDQRSdXXyAgoKFoH9gaRHQiA+0sTFgl8LCTtDCKsTGykaxsjBgZ2FhJ8QmjcEHPmALS/9AwULQwkKLlTNw5ew4m528TLMHliSTe+859zWJUilSpEjRYXjtDF4JiqG8X8zsef8qoBIUw/JloN+XCtVYHq+d5J8f3+p456Ymh98KwrXd2bARci2A+9QquJID3vr+fJiby8QOiQs4idPynTM54EMtSsZBuKRJgO3hybWOgSefy0ZiJQrI57K6ZI0A5M8vX2pjZUbHkGQAiHAR4sOhb6Bbl67eeRgeGtSvaB/KjodFsNBYAaVCVTuZIpY2J0PORM7NzwycIY5rRWGv11CUox0Qsbww8WuE7KS/smJ44oZWNgBxhORo68ozqyCxfDkQJ4i4fXyKBJUqwQEbY7vZEJA3wBSBWTHJETNyEYnT1PhYbGl5Y17f3v+Qc3tYBAbVrBSS1QK4n+IU52D2F3ZMjjMWifOziweFVWWxSAht1DeheQ/09vsRB7yCXPachxV2Qi7zYVZKtoXJpY0+VNguI3aQoRM727DyvMhQ2yrF5FqAlMnFge24VZI9B5bvOSmTHOhiB6WUHiApv82B7dBb6bltM8QWFUPM84P75N+I1e1pHVwuombt2DaRvF4HVzuIjBPq2w55C2rB1W50pKe9/4hUE+i4gB9nX/6dqiMnVQAAAABJRU5ErkJggg=="
+      "uuid": "3e89577f-3a9d-1416-d510-d5ed356cb07b",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmUlEQVR4nGNgGAWDCJTP9vxPjhoWYjTjk2c6ebWLoM1BVo445ZjMtcsYO1O3MyILztmZgGLoumP7GVTlxBmwqWHE5kyQYl0ZLQaQ4TBxkNjtRy8Z0NUwwUyDuQIkkeK+gPHyk2soikEAXQ3IAkZQGIAUw0wHKUIXA4UBuhqMwAC5Aj200cWwqQF7AQRATkI3FF0Mmxq4AeQCAGzqXCKfi8cFAAAAAElFTkSuQmCC"
     },
     {
       "name": "wheat_stage3_alternate.png",
@@ -443,10 +443,10 @@
       "id": "alternate",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -465,8 +465,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "26d23583-b554-9e77-3cff-62b3c1f3f2ca",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB7UlEQVR4nO1VPUsDQRS8O06LKxQUBMXCzl5UNAqmsBOvTpM6djYKNlpYCdrYGds01hH7CH6BIjYW/oEEDAhaWGixMkfmeFnvYxOMFt6DsJvdfTOz72PPsjLLLLPM/rvZUYtnd5uK85XpffvXBcBKB/lAhJ+f6akIO2mzuLOgvIG+nolApJ2kA5XdS/v97dOq1m7DtGAs7S0pmaZuyYGbKECKkE6wTiMC0To5cN00lZyfVK+sgp8LnDwv0c3IgIPLOUmKcUsoxQ/kFFFvfHRNjEsRB/PUq5Q3ajaKUYpYKy5iS50eXtsmLYzLQLQkZypdU8WsA4TN81wVR0pgCMe4feyrh8dmIFqSMwUunGVBUW1569wmOYlxa6zd3D9Z9UYzFAD/tHeDawU/p0iO/45ssaibC/JgxNrc1GRk2PWWjcMkXiBAdxoZGmxzwmEJSBGtOggNOOySKBGSXO45dJIm88WexUjHifFh66hy0QaMFxNh1vGeX15DPJJLPEdWNwkAzjCxYFhcBNXJkXuCx+HpDxl+YQropOeXYY+LEshR8QTU8fzl2W947JDQ0OdUy3nw5rcqWz/Hb4G+3ylepJMp+Or6fOLHSJ5LJe8W/KfwOgYHoCloGp6jL+BLxxaLs7HRfhNuIzzHGKlH9ucCvgB3gQdm6lR1JwAAAABJRU5ErkJggg=="
+      "uuid": "6f8a0072-6b97-2a74-418d-3a44aaf584c1",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAi0lEQVR4nGNgGAWDGBTPcftPjDoWcjQhq2dCFwyyciRaM4hmQpe4/OQaQ2/KLkZksRm7YrG6TFVOHGEAsvOPXmv/DxODicPEMMAMqOkghTA2NjFc4owgxu1HL8EKQE4H2QTyBrIYzAXYxJky3BYzgvwCA9ZalYzoYvjEwWEAkkD3GjYxbOIYsUAqAABCvFt2pkAR/QAAAABJRU5ErkJggg=="
     },
     {
       "name": "wheat_stage3_variant2.png",
@@ -476,10 +476,10 @@
       "id": "variant2",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -498,8 +498,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "7d0a4ea6-4479-852e-ce92-044f59591f2f",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB9klEQVR4nO1UPUsDQRR8WaOIBMUy+Qe2oqCCRkTsvE6wsxHsDNhoI6TURoidYmMn2MVORIyCCorYiP8gAQOCFhZanMzhO9697OUL4xXewJHL3uyb2bezSxQjRowY/x5nD+tulE0wxYu7yExA13y8f9FfmVjZyvoa0IOuOchfJWwmJLlTgK7BC5uwAab4+S1h1DoqXnu6SVkYg/g/O7yd4DG8r+7MeBz9rRWgo+XKZ0Ac4wYF0X48i86EbwJkxu7auXWbWhXPLU2RFEctfzXL+Um3r7+bnOlRjwQzhcNLOincWDmM49Nb2tso1e3K5r7jPj5VA7X8ENIPZA7wjsIaOityO2xZCcsOi6NWUgsQkTepdP9M5UrVOpE7JKGzgl9wgYFUqmYxEIee3wFpAgLZkaFQ18xhofncuKuzwiIY03UCISTxQZtAaLRrrBxc5izMjQU4+M4muEsvr2814qxneJ90wtOZQS+EciICyO2uZ5RNSMgTIPUMiuHRx0y7RlGkv5FR/OojjTFwpDgvxMi2h7nGysOM6r3lnEgTepsAzoaRgzpcAMRlkLRRdEoaBVcfad4mXr2sl9TO+CjaLiLNQUFuv80oc/hO0eJ1gVuv0bXLHD6G7XKswIRmJrVi1PbNhE3KpHuoGXT1Gv8UtMMxTal0EJEb+AYXvBtR4akWYwAAAABJRU5ErkJggg=="
+      "uuid": "2543bd11-b52c-6fa4-4b1e-4b4412126528",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAkklEQVR4nGNgGAVDBFTN9fyPS44RWUFb8nZGYgxAVsd05noXTtORQZCVI1ZxJhPNMkZ0m+fvTsAw9PKTawzY1DFic6aqnDiDrowWA8hwmDhMbN2x/XADQGJMMJNgpoMEE10XMIJsRFYIE0NXxwgKA5DE7Ucv4QFErBiKH0GuQA9tYsTAXgABkHPQA44YMbgB5AIALAJlSYwx7qsAAAAASUVORK5CYII="
     },
     {
       "name": "wheat_stage3_variant3.png",
@@ -509,10 +509,10 @@
       "id": "variant3",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -531,8 +531,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "d3c30614-f59c-a2a4-fa38-d8081ca2cd75",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB5UlEQVR4nO1Wr0sEQRidHTiDoIKIoAab1STiiZwWm1csYrxiUSyCghgFBYto0WAUi+VsV/QQT+SKBot/gAabwaBh5Y2+5btxZ28W7riyHwzMzrx53/t+zLBKZZZZZpll1mEL2kVcedgIOZ+fPAjaJqAS4whr5Zu6WTverAZtz8DqfsGIKM5OmG84//z4Vme7tab8Oq0zRMeB75W9Qogo4ZBR+zpPLYCpxbDrulTMG8fYw5wGgS0RUPlzDieuunb35sw+8T682rUhlUvnMrXAvL59mf2Lci3qAcx9g9LNAIzE5Xxtedo4RNrZAxTBswvrU/+ywaB0UqpQZ9Zc1hU22N8XYSiMIvkNEYtzv1mJcw68xkSKQGRQfLJVDbAOEJvLJZYlkBly3QK7nNomZ2SSVHa4LULiZMkoAnsokzRwgdP0AMmlsa4kZQma4bBmixwZHVBH53cNYnFbUDqMAK8YupeNdPv0oh6f39XV4X1ESmKJu7yuKzQhcfIRggNg4WDntBiCj2KxJ6+xlo8HADPjYw1R8tGxcXHNBWJkw5Up23lkpe18VDvOMfjGp8XJfTS1CxN7ADcg6UAaYsmZ6DztgTTEMmteVvI84IuDyCSh2l7I9eSia5Nkvrjhoa7W/g+oFlvHBfwArCr0suVaXpUAAAAASUVORK5CYII="
+      "uuid": "4a311f41-1637-1188-bfb1-0ed3f93b95c5",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAlUlEQVR4nGNgGAWDDFTMcP9Pqh4mYgwBicEwQQNA4NSlDrhCkKYgK0cGXIAJXUBVTpzBTK+CEVns8pNrDB0ZO1HE5m6L+49iQAWS85BdgC6G7BWQGBPMJJjtyV6LGEE2whQji8FcARMDuZQRZMDtRy/BGkAKQKaCFBMSg4cByCSQiTAAMpUYMZRABEmiSxArhjUaSQEAScZh3DaiY4AAAAAASUVORK5CYII="
     }
   ]
 }

@@ -1,0 +1,131 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "dry": "farmerplus:block/banana_leaf_dry",
+    "particle": "farmerplus:block/banana_leaf_dry"
+  },
+  "elements": [
+    {
+      "name": "dry_diagonal_petiole",
+      "from": [
+        -8.6,
+        7.6,
+        17
+      ],
+      "to": [
+        -7.4,
+        8.6,
+        24
+      ],
+      "faces": {
+        "north": {
+          "texture": "#dry",
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ]
+        },
+        "south": {
+          "texture": "#dry",
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ]
+        },
+        "east": {
+          "texture": "#dry",
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ]
+        },
+        "west": {
+          "texture": "#dry",
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ]
+        },
+        "up": {
+          "texture": "#dry",
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ]
+        },
+        "down": {
+          "texture": "#dry",
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ]
+        }
+      },
+      "rotation": {
+        "origin": [
+          -8,
+          8,
+          24
+        ],
+        "x": 0,
+        "y": -45,
+        "z": 0
+      }
+    },
+    {
+      "name": "dry_diagonal_hanging_blade",
+      "from": [
+        -9.403805922287441,
+        -14,
+        19.40380592228744
+      ],
+      "to": [
+        2.5961940777125587,
+        8,
+        19.40380592228744
+      ],
+      "faces": {
+        "north": {
+          "texture": "#dry",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#dry",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      },
+      "rotation": {
+        "origin": [
+          -3.4038059222874413,
+          8,
+          19.40380592228744
+        ],
+        "x": -8,
+        "y": -45,
+        "z": 0
+      }
+    }
+  ]
+}

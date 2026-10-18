@@ -21,8 +21,8 @@
   "ai_used": true,
   "ai_agents": "codex-mcp-client",
   "resolution": {
-    "width": 32,
-    "height": 32
+    "width": 16,
+    "height": 16
   },
   "elements": [
     {
@@ -47,7 +47,7 @@
         4
       ],
       "autouv": 0,
-      "color": 6,
+      "color": 9,
       "rotation": [
         0,
         -22.5,
@@ -63,8 +63,8 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
           "texture": 0
         },
@@ -79,10 +79,10 @@
         },
         "south": {
           "uv": [
-            32,
+            16,
             0,
             0,
-            32
+            16
           ],
           "texture": 0
         },
@@ -115,7 +115,7 @@
         }
       },
       "type": "cube",
-      "uuid": "f801baaf-e943-c123-a83c-71231fdb01dc"
+      "uuid": "8528648b-06ce-9e51-8870-397d4f76a69a"
     },
     {
       "name": "back_stalks",
@@ -139,7 +139,7 @@
         11.5
       ],
       "autouv": 0,
-      "color": 0,
+      "color": 2,
       "rotation": [
         0,
         22.5,
@@ -153,10 +153,10 @@
       "faces": {
         "north": {
           "uv": [
-            32,
+            16,
             0,
             0,
-            32
+            16
           ],
           "texture": 1
         },
@@ -173,8 +173,8 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
           "texture": 1
         },
@@ -207,7 +207,7 @@
         }
       },
       "type": "cube",
-      "uuid": "1ee6631c-5aa2-58d9-a3ce-d92b63f0ef49"
+      "uuid": "177c2df7-e994-cd54-8b4e-e7ae1a33cbc8"
     },
     {
       "name": "left_stalks",
@@ -231,7 +231,7 @@
         16
       ],
       "autouv": 0,
-      "color": 7,
+      "color": 1,
       "rotation": [
         0,
         45,
@@ -254,10 +254,10 @@
         },
         "east": {
           "uv": [
-            32,
+            16,
             0,
             0,
-            32
+            16
           ],
           "texture": 1
         },
@@ -274,8 +274,8 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
           "texture": 1
         },
@@ -299,7 +299,7 @@
         }
       },
       "type": "cube",
-      "uuid": "378fd26b-6c04-f0dc-0561-317f61fc66b0"
+      "uuid": "06a46cee-a016-df76-4986-669946721e05"
     },
     {
       "name": "right_stalks",
@@ -323,7 +323,7 @@
         16
       ],
       "autouv": 0,
-      "color": 5,
+      "color": 6,
       "rotation": [
         0,
         -45,
@@ -348,8 +348,8 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
           "texture": 0
         },
@@ -364,10 +364,10 @@
         },
         "west": {
           "uv": [
-            32,
+            16,
             0,
             0,
-            32
+            16
           ],
           "texture": 0
         },
@@ -391,15 +391,15 @@
         }
       },
       "type": "cube",
-      "uuid": "0aded6d2-e449-79f9-9aad-604df1a1aa25"
+      "uuid": "f603d694-f41c-5b98-d952-005ede74c348"
     }
   ],
   "groups": [],
   "outliner": [
-    "f801baaf-e943-c123-a83c-71231fdb01dc",
-    "1ee6631c-5aa2-58d9-a3ce-d92b63f0ef49",
-    "378fd26b-6c04-f0dc-0561-317f61fc66b0",
-    "0aded6d2-e449-79f9-9aad-604df1a1aa25"
+    "8528648b-06ce-9e51-8870-397d4f76a69a",
+    "177c2df7-e994-cd54-8b4e-e7ae1a33cbc8",
+    "06a46cee-a016-df76-4986-669946721e05",
+    "f603d694-f41c-5b98-d952-005ede74c348"
   ],
   "textures": [
     {
@@ -410,10 +410,10 @@
       "id": "crop",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": true,
       "use_as_default": false,
       "layers_enabled": false,
@@ -432,8 +432,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "6bd2a0c8-c0f0-179d-1ebf-7812bfafff5b",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAsElEQVR4nGNgGAWjYBSMglEwCkbBKBgFo2AUUAhCKhz+U6KfiWGAAdNAO4AFX9Cu6TjACOMv3J8FD+p4x2lwcXIBzDwWYhVv3nkNhU+JI5DNY0F2DQigG4ysGBQioJAB8bE5AtkcdPNgIYpuHhNMEUgQZjA2V8OiAzlasDkUhEkxjwldAJuh6HIgPi7D8TkUm3mM6IpAQeXrrgVmY7OcVLWkmIeiCVfQYfMVocIIn3kAgByZ3ITg1xEAAAAASUVORK5CYII="
+      "uuid": "b569eb29-5166-c7ad-a929-7f32cc624d68",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWElEQVR4nGNgGAWjYPiBxE6X/6SqYQIRzWtC4YLICkBsGB+XGsat52v+n7t7k+He3fdwU0PcLMD0ml0n4HxsarwNWxjhAiAbsHkBJAazHZcavGGALobOBwDtOzmvQ091IgAAAABJRU5ErkJggg=="
     },
     {
       "name": "wheat_stage1_alternate.png",
@@ -443,10 +443,10 @@
       "id": "alternate",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -465,8 +465,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "54cfd341-cba5-36b1-e902-d3ead40ccfc2",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAo0lEQVR4nGNgGAWjYBSMglEwCkbBKBgFo2AUDFUQWGn3nxrmMDEMsGNZCGmedyADRXOSwwxGSh2EbCYTMS7evPMaGFMDgCyHmQfyDAuya9B9B1OM7BCQGDZ12CzDZ9769kNgORaQIpiPsRmOrBhbXGIzlFjzQIAJXQDdYGQ5EBsWCvgMJdY8EEDhgFzu664FZmNTTCt1GJpwxSm6j4gpCwiZBwDqwYzQDezgxgAAAABJRU5ErkJggg=="
+      "uuid": "61a2320b-2e31-8e17-c692-35892a9805b6",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWUlEQVR4nGNgGAWjYPiD2C7H/4TUMMEUwhTXrw36D8K4DEHmg9QxbrxQ+X/NrhNwBSFuFgzn7t5kuHf3PYqYv0E7hlolZUFUk5FtBrFxeQFdLU7/4jMAxgYALa45HIXSG9wAAAAASUVORK5CYII="
     },
     {
       "name": "wheat_stage1_variant2.png",
@@ -476,10 +476,10 @@
       "id": "variant2",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -498,8 +498,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "dc75faed-92cf-70eb-9a61-fe13fb41adce",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAp0lEQVR4nGNgGAWjYBSMglEwCkbBKBgFo2AU0AlEVDv8xybORI4magImhgEGLKQoXnooCx4i0XbTGCmxGGYWCykaNu+8hsIn1xHIZjEhC8IwPg0rWg+ALQXxYWqR0wqyOcSYxQSTAPkGJIFsMDqAWQ6jcRmOjAmZxYRNEJuh6HIgPi4LQHLEmsWIzXWgIPV11wKzsVlOilpSzMIwGFfwYfMZvjIDn1kA3a2dZjPSVv4AAAAASUVORK5CYII="
+      "uuid": "c3b92655-2ee1-127a-882b-87c3fb00ed33",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAUklEQVR4nGNgGAWjYGSAlG6X//jkmUBE27pQsCKQYmQNyGyQGmzqGHdcrPl/7u5Nhnt338NNDXGzANNrdp1AEcOlDm4DNueCxGA241OH07+ExADkVzuQmTSWzQAAAABJRU5ErkJggg=="
     },
     {
       "name": "wheat_stage1_variant3.png",
@@ -509,10 +509,10 @@
       "id": "variant3",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -531,8 +531,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "6e70ff63-f703-53cb-008f-cece91b8cfd3",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAApklEQVR4nGNgGAWjYBSMglEwCkbBKBgFo2AUjAIKQFiZ7X8GCgELMYoW702HWxTrPJORHIeu6jrMiM08FmIs37zzGgqfHEdgMw/kKBZsvoO5GF0xSBzEx+YIZHPQzcNlOYhmAikCCcIMxuZqmGLkYMRmMAiTYh7YAbgMhhmKLgfi4zIcn0NxmceIzAEFsa+7FpiNTTGpakkxD0UTrqDD5itCWZGQeQCnF5u+Vj2O9wAAAABJRU5ErkJggg=="
+      "uuid": "a01f9d27-5430-920f-adc0-36e9e7c4e284",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWklEQVR4nGNgGAWjYHiBpDan/+ToY0LX3LIyGMxGF0MWR5Zj3Ham6v+aXSfgJiopCzIYKaszIIuFuFkwnLt7k+He3fcoYl4mbYwoXoDZgksMxMbpVWwSxIgBAIYkNsGP0t8lAAAAAElFTkSuQmCC"
     }
   ]
 }

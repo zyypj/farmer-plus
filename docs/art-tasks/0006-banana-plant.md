@@ -61,5 +61,9 @@ Leaf hitboxes follow the leaf models: `python art/banana_leaf_shapes.py` voxeliz
 - [x] All files above replaced with the same names; `./gradlew build` and `python art/validate_wheat_art.py` pass.
 - [x] `python art/preview_world_models.py` (see [docs/banana.md](../banana.md)) shows connected leaves with no gaps at the segment joins, in all 8 directions.
 - [ ] In game, from 20 blocks away the plant reads as a banana: pale green pseudostem, huge torn leaves, a bunch with a purple bud.
+- [x] Upright harvested bunch: finished fibrous cut stalk, eight shared ripe pieces and matching `HAND_CENTERS`; full and partial states previewed from a saved test world.
+- [x] Identical display exported through Blockbench to all nine composite item models; third-person scale stays 1.1 and GUI/ground/fixed framing is reviewed.
+- [x] Dry leaves connect in all eight directions; hitboxes regenerated after the diagonal model/blockstate change.
+- [ ] Confirm the carried bunch on the right shoulder in F5 and the partial top-right crop in first person in Minecraft.
 
-The last item remains pending: the in-game screenshot has no measured camera distance and desktop inspection was stopped by the user. Solid individual fruit adds twenty half-hand models through vanilla multipart; each model respects the 12-element limit, while the assembled green/ripe bunch totals 104 elements. See the report before reviewing performance.
+The distance and shoulder playtests remain pending: the existing screenshot has no measured camera distance and Computer Use was stopped with Escape, including during the resumed inspection. Editor previews and resource loading do not replace those checks. Solid individual fruit adds twenty half-hand models through vanilla multipart; each model respects the 12-element limit, while the assembled green/ripe plant bunch totals 104 elements and the finished harvested bunch totals 102. See the report before reviewing performance.

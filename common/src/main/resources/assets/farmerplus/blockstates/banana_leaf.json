@@ -154,13 +154,13 @@
       "model": "farmerplus:block/banana_leaf_mature_diagonal_tip"
     },
     "age=dry,direction=north_east,segment=0": {
-      "model": "farmerplus:block/banana_leaf_dry"
+      "model": "farmerplus:block/banana_leaf_dry_diagonal"
     },
     "age=dry,direction=north_east,segment=1": {
-      "model": "farmerplus:block/banana_leaf_dry"
+      "model": "farmerplus:block/banana_leaf_dry_diagonal"
     },
     "age=dry,direction=north_east,segment=2": {
-      "model": "farmerplus:block/banana_leaf_dry"
+      "model": "farmerplus:block/banana_leaf_dry_diagonal"
     },
     "age=young,direction=south_east,segment=0": {
       "model": "farmerplus:block/banana_leaf_young_diagonal_base",
@@ -187,15 +187,15 @@
       "y": 90
     },
     "age=dry,direction=south_east,segment=0": {
-      "model": "farmerplus:block/banana_leaf_dry",
+      "model": "farmerplus:block/banana_leaf_dry_diagonal",
       "y": 90
     },
     "age=dry,direction=south_east,segment=1": {
-      "model": "farmerplus:block/banana_leaf_dry",
+      "model": "farmerplus:block/banana_leaf_dry_diagonal",
       "y": 90
     },
     "age=dry,direction=south_east,segment=2": {
-      "model": "farmerplus:block/banana_leaf_dry",
+      "model": "farmerplus:block/banana_leaf_dry_diagonal",
       "y": 90
     },
     "age=young,direction=south_west,segment=0": {
@@ -223,15 +223,15 @@
       "y": 180
     },
     "age=dry,direction=south_west,segment=0": {
-      "model": "farmerplus:block/banana_leaf_dry",
+      "model": "farmerplus:block/banana_leaf_dry_diagonal",
       "y": 180
     },
     "age=dry,direction=south_west,segment=1": {
-      "model": "farmerplus:block/banana_leaf_dry",
+      "model": "farmerplus:block/banana_leaf_dry_diagonal",
       "y": 180
     },
     "age=dry,direction=south_west,segment=2": {
-      "model": "farmerplus:block/banana_leaf_dry",
+      "model": "farmerplus:block/banana_leaf_dry_diagonal",
       "y": 180
     },
     "age=young,direction=north_west,segment=0": {
@@ -259,15 +259,15 @@
       "y": 270
     },
     "age=dry,direction=north_west,segment=0": {
-      "model": "farmerplus:block/banana_leaf_dry",
+      "model": "farmerplus:block/banana_leaf_dry_diagonal",
       "y": 270
     },
     "age=dry,direction=north_west,segment=1": {
-      "model": "farmerplus:block/banana_leaf_dry",
+      "model": "farmerplus:block/banana_leaf_dry_diagonal",
       "y": 270
     },
     "age=dry,direction=north_west,segment=2": {
-      "model": "farmerplus:block/banana_leaf_dry",
+      "model": "farmerplus:block/banana_leaf_dry_diagonal",
       "y": 270
     }
   }

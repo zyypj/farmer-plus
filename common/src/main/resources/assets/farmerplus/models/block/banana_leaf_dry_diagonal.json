@@ -1,0 +1,133 @@
+{
+  "format_version": "26.3",
+  "credit": "Made with Blockbench",
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "farmerplus:block/banana_leaf_dry",
+    "dry": "farmerplus:block/banana_leaf_dry"
+  },
+  "elements": [
+    {
+      "name": "dry_diagonal_petiole",
+      "from": [
+        -8.6,
+        7.6,
+        17
+      ],
+      "to": [
+        -7.4,
+        8.6,
+        24
+      ],
+      "rotation": {
+        "angle": -45,
+        "axis": "y",
+        "origin": [
+          -8,
+          8,
+          24
+        ],
+        "y": -45
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ],
+          "texture": "#dry"
+        },
+        "east": {
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ],
+          "texture": "#dry"
+        },
+        "south": {
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ],
+          "texture": "#dry"
+        },
+        "west": {
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ],
+          "texture": "#dry"
+        },
+        "up": {
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ],
+          "texture": "#dry"
+        },
+        "down": {
+          "uv": [
+            7,
+            0,
+            9,
+            7
+          ],
+          "texture": "#dry"
+        }
+      }
+    },
+    {
+      "name": "dry_diagonal_hanging_blade",
+      "from": [
+        -9.40381,
+        -14,
+        19.40381
+      ],
+      "to": [
+        2.59619,
+        8,
+        19.40381
+      ],
+      "rotation": {
+        "x": -8,
+        "y": -45,
+        "z": 0,
+        "origin": [
+          -3.40381,
+          8,
+          19.40381
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#dry"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#dry"
+        }
+      }
+    }
+  ]
+}

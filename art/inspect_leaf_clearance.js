@@ -9,7 +9,7 @@ function inspectLeafClearance(root) {
             const modelName = 'wheat_stage' + age + (variation ? '_variant' + variation : '');
             ModelProject.all.filter(p => p.name === modelName && p.save_path).at(-1).select();
             scene.updateMatrixWorld(true);
-            const pixels = new Map(Texture.all.map(t => [t.id, t.canvas.getContext('2d').getImageData(0, 0, 32, 32).data]));
+            const pixels = new Map(Texture.all.map(t => [t.id, {width: t.width, height: t.height, data: t.canvas.getContext('2d').getImageData(0, 0, t.width, t.height).data}]));
             const triangles = cube => {
                 const g = cube.mesh.geometry;
                 const vertices = g.attributes.position;
@@ -25,9 +25,10 @@ function inspectLeafClearance(root) {
             const opaque = (triangle, point, texture) => {
                 const bary = triangle.shape.getBarycoord(point, new THREE.Vector3());
                 const uv = triangle.uv[0].clone().multiplyScalar(bary.x).addScaledVector(triangle.uv[1], bary.y).addScaledVector(triangle.uv[2], bary.z);
-                const x = Math.min(31, Math.max(0, Math.floor(uv.x * 32)));
-                const y = Math.min(31, Math.max(0, Math.floor((1 - uv.y) * 32)));
-                return pixels.get(texture)[(y * 32 + x) * 4 + 3] === 255;
+                const bitmap = pixels.get(texture);
+                const x = Math.min(bitmap.width - 1, Math.max(0, Math.floor(uv.x * bitmap.width)));
+                const y = Math.min(bitmap.height - 1, Math.max(0, Math.floor((1 - uv.y) * bitmap.height)));
+                return bitmap.data[(y * bitmap.width + x) * 4 + 3] === 255;
             };
             const crosses = (first, second, textureA, textureB, attachment) => {
                 for (const a of first) for (const b of second) {

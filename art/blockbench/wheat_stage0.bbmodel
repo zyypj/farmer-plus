@@ -21,8 +21,8 @@
   "ai_used": true,
   "ai_agents": "codex-mcp-client",
   "resolution": {
-    "width": 32,
-    "height": 32
+    "width": 16,
+    "height": 16
   },
   "elements": [
     {
@@ -47,7 +47,7 @@
         4
       ],
       "autouv": 0,
-      "color": 0,
+      "color": 7,
       "rotation": [
         0,
         -22.5,
@@ -63,8 +63,8 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
           "texture": 0
         },
@@ -79,10 +79,10 @@
         },
         "south": {
           "uv": [
-            32,
+            16,
             0,
             0,
-            32
+            16
           ],
           "texture": 0
         },
@@ -115,7 +115,7 @@
         }
       },
       "type": "cube",
-      "uuid": "c366b225-e2df-44c8-576d-06b17efb5a45"
+      "uuid": "4ff16d83-063b-3d0f-4e71-909b36b2baca"
     },
     {
       "name": "back_stalks",
@@ -139,7 +139,7 @@
         11.5
       ],
       "autouv": 0,
-      "color": 2,
+      "color": 3,
       "rotation": [
         0,
         22.5,
@@ -153,10 +153,10 @@
       "faces": {
         "north": {
           "uv": [
-            32,
+            16,
             0,
             0,
-            32
+            16
           ],
           "texture": 1
         },
@@ -173,8 +173,8 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
           "texture": 1
         },
@@ -207,7 +207,7 @@
         }
       },
       "type": "cube",
-      "uuid": "1149dd94-73e4-88dc-62bc-a5e47bd2db9f"
+      "uuid": "aa7800b4-05d3-5b45-b115-a0dbe7d51e00"
     },
     {
       "name": "left_stalks",
@@ -231,7 +231,7 @@
         16
       ],
       "autouv": 0,
-      "color": 9,
+      "color": 7,
       "rotation": [
         0,
         45,
@@ -254,10 +254,10 @@
         },
         "east": {
           "uv": [
-            32,
+            16,
             0,
             0,
-            32
+            16
           ],
           "texture": 1
         },
@@ -274,8 +274,8 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
           "texture": 1
         },
@@ -299,7 +299,7 @@
         }
       },
       "type": "cube",
-      "uuid": "a5208cd4-a74c-b70c-6349-eed34f38ab59"
+      "uuid": "c102a944-b508-b9f1-b55c-32b0563e851f"
     },
     {
       "name": "right_stalks",
@@ -323,7 +323,7 @@
         16
       ],
       "autouv": 0,
-      "color": 2,
+      "color": 6,
       "rotation": [
         0,
         -45,
@@ -348,8 +348,8 @@
           "uv": [
             0,
             0,
-            32,
-            32
+            16,
+            16
           ],
           "texture": 0
         },
@@ -364,10 +364,10 @@
         },
         "west": {
           "uv": [
-            32,
+            16,
             0,
             0,
-            32
+            16
           ],
           "texture": 0
         },
@@ -391,15 +391,15 @@
         }
       },
       "type": "cube",
-      "uuid": "5be9519e-28d2-3041-eaf4-c96542e58050"
+      "uuid": "3805719f-4f5e-2b94-fdec-3d4661f296c1"
     }
   ],
   "groups": [],
   "outliner": [
-    "c366b225-e2df-44c8-576d-06b17efb5a45",
-    "1149dd94-73e4-88dc-62bc-a5e47bd2db9f",
-    "a5208cd4-a74c-b70c-6349-eed34f38ab59",
-    "5be9519e-28d2-3041-eaf4-c96542e58050"
+    "4ff16d83-063b-3d0f-4e71-909b36b2baca",
+    "aa7800b4-05d3-5b45-b115-a0dbe7d51e00",
+    "c102a944-b508-b9f1-b55c-32b0563e851f",
+    "3805719f-4f5e-2b94-fdec-3d4661f296c1"
   ],
   "textures": [
     {
@@ -410,10 +410,10 @@
       "id": "crop",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": true,
       "use_as_default": false,
       "layers_enabled": false,
@@ -432,8 +432,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "30dba88d-26dc-b99f-342e-bef25c7cd067",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAhUlEQVR4nGNgGAWjYBSMglEwCkbBKBgFo2AUjIJRQCEIqXD4T4l+FkIKFu7PglsQ7ziNEZ1PqoXo+hkJWbZ55zUwf03HAUZ0X/u6azGA5EE0NkcRYx4TsgNAimAKkIMW2XJsfBAA6UMPEWTzCOlnQAYgy0GuJRS/1FCHEgKkupSgT4hQDwCgDlfmvQHDKgAAAABJRU5ErkJggg=="
+      "uuid": "d381bb1a-5d35-f87e-1866-fa983d4f5aa1",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAANUlEQVR4nGNgGAWjYBRQFyR2uvwHYVxyuNQwgYit52vAgkrKghiam9eEguXwqcGwCZ8YOh8AZEcamBKvw1oAAAAASUVORK5CYII="
     },
     {
       "name": "wheat_stage0_alternate.png",
@@ -443,10 +443,10 @@
       "id": "alternate",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -465,8 +465,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "e94507ea-3306-f0e1-0945-fc871c4c6afe",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAiUlEQVR4nGNgGAWjYBSMglEwCkbBKBgFo2AUjIJRMMCAEZ/kvAMZ/7GJJznMYAystPu/vv0QXv34zAOZgeIAdEkQf/POa2A+zCKQpSDa112LASQHotENxGYeTC26eSDAhGwATAEyQFaMzccgPeiWE2seVgDyJcj1MN+Sq4ZYtfAQIMWlpMY9Pj0A8HFSzauR6XAAAAAASUVORK5CYII="
+      "uuid": "088a7ba4-3ea9-342c-0d6e-ff288c9b6ea8",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAOElEQVR4nGNgGAWjYBRQH8R2Of5HZiPzcallggnUrw0CC2y8UPkfhEFsJWVBrJqR1WK1HZ8YujgApcsdTwMyG1kAAAAASUVORK5CYII="
     },
     {
       "name": "wheat_stage0_variant2.png",
@@ -476,10 +476,10 @@
       "id": "variant2",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -498,8 +498,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "1016612a-d847-7424-af23-7484337e0a07",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAhElEQVR4nGNgGAWjYBSMglEwCkbBKBgFo2AUjIJRQCcQUe3wH5s4CyFNK1oPMC49lAXXHG03DYNPikPQ9TLiU7B55zUGX3ctMA0CIMeg+wgkj8tRxJjFhO4AkGaYImSAbDk2PswS5BAh1iwGbADkQ5APcMUdKerwqcEIAVJdS5Rv8KgFAHpYWOJD9QAZAAAAAElFTkSuQmCC"
+      "uuid": "73cf22b7-12f8-f999-788e-e81e01cd3130",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAANklEQVR4nGNgGAWjYBRQF6R0u/zHJY4sh66OCUTsuFgDFmxbF4phiJKyIJgGqcGnDqcrCIkBAM1yHdNZFYjyAAAAAElFTkSuQmCC"
     },
     {
       "name": "wheat_stage0_variant3.png",
@@ -509,10 +509,10 @@
       "id": "variant3",
       "group": "",
       "scope": 0,
-      "width": 32,
-      "height": 32,
-      "uv_width": 32,
-      "uv_height": 32,
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
       "particle": false,
       "use_as_default": false,
       "layers_enabled": false,
@@ -531,8 +531,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "cf325b64-3b96-adad-03ff-9ba48f40f8e8",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAg0lEQVR4nGNgGAWjYBSMglEwCkbBKBgFo2AUjIJRMMCAEZ/k4r3p/2HsWOeZjOh8Ui3Dpp8Rn2Wbd14D81d1HYarCyuzBavzdddiAMmDaGyOItY8JmRFMAXIAFkxNj4IgPShhwiyeTBH49LPgAxAikGuRdZES3XwEEAHhFxK0CdEqgcAp2FV1fAv0lAAAAAASUVORK5CYII="
+      "uuid": "08e22632-a18f-4f51-8511-2ab6500704e4",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAOElEQVR4nGNgGAWjYBRQFyS1Of0HYWzi2NgwwARjKCkLgultZ6rgilpWBoPZIDGYOEwMqwvIEQMA1tUdZzoUQS4AAAAASUVORK5CYII="
     }
   ]
 }

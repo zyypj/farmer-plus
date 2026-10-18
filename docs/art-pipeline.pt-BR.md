@@ -6,7 +6,7 @@ A arte do Farmer+ segue **Vanilla+ realista**: pixel art reconhecível como Mine
 
 ## Regras de estilo
 
-- **Texturas 16×16:** toda textura de bloco e de item usa **16×16 pixels**. Desenhe direto na grade, com grupos de pixels definidos, e simplifique as marcações pequenas. Só o ícone do mod é maior (512×512). Texturas de entidade e de tela (`textures/entity/…`, `textures/gui/…`) mantêm o tamanho do layout vanilla que substituem, como 128×64 num bote, porque os modelos e telas leem regiões fixas.
+- **Texturas 16×16:** toda textura de bloco e de item usa **16×16 pixels**. Desenhe direto na grade, com grupos de pixels definidos, e simplifique as marcações pequenas. Só o ícone do mod é maior (512×512). O trigo não tem exceção de tamanho: sprites dos estágios, todas as variantes, atlas das folhas modeladas, materiais do feixe e todos os sprites esmagados (incluindo os arquivos AGE 0–1 sem uso) são desenhados nativamente em 16×16. As imagens embutidas e a resolução UV dos projetos Blockbench também precisam ser 16×16. Texturas de entidade e de tela (`textures/entity/…`, `textures/gui/…`) mantêm o tamanho do layout vanilla que substituem, como 128×64 num bote, porque os modelos e telas leem regiões fixas.
 - **PNG, RGBA, 8 bits.** Fundo transparente nos itens. Sem pixels semitransparentes, exceto materiais tipo vidro.
 - **Sem anti-aliasing, degradês contínuos, desfoque ou texturas fotográficas.** Use grupos de pixels definidos e sombreamento em degraus. Amplie as prévias pelo vizinho mais próximo.
 - **Paleta limitada.** Em geral, 5–8 tons por material, com verdes, palha, ocres e cremes naturais. Evite pontilhado aleatório e contraste excessivo entre caules vizinhos.
@@ -27,7 +27,7 @@ A arte do Farmer+ segue **Vanilla+ realista**: pixel art reconhecível como Mine
 | Texturas de bloco | `common/src/main/resources/assets/farmerplus/textures/block/<id>[_parte].png` | sim |
 | Substituições do trigo vanilla | `common/src/main/resources/assets/minecraft/{blockstates,models,items,textures}/…` | sim |
 | Modelos de bloco (exportados) | `common/src/main/resources/assets/farmerplus/models/block/<id>.json` | sim |
-| Ícone do mod | `common/src/main/resources/assets/farmerplus/icon.png` (quadrado, 128×128 ou 512×512) | sim |
+| Ícone do mod | `common/src/main/resources/assets/farmerplus/icon.png` (512×512) | sim |
 | Projetos do Blockbench | `art/blockbench/<id>.bbmodel` | não |
 | Arquivos de trabalho/camadas | `art/textures/…` | não |
 

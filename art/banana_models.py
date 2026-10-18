@@ -96,6 +96,12 @@ def leaves():
     dry['faces'] = {'north': face('dry'), 'south': face('dry')}
     petiole = box('dry_petiole', [7.4, 7.6, 14], [8.6, 8.6, 21], 'dry', (7, 0, 9, 7))
     model('banana_leaf_dry', {'dry': NS + 'banana_leaf_dry'}, [petiole, dry])
+    diagonal_petiole = box('dry_diagonal_petiole', [-8.6, 7.6, 17], [-7.4, 8.6, 24], 'dry', (7, 0, 9, 7), rotation([-8, 8, 24], y=-45))
+    offset = 6.5 / math.sqrt(2)
+    origin = [-8 + offset, 8, 24 - offset]
+    diagonal_blade = box('dry_diagonal_hanging_blade', [origin[0] - 6, -14, origin[2]], [origin[0] + 6, 8, origin[2]], 'dry', rotation=rotation(origin, x=-8, y=-45))
+    diagonal_blade['faces'] = {'north': face('dry'), 'south': face('dry')}
+    model('banana_leaf_dry_diagonal', {'dry': NS + 'banana_leaf_dry'}, [diagonal_petiole, diagonal_blade])
 
 
 def stems():
