@@ -4,7 +4,7 @@
     "model_format": "java_block",
     "box_uv": false
   },
-  "name": "avocado_leaves_unripe",
+  "name": "avocado_fruit_ripe",
   "parent": "",
   "java_block_version": "26.3",
   "ambientocclusion": false,
@@ -18,6 +18,8 @@
   "multi_file_ruleset": "",
   "variable_placeholder_buttons": [],
   "unhandled_root_fields": {},
+  "ai_used": true,
+  "ai_agents": "FarmerPlusArt",
   "resolution": {
     "width": 16,
     "height": 16
@@ -35,17 +37,17 @@
       "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        8.33,
-        -0.98,
-        7.83
+        8.27,
+        15.02,
+        7.77
       ],
       "to": [
-        8.67,
-        0,
-        8.17
+        8.73,
+        16,
+        8.23
       ],
       "autouv": 0,
-      "color": 1,
+      "color": 2,
       "origin": [
         0,
         0,
@@ -108,7 +110,7 @@
         }
       },
       "type": "cube",
-      "uuid": "c6f6f4d6-be28-7634-29c0-99dc19215fc5"
+      "uuid": "2c815306-355c-4cfc-c486-8ecc0ca79479"
     },
     {
       "name": "fruit_0_neck",
@@ -122,17 +124,17 @@
       "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        8.1724,
-        -1.602,
-        7.6724
+        7.807,
+        13.93,
+        7.307
       ],
       "to": [
-        8.8276,
-        -0.8844,
-        8.3276
+        9.193,
+        15.126,
+        8.693
       ],
       "autouv": 0,
-      "color": 6,
+      "color": 7,
       "rotation": [
         0,
         -12,
@@ -140,7 +142,7 @@
       ],
       "origin": [
         8.5,
-        -0.9,
+        15.1,
         8
       ],
       "faces": {
@@ -200,7 +202,7 @@
         }
       },
       "type": "cube",
-      "uuid": "626b4c15-5b8b-5bd7-dd1e-e166894a6213"
+      "uuid": "24d011a4-36e7-58fa-4c38-70adb44957a6"
     },
     {
       "name": "fruit_0_upper_shoulders",
@@ -214,17 +216,17 @@
       "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        7.9696,
-        -2.07,
-        7.4696
+        7.378,
+        13.15,
+        6.878
       ],
       "to": [
-        9.0304,
-        -1.5708,
-        8.5304
+        9.622,
+        13.982,
+        9.122
       ],
       "autouv": 0,
-      "color": 5,
+      "color": 8,
       "rotation": [
         0,
         -12,
@@ -232,7 +234,7 @@
       ],
       "origin": [
         8.5,
-        -0.9,
+        15.1,
         8
       ],
       "faces": {
@@ -292,7 +294,7 @@
         }
       },
       "type": "cube",
-      "uuid": "4d942c66-b8ca-7d06-ce3a-7360c789275c"
+      "uuid": "7cf1fb7f-7c6f-a593-aabf-d5adeaffbeb9"
     },
     {
       "name": "fruit_0_lower_shoulders",
@@ -306,17 +308,17 @@
       "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        7.681,
-        -2.577,
-        7.181
+        6.7675,
+        12.305,
+        6.2675
       ],
       "to": [
-        9.319,
-        -2.0388,
-        8.819
+        10.2325,
+        13.202,
+        9.7325
       ],
       "autouv": 0,
-      "color": 3,
+      "color": 5,
       "rotation": [
         0,
         -12,
@@ -324,7 +326,7 @@
       ],
       "origin": [
         8.5,
-        -0.9,
+        15.1,
         8
       ],
       "faces": {
@@ -384,7 +386,7 @@
         }
       },
       "type": "cube",
-      "uuid": "4987c58b-ee6d-3a9a-58da-d39b48afc4a7"
+      "uuid": "dc4718e1-6290-309c-0e92-aa719cf33359"
     },
     {
       "name": "fruit_0_upper_belly",
@@ -398,17 +400,17 @@
       "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        7.3924,
-        -3.201,
-        6.8924
+        6.157,
+        11.265,
+        5.657
       ],
       "to": [
-        9.6076,
-        -2.5458,
-        9.1076
+        10.843,
+        12.357,
+        10.343
       ],
       "autouv": 0,
-      "color": 4,
+      "color": 3,
       "rotation": [
         0,
         -12,
@@ -416,7 +418,7 @@
       ],
       "origin": [
         8.5,
-        -0.9,
+        15.1,
         8
       ],
       "faces": {
@@ -476,7 +478,7 @@
         }
       },
       "type": "cube",
-      "uuid": "513380dd-a46c-eb45-1329-9d7aab58ee97"
+      "uuid": "f99c1baf-8a22-bcae-fba5-19b559e8e596"
     },
     {
       "name": "fruit_0_full_belly",
@@ -490,17 +492,17 @@
       "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        7.2364,
-        -3.981,
-        6.7364
+        5.827,
+        9.965,
+        5.327
       ],
       "to": [
-        9.7636,
-        -3.1698,
-        9.2636
+        11.173,
+        11.317,
+        10.673
       ],
       "autouv": 0,
-      "color": 8,
+      "color": 2,
       "rotation": [
         0,
         -12,
@@ -508,7 +510,7 @@
       ],
       "origin": [
         8.5,
-        -0.9,
+        15.1,
         8
       ],
       "faces": {
@@ -568,7 +570,7 @@
         }
       },
       "type": "cube",
-      "uuid": "78536495-810b-9025-7c42-96bc9eca24a6"
+      "uuid": "7195a9fd-078e-e7e3-4124-0c22aeb4cb74"
     },
     {
       "name": "fruit_0_lower_belly",
@@ -582,17 +584,17 @@
       "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        7.4392,
-        -4.527,
-        6.9392
+        6.256,
+        9.055,
+        5.756
       ],
       "to": [
-        9.5608,
-        -3.9498,
-        9.0608
+        10.744,
+        10.017,
+        10.244
       ],
       "autouv": 0,
-      "color": 1,
+      "color": 2,
       "rotation": [
         0,
         -12,
@@ -600,7 +602,7 @@
       ],
       "origin": [
         8.5,
-        -0.9,
+        15.1,
         8
       ],
       "faces": {
@@ -660,7 +662,7 @@
         }
       },
       "type": "cube",
-      "uuid": "eaedccd8-9953-89d6-6963-5fc848a9bb41"
+      "uuid": "6b1719cc-096e-f0c5-1ffa-62cdadbd83c6"
     },
     {
       "name": "fruit_0_rounded_base",
@@ -674,17 +676,17 @@
       "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        7.798,
-        -4.878,
-        7.298
+        7.015,
+        8.47,
+        6.515
       ],
       "to": [
-        9.202,
-        -4.4958,
-        8.702
+        9.985,
+        9.107,
+        9.485
       ],
       "autouv": 0,
-      "color": 7,
+      "color": 0,
       "rotation": [
         0,
         -12,
@@ -692,7 +694,7 @@
       ],
       "origin": [
         8.5,
-        -0.9,
+        15.1,
         8
       ],
       "faces": {
@@ -752,24 +754,24 @@
         }
       },
       "type": "cube",
-      "uuid": "cb961fa5-dba0-557e-27fe-cd7e98475ad6"
+      "uuid": "812b71aa-ef11-4850-e289-96e17b7533d4"
     }
   ],
   "groups": [],
   "outliner": [
-    "c6f6f4d6-be28-7634-29c0-99dc19215fc5",
-    "626b4c15-5b8b-5bd7-dd1e-e166894a6213",
-    "4d942c66-b8ca-7d06-ce3a-7360c789275c",
-    "4987c58b-ee6d-3a9a-58da-d39b48afc4a7",
-    "513380dd-a46c-eb45-1329-9d7aab58ee97",
-    "78536495-810b-9025-7c42-96bc9eca24a6",
-    "eaedccd8-9953-89d6-6963-5fc848a9bb41",
-    "cb961fa5-dba0-557e-27fe-cd7e98475ad6"
+    "2c815306-355c-4cfc-c486-8ecc0ca79479",
+    "24d011a4-36e7-58fa-4c38-70adb44957a6",
+    "7cf1fb7f-7c6f-a593-aabf-d5adeaffbeb9",
+    "dc4718e1-6290-309c-0e92-aa719cf33359",
+    "f99c1baf-8a22-bcae-fba5-19b559e8e596",
+    "7195a9fd-078e-e7e3-4124-0c22aeb4cb74",
+    "6b1719cc-096e-f0c5-1ffa-62cdadbd83c6",
+    "812b71aa-ef11-4850-e289-96e17b7533d4"
   ],
   "textures": [
     {
-      "name": "avocado_fruit_unripe.png",
-      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/avocado_fruit_unripe.png",
+      "name": "avocado_fruit_ripe.png",
+      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/avocado_fruit_ripe.png",
       "folder": "block",
       "namespace": "farmerplus",
       "id": "fruit",
@@ -797,8 +799,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "ab0ba942-13a4-da73-3988-28fe55ee77b3",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAh0lEQVR4nGOcfSTnPwMU3Hv6HMZkePLiA5z96tlXODtERZNh7/HrYPbzF98YmEAMZVEFMHY1sGQgFTDhkpCREKDMgCcvPhBlCAuIuPv6AUYYwAwh2wXEAiaiVY4agBOwTJt2jIEkoILKZUTOC9jAobOQdI/TBbgyEAwgZyRsgP7p4NXjXyh8ABw6L8O1mUy4AAAAAElFTkSuQmCC"
+      "uuid": "358efaa5-b41d-1369-7e9d-27863abaca1f",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAxElEQVR4nGPMLPP7zwAFL199gzEZ3rz8Cmd/evUdzs7OMGTYe/w6mP38xTcGJrgMAwODuBgXA6mACZvtyAaJiHMTZ4A4kiZsXuET48RvALpGdIDLJUz4NCJrunf5DW4DxHEEHnJMEOUFcSSDnt/5jKIQnY/VgD3r78HZkiq8KLZz87FgN2APkiZdawms3sEXlUwugUooAtgCFFcAggALsgvIAYzIeQEbuHr5NV4DWHBlIBhAzkjYAEoskANINuDrpz8ofABU80oq5PNDXQAAAABJRU5ErkJggg=="
     }
   ]
 }

@@ -27,15 +27,19 @@ Inspirada no abacateiro real (*Persea americana*): 9–20 m de altura, tronco cu
 
 Só folhas **naturais** (colocadas pela árvore, não pelo jogador) dão fruto, e só as que têm **ar embaixo** e seguem um padrão espaçado, então uma árvore madura carrega uma quantidade realista de abacates (cerca de 5% das folhas).
 
-| Estágio | `fruit` | Aparência | Próximo estágio |
-|---|---|---|---|
-| Folhas | 0 | Folhas comuns | Flores (≈1 a cada 24 random ticks) |
-| Florindo | 1 | Florzinhas amarelo-esverdeadas embaixo das folhas | Fruto verde (≈1 em 8) |
-| Verde | 2 | Abacates pequenos e verdes pendurados | Maduro (≈1 em 10) |
-| Maduro | 3 | Abacates grandes e escuros pendurados | Cai sozinho (≈1 em 40) |
+O fruto é um bloco próprio, **`avocado_fruit`**, pendurado no bloco de ar embaixo da folha (como o cacau no tronco da selva). Ele tem hitbox de verdade para mirar, nunca cai sozinho e quebra se a folha de cima for removida.
 
-- **Colher:** botão direito nas folhas com fruto maduro dá um abacate; as folhas começam um novo ciclo, então a árvore frutifica muitas vezes.
-- **Quebrar** folhas maduras também dá o abacate. As folhas dão mudas (5%) e **gravetos** como as de carvalho; tesoura ou Toque de Seda dão o bloco de folhas.
+| Estágio | `stage` | Aparência | Próximo estágio |
+|---|---|---|---|
+| — | — | Folhas comuns | A folha solta flores embaixo (≈1 a cada 24 random ticks) |
+| Florindo | 0 | Florzinhas amarelo-esverdeadas | Fruto verde (≈1 em 8) |
+| Verde | 1 | Abacate pequeno e verde | Maduro (≈1 em 10) |
+| Maduro | 2 | Abacate grande e escuro | Fica até ser colhido |
+
+Com o `random_tick_speed` padrão, o primeiro abacate maduro aparece uns 7–11 minutos depois que a árvore cresce; um mesmo ponto leva cerca de 48 minutos de folha a fruto maduro.
+
+- **Colher:** botão direito num abacate maduro; o lugar fica livre e a folha floresce de novo depois, então a árvore frutifica muitas vezes. Farinha de osso avança um estágio.
+- **Quebrar** um abacate maduro também dá o abacate; flores e fruto verde não dão nada. As folhas dão mudas (5%) e **gravetos** como as de carvalho; tesoura ou Toque de Seda dão o bloco de folhas.
 - Abacate: 4 de fome, 0,6 de saturação; aldeões comem; dá para compostar.
 
 ## Conjunto de madeira

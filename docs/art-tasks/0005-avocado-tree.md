@@ -64,7 +64,7 @@ The blockstate is multipart: `*_core` is always drawn and `*_arm` (pointing nort
 
 ## Fruit models (Blockbench, optional upgrade)
 
-`models/block/avocado_leaves_flowers.json`, `avocado_leaves_unripe.json` and `avocado_leaves_ripe.json` are overlays drawn **under** a leaves block (the blockstate is multipart, `fruit` 1–3). They currently use simple boxes. Rebuild them as pear-shaped avocados (2–3 cuboids each: narrow neck, wide body) hanging 3–6 px below the leaves on a short stalk, 1–2 fruits per block, ≤ 8 elements per model. Keep everything between y = −8 and y = 0 and inside x/z 0–16.
+`models/block/avocado_fruit_flowering.json`, `avocado_fruit_unripe.json` and `avocado_fruit_ripe.json` (sources `art/blockbench/avocado_fruit_*.bbmodel`) belong to the **`avocado_fruit` block**, which sits in the air block under a leaf (`stage` 0–2). They hang from the top face: keep the stalk touching y = 16, everything between y = 8 and y = 16 and inside x/z 0–16, ≤ 8 elements per model. These used to be leaf overlays named `avocado_leaves_*` drawn between y = −8 and 0; the models were moved up by 16 px, so `art/avocado_pixels.py`, `art/export_avocado.js` and `art/preview_avocado.js` must write the new names and coordinates (`python art/validate_avocado_art.py` already checks them).
 
 ## Done when
 

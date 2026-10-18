@@ -6,23 +6,31 @@ Art tasks 0005 and 0002 replace the provisional images in place. Twenty-six avoc
 
 ## Tree and wood
 
-Grey-brown bark has short irregular fissures and small plates. Cut ends and stripped logs expose creamy, slightly pink wood. Planks, door, lattice trapdoor, signs, shelf and boats share that warm palette. Leaves use large dark-green lanceolate clusters with small transparent gaps and lighter midribs; the sapling has five large leaves. Unripe skins are smooth green, while ripe skins have dark green/purple shadows and sparse pebbled highlights. The fruit item has a pear silhouette and a short stalk.
+Grey-brown bark has short irregular fissures and small plates. Cut ends and stripped logs expose creamy, slightly pink wood. Planks, door, lattice trapdoor, signs, shelf and boats share that warm palette. Leaves use original native 16×16 lanceolate clusters with softer dark-green shading, subtle central veins, restrained waxy highlights and irregular transparent gaps. Reduced edge contrast and varied directions keep the crown dense and compatible with vanilla; the sapling shares the new leaf palette. Unripe skins are smooth green, while ripe skins have dark green/purple shadows and sparse pebbled highlights. The fruit item has a pear silhouette and a short stalk.
 
 ![Native tree and wood textures](images/avocado-textures.png)
 
 ![Additional wood textures and native entity layouts](images/avocado-wood-extras.png)
 
+## Inventory icon refinement
+
+The boat and chest-boat sprites use an original diagonal view, a readable recessed hull, shorter integrated oars and a shaded chest. Sign and hanging-sign icons have stronger board depth, wood grain and clearer supports; the door icon has four window panes and two lower panels matching the block design. All five icons retain the creamy avocado palette, native 16×16 pixels and existing paths. Vanilla sprites were viewed only as style references.
+
+![Refined wood item icons](images/avocado-items-refined.png)
+
+Run `python art/avocado_wood_pixels.py --items-only` to regenerate these five icons and their preview without rewriting block textures or entity atlases.
+
 ## Hanging models
 
-The existing multipart leaf blockstate and all resource names are preserved. Each overlay is a Java Block/Item model exported through the Blockbench MCP server, saved in `art/blockbench/avocado_leaves_<stage>.bbmodel` with an embedded 16×16 atlas.
+The hanging fruit block uses the flowering, unripe and ripe models below. Each is a Java Block/Item model exported through the Blockbench MCP server, saved in `art/blockbench/avocado_fruit_<stage>.bbmodel` with an embedded 16×16 atlas. Models occupy the upper half of the separate fruit block, with their stalks reaching the leaves above.
 
 | Overlay | Elements | Vertical bounds after rotation | Arrangement |
 |---|---:|---|---|
-| `avocado_leaves_flowers` | 8 | −3.30…0 | Two small branching panicles with solid stalks and florets |
-| `avocado_leaves_unripe` | 8 | −4.94…0 | One smaller green pear, seven connected body sections and one stalk |
-| `avocado_leaves_ripe` | 8 | −6.08…0 | One larger dark pear, seven connected body sections and one stalk |
+| `avocado_fruit_flowering` | 8 | 12.70…16 | Two small branching panicles with solid stalks and florets |
+| `avocado_fruit_unripe` | 8 | 9.82…16 | One smaller green pear, seven connected body sections and one stalk |
+| `avocado_fruit_ripe` | 8 | 8.34…16 | One larger dark pear, seven connected body sections and one stalk |
 
-One fruit per overlay leaves room for a gradual narrow neck, broad lower belly and smaller rounded base within the eight-element budget. The sections share a slight lean and continuous side UV heights. This replaces the task's initial two-fruit box suggestion while retaining its permitted one-fruit arrangement and performance limit. Every rotated vertex stays within X/Z=0…16 and Y=−8…0. Flowers remain flowers rather than prematurely showing fruit.
+One fruit per model leaves room for a gradual narrow neck, broad lower belly and smaller rounded base within the eight-element budget. Both fruit stages are now 65% wider and their body sections are 30% taller than the first export; the stalk is thicker too, improving visibility below a full leaf block. The sections share a slight lean and continuous side UV heights. This replaces the task's initial two-fruit box suggestion while retaining its permitted one-fruit arrangement and performance limit. Every rotated vertex stays within X/Z=0…16 and Y=8…16 in the fruit block, equivalent to Y=−8…0 relative to the leaves above. Flowers remain flowers rather than prematurely showing fruit.
 
 ![Native Blockbench comparison below leaf blocks](images/avocado-canopy-front.png)
 
@@ -46,4 +54,4 @@ The existing 48 trampled models and blockstate geometry are unchanged. `art/tram
 
 Build and the validator passed. Checks include native embedded texture equality, all rotated avocado vertices, element budgets, crushed transparency/variation and current asset bytes in all three loader jars. The MCP export report is `build/art/validation/avocado-blockbench.json`.
 
-The canopy image is a Blockbench render and the wheat field is an offline model render. Manual inspection of a grown tree and repeated survival trampling inside Minecraft remains pending; the NeoForge resource-load report records loading separately in `build/art/validation/avocado-crushed-resource-load.json`.
+The canopy image is a Blockbench render and the wheat field is an offline model render. The latest enlarged-fruit build passed 19,188 validator checks, and NeoForge loaded the current models and textures without Farmer+ model or texture warnings; resource hashes and atlas loading are recorded in `build/art/validation/avocado-canopy-resource-load.json`. Manual inspection of a grown tree and repeated survival trampling inside Minecraft remains pending.

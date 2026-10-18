@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ASSET = ROOT / 'common/src/main/resources/assets/farmerplus'
 WOOD = ['9d7e69', 'b99a80', 'd0b297', 'e2c5a7', 'efd6b7', 'fae5c7']
 BARK = ['514b43', '655d52', '776e60', '8a7f70', 'a09380', 'afa18c']
-LEAF = ['142e24', '20442d', '2b5934', '3a6e3e', '598c4c', '82a965']
+LEAF = ['203a29', '2d4d32', '3c6140', '50784b', '72965b', '91ac70']
 
 
 def color(hexes):
@@ -128,21 +128,24 @@ def leaf(draw, cx, cy, length, width, angle, p):
     a = math.radians(angle)
     def pt(u, v):
         return (round(cx + u * math.cos(a) - v * math.sin(a)), round(cy + u * math.sin(a) + v * math.cos(a)))
-    draw.polygon([pt(-length / 2, 0), pt(-length / 4, -width / 2), pt(length / 4, -width / 2), pt(length / 2, 0), pt(length / 5, width / 2), pt(-length / 4, width / 2)], fill=p[1])
-    draw.polygon([pt(-length / 2 + 1, 0), pt(-length / 4, -width / 2), pt(length / 4, -width / 2 + 1), pt(length / 2 - 1, 0), pt(-length / 4, 0)], fill=p[3])
-    draw.line([pt(-length / 3, 0), pt(length / 3, 0)], fill=p[2])
-    draw.line([pt(-length / 4, -1), pt(length / 7, -1)], fill=p[4])
+    draw.polygon([pt(-length / 2, 0), pt(-length / 4, -width / 2), pt(length / 4, -width / 2), pt(length / 2, 0), pt(length / 5, width / 2), pt(-length / 4, width / 2)], fill=p[2])
+    draw.polygon([pt(-length / 2 + 1, 0), pt(-length / 4, -width / 2), pt(length / 4, -width / 2), pt(length / 2 - 1, 0), pt(-length / 4, 0)], fill=p[3])
+    draw.line([pt(-length / 3, 0), pt(length / 4, 0)], fill=p[4])
+    draw.line([pt(-length / 5, width / 2), pt(length / 5, width / 2)], fill=p[1])
+    draw.point(pt(-length / 4, -1), fill=p[5])
 
 
 def leaves():
     p = color(LEAF)
-    large = Image.new('RGBA', (48, 48), p[0])
+    large = Image.new('RGBA', (48, 48), p[1])
     d = ImageDraw.Draw(large)
     for dx in (0, 16, 32):
         for dy in (0, 16, 32):
-            for x, y, length, width, angle in [(2, 2, 9, 4, -35), (12, 2, 9, 5, 36), (6, 7, 9, 4, -28), (0, 11, 9, 4, 48), (12, 12, 10, 5, -40), (5, 15, 8, 3, 20)]:
+            d.polygon([(dx, dy + 5), (dx + 4, dy + 4), (dx + 6, dy + 8), (dx + 1, dy + 10)], fill=p[0])
+            d.polygon([(dx + 8, dy + 9), (dx + 13, dy + 8), (dx + 16, dy + 12), (dx + 13, dy + 15), (dx + 9, dy + 13)], fill=p[0])
+            for x, y, length, width, angle in [(1, 1, 7, 3, -30), (9, 2, 8, 4, 25), (15, 7, 7, 3, -48), (5, 7, 8, 4, -32), (2, 13, 8, 3, 35), (10, 13, 8, 4, -20)]:
                 leaf(d, dx + x, dy + y, length, width, angle, p)
-            for x, y in [(7, 1), (8, 1), (2, 7), (3, 8), (8, 12), (0, 6), (14, 7), (15, 7), (9, 15), (5, 11)]:
+            for x, y in [(10, 0), (11, 0), (11, 1), (2, 3), (3, 3), (3, 4), (8, 7), (8, 8), (7, 8), (14, 6), (15, 6), (15, 7), (0, 11), (1, 11), (1, 12), (12, 10), (12, 11), (11, 11), (5, 13), (6, 13), (6, 14), (0, 7), (7, 3), (8, 3), (4, 10), (9, 15), (10, 15), (15, 13), (15, 14), (14, 14)]:
                 d.point((dx + x, dy + y), fill=(0, 0, 0, 0))
     return large.crop((16, 16, 32, 32))
 
@@ -225,14 +228,19 @@ def door_item():
     im = Image.new('RGBA', (16, 16))
     d = ImageDraw.Draw(im)
     p = color(WOOD)
-    d.rectangle((4, 1, 11, 15), fill=p[1])
-    d.rectangle((4, 1, 10, 14), fill=p[3])
-    d.line([(4, 1), (10, 1)], fill=p[5])
-    d.rectangle((5, 3, 9, 6), fill=(0, 0, 0, 0))
-    d.line([(7, 3), (7, 6)], fill=p[3])
-    d.rectangle((5, 9, 9, 13), fill=p[2])
-    d.line([(6, 10), (6, 12)], fill=p[4])
-    d.point((9, 8), fill='#9b7c4f')
+    d.rectangle((3, 0, 12, 15), fill=p[0])
+    d.rectangle((3, 0, 11, 14), fill=p[3])
+    d.line([(4, 0), (10, 0)], fill=p[5])
+    d.line([(3, 1), (3, 14)], fill=p[4])
+    for x in (5, 9):
+        for y in (2, 5):
+            d.rectangle((x, y, x + 1, y + 1), fill=(0, 0, 0, 0))
+        d.rectangle((x, 10, x + 1, 13), fill=p[1])
+        d.line([(x, 10), (x, 12)], fill=p[2])
+        d.point((x + 1, 10), fill=p[4])
+    d.line([(4, 8), (10, 8)], fill=p[2])
+    d.point((11, 8), fill='#856b43')
+    d.point((10, 8), fill='#d9b86b')
     return im
 
 
@@ -264,7 +272,8 @@ def model(stage):
     else:
         ripe = stage == 'ripe'
         x, z, length, scale = (8.5, 8, .9, 1 if ripe else .78)
-        elements.append(cube('fruit_0_stalk', [x - .17, -length - .08, z - .17], [x + .17, 0, z + .17], [12, 0, 14, 8]))
+        width_scale, height_scale = scale * 1.65, scale * 1.30
+        elements.append(cube('fruit_0_stalk', [x - .23, -length - .08, z - .23], [x + .23, 0, z + .23], [12, 0, 14, 8]))
         rotation = {'origin': [x, -length, z], 'x': 0, 'y': -12, 'z': 5}
         for part, width, low, high, uv in [
             ('neck', .42, -.9, .02, [0, 12, 8, 16]),
@@ -275,7 +284,7 @@ def model(stage):
             ('lower_belly', 1.36, -4.65, -3.91, [0, 0, 12, 12]),
             ('rounded_base', .9, -5.1, -4.61, [8, 12, 16, 16]),
         ]:
-            section = cube('fruit_0_' + part, [x - width * scale, -length + low * scale, z - width * scale], [x + width * scale, -length + high * scale, z + width * scale], uv, rotation)
+            section = cube('fruit_0_' + part, [x - width * width_scale, -length + low * height_scale, z - width * width_scale], [x + width * width_scale, -length + high * height_scale, z + width * width_scale], uv, rotation)
             if part not in ('neck', 'rounded_base'):
                 for side in ('north', 'south', 'east', 'west'):
                     section['faces'][side]['uv'] = [0, max(0, -high / 5.1 * 12), 12, min(12, -low / 5.1 * 12)]

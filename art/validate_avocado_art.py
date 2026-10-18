@@ -29,8 +29,8 @@ def validate():
     def check(value, message):
         if not value:
             errors.append(message)
-    for stage in ('flowers', 'unripe', 'ripe'):
-        name = 'avocado_leaves_' + stage
+    for stage in ('flowering', 'unripe', 'ripe'):
+        name = 'avocado_fruit_' + stage
         model = json.loads((ASSET / 'models/block' / (name + '.json')).read_text(encoding='utf-8'))
         source = json.loads((ROOT / 'art/blockbench' / (name + '.bbmodel')).read_text(encoding='utf-8'))
         check(source['meta']['model_format'] == 'java_block' and source['resolution'] == {'width': 16, 'height': 16}, name + ': portable native 16x16 project')
@@ -39,21 +39,21 @@ def validate():
         vertices = []
         for element in model['elements']:
             vertices += [rotated([x, y, z], element.get('rotation', {})) for x in (element['from'][0], element['to'][0]) for y in (element['from'][1], element['to'][1]) for z in (element['from'][2], element['to'][2])]
-        check(all(-8 - 1e-6 <= p[1] <= 1e-6 and 0 <= p[0] <= 16 and 0 <= p[2] <= 16 for p in vertices), name + ': all rotated vertices below leaves within model limits')
+        check(all(8 - 1e-6 <= p[1] <= 16 + 1e-6 and 0 <= p[0] <= 16 and 0 <= p[2] <= 16 for p in vertices), name + ': all rotated vertices hang from the top half of the fruit block')
         for texture in source['textures']:
             final = Image.open(ASSET / 'textures/block' / texture['name']).convert('RGBA')
             embedded = Image.open(BytesIO(base64.b64decode(texture['source'].split(',')[1]))).convert('RGBA')
             check(embedded.size == (16, 16) and embedded.tobytes() == final.tobytes(), name + ': embedded texture matches final pixels')
-        if stage != 'flowers':
+        if stage != 'flowering':
             by_name = {element['name']: element for element in model['elements']}
             check(all(all(element['to'][i] > element['from'][i] for i in range(3)) for element in model['elements']), name + ': fruit and stalk use solid cuboids')
             neck = by_name['fruit_0_neck']
             belly = by_name['fruit_0_full_belly']
             check(belly['to'][0] - belly['from'][0] > 3 * (neck['to'][0] - neck['from'][0]), name + ': narrow pear neck and full lower belly')
-            check(by_name['fruit_0_stalk']['to'][1] == 0, name + ': stalk reaches leaf underside')
+            check(by_name['fruit_0_stalk']['to'][1] == 16, name + ': stalk reaches leaf underside')
         records.append({'name': name, 'elements': len(model['elements']), 'min_y': min(p[1] for p in vertices), 'max_y': max(p[1] for p in vertices)})
-    multipart = json.loads((ASSET / 'blockstates/avocado_leaves.json').read_text(encoding='utf-8'))['multipart']
-    check({part['when']['fruit'] for part in multipart if 'when' in part} == {'1', '2', '3'}, 'Avocado: flowering and two fruit states preserved')
+    variants = json.loads((ASSET / 'blockstates/avocado_fruit.json').read_text(encoding='utf-8'))['variants']
+    check(set(variants) == {'stage=0', 'stage=1', 'stage=2'}, 'Avocado: flowering and two fruit states preserved')
     crushed = []
     for age in range(2, 8):
         masks = []

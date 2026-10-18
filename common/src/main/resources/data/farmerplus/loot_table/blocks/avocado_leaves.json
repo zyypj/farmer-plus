@@ -86,32 +86,6 @@
         }
       ],
       "rolls": 1
-    },
-    {
-      "condition": {
-        "type": "minecraft:inverted",
-        "term": {
-          "type": "minecraft:any_of",
-          "terms": [
-            "minecraft:tool/can_shear",
-            "minecraft:tool/can_silk_touch"
-          ]
-        }
-      },
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "farmerplus:avocado",
-          "condition": {
-            "type": "minecraft:match_block",
-            "blocks": "farmerplus:avocado_leaves",
-            "state": {
-              "fruit": "3"
-            }
-          }
-        }
-      ],
-      "rolls": 1
     }
   ],
   "random_sequence": "farmerplus:blocks/avocado_leaves"

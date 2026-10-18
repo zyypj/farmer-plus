@@ -27,15 +27,19 @@ Modelled on real avocado trees (*Persea americana*): 9–20 m tall, a short trun
 
 Only **natural** leaves (placed by the tree, not by players) bear fruit, and only those with **air below** and on a sparse pattern, so a mature tree carries a realistic handful of avocados (about 5% of its leaves).
 
-| Stage | `fruit` | Looks like | Next stage |
-|---|---|---|---|
-| Leaves | 0 | Plain leaves | Flowers (≈1 in 24 random ticks) |
-| Flowering | 1 | Small yellow-green flowers under the leaves | Green fruit (≈1 in 8) |
-| Unripe | 2 | Small green avocados hanging | Ripe (≈1 in 10) |
-| Ripe | 3 | Large dark avocados hanging | Falls on its own (≈1 in 40) |
+The fruit is its own block, **`avocado_fruit`**, hanging in the air block under the leaf (like cocoa on jungle logs). It has a real hitbox that you can aim at, it never falls by itself, and it breaks if the leaf above it is removed.
 
-- **Pick:** right-click ripe leaves to get an avocado; the leaves start a new cycle, so a tree fruits many times.
-- **Breaking** ripe leaves also drops the avocado. Leaves drop saplings (5%) and **sticks** like oak leaves; shears or Silk Touch give the leaves block.
+| Stage | `stage` | Looks like | Next stage |
+|---|---|---|---|
+| — | — | Plain leaves | A leaf grows flowers below it (≈1 in 24 random ticks) |
+| Flowering | 0 | Small yellow-green flowers | Green fruit (≈1 in 8) |
+| Unripe | 1 | Small green avocado | Ripe (≈1 in 10) |
+| Ripe | 2 | Large dark avocado | Stays until picked |
+
+With the default `random_tick_speed`, the first ripe avocado shows up about 7–11 minutes after a tree is grown; a single spot takes about 48 minutes from leaf to ripe fruit.
+
+- **Pick:** right-click a ripe avocado to get it; the spot is free again and the leaf flowers later, so a tree fruits many times. Bone meal advances one stage.
+- **Breaking** a ripe avocado also drops it; flowers and green fruit drop nothing. Leaves drop saplings (5%) and **sticks** like oak leaves; shears or Silk Touch give the leaves block.
 - Avocado: 4 hunger, 0.6 saturation; villagers eat it; compostable.
 
 ## Wood set

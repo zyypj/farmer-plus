@@ -33,8 +33,7 @@
     "properties": {
       "distance": "7",
       "persistent": "false",
-      "waterlogged": "false",
-      "fruit": "0"
+      "waterlogged": "false"
     }
   },
   "height": {

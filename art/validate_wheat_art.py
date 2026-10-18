@@ -37,7 +37,7 @@ STRAWBERRY_BUDGETS = {0: 8, 1: 12, 2: 16, 3: 20, 4: 20}
 
 
 def element_budget(stem):
-    if stem in ('avocado_leaves_flowers', 'avocado_leaves_unripe', 'avocado_leaves_ripe'):
+    if stem in ('avocado_fruit_flowering', 'avocado_fruit_unripe', 'avocado_fruit_ripe'):
         return 8
     if stem == 'wheat_sheaf':
         return 24

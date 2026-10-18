@@ -3,14 +3,20 @@ async function previewAvocado(root) {
     const previous = Project;
     const input = {ambientocclusion: false, textures: {leaf: 'farmerplus:block/avocado_leaves', particle: 'farmerplus:block/avocado_leaves'}, elements: []};
     ['flowers', 'unripe', 'ripe'].forEach((stage, index) => {
-        const source = JSON.parse(fs.readFileSync(root + '/art/model-inputs/avocado_leaves_' + stage + '.json', 'utf8'));
+        const name = 'avocado_fruit_' + (stage === 'flowers' ? 'flowering' : stage);
+        const source = JSON.parse(fs.readFileSync(root + '/common/src/main/resources/assets/farmerplus/models/block/' + name + '.json', 'utf8'));
         const offset = (index - 1) * 16;
         input.textures[stage] = source.textures.fruit;
         for (const original of source.elements) {
             const element = JSON.parse(JSON.stringify(original));
             element.from[0] += offset;
             element.to[0] += offset;
-            if (element.rotation) element.rotation.origin[0] += offset;
+            element.from[1] -= 16;
+            element.to[1] -= 16;
+            if (element.rotation) {
+                element.rotation.origin[0] += offset;
+                element.rotation.origin[1] -= 16;
+            }
             for (const face of Object.values(element.faces)) face.texture = '#' + stage;
             input.elements.push(element);
         }

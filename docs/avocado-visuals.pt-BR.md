@@ -6,23 +6,31 @@ As tarefas de arte 0005 e 0002 substituem as imagens provisórias nos mesmos cam
 
 ## Árvore e madeira
 
-A casca marrom-acinzentada tem fissuras curtas e irregulares e pequenas placas. Cortes de tora e madeira descascada mostram madeira creme levemente rosada. Tábuas, porta, alçapão vazado, placas, prateleira e barcos compartilham essa paleta quente. As folhas usam grupos grandes e alongados de verde-escuro, com pequenos espaços transparentes e nervuras claras; a muda tem cinco folhas grandes. A casca dos frutos verdes é lisa, enquanto os maduros têm sombras verde-escuras/arroxeadas e pequenos realces rugosos. O item tem silhueta de pera e cabinho curto.
+A casca marrom-acinzentada tem fissuras curtas e irregulares e pequenas placas. Cortes de tora e madeira descascada mostram madeira creme levemente rosada. Tábuas, porta, alçapão vazado, placas, prateleira e barcos compartilham essa paleta quente. As folhas usam grupos alongados originais em 16×16 nativos, com sombras verde-escuras mais suaves, nervuras centrais discretas, brilho ceroso moderado e pequenos espaços transparentes irregulares. O menor contraste nas bordas e as direções variadas mantêm a copa densa e compatível com o vanilla; a muda compartilha a nova paleta. A casca dos frutos verdes é lisa, enquanto os maduros têm sombras verde-escuras/arroxeadas e pequenos realces rugosos. O item tem silhueta de pera e cabinho curto.
 
 ![Texturas nativas da árvore e da madeira](images/avocado-textures.png)
 
 ![Texturas adicionais de madeira e layouts nativos das entidades](images/avocado-wood-extras.png)
 
+## Refinamento dos ícones de inventário
+
+Os sprites do barco e do barco com baú usam uma vista diagonal original, casco com interior legível, remos mais curtos integrados e baú sombreado. As placas têm mais profundidade na madeira, veios e suportes mais claros; o ícone da porta tem quatro vidros e dois painéis inferiores, acompanhando o bloco. Os cinco ícones mantêm a paleta creme do abacateiro, pixels nativos 16×16 e os mesmos caminhos. Os sprites vanilla foram vistos apenas como referência de estilo.
+
+![Ícones refinados dos itens de madeira](images/avocado-items-refined.png)
+
+Rode `python art/avocado_wood_pixels.py --items-only` para regenerar esses cinco ícones e sua prévia sem reescrever texturas de bloco ou atlas de entidades.
+
 ## Modelos pendurados
 
-O blockstate multipart das folhas e todos os nomes de recursos foram preservados. Cada sobreposição é um modelo Java Block/Item exportado pelo servidor MCP do Blockbench, salvo em `art/blockbench/avocado_leaves_<estágio>.bbmodel` com um atlas 16×16 embutido.
+O bloco de frutos pendurados usa os modelos de floração, fruto verde e fruto maduro abaixo. Cada um é um modelo Java Block/Item exportado pelo servidor MCP do Blockbench, salvo em `art/blockbench/avocado_fruit_<estágio>.bbmodel` com um atlas 16×16 embutido. Os modelos ocupam a metade superior do bloco separado de frutos, com os cabos alcançando as folhas acima.
 
 | Sobreposição | Elementos | Limites verticais após rotação | Arranjo |
 |---|---:|---|---|
-| `avocado_leaves_flowers` | 8 | −3,30…0 | Dois pequenos cachos ramificados com cabos e flores sólidos |
-| `avocado_leaves_unripe` | 8 | −4,94…0 | Uma pera verde menor, sete partes conectadas no corpo e um cabo |
-| `avocado_leaves_ripe` | 8 | −6,08…0 | Uma pera escura maior, sete partes conectadas no corpo e um cabo |
+| `avocado_fruit_flowering` | 8 | 12,70…16 | Dois pequenos cachos ramificados com cabos e flores sólidos |
+| `avocado_fruit_unripe` | 8 | 9,82…16 | Uma pera verde menor, sete partes conectadas no corpo e um cabo |
+| `avocado_fruit_ripe` | 8 | 8,34…16 | Uma pera escura maior, sete partes conectadas no corpo e um cabo |
 
-Um fruto por sobreposição permite modelar gradualmente o pescoço fino, a barriga larga embaixo e a base menor arredondada dentro do limite de oito elementos. As partes compartilham uma leve inclinação e alturas contínuas de UV nas laterais. Isso substitui a sugestão inicial de duas frutas em caixas da tarefa, preservando sua opção de um fruto e o limite de desempenho. Todos os vértices rotacionados ficam dentro de X/Z=0…16 e Y=−8…0. O estágio de floração continua mostrando flores.
+Um fruto por modelo permite modelar gradualmente o pescoço fino, a barriga larga embaixo e a base menor arredondada dentro do limite de oito elementos. Os dois estágios de fruto agora são 65% mais largos e suas partes do corpo são 30% mais altas do que na primeira exportação; o cabo também engrossou, melhorando a leitura abaixo de um bloco inteiro de folhas. As partes compartilham uma leve inclinação e alturas contínuas de UV nas laterais. Isso substitui a sugestão inicial de duas frutas em caixas da tarefa, preservando sua opção de um fruto e o limite de desempenho. Todos os vértices rotacionados ficam dentro de X/Z=0…16 e Y=8…16 no bloco de frutos, equivalente a Y=−8…0 em relação às folhas acima. O estágio de floração continua mostrando flores.
 
 ![Comparação nativa do Blockbench abaixo das folhas](images/avocado-canopy-front.png)
 
@@ -46,4 +54,4 @@ Os 48 modelos de trigo pisoteado e a geometria do blockstate continuam iguais. `
 
 O build e o validador passaram. As verificações incluem igualdade das texturas nativas embutidas, todos os vértices rotacionados dos abacates, limites de elementos, transparência/variação do trigo esmagado e bytes atuais dos recursos nos jars dos três loaders. O relatório da exportação MCP fica em `build/art/validation/avocado-blockbench.json`.
 
-A imagem das copas é uma renderização do Blockbench e o campo de trigo é uma renderização offline dos modelos. A inspeção manual de uma árvore crescida e do pisoteio repetido em sobrevivência dentro do Minecraft ainda está pendente; o relatório `build/art/validation/avocado-crushed-resource-load.json` registra separadamente o carregamento no NeoForge.
+A imagem das copas é uma renderização do Blockbench e o campo de trigo é uma renderização offline dos modelos. O build mais recente com os frutos maiores passou nas 19.188 verificações do validador, e o NeoForge carregou os modelos e texturas atuais sem avisos de modelo ou textura do Farmer+; os hashes dos recursos e o carregamento dos atlas estão em `build/art/validation/avocado-canopy-resource-load.json`. A inspeção manual de uma árvore crescida e do pisoteio repetido em sobrevivência dentro do Minecraft ainda está pendente.

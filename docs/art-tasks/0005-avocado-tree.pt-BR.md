@@ -64,7 +64,7 @@ O blockstate é multipart: `*_core` sempre aparece e `*_arm` (apontando para o n
 
 ## Modelos dos frutos (Blockbench, melhoria opcional)
 
-`models/block/avocado_leaves_flowers.json`, `avocado_leaves_unripe.json` e `avocado_leaves_ripe.json` são sobreposições desenhadas **embaixo** de um bloco de folhas (o blockstate é multipart, `fruit` 1–3). Hoje usam caixas simples. Refaça como abacates em formato de pera (2–3 cubos cada: pescoço fino, corpo largo) pendurados 3–6 px abaixo das folhas num cabinho curto, 1–2 frutos por bloco, no máximo 8 elementos por modelo. Mantenha tudo entre y = −8 e y = 0 e dentro de x/z 0–16.
+`models/block/avocado_fruit_flowering.json`, `avocado_fruit_unripe.json` e `avocado_fruit_ripe.json` (fontes `art/blockbench/avocado_fruit_*.bbmodel`) pertencem ao **bloco `avocado_fruit`**, que fica no bloco de ar embaixo de uma folha (`stage` 0–2). Eles pendem da face de cima: mantenha o cabinho encostando em y = 16, tudo entre y = 8 e y = 16 e dentro de x/z 0–16, no máximo 8 elementos por modelo. Antes eram sobreposições das folhas chamadas `avocado_leaves_*`, desenhadas entre y = −8 e 0; os modelos foram subidos 16 px, então `art/avocado_pixels.py`, `art/export_avocado.js` e `art/preview_avocado.js` precisam gravar os nomes e coordenadas novos (`python art/validate_avocado_art.py` já confere isso).
 
 ## Pronto quando
 

@@ -2,9 +2,14 @@ async function exportAvocado(root) {
     const fs = require('fs');
     const records = [];
     for (const stage of ['flowers', 'unripe', 'ripe']) {
-        const name = 'avocado_leaves_' + stage;
+        const name = 'avocado_fruit_' + (stage === 'flowers' ? 'flowering' : stage);
         const destination = root + '/common/src/main/resources/assets/farmerplus/models/block/' + name + '.json';
-        const input = JSON.parse(fs.readFileSync(root + '/art/model-inputs/' + name + '.json', 'utf8'));
+        const input = JSON.parse(fs.readFileSync(root + '/art/model-inputs/avocado_leaves_' + stage + '.json', 'utf8'));
+        for (const element of input.elements) {
+            element.from[1] += 16;
+            element.to[1] += 16;
+            if (element.rotation) element.rotation.origin[1] += 16;
+        }
         newProject(Formats.java_block);
         Project.name = name;
         Project.java_block_version = '26.3';
@@ -37,15 +42,15 @@ async function exportAvocado(root) {
                 vertex.toArray().forEach((value, axis) => {min[axis] = Math.min(min[axis], value); max[axis] = Math.max(max[axis], value);});
             }
         }
-        if (min[1] < -8 || max[1] > 0 || min[0] < 0 || min[2] < 0 || max[0] > 16 || max[2] > 16) throw Error('Avocado outside overlay limits');
+        if (min[1] < 8 || max[1] > 16 || min[0] < 0 || min[2] < 0 || max[0] > 16 || max[2] > 16) throw Error('Avocado outside hanging fruit limits');
         Project.save_path = root + '/art/blockbench/' + name + '.bbmodel';
         Project.export_path = destination;
         fs.writeFileSync(Project.save_path, JSON.stringify(JSON.parse(Codecs.project.compile({absolute_paths: false})), null, 2) + '\n');
         fs.writeFileSync(destination, JSON.stringify(result, null, 2) + '\n');
         Project.saved = true;
         if (Dialog.open) Dialog.open.hide();
-        Preview.selected.camera.position.set(-19, 7, -25);
-        Preview.selected.controls.target.set(0, -2.8, 0);
+        Preview.selected.camera.position.set(-19, 23, -25);
+        Preview.selected.controls.target.set(0, 13.2, 0);
         Preview.selected.controls.update();
         Canvas.updateAll();
         await new Promise(resolve => setTimeout(resolve, 120));

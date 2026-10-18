@@ -4,7 +4,7 @@
     "model_format": "java_block",
     "box_uv": false
   },
-  "name": "avocado_leaves_ripe",
+  "name": "avocado_fruit_flowering",
   "parent": "",
   "java_block_version": "26.3",
   "ambientocclusion": false,
@@ -18,13 +18,15 @@
   "multi_file_ruleset": "",
   "variable_placeholder_buttons": [],
   "unhandled_root_fields": {},
+  "ai_used": true,
+  "ai_agents": "FarmerPlusArt",
   "resolution": {
     "width": 16,
     "height": 16
   },
   "elements": [
     {
-      "name": "fruit_0_stalk",
+      "name": "panicle_0_stem",
       "box_uv": false,
       "render_order": "default",
       "rescale": false,
@@ -35,17 +37,17 @@
       "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        8.33,
-        -0.98,
-        7.83
+        4.37,
+        14.5,
+        4.87
       ],
       "to": [
-        8.67,
-        0,
-        8.17
+        4.63,
+        16,
+        5.13
       ],
       "autouv": 0,
-      "color": 3,
+      "color": 2,
       "origin": [
         0,
         0,
@@ -55,63 +57,63 @@
         "north": {
           "uv": [
             12,
-            0,
+            12,
             14,
-            8
+            16
           ],
           "texture": 0
         },
         "east": {
           "uv": [
             12,
-            0,
+            12,
             14,
-            8
+            16
           ],
           "texture": 0
         },
         "south": {
           "uv": [
             12,
-            0,
+            12,
             14,
-            8
+            16
           ],
           "texture": 0
         },
         "west": {
           "uv": [
             12,
-            0,
+            12,
             14,
-            8
+            16
           ],
           "texture": 0
         },
         "up": {
           "uv": [
             12,
-            0,
+            12,
             14,
-            8
+            16
           ],
           "texture": 0
         },
         "down": {
           "uv": [
             12,
-            0,
+            12,
             14,
-            8
+            16
           ],
           "texture": 0
         }
       },
       "type": "cube",
-      "uuid": "c0510bba-1d77-81a6-a2a1-688776a74588"
+      "uuid": "d092a091-55e6-3dac-77af-4b7f1aa891ee"
     },
     {
-      "name": "fruit_0_neck",
+      "name": "panicle_0_flowers_0",
       "box_uv": false,
       "render_order": "default",
       "rescale": false,
@@ -122,26 +124,205 @@
       "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        8.08,
-        -1.8,
-        7.58
+        2.8,
+        12.7,
+        5
       ],
       "to": [
-        8.92,
-        -0.88,
-        8.42
+        6.2,
+        15.2,
+        5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "rotation": [
+        0,
+        20,
+        0
+      ],
+      "origin": [
+        4.5,
+        14.5,
+        5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            8,
+            12
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            8,
+            12
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        }
+      },
+      "type": "cube",
+      "uuid": "3bcb29c0-e9e3-8a56-0f93-50263094762c"
+    },
+    {
+      "name": "panicle_0_flowers_90",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        2.8,
+        12.7,
+        5
+      ],
+      "to": [
+        6.2,
+        15.2,
+        5
       ],
       "autouv": 0,
       "color": 7,
       "rotation": [
         0,
-        -12,
-        5
+        110,
+        0
       ],
       "origin": [
-        8.5,
-        -0.9,
-        8
+        4.5,
+        14.5,
+        5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            8,
+            12
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            8,
+            12
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        }
+      },
+      "type": "cube",
+      "uuid": "7a714bf8-323a-6c94-89b1-9a4651349be2"
+    },
+    {
+      "name": "panicle_0_florets",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        4.1,
+        13.55,
+        4.6
+      ],
+      "to": [
+        4.9,
+        14.1,
+        5.4
+      ],
+      "autouv": 0,
+      "color": 7,
+      "origin": [
+        0,
+        0,
+        0
       ],
       "faces": {
         "north": {
@@ -200,10 +381,10 @@
         }
       },
       "type": "cube",
-      "uuid": "ca1eb1d3-914d-de02-0b11-e1ff9b247f95"
+      "uuid": "cfaa78ca-8c69-f1bc-140d-f40ed08f9211"
     },
     {
-      "name": "fruit_0_upper_shoulders",
+      "name": "panicle_1_stem",
       "box_uv": false,
       "render_order": "default",
       "rescale": false,
@@ -214,88 +395,175 @@
       "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        7.82,
-        -2.4,
-        7.32
+        10.87,
+        14.5,
+        9.87
       ],
       "to": [
-        9.18,
-        -1.76,
-        8.68
+        11.13,
+        16,
+        10.13
+      ],
+      "autouv": 0,
+      "color": 5,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            12,
+            12,
+            14,
+            16
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            12,
+            12,
+            14,
+            16
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            12,
+            12,
+            14,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            12,
+            12,
+            14,
+            16
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            12,
+            12,
+            14,
+            16
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            12,
+            12,
+            14,
+            16
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "8dd2ccd6-c074-2db9-aa03-4a3a3a377a54"
+    },
+    {
+      "name": "panicle_1_flowers_0",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        9.3,
+        12.7,
+        10
+      ],
+      "to": [
+        12.7,
+        15.2,
+        10
       ],
       "autouv": 0,
       "color": 7,
       "rotation": [
         0,
-        -12,
-        5
+        -25,
+        0
       ],
       "origin": [
-        8.5,
-        -0.9,
-        8
+        11,
+        14.5,
+        10
       ],
       "faces": {
         "north": {
           "uv": [
+            8,
             0,
-            2.02353,
-            12,
-            3.52941
+            16,
+            12
           ],
           "texture": 0
         },
         "east": {
           "uv": [
             0,
-            2.02353,
-            12,
-            3.52941
+            0,
+            0,
+            0
           ],
-          "texture": 0
+          "texture": null
         },
         "south": {
           "uv": [
+            8,
             0,
-            2.02353,
-            12,
-            3.52941
+            16,
+            12
           ],
           "texture": 0
         },
         "west": {
           "uv": [
             0,
-            2.02353,
-            12,
-            3.52941
+            0,
+            0,
+            0
           ],
-          "texture": 0
+          "texture": null
         },
         "up": {
           "uv": [
-            1,
-            1,
-            9,
-            4
+            0,
+            0,
+            0,
+            0
           ],
-          "texture": 0
+          "texture": null
         },
         "down": {
           "uv": [
             0,
             0,
-            12,
-            12
+            0,
+            0
           ],
-          "texture": 0
+          "texture": null
         }
       },
       "type": "cube",
-      "uuid": "7b8fd8aa-7a26-bffe-2b4d-5a475ea589b7"
+      "uuid": "2b048ca9-dbc4-f96d-da0f-0408b0d3a82e"
     },
     {
-      "name": "fruit_0_lower_shoulders",
+      "name": "panicle_1_flowers_90",
       "box_uv": false,
       "render_order": "default",
       "rescale": false,
@@ -306,88 +574,88 @@
       "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        7.45,
-        -3.05,
-        6.95
+        9.3,
+        12.7,
+        10
       ],
       "to": [
-        9.55,
-        -2.36,
-        9.05
+        12.7,
+        15.2,
+        10
       ],
       "autouv": 0,
-      "color": 6,
+      "color": 4,
       "rotation": [
         0,
-        -12,
-        5
+        65,
+        0
       ],
       "origin": [
-        8.5,
-        -0.9,
-        8
+        11,
+        14.5,
+        10
       ],
       "faces": {
         "north": {
           "uv": [
+            8,
             0,
-            3.43529,
-            12,
-            5.05882
+            16,
+            12
           ],
           "texture": 0
         },
         "east": {
           "uv": [
             0,
-            3.43529,
-            12,
-            5.05882
+            0,
+            0,
+            0
           ],
-          "texture": 0
+          "texture": null
         },
         "south": {
           "uv": [
+            8,
             0,
-            3.43529,
-            12,
-            5.05882
+            16,
+            12
           ],
           "texture": 0
         },
         "west": {
           "uv": [
             0,
-            3.43529,
-            12,
-            5.05882
+            0,
+            0,
+            0
           ],
-          "texture": 0
+          "texture": null
         },
         "up": {
           "uv": [
-            1,
-            1,
-            9,
-            4
+            0,
+            0,
+            0,
+            0
           ],
-          "texture": 0
+          "texture": null
         },
         "down": {
           "uv": [
             0,
             0,
-            12,
-            12
+            0,
+            0
           ],
-          "texture": 0
+          "texture": null
         }
       },
       "type": "cube",
-      "uuid": "19e026a8-b482-3bd7-118c-7cc11c0f7474"
+      "uuid": "8eb9e993-c643-48fc-0e44-b64ac8263d98"
     },
     {
-      "name": "fruit_0_upper_belly",
+      "name": "panicle_1_florets",
       "box_uv": false,
       "render_order": "default",
       "rescale": false,
@@ -398,378 +666,97 @@
       "scope": 0,
       "allow_mirror_modeling": true,
       "from": [
-        7.08,
-        -3.85,
-        6.58
+        10.6,
+        13.55,
+        9.6
       ],
       "to": [
-        9.92,
-        -3.01,
-        9.42
+        11.4,
+        14.1,
+        10.4
       ],
       "autouv": 0,
-      "color": 2,
-      "rotation": [
-        0,
-        -12,
-        5
-      ],
+      "color": 4,
       "origin": [
-        8.5,
-        -0.9,
-        8
+        0,
+        0,
+        0
       ],
       "faces": {
         "north": {
           "uv": [
             0,
-            4.96471,
             12,
-            6.94118
+            8,
+            16
           ],
           "texture": 0
         },
         "east": {
           "uv": [
             0,
-            4.96471,
             12,
-            6.94118
-          ],
-          "texture": 0
-        },
-        "south": {
-          "uv": [
-            0,
-            4.96471,
-            12,
-            6.94118
-          ],
-          "texture": 0
-        },
-        "west": {
-          "uv": [
-            0,
-            4.96471,
-            12,
-            6.94118
-          ],
-          "texture": 0
-        },
-        "up": {
-          "uv": [
-            1,
-            1,
-            9,
-            4
-          ],
-          "texture": 0
-        },
-        "down": {
-          "uv": [
-            0,
-            0,
-            12,
-            12
-          ],
-          "texture": 0
-        }
-      },
-      "type": "cube",
-      "uuid": "46afd1dd-6228-03df-eb9e-4e479984dd9a"
-    },
-    {
-      "name": "fruit_0_full_belly",
-      "box_uv": false,
-      "render_order": "default",
-      "rescale": false,
-      "locked": false,
-      "shade_direction_override": "",
-      "light_emission": 0,
-      "export": true,
-      "scope": 0,
-      "allow_mirror_modeling": true,
-      "from": [
-        6.88,
-        -4.85,
-        6.38
-      ],
-      "to": [
-        10.12,
-        -3.81,
-        9.62
-      ],
-      "autouv": 0,
-      "color": 9,
-      "rotation": [
-        0,
-        -12,
-        5
-      ],
-      "origin": [
-        8.5,
-        -0.9,
-        8
-      ],
-      "faces": {
-        "north": {
-          "uv": [
-            0,
-            6.84706,
-            12,
-            9.29412
-          ],
-          "texture": 0
-        },
-        "east": {
-          "uv": [
-            0,
-            6.84706,
-            12,
-            9.29412
-          ],
-          "texture": 0
-        },
-        "south": {
-          "uv": [
-            0,
-            6.84706,
-            12,
-            9.29412
-          ],
-          "texture": 0
-        },
-        "west": {
-          "uv": [
-            0,
-            6.84706,
-            12,
-            9.29412
-          ],
-          "texture": 0
-        },
-        "up": {
-          "uv": [
-            1,
-            1,
-            9,
-            4
-          ],
-          "texture": 0
-        },
-        "down": {
-          "uv": [
-            0,
-            0,
-            12,
-            12
-          ],
-          "texture": 0
-        }
-      },
-      "type": "cube",
-      "uuid": "92fcccf9-852d-0943-6b8a-f447f148f742"
-    },
-    {
-      "name": "fruit_0_lower_belly",
-      "box_uv": false,
-      "render_order": "default",
-      "rescale": false,
-      "locked": false,
-      "shade_direction_override": "",
-      "light_emission": 0,
-      "export": true,
-      "scope": 0,
-      "allow_mirror_modeling": true,
-      "from": [
-        7.14,
-        -5.55,
-        6.64
-      ],
-      "to": [
-        9.86,
-        -4.81,
-        9.36
-      ],
-      "autouv": 0,
-      "color": 1,
-      "rotation": [
-        0,
-        -12,
-        5
-      ],
-      "origin": [
-        8.5,
-        -0.9,
-        8
-      ],
-      "faces": {
-        "north": {
-          "uv": [
-            0,
-            9.2,
-            12,
-            10.94118
-          ],
-          "texture": 0
-        },
-        "east": {
-          "uv": [
-            0,
-            9.2,
-            12,
-            10.94118
-          ],
-          "texture": 0
-        },
-        "south": {
-          "uv": [
-            0,
-            9.2,
-            12,
-            10.94118
-          ],
-          "texture": 0
-        },
-        "west": {
-          "uv": [
-            0,
-            9.2,
-            12,
-            10.94118
-          ],
-          "texture": 0
-        },
-        "up": {
-          "uv": [
-            1,
-            1,
-            9,
-            4
-          ],
-          "texture": 0
-        },
-        "down": {
-          "uv": [
-            0,
-            0,
-            12,
-            12
-          ],
-          "texture": 0
-        }
-      },
-      "type": "cube",
-      "uuid": "6932aba1-a41c-3d08-2a2d-b28f1a339ca6"
-    },
-    {
-      "name": "fruit_0_rounded_base",
-      "box_uv": false,
-      "render_order": "default",
-      "rescale": false,
-      "locked": false,
-      "shade_direction_override": "",
-      "light_emission": 0,
-      "export": true,
-      "scope": 0,
-      "allow_mirror_modeling": true,
-      "from": [
-        7.6,
-        -6,
-        7.1
-      ],
-      "to": [
-        9.4,
-        -5.51,
-        8.9
-      ],
-      "autouv": 0,
-      "color": 3,
-      "rotation": [
-        0,
-        -12,
-        5
-      ],
-      "origin": [
-        8.5,
-        -0.9,
-        8
-      ],
-      "faces": {
-        "north": {
-          "uv": [
             8,
-            12,
-            16,
-            16
-          ],
-          "texture": 0
-        },
-        "east": {
-          "uv": [
-            8,
-            12,
-            16,
             16
           ],
           "texture": 0
         },
         "south": {
           "uv": [
-            8,
+            0,
             12,
-            16,
+            8,
             16
           ],
           "texture": 0
         },
         "west": {
           "uv": [
-            8,
+            0,
             12,
-            16,
+            8,
             16
           ],
           "texture": 0
         },
         "up": {
           "uv": [
-            8,
+            0,
             12,
-            16,
+            8,
             16
           ],
           "texture": 0
         },
         "down": {
           "uv": [
-            8,
+            0,
             12,
-            16,
+            8,
             16
           ],
           "texture": 0
         }
       },
       "type": "cube",
-      "uuid": "f76cac27-91dd-3a93-3497-000b72625153"
+      "uuid": "9b7e0021-398b-ccbc-6bdb-637c719cec41"
     }
   ],
   "groups": [],
   "outliner": [
-    "c0510bba-1d77-81a6-a2a1-688776a74588",
-    "ca1eb1d3-914d-de02-0b11-e1ff9b247f95",
-    "7b8fd8aa-7a26-bffe-2b4d-5a475ea589b7",
-    "19e026a8-b482-3bd7-118c-7cc11c0f7474",
-    "46afd1dd-6228-03df-eb9e-4e479984dd9a",
-    "92fcccf9-852d-0943-6b8a-f447f148f742",
-    "6932aba1-a41c-3d08-2a2d-b28f1a339ca6",
-    "f76cac27-91dd-3a93-3497-000b72625153"
+    "d092a091-55e6-3dac-77af-4b7f1aa891ee",
+    "3bcb29c0-e9e3-8a56-0f93-50263094762c",
+    "7a714bf8-323a-6c94-89b1-9a4651349be2",
+    "cfaa78ca-8c69-f1bc-140d-f40ed08f9211",
+    "8dd2ccd6-c074-2db9-aa03-4a3a3a377a54",
+    "2b048ca9-dbc4-f96d-da0f-0408b0d3a82e",
+    "8eb9e993-c643-48fc-0e44-b64ac8263d98",
+    "9b7e0021-398b-ccbc-6bdb-637c719cec41"
   ],
   "textures": [
     {
-      "name": "avocado_fruit_ripe.png",
-      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/avocado_fruit_ripe.png",
+      "name": "avocado_flowers.png",
+      "relative_path": "../../common/src/main/resources/assets/farmerplus/textures/block/avocado_flowers.png",
       "folder": "block",
       "namespace": "farmerplus",
       "id": "fruit",
@@ -797,8 +784,8 @@
       "visible": true,
       "internal": true,
       "saved": true,
-      "uuid": "e1437b6f-2af3-ef80-68c1-17964bf8f016",
-      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAxElEQVR4nGPMLPP7zwAFL199gzEZ3rz8Cmd/evUdzs7OMGTYe/w6mP38xTcGJrgMAwODuBgXA6mACZvtyAaJiHMTZ4A4kiZsXuET48RvALpGdIDLJUz4NCJrunf5DW4DxHEEHnJMEOUFcSSDnt/5jKIQnY/VgD3r78HZkiq8KLZz87FgN2APkiZdawms3sEXlUwugUooAtgCFFcAggALsgvIAYzIeQEbuHr5NV4DWHBlIBhAzkjYAEoskANINuDrpz8ofABU80oq5PNDXQAAAABJRU5ErkJggg=="
+      "uuid": "a208de5a-60b7-d50c-7822-905b18f4f553",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA1klEQVR4nGNgQAO1kwL/o4vhk2dCV/Dl83d8+jHkmbApKmz1+L9lbyFOlyDLM4IIEGfvietgSR5eToZQBysGOW5RhkdfXzPo6ZUy4pNnuHSp+/+Huwv+g2hkP8JsICTPgM7BFoj45JlAhI9zP9gruAIRnzwLsi0wf2IDuOSZQATIfzYK+gyJvs7gQEKPAULyDPgCjVh5FIAvDRAjTxJgXLMz67+pnBLD6Uf3sCoIcZ8GjwEQ2LA19//JWw/gfHAgImsGGUYKwMgLMMOINQhuALoGXF5CBwD30aa/uWSe5QAAAABJRU5ErkJggg=="
     }
   ]
 }

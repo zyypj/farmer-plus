@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "stage=0": {
+      "model": "farmerplus:block/avocado_fruit_flowering"
+    },
+    "stage=1": {
+      "model": "farmerplus:block/avocado_fruit_unripe"
+    },
+    "stage=2": {
+      "model": "farmerplus:block/avocado_fruit_ripe"
+    }
+  }
+}

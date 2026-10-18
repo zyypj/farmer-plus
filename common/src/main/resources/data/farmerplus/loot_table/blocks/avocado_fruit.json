@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "farmerplus:avocado",
+          "condition": {
+            "type": "minecraft:match_block",
+            "blocks": "farmerplus:avocado_fruit",
+            "state": {
+              "stage": "2"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "random_sequence": "farmerplus:blocks/avocado_fruit"
+}
