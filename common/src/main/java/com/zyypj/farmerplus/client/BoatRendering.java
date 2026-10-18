@@ -30,7 +30,7 @@ public final class BoatRendering {
             ModelLayerLocation boat = boatLayer(set.name());
             ModelLayerLocation chestBoat = chestBoatLayer(set.name());
             registrar.register(set.boat().get(), context -> new BoatRenderer(context, boat));
-            registrar.register(set.chestBoat().get(), context -> new BoatRenderer(context, chestBoat));
+            registrar.register(set.chestBoat().get(), context -> new ChestBoatRenderer(context, chestBoat));
         });
     }
 

@@ -44,7 +44,7 @@ Block and item textures stay **16×16** (the vanilla sign and shelf templates ma
 | `textures/item/avocado_sign.png`, `avocado_hanging_sign.png` | 16×16 | Inventory icons |
 | `textures/item/avocado_boat.png`, `avocado_chest_boat.png` | 16×16 | Inventory icons: pale plank hull (+ chest) |
 | `textures/entity/boat/avocado.png` | 128×64 | Boat entity, vanilla boat UV layout |
-| `textures/entity/chest_boat/avocado.png` | 128×128 | Chest boat entity, vanilla chest boat UV layout |
+| `textures/entity/chest_boat/avocado.png` | 128×128 | Chest boat entity, vanilla chest boat UV layout. Only the hull (rows 0–58) is used: the chest is always drawn with the vanilla oak chest boat texture by `client/ChestBoatRenderer` |
 | `assets/minecraft/textures/gui/signs/farmerplus/avocado.png` | 24×26 | Sign editing screen: board on top, post below |
 | `assets/minecraft/textures/gui/hanging_signs/farmerplus/avocado.png` | 16×16 | Hanging sign editing screen |
 

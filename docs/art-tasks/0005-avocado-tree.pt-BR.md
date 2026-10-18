@@ -44,7 +44,7 @@ Texturas de bloco e item continuam **16×16** (os moldes vanilla de placa e prat
 | `textures/item/avocado_sign.png`, `avocado_hanging_sign.png` | 16×16 | Ícones de inventário |
 | `textures/item/avocado_boat.png`, `avocado_chest_boat.png` | 16×16 | Ícones de inventário: casco de tábuas claras (+ baú) |
 | `textures/entity/boat/avocado.png` | 128×64 | Entidade do bote, layout de UV do bote vanilla |
-| `textures/entity/chest_boat/avocado.png` | 128×128 | Entidade do bote com baú, layout de UV do bote com baú vanilla |
+| `textures/entity/chest_boat/avocado.png` | 128×128 | Entidade do bote com baú, layout de UV do bote com baú vanilla. Só o casco (linhas 0–58) é usado: o baú é sempre desenhado com a textura do bote com baú de carvalho do vanilla pelo `client/ChestBoatRenderer` |
 | `assets/minecraft/textures/gui/signs/farmerplus/avocado.png` | 24×26 | Tela de edição da placa: tábua em cima, haste embaixo |
 | `assets/minecraft/textures/gui/hanging_signs/farmerplus/avocado.png` | 16×16 | Tela de edição da placa suspensa |
 
