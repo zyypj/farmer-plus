@@ -1,0 +1,14 @@
+{
+  "type": "farmerplus:banana_plant",
+  "height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 3,
+    "max_inclusive": 4
+  },
+  "leaves": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 8,
+    "max_inclusive": 10
+  },
+  "suckers": 0
+}

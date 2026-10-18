@@ -1,0 +1,274 @@
+{
+  "variants": {
+    "age=young,direction=north,segment=0": {
+      "model": "farmerplus:block/banana_leaf_young_base"
+    },
+    "age=young,direction=north,segment=1": {
+      "model": "farmerplus:block/banana_leaf_young_blade"
+    },
+    "age=young,direction=north,segment=2": {
+      "model": "farmerplus:block/banana_leaf_young_tip"
+    },
+    "age=mature,direction=north,segment=0": {
+      "model": "farmerplus:block/banana_leaf_mature_base"
+    },
+    "age=mature,direction=north,segment=1": {
+      "model": "farmerplus:block/banana_leaf_mature_blade"
+    },
+    "age=mature,direction=north,segment=2": {
+      "model": "farmerplus:block/banana_leaf_mature_tip"
+    },
+    "age=dry,direction=north,segment=0": {
+      "model": "farmerplus:block/banana_leaf_dry"
+    },
+    "age=dry,direction=north,segment=1": {
+      "model": "farmerplus:block/banana_leaf_dry"
+    },
+    "age=dry,direction=north,segment=2": {
+      "model": "farmerplus:block/banana_leaf_dry"
+    },
+    "age=young,direction=east,segment=0": {
+      "model": "farmerplus:block/banana_leaf_young_base",
+      "y": 90
+    },
+    "age=young,direction=east,segment=1": {
+      "model": "farmerplus:block/banana_leaf_young_blade",
+      "y": 90
+    },
+    "age=young,direction=east,segment=2": {
+      "model": "farmerplus:block/banana_leaf_young_tip",
+      "y": 90
+    },
+    "age=mature,direction=east,segment=0": {
+      "model": "farmerplus:block/banana_leaf_mature_base",
+      "y": 90
+    },
+    "age=mature,direction=east,segment=1": {
+      "model": "farmerplus:block/banana_leaf_mature_blade",
+      "y": 90
+    },
+    "age=mature,direction=east,segment=2": {
+      "model": "farmerplus:block/banana_leaf_mature_tip",
+      "y": 90
+    },
+    "age=dry,direction=east,segment=0": {
+      "model": "farmerplus:block/banana_leaf_dry",
+      "y": 90
+    },
+    "age=dry,direction=east,segment=1": {
+      "model": "farmerplus:block/banana_leaf_dry",
+      "y": 90
+    },
+    "age=dry,direction=east,segment=2": {
+      "model": "farmerplus:block/banana_leaf_dry",
+      "y": 90
+    },
+    "age=young,direction=south,segment=0": {
+      "model": "farmerplus:block/banana_leaf_young_base",
+      "y": 180
+    },
+    "age=young,direction=south,segment=1": {
+      "model": "farmerplus:block/banana_leaf_young_blade",
+      "y": 180
+    },
+    "age=young,direction=south,segment=2": {
+      "model": "farmerplus:block/banana_leaf_young_tip",
+      "y": 180
+    },
+    "age=mature,direction=south,segment=0": {
+      "model": "farmerplus:block/banana_leaf_mature_base",
+      "y": 180
+    },
+    "age=mature,direction=south,segment=1": {
+      "model": "farmerplus:block/banana_leaf_mature_blade",
+      "y": 180
+    },
+    "age=mature,direction=south,segment=2": {
+      "model": "farmerplus:block/banana_leaf_mature_tip",
+      "y": 180
+    },
+    "age=dry,direction=south,segment=0": {
+      "model": "farmerplus:block/banana_leaf_dry",
+      "y": 180
+    },
+    "age=dry,direction=south,segment=1": {
+      "model": "farmerplus:block/banana_leaf_dry",
+      "y": 180
+    },
+    "age=dry,direction=south,segment=2": {
+      "model": "farmerplus:block/banana_leaf_dry",
+      "y": 180
+    },
+    "age=young,direction=west,segment=0": {
+      "model": "farmerplus:block/banana_leaf_young_base",
+      "y": 270
+    },
+    "age=young,direction=west,segment=1": {
+      "model": "farmerplus:block/banana_leaf_young_blade",
+      "y": 270
+    },
+    "age=young,direction=west,segment=2": {
+      "model": "farmerplus:block/banana_leaf_young_tip",
+      "y": 270
+    },
+    "age=mature,direction=west,segment=0": {
+      "model": "farmerplus:block/banana_leaf_mature_base",
+      "y": 270
+    },
+    "age=mature,direction=west,segment=1": {
+      "model": "farmerplus:block/banana_leaf_mature_blade",
+      "y": 270
+    },
+    "age=mature,direction=west,segment=2": {
+      "model": "farmerplus:block/banana_leaf_mature_tip",
+      "y": 270
+    },
+    "age=dry,direction=west,segment=0": {
+      "model": "farmerplus:block/banana_leaf_dry",
+      "y": 270
+    },
+    "age=dry,direction=west,segment=1": {
+      "model": "farmerplus:block/banana_leaf_dry",
+      "y": 270
+    },
+    "age=dry,direction=west,segment=2": {
+      "model": "farmerplus:block/banana_leaf_dry",
+      "y": 270
+    },
+    "age=young,direction=north_east,segment=0": {
+      "model": "farmerplus:block/banana_leaf_young_diagonal_base"
+    },
+    "age=young,direction=north_east,segment=1": {
+      "model": "farmerplus:block/banana_leaf_young_diagonal_tip"
+    },
+    "age=young,direction=north_east,segment=2": {
+      "model": "farmerplus:block/banana_leaf_young_diagonal_tip"
+    },
+    "age=mature,direction=north_east,segment=0": {
+      "model": "farmerplus:block/banana_leaf_mature_diagonal_base"
+    },
+    "age=mature,direction=north_east,segment=1": {
+      "model": "farmerplus:block/banana_leaf_mature_diagonal_tip"
+    },
+    "age=mature,direction=north_east,segment=2": {
+      "model": "farmerplus:block/banana_leaf_mature_diagonal_tip"
+    },
+    "age=dry,direction=north_east,segment=0": {
+      "model": "farmerplus:block/banana_leaf_dry"
+    },
+    "age=dry,direction=north_east,segment=1": {
+      "model": "farmerplus:block/banana_leaf_dry"
+    },
+    "age=dry,direction=north_east,segment=2": {
+      "model": "farmerplus:block/banana_leaf_dry"
+    },
+    "age=young,direction=south_east,segment=0": {
+      "model": "farmerplus:block/banana_leaf_young_diagonal_base",
+      "y": 90
+    },
+    "age=young,direction=south_east,segment=1": {
+      "model": "farmerplus:block/banana_leaf_young_diagonal_tip",
+      "y": 90
+    },
+    "age=young,direction=south_east,segment=2": {
+      "model": "farmerplus:block/banana_leaf_young_diagonal_tip",
+      "y": 90
+    },
+    "age=mature,direction=south_east,segment=0": {
+      "model": "farmerplus:block/banana_leaf_mature_diagonal_base",
+      "y": 90
+    },
+    "age=mature,direction=south_east,segment=1": {
+      "model": "farmerplus:block/banana_leaf_mature_diagonal_tip",
+      "y": 90
+    },
+    "age=mature,direction=south_east,segment=2": {
+      "model": "farmerplus:block/banana_leaf_mature_diagonal_tip",
+      "y": 90
+    },
+    "age=dry,direction=south_east,segment=0": {
+      "model": "farmerplus:block/banana_leaf_dry",
+      "y": 90
+    },
+    "age=dry,direction=south_east,segment=1": {
+      "model": "farmerplus:block/banana_leaf_dry",
+      "y": 90
+    },
+    "age=dry,direction=south_east,segment=2": {
+      "model": "farmerplus:block/banana_leaf_dry",
+      "y": 90
+    },
+    "age=young,direction=south_west,segment=0": {
+      "model": "farmerplus:block/banana_leaf_young_diagonal_base",
+      "y": 180
+    },
+    "age=young,direction=south_west,segment=1": {
+      "model": "farmerplus:block/banana_leaf_young_diagonal_tip",
+      "y": 180
+    },
+    "age=young,direction=south_west,segment=2": {
+      "model": "farmerplus:block/banana_leaf_young_diagonal_tip",
+      "y": 180
+    },
+    "age=mature,direction=south_west,segment=0": {
+      "model": "farmerplus:block/banana_leaf_mature_diagonal_base",
+      "y": 180
+    },
+    "age=mature,direction=south_west,segment=1": {
+      "model": "farmerplus:block/banana_leaf_mature_diagonal_tip",
+      "y": 180
+    },
+    "age=mature,direction=south_west,segment=2": {
+      "model": "farmerplus:block/banana_leaf_mature_diagonal_tip",
+      "y": 180
+    },
+    "age=dry,direction=south_west,segment=0": {
+      "model": "farmerplus:block/banana_leaf_dry",
+      "y": 180
+    },
+    "age=dry,direction=south_west,segment=1": {
+      "model": "farmerplus:block/banana_leaf_dry",
+      "y": 180
+    },
+    "age=dry,direction=south_west,segment=2": {
+      "model": "farmerplus:block/banana_leaf_dry",
+      "y": 180
+    },
+    "age=young,direction=north_west,segment=0": {
+      "model": "farmerplus:block/banana_leaf_young_diagonal_base",
+      "y": 270
+    },
+    "age=young,direction=north_west,segment=1": {
+      "model": "farmerplus:block/banana_leaf_young_diagonal_tip",
+      "y": 270
+    },
+    "age=young,direction=north_west,segment=2": {
+      "model": "farmerplus:block/banana_leaf_young_diagonal_tip",
+      "y": 270
+    },
+    "age=mature,direction=north_west,segment=0": {
+      "model": "farmerplus:block/banana_leaf_mature_diagonal_base",
+      "y": 270
+    },
+    "age=mature,direction=north_west,segment=1": {
+      "model": "farmerplus:block/banana_leaf_mature_diagonal_tip",
+      "y": 270
+    },
+    "age=mature,direction=north_west,segment=2": {
+      "model": "farmerplus:block/banana_leaf_mature_diagonal_tip",
+      "y": 270
+    },
+    "age=dry,direction=north_west,segment=0": {
+      "model": "farmerplus:block/banana_leaf_dry",
+      "y": 270
+    },
+    "age=dry,direction=north_west,segment=1": {
+      "model": "farmerplus:block/banana_leaf_dry",
+      "y": 270
+    },
+    "age=dry,direction=north_west,segment=2": {
+      "model": "farmerplus:block/banana_leaf_dry",
+      "y": 270
+    }
+  }
+}

@@ -41,10 +41,16 @@
   "entity.farmerplus.avocado_boat": "Bote de Abacateiro",
   "entity.farmerplus.avocado_chest_boat": "Bote de Abacateiro com Baú",
   "block.farmerplus.avocado_leaves": "Folhas de Abacateiro",
+  "block.farmerplus.avocado_fruit": "Abacate",
   "block.farmerplus.avocado_trunk": "Tronco de Abacateiro",
   "block.farmerplus.avocado_branch": "Galho de Abacateiro",
   "block.farmerplus.avocado_sapling": "Muda de Abacateiro",
   "tag.block.farmerplus.avocado_logs": "Toras de Abacateiro",
   "tag.item.farmerplus.avocado_logs": "Toras de Abacateiro",
-  "tag.worldgen.biome.farmerplus.has_avocado_trees": "Tem Abacateiros"
+  "tag.worldgen.biome.farmerplus.has_avocado_trees": "Tem Abacateiros",
+  "item.farmerplus.banana": "Banana",
+  "block.farmerplus.banana_sapling": "Muda de Bananeira",
+  "block.farmerplus.banana_stem": "Pseudocaule de Bananeira",
+  "block.farmerplus.banana_leaf": "Folha de Bananeira",
+  "block.farmerplus.banana_bunch": "Cacho de Banana"
 }

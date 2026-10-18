@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=north,stage=0": {
+      "model": "farmerplus:block/banana_bunch_bud"
+    },
+    "facing=north,stage=1": {
+      "model": "farmerplus:block/banana_bunch_flowering"
+    },
+    "facing=north,stage=2": {
+      "model": "farmerplus:block/banana_bunch_green"
+    },
+    "facing=north,stage=3": {
+      "model": "farmerplus:block/banana_bunch_ripe"
+    },
+    "facing=east,stage=0": {
+      "model": "farmerplus:block/banana_bunch_bud",
+      "y": 90
+    },
+    "facing=east,stage=1": {
+      "model": "farmerplus:block/banana_bunch_flowering",
+      "y": 90
+    },
+    "facing=east,stage=2": {
+      "model": "farmerplus:block/banana_bunch_green",
+      "y": 90
+    },
+    "facing=east,stage=3": {
+      "model": "farmerplus:block/banana_bunch_ripe",
+      "y": 90
+    },
+    "facing=south,stage=0": {
+      "model": "farmerplus:block/banana_bunch_bud",
+      "y": 180
+    },
+    "facing=south,stage=1": {
+      "model": "farmerplus:block/banana_bunch_flowering",
+      "y": 180
+    },
+    "facing=south,stage=2": {
+      "model": "farmerplus:block/banana_bunch_green",
+      "y": 180
+    },
+    "facing=south,stage=3": {
+      "model": "farmerplus:block/banana_bunch_ripe",
+      "y": 180
+    },
+    "facing=west,stage=0": {
+      "model": "farmerplus:block/banana_bunch_bud",
+      "y": 270
+    },
+    "facing=west,stage=1": {
+      "model": "farmerplus:block/banana_bunch_flowering",
+      "y": 270
+    },
+    "facing=west,stage=2": {
+      "model": "farmerplus:block/banana_bunch_green",
+      "y": 270
+    },
+    "facing=west,stage=3": {
+      "model": "farmerplus:block/banana_bunch_ripe",
+      "y": 270
+    }
+  }
+}

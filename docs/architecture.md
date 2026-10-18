@@ -86,6 +86,7 @@ Farmer+ must stay invisible on a profiler.
 | Strawberries | `content/strawberry` | [strawberries.md](strawberries.md) |
 | Wood sets and connecting branches | `core/wood`, `client/BoatRendering`, `tools/wood_set.py`, `art/avocado_branches.py` | [avocado.md](avocado.md#reusing-the-wood-set) |
 | Avocado tree | `content/avocado` | [avocado.md](avocado.md) |
+| Banana plant | `content/banana`, `art/banana_art.py` | [banana.md](banana.md) |
 | Broadleaf tree generator | `core/worldgen/BroadleafTreeFeature` | [avocado.md](avocado.md#the-tree) |
 
 ## Adding a new crop (checklist)

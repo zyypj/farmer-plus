@@ -1,0 +1,19 @@
+{
+  "type": "farmerplus:banana_plant",
+  "height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 4,
+    "max_inclusive": 6
+  },
+  "leaves": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 8,
+    "max_inclusive": 10
+  },
+  "suckers": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 2,
+    "max_inclusive": 4
+  },
+  "bunch_chance": 0.35
+}

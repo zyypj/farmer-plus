@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "fruited=false,segment=base": {
+      "model": "farmerplus:block/banana_stem_base"
+    },
+    "fruited=false,segment=middle": {
+      "model": "farmerplus:block/banana_stem_middle"
+    },
+    "fruited=false,segment=crown": {
+      "model": "farmerplus:block/banana_stem_crown"
+    },
+    "fruited=true,segment=base": {
+      "model": "farmerplus:block/banana_stem_base"
+    },
+    "fruited=true,segment=middle": {
+      "model": "farmerplus:block/banana_stem_middle"
+    },
+    "fruited=true,segment=crown": {
+      "model": "farmerplus:block/banana_stem_crown"
+    }
+  }
+}

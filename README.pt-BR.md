@@ -44,6 +44,10 @@ Uma plantação perene nova. Encontre **morangos silvestres** em planícies, cam
 
 Uma árvore frutífera inspirada no abacateiro real — copa redonda e densa de 10–13 blocos, ou uma gigante silvestre de 16–20 blocos a partir de mudas em 2×2 — que nasce nas selvas. As folhas florescem, dão fruto verde e amadurecem em abacates que você colhe com o botão direito — várias e várias vezes. Vem com um conjunto completo de madeira (toras, madeira, versões descascadas, tábuas, escadas, lajes, cercas, portões, portas, alçapões, placas de pressão, botões, placas, placas suspensas, prateleiras, botes e botes com baú) que funciona em todas as receitas de madeira do vanilla. Veja [docs/avocado.pt-BR.md](docs/avocado.pt-BR.md).
 
+### Bananeira
+
+Uma bananeira montada como a erva gigante de verdade: pseudocaule fino, folhas enormes que rasgam e arqueiam (novas, maduras e secas penduradas) e um cacho por pé, pendurado embaixo da copa com o coração roxo. Colha 6–10 bananas com o botão direito; o pé gasto morre e um filho seguidor toma o lugar, então as plantas formam touceiras. Touceiras silvestres nascem nas selvas. Veja [docs/banana.pt-BR.md](docs/banana.pt-BR.md).
+
 ### Pisoteio de plantações
 
 Andar pela plantação entorta as plantas, correr ou passar a cavalo deita elas, e os caminhos que você usa sempre ficam esmagados no solo — geometria de verdade, com caules inclinados e quebrados caindo na direção em que você andou. Plantas entortadas se recuperam com o tempo; as esmagadas só dão sementes. Pular na plantação amassa em vez de destruir a planta e a terra arada. Agache para andar com cuidado. Ligue/desligue com `/gamerule farmerplus:crop_trampling` e `/gamerule farmerplus:mob_crop_trampling`. Veja [docs/trampling.pt-BR.md](docs/trampling.pt-BR.md).
@@ -80,6 +84,7 @@ A mesma tarefa existe para `:fabric` e `:forge`.
 | Pisoteio de plantações | [docs/trampling.md](docs/trampling.md) | [docs/trampling.pt-BR.md](docs/trampling.pt-BR.md) |
 | Morangos | [docs/strawberries.md](docs/strawberries.md) | [docs/strawberries.pt-BR.md](docs/strawberries.pt-BR.md) |
 | Abacateiro e madeira | [docs/avocado.md](docs/avocado.md) | [docs/avocado.pt-BR.md](docs/avocado.pt-BR.md) |
+| Bananeira | [docs/banana.md](docs/banana.md) | [docs/banana.pt-BR.md](docs/banana.pt-BR.md) |
 | Atualizando Minecraft e loaders | [docs/updating.md](docs/updating.md) | [docs/updating.pt-BR.md](docs/updating.pt-BR.md) |
 | Como contribuir | [CONTRIBUTING.md](CONTRIBUTING.md) | [CONTRIBUTING.pt-BR.md](CONTRIBUTING.pt-BR.md) |
 | Histórico de mudanças | [CHANGELOG.md](CHANGELOG.md) | [CHANGELOG.pt-BR.md](CHANGELOG.pt-BR.md) |

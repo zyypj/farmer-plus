@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#farmerplus:has_banana_plants",
+  "features": "farmerplus:wild_banana_clumps",
+  "step": "vegetal_decoration"
+}

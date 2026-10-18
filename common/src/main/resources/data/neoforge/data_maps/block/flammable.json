@@ -51,6 +51,10 @@
     "farmerplus:avocado_branch": {
       "ignite_odds": 5,
       "burn_odds": 5
+    },
+    "farmerplus:banana_leaf": {
+      "ignite_odds": 30,
+      "burn_odds": 60
     }
   }
 }

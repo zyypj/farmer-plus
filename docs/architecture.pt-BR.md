@@ -86,6 +86,7 @@ O Farmer+ precisa ser invisível no profiler.
 | Morangos | `content/strawberry` | [strawberries.pt-BR.md](strawberries.pt-BR.md) |
 | Conjuntos de madeira e galhos conectáveis | `core/wood`, `client/BoatRendering`, `tools/wood_set.py`, `art/avocado_branches.py` | [avocado.pt-BR.md](avocado.pt-BR.md#reaproveitando-o-conjunto-de-madeira) |
 | Abacateiro | `content/avocado` | [avocado.pt-BR.md](avocado.pt-BR.md) |
+| Bananeira | `content/banana`, `art/banana_art.py` | [banana.pt-BR.md](banana.pt-BR.md) |
 | Gerador de árvore de folha larga | `core/worldgen/BroadleafTreeFeature` | [avocado.pt-BR.md](avocado.pt-BR.md#a-árvore) |
 
 ## Adicionando uma plantação nova (checklist)

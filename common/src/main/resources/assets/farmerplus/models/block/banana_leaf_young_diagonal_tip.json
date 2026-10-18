@@ -1,0 +1,96 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "leaf": "farmerplus:block/banana_leaf",
+    "tip": "farmerplus:block/banana_leaf_tip",
+    "particle": "farmerplus:block/banana_leaf"
+  },
+  "elements": [
+    {
+      "name": "tip_left",
+      "from": [
+        -6.5,
+        16.25,
+        -6.6
+      ],
+      "to": [
+        0,
+        16.25,
+        16
+      ],
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            8,
+            16
+          ],
+          "texture": "#tip"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            8,
+            16
+          ],
+          "texture": "#tip"
+        }
+      },
+      "rotation": {
+        "origin": [
+          0,
+          16.25,
+          16
+        ],
+        "x": -14,
+        "y": -45,
+        "z": 0
+      }
+    },
+    {
+      "name": "tip_right",
+      "from": [
+        0,
+        16.25,
+        -6.6
+      ],
+      "to": [
+        6.5,
+        16.25,
+        16
+      ],
+      "faces": {
+        "up": {
+          "uv": [
+            8,
+            0,
+            16,
+            16
+          ],
+          "texture": "#tip"
+        },
+        "down": {
+          "uv": [
+            8,
+            0,
+            16,
+            16
+          ],
+          "texture": "#tip"
+        }
+      },
+      "rotation": {
+        "origin": [
+          0,
+          16.25,
+          16
+        ],
+        "x": -14,
+        "y": -45,
+        "z": 0
+      }
+    }
+  ]
+}

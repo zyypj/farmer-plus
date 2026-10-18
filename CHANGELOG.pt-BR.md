@@ -5,7 +5,8 @@
 ## Não lançado
 
 ### Adicionado
-- Abacateiro: árvore de folha larga realista (de pomar a partir de uma muda, gigante silvestre a partir de mudas em 2×2 e nas selvas) cujas folhas florescem, frutificam e amadurecem repetidamente; botão direito colhe abacates, e os maduros também caem sozinhos.
+- Bananeira: pseudocaule com folhas novas, maduras e secas penduradas, um cacho por pé (coração, flor, verde, maduro) que rende 6–10 bananas, morte do pé depois de frutificar com filho seguidor, touceiras e touceiras silvestres nas selvas.
+- Abacateiro: árvore de folha larga realista (de pomar a partir de uma muda, gigante silvestre a partir de mudas em 2×2 e nas selvas) cujas folhas florescem e frutificam repetidamente; os abacates ficam pendurados embaixo das folhas como bloco próprio, com hitbox, e são colhidos com o botão direito.
 - Madeira fina do abacateiro: a árvore cresce com blocos conectáveis `avocado_trunk` (10 px) e `avocado_branch` (6 px) em vez de toras inteiras; o tronco dropa toras e os galhos dropam gravetos.
 - Conjunto de madeira de abacateiro (toras, madeira, versões descascadas, tábuas, escada, laje, cerca, portão, porta, alçapão, placa de pressão, botão, placa, placa suspensa, prateleira, bote, bote com baú) espelhando todas as tags, receitas, combustível e inflamabilidade do carvalho.
 - Morangos: plantação perene plantada só em terra arada, com estágios de muda, folhagem, flor, fruto verde e maduro, colheita com o botão direito e estolões que se espalham para a terra arada vizinha.

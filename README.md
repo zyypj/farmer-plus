@@ -44,6 +44,10 @@ A new perennial crop. Find **wild strawberries** in plains, meadows and forests,
 
 A full-size fruit tree modelled on real avocados — a dense rounded crown 10–13 blocks tall, or a 16–20 block wild giant from 2×2 saplings — that grows wild in jungles. Its leaves flower, set green fruit and ripen into avocados you pick with a right-click — again and again. It comes with a complete wood set (logs, wood, stripped variants, planks, stairs, slabs, fences, gates, doors, trapdoors, plates, buttons, signs, hanging signs, shelves, boats and chest boats) that works in every vanilla wooden recipe. See [docs/avocado.md](docs/avocado.md).
 
+### Banana plant
+
+A banana built like the real giant herb: a slim pseudostem, huge leaves that tear and arch (young, mature and dry hanging ones), and one bunch per stem that hangs under the crown with its purple bud. Pick 6–10 bananas with a right-click; the spent stem then dies back and a follower sucker takes its place, so plants spread into clumps. Wild clumps grow in jungles. See [docs/banana.md](docs/banana.md).
+
 ### Crop trampling
 
 Walking through crops bends them, sprinting or riding flattens them, and paths you keep using get crushed into the soil — real tilted and snapped stalk geometry that falls in the direction you moved. Bent crops recover over time; crushed ones yield only seeds. Jumping on crops flattens them instead of destroying them and the farmland. Sneak to walk carefully. Toggle with `/gamerule farmerplus:crop_trampling` and `/gamerule farmerplus:mob_crop_trampling`. See [docs/trampling.md](docs/trampling.md).
@@ -80,6 +84,7 @@ The same task exists for `:fabric` and `:forge`.
 | Crop trampling | [docs/trampling.md](docs/trampling.md) | [docs/trampling.pt-BR.md](docs/trampling.pt-BR.md) |
 | Strawberries | [docs/strawberries.md](docs/strawberries.md) | [docs/strawberries.pt-BR.md](docs/strawberries.pt-BR.md) |
 | Avocado tree and wood | [docs/avocado.md](docs/avocado.md) | [docs/avocado.pt-BR.md](docs/avocado.pt-BR.md) |
+| Banana plant | [docs/banana.md](docs/banana.md) | [docs/banana.pt-BR.md](docs/banana.pt-BR.md) |
 | Updating Minecraft and loaders | [docs/updating.md](docs/updating.md) | [docs/updating.pt-BR.md](docs/updating.pt-BR.md) |
 | Contributing | [CONTRIBUTING.md](CONTRIBUTING.md) | [CONTRIBUTING.pt-BR.md](CONTRIBUTING.pt-BR.md) |
 | Changelog | [CHANGELOG.md](CHANGELOG.md) | [CHANGELOG.pt-BR.md](CHANGELOG.pt-BR.md) |

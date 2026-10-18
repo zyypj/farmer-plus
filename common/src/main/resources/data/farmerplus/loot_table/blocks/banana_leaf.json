@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "condition": {
+        "type": "minecraft:any_of",
+        "terms": [
+          "minecraft:tool/can_shear",
+          "minecraft:tool/can_silk_touch"
+        ]
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "farmerplus:banana_leaf"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "farmerplus:blocks/banana_leaf"
+}
